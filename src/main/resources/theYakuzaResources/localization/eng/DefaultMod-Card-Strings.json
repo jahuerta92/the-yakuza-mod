@@ -1,0 +1,323 @@
+{
+  "theYakuza:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "theYakuza:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL theyakuza:Multiword_Keyword."
+  },
+  "theYakuza:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! theyakuza:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theyakuza:Keywords."
+  },
+  "theYakuza:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theYakuza:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "theYakuza:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X theyakuza:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 theyakuza:Keywords."
+  },
+  "theYakuza:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theYakuza:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "theYakuza:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "theYakuza:DefaultAttackWithVariable": { 
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theYakuza:ENERGY_DAMAGE! damage total.)"
+  },
+  "theYakuza:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !theYakuza:SecondMagic! poison to an enemy."
+  },  
+  "theYakuza:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "theYakuza:YakuzaHeatStrike": {
+    "NAME": "Heat Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaGrabTrafficCone": {
+    "NAME": "Grab Traffic Cone",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Traffic_Cone. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Big_Traffic_Cone. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaBaseball": {
+    "NAME": "Baseball",
+    "DESCRIPTION": "theyakuza:Minigame. NL Deal !D! damage."
+  },
+  "theYakuza:YakuzaEssenceOfSweepKick": {
+    "NAME": "Essence of Sweep kick",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfComboRush": {
+    "NAME": "Essence of Combo Rush",
+    "DESCRIPTION": "Deal !D! damage. NL Refund 1 energy if the character has any theyakuza:Heat_Level. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfMultiStrikes": {
+    "NAME": "Essence of Multi-Strikes",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Deal !D! damage !M! times."
+  },
+  "theYakuza:YakuzaEssenceOfHeadCrush": {
+    "NAME": "Essence of Head Crush",
+    "DESCRIPTION": "Use !M! theyakuza:Heat_Level. NL Deal !D! damage."
+  },
+  "theYakuza:YakuzaEssenceOfSlapping": {
+    "NAME": "Essence of Slapping",
+    "DESCRIPTION": "Deal !D! damage. NL This damage is affected !M! times by theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfSwiftStrikes": {
+    "NAME": "Essence of Swift Strikes",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaBowling": {
+    "NAME": "Bowling",
+    "DESCRIPTION": "theyakuza:Minigame. NL Deal !D! damage to ALL enemies."
+  },
+  "theYakuza:YakuzaEssenceOfTaunt": {
+    "NAME": "Essence Of Taunt",
+    "DESCRIPTION": "Gain 2 theyakuza:Heat_Level.",
+    "UPGRADE_DESCRIPTION": "Gain 2 theyakuza:Heat_Level and !B! Block."
+  },
+  "theYakuza:YakuzaEssenceOfWeave": {
+    "NAME": "Essence of Weave",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Prevent the next time you would lose HP this turn.",
+    "UPGRADE_DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Prevent the next time you would lose HP this turn. NL Draw 1 card."
+  },
+  "theYakuza:YakuzaEssenceOfRepair": {
+    "NAME": "Essence of Repair",
+    "DESCRIPTION": "Equipped item recovers !M! theyakuza:Durability."
+  },
+  "theYakuza:YakuzaGrabPan": {
+    "NAME": "Grab Pan",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Pan. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Pan+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaGrabNunchaku": {
+    "NAME": "Grab Nunchaku",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Nunchaku. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Nunchaku+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaGrabNamelessKatana": {
+    "NAME": "Grab Nameless Katana",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Nameless_Katana. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Nameless_Katana_Plus. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaEssenceOfParry": {
+    "NAME": "Essence of Parry",
+    "DESCRIPTION": "If an item is equipped, gain !B! Block."
+  },
+  "theYakuza:YakuzaPoker": {
+    "NAME": "Poker",
+    "DESCRIPTION": "theyakuza:Minigame. NL Discard 1 card. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Discard 1 card. NL Draw !M! cards."
+  },
+  "theYakuza:YakuzaShogi": {
+    "NAME": "Shogi",
+    "DESCRIPTION": "theyakuza:Minigame. NL Draw !M! cards."
+  },
+  "theYakuza:YakuzaFishing": {
+    "NAME": "Fishing",
+    "DESCRIPTION": "theyakuza:Minigame. NL Gain !M! Energy. NL Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponFinish": {
+    "NAME": "Essence of Weapon Finish",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Deal !D! damage. NL Throw current item."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponCounter": {
+    "NAME": "Essence of Weapon Counter",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Gain !B! block. NL Throw current item."
+  },
+  "theYakuza:YakuzaEssenceOfHeatPunches": {
+    "NAME": "Essence of Heat Punches",
+    "DESCRIPTION": "Deal !D! damage. NL Repeat this effect for each theyakuza:Heat_Level. NL Gain 1 theyakuza:Heat_Level. NL Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfDropkick": {
+    "NAME": "Essence of Dropkick",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat_Level. NL End your turn."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponMastery": {
+    "NAME": "Essence of Weapon Mastery",
+    "DESCRIPTION": "Deal !D! damage. NL Activate item Attack effect 1 additional time."
+  },
+  "theYakuza:YakuzaEssenceOfHitAndRun": {
+    "NAME": "Essence of Hit And Run",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfFinisher": {
+    "NAME": "Essence of Finisher",
+    "DESCRIPTION": "Reduce the cost of this card by 1 this turn every time you gain 1 Heat Level. NL Deal !D! damage. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfFollowUp": {
+    "NAME": "Essence of Follow-up",
+    "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random card by 1 this turn. NL Gain 1 theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfDisarming": {
+    "NAME": "Essence of Disarming",
+    "DESCRIPTION": "Use 2 theyakuza:Heat_Level. NL Deal !D! damage. NL Gain !B! block. NL Apply 2 Weak."
+  },
+  "theYakuza:YakuzaTelephoneClub": {
+    "NAME": "Telephone Club",
+    "DESCRIPTION": "theyakuza:Minigame. NL Deal !D! damage. NL Draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Deal !D! damage. NL Draw 1 card."
+  },
+  "theYakuza:YakuzaTaxiDriver": {
+    "NAME": "Taxi Driver",
+    "DESCRIPTION": "theyakuza:Minigame. NL Deal !D! damage to ALL enemies. NL Gain 1 Buffer. NL Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfSidestepping": {
+    "NAME": "Essence of Sidestepping",
+    "DESCRIPTION": "Gain !B! Block. Repeat this effect for each theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaDarts": {
+    "NAME": "Darts",
+    "DESCRIPTION": "theyakuza:Minigame. NL Gain !B! Block."
+  },
+  "theYakuza:YakuzaEssenceOfImprovisation": {
+    "NAME": "Essence of Improvisation",
+    "DESCRIPTION": "Add a random card that grants theyakuza:Heat_Level. It costs 0 this turn. NL Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfQuickGrab": {
+    "NAME": "Essence of Quick Grab",
+    "DESCRIPTION": "Add a random theyakuza:Grab card. It costs 0 this turn. NL Exhaust."
+  },
+  "theYakuza:YakuzaPubCrawl": {
+    "NAME": "Pub Crawl",
+    "DESCRIPTION": "theyakuza:Minigame. NL Add a random theyakuza:Minigame card. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Add a random Minigame card. It costs 0 this turn."
+
+  },
+  "theYakuza:YakuzaEssenceOfFinesse": {
+    "NAME": "Essence of Finesse",
+    "DESCRIPTION": "Gain !B! Block. NL Activate item Skill effect 1 additional time."
+  },
+  "theYakuza:YakuzaCabaretClub": {
+    "NAME": "Cabaret Club",
+    "DESCRIPTION": "theyakuza:Minigame. NL Gain !B! Block. NL This theyakuza:Minigame activation is !M! times as effective."
+  },
+  "theYakuza:YakuzaEssenceOfSwitchGrab": {
+    "NAME": "Essence of Switch Grab",
+    "DESCRIPTION": "Play a random unupgraded theyakuza:Grab.",
+    "UPGRADE_DESCRIPTION": "Play a random Upgraded theyakuza:Grab."
+
+  },
+  "theYakuza:YakuzaGrabSake": {
+    "NAME": "Grab Sake",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Sake. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Sake+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaGrabRevolver": {
+    "NAME": "Grab Revolver",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Revolver. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Revolver+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaGrabBike": {
+    "NAME": "Grab Bike",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Bike. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Bike+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaBoxing": {
+    "NAME": "Boxing",
+    "DESCRIPTION": "theyakuza:Minigame. NL Gain 1 temporary strength with each theyakuza:Minigame activation."
+  },
+  "theYakuza:YakuzaMahjong": {
+    "NAME": "Mahjong",
+    "DESCRIPTION": "theyakuza:Minigame. NL Gain !M! block with each theyakuza:Minigame activation."
+  },
+  "theYakuza:YakuzaEssenceOfAggresiveGrabs": {
+    "NAME": "Essence of Aggresive Grabs",
+    "DESCRIPTION": "The first Grab played each turn deals !M! damage to ALL enemies."
+  },
+  "theYakuza:YakuzaEssenceOfBurningHeat": {
+    "NAME": "Essence of Burning Heat",
+    "DESCRIPTION": "At the start of your turn, deal !M! damage to a random enemy per theyakuza:Heat_Level."
+  },
+  "theYakuza:YakuzaEssenceOfDurableWeapons": {
+    "NAME": "Essence of Durable Weapons",
+    "DESCRIPTION": "theyakuza:Grab items have !M! more theyakuza:Durability."
+  },
+  "theYakuza:YakuzaEssenceOfRecycling": {
+    "NAME": "Essence of Recycling",
+    "DESCRIPTION": "When an item theyakuza:Durability reaches 0, add a theyakuza:Broken_Pipe to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL When an item theyakuza:Durability reaches 0, add a theyakuza:Broken_Pipe_Plus to your hand."
+  },
+  "theYakuza:YakuzaGrabBrokenPipe": {
+    "NAME": "Grab Broken Pipe",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe_Plus. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaBeastStyle": {
+    "NAME": "Beast Style",
+    "DESCRIPTION": "After playing a theyakuza:Grab draw 1 card. NL Refund 1 energy the first time you theyakuza:Grab an item each turn."
+  },
+  "theYakuza:YakuzaRushStyle": {
+    "NAME": "Rush Style",
+    "DESCRIPTION": "Lose !M! Strength. NL Gain !theYakuza:SecondMagic! temporary dexterity after playing each Attack."
+  },
+  "theYakuza:YakuzaBrawlerStyle": {
+    "NAME": "Brawler Style",
+    "DESCRIPTION": "When HP is lost, gain 1 theyakuza:Retaliate."
+  },
+  "theYakuza:YakuzaEssenceOfBlocking": {
+    "NAME": "Essence of Blocking",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Gain !B! Block."
+  },
+  "theYakuza:YakuzaEssenceOfSteel": {
+    "NAME": "Essence of Steel",
+    "DESCRIPTION": "Use 1 theyakuza:Heat_Level. NL Gain !M! Metallicize. NL Gain !M! Plated Armor. NL Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfRetaliation": {
+    "NAME": "Essence of Retaliation",
+    "DESCRIPTION": "Gain 1 theyakuza:Retaliate."
+  },
+  "theYakuza:YakuzaGrabSais": {
+    "NAME": "Grab Sais",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Sais. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Sais+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+  },
+  "theYakuza:YakuzaEssenceOfPolish": {
+    "NAME": "Essence of Polish",
+    "DESCRIPTION": "Item Attack and Skill triggered effects are improved by !M!."
+  },
+  "theYakuza:YakuzaEssenceOfIntimidation": {
+    "NAME": "Essence of Intimidation",
+    "DESCRIPTION": "At the start of your turn, apply 1 vulnerable to enemies intending to Attack or 1 Weak otherwise."
+  },
+  "theYakuza:YakuzaKomakiTigerDrop": {
+    "NAME": "Komaki Tiger Drop",
+    "DESCRIPTION": "If an enemy intends to attack deal !D! damage. Gain 1 Heat Level."
+  },
+  "theYakuza:YakuzaKomakiParry": {
+    "NAME": "Komaki Komaki Parry",
+    "DESCRIPTION": "If an enemy intends to attack deal !D! damage and Stun them 1 turn. Gain 1 Heat Level. Exhaust."
+  },
+  "theYakuza:YakuzaEssenceOfTheDragonGod": {
+    "NAME": "Essence of the Dragon God",
+    "DESCRIPTION": "Use ALL theyakuza:Heat_Level. Deal !D! damage per theyakuza:Heat_Level used this way."
+  },
+  "theYakuza:YakuzaEssenceOfKiwami": {
+    "NAME": "Essence of Kiwami",
+    "DESCRIPTION": "Use 3 theyakuza:Heat_Level. Deal !D! damage. Gain !B! Block."
+  },
+  "theYakuza:YakuzaEssenceOfNoMercy": {
+    "NAME": "Essence of No Mercy",
+    "DESCRIPTION": "This attack deals damage equal to 1 / !M! enemy missing HP. Gain 1 theyakuza:Heat_Level."
+  }
+}

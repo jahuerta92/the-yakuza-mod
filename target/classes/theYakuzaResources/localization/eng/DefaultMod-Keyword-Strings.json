@@ -1,0 +1,200 @@
+[
+  {
+    "NAMES": [
+      "minigame",
+      "minigames",
+      "Minigame",
+      "Minigames"
+    ],
+    "DESCRIPTION": "Whenever you play a Minigame card, gain a random effect from this list: NL - Gain 3 block. NL - Gain 5 Gold. NL - Deal 5 damage to a random enemy. NL - Draw 1 card. NL - Apply 1 weak to ALL enemies. NL - Apply 1 vulnerable to ALL enemies. NL Gain 1 Temporary Strength. NL Gain 1 Temporary Dexterity. NL - Obtain a random common potion."
+  },
+  {
+    "NAMES": [
+      "durability",
+      "Durability"
+    ],
+    "DESCRIPTION": "After each triggered action (skill or attack) items lose 1 durability. NL When durability reaches 0, items break."
+  },
+  {
+    "NAMES": [
+      "grab",
+      "Grab"
+    ],
+    "DESCRIPTION": "Grab the described item. NL Items empower attacks and skills, and can be thrown. NL Triggering If an item is already grabbed, throw it and grab the new one. NL Triggering effects decrease durability by 1. NL When durability reaches 0, items break."
+  },
+  {
+    "PROPER_NAME": "Heat Level",
+    "NAMES": [
+      "Heat Level",
+      "heat_level",
+      "heat_levels",
+      "Heat Levels",
+      "Heat_Levels"
+    ],
+    "DESCRIPTION": "Each heat level adds +2 attack damage and +2 block gain. NL Heat Level caps at 3 stacks. NL Lose 1 Heat Level whenever you take damage."
+  },
+  {
+    "PROPER_NAME": "Traffic Cone",
+    "NAMES": [
+      "Traffic Cone",
+      "Traffic_Cone",
+      "traffic_cone"
+    ],
+    "DESCRIPTION": "Attack: Deal 1 more damage. NL Skill: Gain 2 block. NL Thrown: Deal 6 damage damage to a random enemy."
+  },
+  {
+    "PROPER_NAME": "Big Traffic Cone",
+    "NAMES": [
+      "Big Traffic Cone",
+      "Big_Traffic_Cone",
+      "big_traffic_cone"
+    ],
+    "DESCRIPTION": "Attack: Deal 2 more damage. NL Skill: Gain 3 block. NL Thrown: Deal 9 damage damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "nunchaku",
+      "Nunchaku"
+    ],
+    "DESCRIPTION": "Attack: Deal 2 more damage. Gain 2 block. NL Skill: Gain 4 block. NL Thrown: Deal 6 damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "nunchaku+",
+      "Nunchaku+"
+    ],
+    "DESCRIPTION": "Attack: Deal 3 more damage. Gain 3 block. NL Skill: Gain 4 block. NL Thrown: Deal 9 damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "pan",
+      "Pan"
+    ],
+    "DESCRIPTION": "Attack: Deal 1 more damage. NL Skill: Gain 6 block. NL Thrown: Gain 3 block. Deal 3 damage damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "pan+",
+      "Pan+"
+    ],
+    "DESCRIPTION": "Attack: Deal 1 more damage. NL Skill: Gain 8 block. NL Thrown: Gain 4 block. Deal 4 damage damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "sake",
+      "Sake"
+    ],
+    "DESCRIPTION": "Attack: Gain 1 Strength. NL Skill: Gain 1 Dexterity. NL Thrown: Draw 2 cards."
+  },
+  {
+    "NAMES": [
+      "sake+",
+      "Sake+"
+    ],
+    "DESCRIPTION": "Attack: Gain 1 Strength. NL Skill: Gain 1 Dexterity. NL Thrown: Draw 3 cards."
+  },
+  {
+    "NAMES": [
+      "revolver",
+      "Revolver"
+    ],
+    "DESCRIPTION": "Attack: Deal 4 more damage. Apply 1 Vulnerable to ALL enemies. NL Skill: No effect. NL Thrown: Deal 0 damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "revolver+",
+      "Revolver+"
+    ],
+    "DESCRIPTION": "Attack: Deal 7 more damage. Apply 1 Vulnerable to ALL enemies. NL Skill: No effect. NL Thrown: Deal 0 damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "bike",
+      "Bike"
+    ],
+    "DESCRIPTION": "Attack: Deal 12 more damage. NL Skill: Gain 10 Block. NL Thrown: Deal 12 damage to ALL enemies."
+  },
+  {
+    "NAMES": [
+      "bike+",
+      "Bike+"
+    ],
+    "DESCRIPTION": "Attack: Deal 17 more damage. NL Skill: Gain 13 Block. NL Thrown: Deal 12 damage to ALL enemies."
+  },
+  {
+    "NAMES": [
+      "sais",
+      "Sais"
+    ],
+    "DESCRIPTION": "Attack: Gain 2 Temporary Dexterity. NL Skill: Gain 2 Temporary Strength. NL Thrown: Gain 1 Retaliate."
+  },
+  {
+    "NAMES": [
+      "sais+",
+      "Sais+"
+    ],
+    "DESCRIPTION": "Attack: Gain 3 Temporary Dexterity. NL Skill: Gain 3 Temporary Strength. NL Thrown: Gain 1 Retaliate."
+  },
+  {
+    "PROPER_NAME": "Nameless Katana",
+    "NAMES": [
+      "Nameless Katana",
+      "nameless_katana",
+      "Nameless_Katana"
+    ],
+    "DESCRIPTION": "Attack: Attacks deal 5 more damage. NL Skill: Gain 1 block. NL Thrown: Deal 4 damage to a random enemy."
+  },
+  {
+    "PROPER_NAME": "Nameless Katana+",
+    "NAMES": [
+      "Nameless Katana+",
+      "nameless_katana_plus",
+      "Nameless_Katana_Plus"
+    ],
+    "DESCRIPTION": "Attack: Attacks deal 8 more damage. NL Skill: Gain 1 block. NL Thrown: Deal 4 damage to a random enemy."
+  },
+  {
+    "PROPER_NAME": "Broken Pipe",
+    "NAMES": [
+      "Broken Pipe",
+      "Broken_Pipe",
+      "broken_pipe"
+    ],
+    "DESCRIPTION": "Attack: Deal 2 more damage. NL Skill: Gain 2 block. NL Thrown: Deal 3 damage damage to a random enemy."
+  },
+  {
+    "PROPER_NAME": "Broken Pipe+",
+    "NAMES": [
+      "Broken Pipe+",
+      "Broken_Pipe_Plus",
+      "broken_pipe_plus"
+
+    ],
+    "DESCRIPTION": "Attack: Deal 3 more damage. NL Skill: Gain 3 block. NL Thrown: Deal 5 damage damage to a random enemy."
+  },
+  {
+    "NAMES": [
+      "retaliate",
+      "Retaliate"
+    ],
+    "DESCRIPTION": "At the start of your turn, play 1 Attack from your draw pile for each Retaliate charge."
+  },
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]
