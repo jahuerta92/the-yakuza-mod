@@ -40,8 +40,8 @@ public class YakuzaEssenceOfNoMercy extends AbstractDynamicCard {
 
     private static final int COST = 1; // COST = ${COST}
 
-    private static final int MAGIC = 4;
-    private static final int UPGRADED_MAGIC = -2;
+    private static final int MAGIC = 3;
+    private static final int UPGRADED_MAGIC = -1;
 
     // /STAT DECLARATION/
     public YakuzaEssenceOfNoMercy() { // public ${NAME}() - This one and the one right under the imports are the
@@ -56,9 +56,10 @@ public class YakuzaEssenceOfNoMercy extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int trueDamage = (int) Math.floor((m.maxHealth - m.currentHealth) / magicNumber);
+        DamageInfo damage = new DamageInfo(p, trueDamage, damageTypeForTurn);
+        damage.applyPowers(p, m);
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, trueDamage, damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                new DamageAction(m, damage, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
     }
 

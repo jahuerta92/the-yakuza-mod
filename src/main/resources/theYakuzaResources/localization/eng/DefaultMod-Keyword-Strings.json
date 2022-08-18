@@ -20,7 +20,7 @@
       "grab",
       "Grab"
     ],
-    "DESCRIPTION": "Grab the described item. NL Items empower attacks and skills, and can be thrown. NL Triggering If an item is already grabbed, throw it and grab the new one. NL Triggering effects decrease durability by 1. NL When durability reaches 0, items break."
+    "DESCRIPTION": "Grab the described item. NL Items empower attacks and skills, and can be thrown. NL If an item is already grabbed, throw it and grab the new one. NL Triggering effects decrease durability by 1. NL When durability reaches 0, items break."
   },
   {
     "PROPER_NAME": "Heat Level",

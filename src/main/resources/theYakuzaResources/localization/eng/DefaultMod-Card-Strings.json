@@ -220,8 +220,8 @@
   },
   "theYakuza:YakuzaGrabSake": {
     "NAME": "Grab Sake",
-    "DESCRIPTION": "theyakuza:Grab theyakuza:Sake. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Sake+. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Sake. NL theyakuza:Durability !theYakuza:YakuzaDurability!. Exhaust.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Sake+. NL theyakuza:Durability !theYakuza:YakuzaDurability!. Exhaust."
   },
   "theYakuza:YakuzaGrabRevolver": {
     "NAME": "Grab Revolver",
@@ -243,7 +243,7 @@
   },
   "theYakuza:YakuzaEssenceOfAggresiveGrabs": {
     "NAME": "Essence of Aggresive Grabs",
-    "DESCRIPTION": "The first Grab played each turn deals !M! damage to ALL enemies."
+    "DESCRIPTION": "The first theyakuza:Grab played each turn deals !M! damage to ALL enemies."
   },
   "theYakuza:YakuzaEssenceOfBurningHeat": {
     "NAME": "Essence of Burning Heat",
@@ -260,8 +260,8 @@
   },
   "theYakuza:YakuzaGrabBrokenPipe": {
     "NAME": "Grab Broken Pipe",
-    "DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe. NL theyakuza:Durability !theYakuza:YakuzaDurability!.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe_Plus. NL theyakuza:Durability !theYakuza:YakuzaDurability!."
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe. NL theyakuza:Durability !theYakuza:YakuzaDurability!. Exhaust.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Broken_Pipe_Plus. NL theyakuza:Durability !theYakuza:YakuzaDurability!. Exhaust."
   },
   "theYakuza:YakuzaBeastStyle": {
     "NAME": "Beast Style",
@@ -302,11 +302,11 @@
   },
   "theYakuza:YakuzaKomakiTigerDrop": {
     "NAME": "Komaki Tiger Drop",
-    "DESCRIPTION": "If an enemy intends to attack deal !D! damage. Gain 1 Heat Level."
+    "DESCRIPTION": "If an enemy intends to attack deal !D! damage. Gain 1 theyakuza:Heat_Level."
   },
   "theYakuza:YakuzaKomakiParry": {
     "NAME": "Komaki Komaki Parry",
-    "DESCRIPTION": "If an enemy intends to attack deal !D! damage and Stun them 1 turn. Gain 1 Heat Level. Exhaust."
+    "DESCRIPTION": "If an enemy intends to attack deal !D! damage and Stun them 1 turn. Gain 1 theyakuza:Heat_Level. Exhaust."
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
     "NAME": "Essence of the Dragon God",

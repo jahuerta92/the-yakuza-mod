@@ -41,7 +41,7 @@ public class YakuzaKomakiTigerDrop extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK; //
     public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
 
-    private static final int COST = 0; // COST = ${COST}
+    private static final int COST = 1; // COST = ${COST}
 
     private static final int DAMAGE = 22; // DAMAGE = ${DAMAGE}
     private static final int UPGRADE_PLUS_DMG = 8; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}

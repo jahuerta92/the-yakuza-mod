@@ -10,14 +10,10 @@ import theYakuza.cards.UncommonSkills.*;
 import theYakuza.cards.CommonSkills.*;
 import theYakuza.cards.UncommonPowers.*;
 import theYakuza.cards.TemporaryCards.*;
+import theYakuza.cards.RareAttacks.*;
 
 import theYakuza.cards.DefaultExampleCards.DefaultCommonAttack;
 import theYakuza.cards.DefaultExampleCards.DefaultCommonSkill;
-import theYakuza.cards.RareAttacks.YakuzaEssenceOfKiwami;
-import theYakuza.cards.RareAttacks.YakuzaEssenceOfNoMercy;
-import theYakuza.cards.RareAttacks.YakuzaEssenceOfTheDragonGod;
-import theYakuza.cards.RareAttacks.YakuzaKomakiParry;
-import theYakuza.cards.RareAttacks.YakuzaKomakiTigerDrop;
 import theYakuza.relics.DefaultClickableRelic;
 import theYakuza.relics.PlaceholderRelic;
 import theYakuza.relics.PlaceholderRelic2;

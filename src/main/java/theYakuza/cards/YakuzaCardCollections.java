@@ -3,8 +3,14 @@ package theYakuza.cards;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import theYakuza.cards.CommonAttacks.*;
 import theYakuza.cards.UncommonAttacks.*;
+import theYakuza.cards.UncommonPowers.YakuzaBoxing;
+import theYakuza.cards.UncommonPowers.YakuzaBrawlerStyle;
+import theYakuza.cards.UncommonPowers.YakuzaMahjong;
 import theYakuza.cards.UncommonSkills.*;
 import theYakuza.cards.CommonSkills.*;
+import theYakuza.cards.RareAttacks.YakuzaEssenceOfNoMercy;
+import theYakuza.cards.RareAttacks.YakuzaKomakiParry;
+import theYakuza.cards.RareAttacks.YakuzaKomakiTigerDrop;
 import theYakuza.cards.RareSkills.YakuzaEssenceOfSwitchGrab;
 import theYakuza.cards.TemporaryCards.YakuzaGrabBrokenPipe;
 
@@ -29,8 +35,13 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfDropkick());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfHitAndRun());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfFollowUp());
+                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaBrawlerStyle());
+                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaKomakiParry());
+                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaKomakiTigerDrop());
+                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfNoMercy());
+
                 /*
-                 * YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaBrawlerStyle());
+                 * 
                  * YakuzaCardCollections.HeatLevelCards.addToBottom(new
                  * YakuzaEssenceOfUltimatePower());
                  * YakuzaCardCollections.HeatLevelCards.addToBottom(new
@@ -51,6 +62,8 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabRevolver());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBike());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBrokenPipe());
+                YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabSais());
+
                 /*
                  * YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabStaminanRoyale());
                  * YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabMotorcycle());
@@ -67,9 +80,9 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaTaxiDriver());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaPubCrawl());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaCabaretClub());
+                YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaMahjong());
+                YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBoxing());
                 /*
-                 * YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaMahjong());
-                 * YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBoxing());
                  * YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaDragonKart());
                  * YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBakaMitai());
                  * YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaRealState());
