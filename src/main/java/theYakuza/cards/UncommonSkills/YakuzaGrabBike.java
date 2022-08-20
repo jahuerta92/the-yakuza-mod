@@ -19,7 +19,7 @@ public class YakuzaGrabBike extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(YakuzaGrabBike.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Yakuza_Grab_Bike.png");
 
     // /TEXT DECLARATION/
 

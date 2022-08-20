@@ -19,7 +19,7 @@ public class YakuzaGrabTrafficCone extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(YakuzaGrabTrafficCone.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Yakuza_Grab_Traffic_Cone.png");
 
     // /TEXT DECLARATION/
 

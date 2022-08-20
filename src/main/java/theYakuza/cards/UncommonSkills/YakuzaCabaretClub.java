@@ -22,8 +22,8 @@ public class YakuzaCabaretClub extends AbstractDynamicCard {
                                                                                                 // ONE
     // FOR THE
     // TEMPLATE;
-    public static final String IMG = makeCardPath("Skill.png");// "public static final String IMG =
-                                                               // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Cabaret_Club.png");// "public static final String IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 

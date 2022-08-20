@@ -12,6 +12,7 @@ import theYakuza.relics.BottledPlaceholderRelic;
 import theYakuza.relics.DefaultClickableRelic;
 import theYakuza.relics.PlaceholderRelic;
 import theYakuza.relics.PlaceholderRelic2;
+import theYakuza.relics.TojoBadgeRelic;
 import theYakuza.util.IDCheckDontTouchPls;
 import theYakuza.util.TextureLoader;
 import theYakuza.variables.DefaultCustomVariable;
@@ -120,17 +121,17 @@ public class DefaultMod implements
     // PATHS!!!!!!!!!!!
 
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_attack_yakuza.png";
+    private static final String SKILL_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_skill_yakuza.png";
+    private static final String POWER_DEFAULT_GRAY = "theYakuzaResources/images/512/bg_power_yakuza.png";
 
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "theYakuzaResources/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "theYakuzaResources/images/512/card_small_orb.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY = "theYakuzaResources/images/512/card_yakuza_orb.png";
+    private static final String CARD_ENERGY_ORB = "theYakuzaResources/images/512/card_small_yakuza_orb.png";
 
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/card_default_gray_orb.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_attack_yakuza.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_skill_yakuza.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/bg_power_yakuza.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theYakuzaResources/images/1024/card_yakuza_orb.png";
 
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "theYakuzaResources/images/charSelect/YakuzaCharacterButton.png";
@@ -417,8 +418,10 @@ public class DefaultMod implements
         // just remove the player class at the end (in this case the
         // "TheDefaultEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID,
-                PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        // BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID,
+        // PLACEHOLDER_POTION_HYBRID,
+        // PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID,
+        // TheDefault.Enums.THE_DEFAULT);
 
         logger.info("Done editing potions");
     }
@@ -442,18 +445,23 @@ public class DefaultMod implements
 
         // This adds a character specific relic. Only when you play with the mentioned
         // color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+        // BaseMod.addRelicToCustomPool(new PlaceholderRelic(),
+        // TheDefault.Enums.COLOR_GRAY);
+        // BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(),
+        // TheDefault.Enums.COLOR_GRAY);
+        // BaseMod.addRelicToCustomPool(new DefaultClickableRelic(),
+        // TheDefault.Enums.COLOR_GRAY);
 
         // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
+        // BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
 
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see
         // them in game
         // (the others are all starters so they're marked as seen in the character file)
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        // UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+        BaseMod.addRelicToCustomPool(new TojoBadgeRelic(), TheDefault.Enums.COLOR_GRAY);
+        UnlockTracker.markRelicAsSeen(TojoBadgeRelic.ID);
         logger.info("Done adding relics!");
     }
 

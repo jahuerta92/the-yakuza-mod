@@ -5,18 +5,8 @@ import basemod.animations.SpriterAnimation;
 import theYakuza.DefaultMod;
 
 import theYakuza.cards.CommonAttacks.*;
-import theYakuza.cards.UncommonAttacks.*;
-import theYakuza.cards.UncommonSkills.*;
 import theYakuza.cards.CommonSkills.*;
-import theYakuza.cards.UncommonPowers.*;
-import theYakuza.cards.TemporaryCards.*;
-import theYakuza.cards.RareAttacks.*;
-
-import theYakuza.cards.DefaultExampleCards.DefaultCommonAttack;
-import theYakuza.cards.DefaultExampleCards.DefaultCommonSkill;
-import theYakuza.relics.DefaultClickableRelic;
-import theYakuza.relics.PlaceholderRelic;
-import theYakuza.relics.PlaceholderRelic2;
+import theYakuza.relics.TojoBadgeRelic;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -79,7 +69,7 @@ public class TheDefault extends CustomPlayer {
     public static final int STARTING_HP = 85;
     public static final int MAX_HP = 85;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
+    public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
 
     // =============== /BASE STATS/ =================
@@ -166,40 +156,14 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-
-        retVal.add(YakuzaEssenceOfKiwami.ID);
-        retVal.add(YakuzaEssenceOfTheDragonGod.ID);
-        retVal.add(YakuzaEssenceOfNoMercy.ID);
-        retVal.add(YakuzaKomakiParry.ID);
-        retVal.add(YakuzaKomakiTigerDrop.ID);
-
-        retVal.add(YakuzaEssenceOfSwiftStrikes.ID);
-        retVal.add(YakuzaEssenceOfSwiftStrikes.ID);
-        retVal.add(YakuzaEssenceOfSwiftStrikes.ID);
-        retVal.add(YakuzaEssenceOfSwiftStrikes.ID);
-        retVal.add(YakuzaEssenceOfSwiftStrikes.ID);
-
-        // retVal.add(YakuzaBaseball.ID);
-
-        for (int i = 0; i < 2; i++) {
-            retVal.add(DefaultCommonSkill.ID);
+        for (int i = 0; i < 4; i++) {
+            retVal.add(YakuzaStrike.ID);
         }
-        /*
-         * retVal.add(DefaultCommonAttack.ID);
-         * retVal.add(DefaultUncommonAttack.ID);
-         * retVal.add(DefaultRareAttack.ID);
-         * 
-         * retVal.add(DefaultUncommonSkill.ID);
-         * retVal.add(DefaultRareSkill.ID);
-         * 
-         * retVal.add(DefaultCommonPower.ID);
-         * retVal.add(DefaultUncommonPower.ID);
-         * retVal.add(DefaultRarePower.ID);
-         * 
-         * retVal.add(DefaultAttackWithVariable.ID);
-         * retVal.add(DefaultSecondMagicNumberSkill.ID);
-         * retVal.add(OrbSkill.ID);
-         */
+        for (int i = 0; i < 4; i++) {
+            retVal.add(YakuzaDefend.ID);
+        }
+        retVal.add(YakuzaGrabTrafficCone.ID);
+        retVal.add(YakuzaHeatStrike.ID);
         return retVal;
     }
 
@@ -207,16 +171,11 @@ public class TheDefault extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
-
+        retVal.add(TojoBadgeRelic.ID);
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see
         // them in game
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        UnlockTracker.markRelicAsSeen(TojoBadgeRelic.ID);
 
         return retVal;
     }
@@ -224,7 +183,7 @@ public class TheDefault extends CustomPlayer {
     // character Select screen effect
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("ATTACK_DAGGER_1", 1.25f); // Sound Effect
+        CardCrawlGame.sound.playA("RAGE", 1.25f); // Sound Effect
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT,
                 false); // Screen Effect
     }
@@ -232,7 +191,7 @@ public class TheDefault extends CustomPlayer {
     // character Select on-button-press sound effect
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "ATTACK_DAGGER_1";
+        return "RAGE";
     }
 
     // Should return how much HP your maximum HP reduces by when starting a run at
@@ -271,7 +230,7 @@ public class TheDefault extends CustomPlayer {
     // Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new YakuzaStrike();
     }
 
     // The class name as it appears next to your player name in-game

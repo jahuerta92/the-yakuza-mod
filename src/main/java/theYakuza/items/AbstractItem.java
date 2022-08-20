@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 
 import theYakuza.cards.CommonSkills.YakuzaEssenceOfRepair;
+import theYakuza.cards.RareAttacks.YakuzaEssenceOfIronFists;
 import theYakuza.cards.RareSkills.YakuzaEssenceOfSwitchGrab;
 import theYakuza.cards.UncommonAttacks.YakuzaEssenceOfWeaponFinish;
 import theYakuza.cards.UncommonAttacks.YakuzaEssenceOfWeaponMastery;
@@ -44,8 +45,8 @@ public abstract class AbstractItem extends AbstractStance {
     protected static final float NUM_X_OFFSET;
     protected static final float NUM_Y_OFFSET;
 
-    private static final String DOUBLE_ATTACK_ACTIVATION_CARD_ID = YakuzaEssenceOfWeaponMastery.ID;
-    private static final String DOUBLE_SKILL_ACTIVATION_CARD_ID = YakuzaEssenceOfFinesse.ID;
+    protected static final String DOUBLE_ATTACK_ACTIVATION_CARD_ID = YakuzaEssenceOfWeaponMastery.ID;
+    protected static final String DOUBLE_SKILL_ACTIVATION_CARD_ID = YakuzaEssenceOfFinesse.ID;
 
     public AbstractItem() {
         super();
@@ -84,7 +85,11 @@ public abstract class AbstractItem extends AbstractStance {
     }
 
     public void repair(int amount) {
-        durability += amount;
+        if (durability + amount >= 999) {
+            durability = 999;
+        } else {
+            durability += amount;
+        }
     }
 
     @Override
@@ -169,6 +174,7 @@ public abstract class AbstractItem extends AbstractStance {
         allowed_ids.add(YakuzaEssenceOfWeaponCounter.ID);
         allowed_ids.add(YakuzaEssenceOfSwitchGrab.ID);
         allowed_ids.add(YakuzaEssenceOfRepair.ID);
+        allowed_ids.add(YakuzaEssenceOfIronFists.ID);
 
         boolean check = true;
 

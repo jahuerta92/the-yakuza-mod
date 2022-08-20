@@ -70,7 +70,7 @@ public class YakuzaKomakiParry extends AbstractDynamicCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        this.glowColor = null;
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
             if (!m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0) {
                 this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();

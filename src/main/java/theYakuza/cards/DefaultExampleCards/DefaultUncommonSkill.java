@@ -12,6 +12,9 @@ import theYakuza.DefaultMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheDefault;
 
+import basemod.AutoAdd;
+
+@AutoAdd.Ignore
 public class DefaultUncommonSkill extends AbstractDynamicCard {
 
     /*

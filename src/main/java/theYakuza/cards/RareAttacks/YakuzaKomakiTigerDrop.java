@@ -27,8 +27,8 @@ public class YakuzaKomakiTigerDrop extends AbstractDynamicCard {
     public static final String ID = DefaultMod.makeID(YakuzaKomakiTigerDrop.class.getSimpleName()); // USE THIS ONE
                                                                                                     // FOR THE
     // TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
-                                                                // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Komaki_Tiger_Drop.png");// "public static final String IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 
@@ -67,7 +67,8 @@ public class YakuzaKomakiTigerDrop extends AbstractDynamicCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        this.glowColor = null;
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
             if (!m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0) {
                 this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();

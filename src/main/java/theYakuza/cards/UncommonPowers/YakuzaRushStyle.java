@@ -18,8 +18,8 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaRushStyle extends AbstractDynamicCard {
 
     public static final String ID = DefaultMod.makeID(YakuzaRushStyle.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");// "public static final String IMG =
-                                                               // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Rush_Style.png");// "public static final String IMG =
+    // makeCardPath("${NAME}.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 

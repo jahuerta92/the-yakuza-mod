@@ -2,7 +2,7 @@ package theYakuza.cards.RareAttacks;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -62,7 +62,7 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
         int repeats = p.getPower(HeatLevelPower.POWER_ID).amount;
         if (heatCost > 0) {
             AbstractDungeon.actionManager.addToBottom(
-                    new RemoveSpecificPowerAction(p, p, HeatLevelPower.POWER_ID));
+                    new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, repeats));
         }
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage * repeats, damageTypeForTurn),

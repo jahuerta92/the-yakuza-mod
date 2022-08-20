@@ -30,5 +30,12 @@
       ".",
       "Select a card to bottle for "
     ]
+  },
+  "theYakuza:TojoBadgeRelic": {
+    "NAME": "Tojo Badge",
+    "FLAVOR": "I am Mr Shakedown.",
+    "DESCRIPTIONS": [
+      "Gain #b10 #yGold after each combat victory."
+    ]
   }
 }

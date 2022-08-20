@@ -19,7 +19,7 @@ public class YakuzaGrabRevolver extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(YakuzaGrabRevolver.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Yakuza_Grab_Revolver.png");
 
     // /TEXT DECLARATION/
 

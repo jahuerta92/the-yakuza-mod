@@ -9,7 +9,8 @@
 },
 "theYakuza:HeatLevel": {
         "NAME": "Heat Level",
-        "DESCRIPTIONS": ["Increase attack and block by #b",". Up to 3 stacks. Lose 1 stack when HP is damaged."]
+        "DESCRIPTIONS": ["Increase attack and block by #b",". Up to #b", " stacks.", " Lose 1 stack when HP is damaged.",
+         " Lose #b", " stack at the end of your turn.", " stacks at the end of your turn."]
 },
 "theYakuza:Weave": {
         "NAME": "Weave",
@@ -37,7 +38,7 @@
 },
 "theYakuza:EssenceOfRecycling": {
         "NAME": "Essence of Recycling",
-        "DESCRIPTIONS": ["When an item #yDurability reaches 0, add a #yBroken #yPipe to your hand.", "When an item #yDurability reaches 0, add a #yBroken #yPipe+ to your hand."]
+        "DESCRIPTIONS": ["When an item #yDurability reaches #b0, add a #yBroken #yPipe to your hand.", "When an item #yDurability reaches #b0, add a #yBroken #yPipe+ to your hand."]
 },
 "theYakuza:BeastStyle": {
         "NAME": "Beast Style",
@@ -61,6 +62,47 @@
 },
 "theYakuza:EssenceOfIntimidation": {
         "NAME": "Essence of Intimidation",
-        "DESCRIPTIONS": ["At the start of your turn, apply 1 vulnerable to enemies intending to Attack or 1 Weak otherwise."]
+        "DESCRIPTIONS": ["At the start of your turn, apply #b1 vulnerable to enemies intending to Attack or #b1 Weak otherwise."]
+},
+"theYakuza:FridayNight": {
+        "NAME": "Friday Night",
+        "DESCRIPTIONS": ["Minigame effects activate #b", " additional time.", " additional times."]
+},
+"theYakuza:RealEstate": {
+        "NAME": "Real Estate",
+        "DESCRIPTIONS": ["Minigame activations grant #b", " additional effects"]
+},
+"theYakuza:Colosseum": {
+        "NAME": "Colosseum",
+        "DESCRIPTIONS": ["Minigame activations grant #b", " Heat Level."]
+},
+"theYakuza:Chairman": {
+        "NAME": "4th Chairman",
+        "DESCRIPTIONS": ["Raise Heat Level cap by #b", " ."]
+},
+"theYakuza:FuryOfTheAzureDragon": {
+        "NAME": "Fury of the Azure Dragon",
+        "DESCRIPTIONS": ["Heat Level never decreases."]
+},
+"theYakuza:DragonOfDojimaStyle": {
+        "NAME": "Dragon of Dojima Style",
+        "DESCRIPTIONS": ["After playing an Attack, create #b", " copy of itself with its damage divided by #b3, cost reduced by #b1, Purge and Exhaust. No effect on #b0 cost cards.",
+        " copies of itself with its damage divided by #b3, cost reduced by #b1, Purge and Exhaust. No effect on #b0 cost cards."]
+},
+"theYakuza:ExtremeHeatMode": {
+        "NAME": "Extreme Heat Mode",
+        "DESCRIPTIONS": ["Effects of Heat Level are increased by #b", "."]
+},
+"theYakuza:ExtremeHeatModeDecay": {
+        "NAME": "Heat Level Decay",
+        "DESCRIPTIONS": ["Heat Level decays by #b", " at the end of your turn."]
+},
+"theYakuza:DragonForm": {
+        "NAME": "Dragon Form",
+        "DESCRIPTIONS": ["At the start of your turn, Increase ALL of your powers by #b", "."]
+},
+"theYakuza:KamurochoStreets": {
+        "NAME": "Kamurocho Streets",
+        "DESCRIPTIONS": ["At the start of your turn, add #b", " random grab card to your hand with cost reduced by 1."]
 }
 }

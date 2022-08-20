@@ -15,6 +15,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.AutoAdd;
+
+@AutoAdd.Ignore
 public class OrbSkill extends AbstractDynamicCard {
 
     /*

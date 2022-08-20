@@ -26,8 +26,8 @@ public class YakuzaEssenceOfKiwami extends AbstractDynamicCard {
                                                                                                     // ONE
                                                                                                     // FOR THE
     // TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
-                                                                // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_Kiwami.png");// "public static final String IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 

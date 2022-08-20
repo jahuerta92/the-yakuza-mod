@@ -1,6 +1,7 @@
 package theYakuza.cards.UncommonSkills;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import theYakuza.DefaultMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheDefault;
+import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.DefaultMod.makeCardPath;
 
@@ -58,6 +60,8 @@ public class YakuzaEssenceOfSteel extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(
+                new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, heatCost));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new MetallicizePower(p, magicNumber)));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,

@@ -15,7 +15,9 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import theYakuza.DefaultMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheDefault;
+import basemod.AutoAdd;
 
+@AutoAdd.Ignore
 public class DefaultAttackWithVariable extends AbstractDynamicCard {
 
     /*

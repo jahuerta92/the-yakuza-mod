@@ -18,6 +18,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
+import basemod.AutoAdd;
+
+@AutoAdd.Ignore
 public class DefaultRareAttack extends AbstractDynamicCard {
 
     /*

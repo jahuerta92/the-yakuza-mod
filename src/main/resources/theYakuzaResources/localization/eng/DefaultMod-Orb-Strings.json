@@ -20,6 +20,17 @@
       " damage to a random enemy."
     ]
   },
+  "theYakuza:IronKnucklesItem": {
+    "NAME": "Iron Knuckles",
+    "DESCRIPTION": [
+      "#yAttack: This attack deals #b",
+      " more damage.",
+      " NL #ySkill: Gain #b",
+      " Block.",
+      " NL #yThrown: Deal #b",
+      " damage to a random enemy."
+    ]
+  },
   "theYakuza:PanItem": {
     "NAME": "Pan",
     "DESCRIPTION": [
@@ -61,7 +72,7 @@
       " Strength.",
       " NL #ySkill: Gain #b",
       " Dexterity.",
-      " NL #yThrown: Draw #b", " card.", "cards."
+      " NL #yThrown: Draw #b", " card.", " cards."
     ]
   },
   "theYakuza:RevolverItem": {
@@ -105,6 +116,49 @@
       " Temporary Strength.",
       " NL #yThrown: Gain #b",
       " Retaliate."
+    ]
+  },
+  "theYakuza:DragonKartItem": {
+    "NAME": "Dragon Kart",
+    "DESCRIPTION": [
+      "#yAttack: Activate #b",
+      " Minigame.",
+      " NL #ySkill: Activate #b",
+      " Minigame.",
+      " NL #yThrown: Activate #b",
+      " Minigame."
+    ]
+  } ,
+  "theYakuza:MotorcycleItem": {
+    "NAME": "Motorcycle",
+    "DESCRIPTION": [
+      "#yAttack: Deal double damage",
+      " NL #ySkill: Gain #b",
+      " Buffer.",
+      " NL #yThrown: Deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "theYakuza:DemonfireDaggerItem": {
+    "NAME": "Demonfire Dagger",
+    "DESCRIPTION": [
+      "#yAttack: This attack deals #b",
+      " more damage.",
+      " NL #ySkill: Draw #b",
+      " card.", " cards.", 
+      " NL #yThrown: Deal #b",
+      " damage to a random enemy."
+    ]
+  },
+  "theYakuza:StaminanXItem": {
+    "NAME": "Staminan X",
+    "DESCRIPTION": [
+      "#yAttack: Gain #b",
+      " Heat Level.",
+      " NL #ySkill: Heal #b",
+      " HP.",
+      " NL #yThrown: Gain #b",
+      " Energy."
     ]
   }
 }

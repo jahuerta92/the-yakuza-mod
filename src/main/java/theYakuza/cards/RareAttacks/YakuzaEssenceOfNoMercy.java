@@ -1,6 +1,7 @@
 package theYakuza.cards.RareAttacks;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theYakuza.DefaultMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheDefault;
+import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.DefaultMod.makeCardPath;
 
@@ -42,25 +44,40 @@ public class YakuzaEssenceOfNoMercy extends AbstractDynamicCard {
 
     private static final int MAGIC = 3;
     private static final int UPGRADED_MAGIC = -1;
+    private static final int HEAT = 1;
 
     // /STAT DECLARATION/
     public YakuzaEssenceOfNoMercy() { // public ${NAME}() - This one and the one right under the imports are the
                                       // most
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = 0;
+        baseDamage = damage = 0;
         magicNumber = baseMagicNumber = MAGIC;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int trueDamage = (int) Math.floor((m.maxHealth - m.currentHealth) / magicNumber);
-        DamageInfo damage = new DamageInfo(p, trueDamage, damageTypeForTurn);
-        damage.applyPowers(p, m);
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, damage, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
+                        AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(p, p, new HeatLevelPower(p, p, HEAT)));
+
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        int trueDamage = 0;
+
+        super.calculateCardDamage(mo);
+        if (mo != null) {
+            trueDamage = (int) Math.floor((mo.maxHealth - mo.currentHealth) / magicNumber);
+            this.isDamageModified = true;
+        }
+
+        this.damage += trueDamage;
     }
 
     // Upgraded stats.
