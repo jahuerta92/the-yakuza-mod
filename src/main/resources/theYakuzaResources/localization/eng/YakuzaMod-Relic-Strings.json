@@ -1,0 +1,125 @@
+{
+  "theYakuza:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theYakuza:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theYakuza:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theYakuza:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "theYakuza:TojoBadgeRelic": {
+    "NAME": "Tojo Badge",
+    "FLAVOR": "I am Mr Shakedown.",
+    "DESCRIPTIONS": [
+      "Gain #b10 #yGold after each combat victory."
+    ]
+  },
+  "theYakuza:NuggetRelic": {
+    "NAME": "Nugget",
+    "FLAVOR": "Best in the bussiness.",
+    "DESCRIPTIONS": [
+      "#ytheyakuza:Minigame effects are #b50% more effective."
+    ]
+  },
+  "theYakuza:DragonScaleRelic": {
+    "NAME": "Dragon Scale",
+    "FLAVOR": "Hear me roar.",
+    "DESCRIPTIONS": [
+      "#ytheyakuza:Heat_Level does not decrease from HP loss"
+    ]
+  },
+  "theYakuza:ManholeCoverRelic": {
+    "NAME": "Manhole Cover",
+    "FLAVOR": "Welcome to The Purgatory.",
+    "DESCRIPTIONS": [
+      "At the beginning of combat add a #yBroken #yPipe #ytheyakuza:Grab into your hand."
+    ]
+  },
+  "theYakuza:TojoRenegadeRelic": {
+    "NAME": "Tojo Renegade",
+    "FLAVOR": "I'm sorry Nishiki.",
+    "DESCRIPTIONS": [
+      "Replaces #rTojo #rBadge. NL Begin each combat with #b2 #ytheyakuza:Heat_Level."
+    ]
+  },
+  "theYakuza:MicrophoneRelic": {
+    "NAME": "Microphone",
+    "FLAVOR": "Today is diamond, my 24h Cindirella.",
+    "DESCRIPTIONS": [
+      "Lose 1 [E] . Using any card activates #ytheyakuza:Minigame"
+    ]
+  },
+  "theYakuza:HardHatRelic": {
+    "NAME": "Hard Hat",
+    "FLAVOR": "A school for youth's way of life. Creating Smiles",
+    "DESCRIPTIONS": [
+      "Gain 1 [E] . Can't gain #yStrength, #yDexterity or #ytheyakuza:Heat_Level."
+    ]
+  },
+  "theYakuza:IrezumiRelic": {
+    "NAME": "Irezumi",
+    "FLAVOR": "Like a dragon.",
+    "DESCRIPTIONS": [
+      "Gaining #ytheyakuza:Heat_Level heals #b1 HP."
+    ]
+  },
+  "theYakuza:IdolsRodRelic": {
+    "NAME": "Idol's Rod",
+    "FLAVOR": "So much more!",
+    "DESCRIPTIONS": [
+      "#b5% chance a #ytheyakuza:Minigame activation grants a random #ycommon #ypotion."
+    ]
+  },
+  "theYakuza:ThrowingGlovesRelic": {
+    "NAME": "Throwing Gloves",
+    "FLAVOR": "A retired athlete best friend.",
+    "DESCRIPTIONS": [
+      "#yThrowing item effects increased by #b1."
+    ]
+  },
+  "theYakuza:MajimasEyepatchRelic": {
+    "NAME": "Majima's Eyepatch",
+    "FLAVOR": "Receive and bite you.",
+    "DESCRIPTIONS": [
+      "Gaining #ytheyakuza:Weave charges grants #b1 #yStrength."
+    ]
+  },
+  "theYakuza:SaejimasCoatRelic": {
+    "NAME": "Saejima's Coat",
+    "FLAVOR": "A tiger's hide thickens in battle.",
+    "DESCRIPTIONS": [
+      "Gaining #ytheyakuza:Retaliate charges grants #b1 #yDexterity."
+    ]
+  },
+  "theYakuza:AkiyamasVaultRelic": {
+    "NAME": "Akiyama's Vault",
+    "FLAVOR": "From rags to riches.",
+    "DESCRIPTIONS": [
+      "#ytheyakuza:Minigame activations grant #b1 more effect."
+    ]
+  }
+}
