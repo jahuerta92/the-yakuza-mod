@@ -2,6 +2,7 @@ package theYakuza.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -24,6 +25,7 @@ public class GrabAction extends AbstractGameAction {
         }
 
         AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
+        CardCrawlGame.sound.play("BLOCK_GAIN_1");
         AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction(item));
         isDone = true;
     }

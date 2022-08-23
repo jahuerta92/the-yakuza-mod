@@ -14,7 +14,7 @@ public class RetaliateAction extends AbstractGameAction {
 
     public RetaliateAction(final AbstractPlayer p) {
         this.p = p;
-        actionType = ActionType.USE;
+        actionType = ActionType.CARD_MANIPULATION;
     }
 
     @Override

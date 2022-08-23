@@ -12,15 +12,15 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makePowerPath;
+import static theYakuza.YakuzaMod.makePowerPath;
 
 public class BeastStylePower extends AbstractGrabPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("BeastStyle");
+    public static final String POWER_ID = YakuzaMod.makeID("BeastStyle");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -29,8 +29,8 @@ public class BeastStylePower extends AbstractGrabPower implements CloneablePower
     // image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("beast_style_power84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("beast_style_power32.png"));
 
     private boolean activated;
 

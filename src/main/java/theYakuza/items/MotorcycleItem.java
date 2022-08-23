@@ -1,6 +1,6 @@
 package theYakuza.items;
 
-import static theYakuza.DefaultMod.makeOrbPath;
+import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -11,14 +11,14 @@ import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
-import com.megacrit.cardcrawl.powers.BufferPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
+import theYakuza.powers.WeavePower;
 
 public class MotorcycleItem extends CustomItem {
 
     // Standard ID/Description
-    public static final String ITEM_ID = DefaultMod.makeID("MotorcycleItem");
+    public static final String ITEM_ID = YakuzaMod.makeID("MotorcycleItem");
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
@@ -37,7 +37,7 @@ public class MotorcycleItem extends CustomItem {
                 ATTACK_AMOUNT,
                 SKILL_AMOUNT,
                 THROW_AMOUNT,
-                makeOrbPath("default_item.png"));
+                makeOrbPath("motorcycle_item.png"));
 
         if (upgraded >= 1) {
             this.upgrade(upgraded, UPGRADED_ATTACK_AMOUNT, UPGRADED_SKILL_AMOUNT, UPGRADED_THROW_AMOUNT);
@@ -65,7 +65,7 @@ public class MotorcycleItem extends CustomItem {
     @Override
     public void performSkillEffect(AbstractCard card) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new BufferPower(AbstractDungeon.player, skillValue)));
+                new WeavePower(AbstractDungeon.player, AbstractDungeon.player, skillValue)));
 
     }
 
@@ -73,7 +73,7 @@ public class MotorcycleItem extends CustomItem {
     public void performThrownEffect() {
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player,
                 DamageInfo.createDamageMatrix(throwValue), DamageType.NORMAL,
-                AttackEffect.SLASH_VERTICAL));
+                AttackEffect.BLUNT_HEAVY));
     }
 
 }

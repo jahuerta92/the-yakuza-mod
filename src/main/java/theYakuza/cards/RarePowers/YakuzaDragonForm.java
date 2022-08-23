@@ -1,23 +1,27 @@
 package theYakuza.cards.RarePowers;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.DragonFormPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class YakuzaDragonForm extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaDragonForm.class.getSimpleName());
+    public static final String ID = YakuzaMod.makeID(YakuzaDragonForm.class.getSimpleName());
     public static final String IMG = makeCardPath("Yakuza_Dragon_Form.png");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -26,7 +30,7 @@ public class YakuzaDragonForm extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 4;
 
@@ -53,6 +57,7 @@ public class YakuzaDragonForm extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             isEthereal = false;
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

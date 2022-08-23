@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theYakuza.DefaultMod;
-import theYakuza.characters.TheDefault;
+import theYakuza.YakuzaMod;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 @AutoAdd.Ignore // Remove this line when you make a template. Refer to
@@ -48,7 +48,7 @@ public class CardTemplate extends AbstractDynamicCard {
     // public static final String ID =
     // DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE
     // TEMPLATE;
-    public static final String ID = DefaultMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    public static final String ID = YakuzaMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
                                                                 // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
@@ -61,7 +61,7 @@ public class CardTemplate extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY; // since they don't change much.
     private static final CardType TYPE = CardType.ATTACK; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1; // COST = ${COST}
     private static final int UPGRADED_COST = 0; // UPGRADED_COST = ${UPGRADED_COST}

@@ -7,18 +7,19 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.EssenceOfIntimidationPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 public class YakuzaEssenceOfIntimidation extends AbstractDynamicCard {
 
-    public static final String ID = DefaultMod.makeID(YakuzaEssenceOfIntimidation.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");// "public static final String IMG =
-                                                               // makeCardPath("${NAME}.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfIntimidation.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_Intimidation.png");// "public static final String
+                                                                                        // IMG =
+    // makeCardPath("${NAME}.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
@@ -32,7 +33,7 @@ public class YakuzaEssenceOfIntimidation extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.SELF; // since they don't change much.
     private static final CardType TYPE = CardType.POWER; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1; // COST = ${COST}
     private static final int UPGRADED_COST = 0; // COST = ${COST}

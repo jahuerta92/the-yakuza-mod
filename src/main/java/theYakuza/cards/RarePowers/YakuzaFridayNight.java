@@ -1,12 +1,12 @@
 package theYakuza.cards.RarePowers;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.FridayNightPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +19,7 @@ public class YakuzaFridayNight extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaFridayNight.class.getSimpleName());
+    public static final String ID = YakuzaMod.makeID(YakuzaFridayNight.class.getSimpleName());
     public static final String IMG = makeCardPath("Yakuza_Friday_Night.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -31,7 +31,7 @@ public class YakuzaFridayNight extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1;
     private static final int POWER = 1;
@@ -47,6 +47,7 @@ public class YakuzaFridayNight extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        CardCrawlGame.sound.playA("YAKUZA_FRIDAY_NIGHT", 0.0f);
         AbstractDungeon.actionManager.addToBottom(new MinigameAction(p));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new FridayNightPower(p, p, POWER)));

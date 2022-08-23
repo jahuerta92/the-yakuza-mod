@@ -3,15 +3,13 @@ package theYakuza.cards;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import theYakuza.cards.CommonAttacks.*;
 import theYakuza.cards.UncommonAttacks.*;
-import theYakuza.cards.UncommonPowers.YakuzaBoxing;
-import theYakuza.cards.UncommonPowers.YakuzaBrawlerStyle;
-import theYakuza.cards.UncommonPowers.YakuzaMahjong;
+import theYakuza.cards.UncommonPowers.*;
 import theYakuza.cards.UncommonSkills.*;
 import theYakuza.cards.CommonSkills.*;
 import theYakuza.cards.RareAttacks.*;
 import theYakuza.cards.RarePowers.*;
 import theYakuza.cards.RareSkills.*;
-import theYakuza.cards.TemporaryCards.YakuzaGrabBrokenPipe;
+import theYakuza.cards.TemporaryCards.*;
 
 public class YakuzaCardCollections {
         public static CardGroup HeatLevelCards = new CardGroup(
@@ -41,7 +39,7 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfIronFists());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfUltimatePower());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaGrabStaminanX());
-                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaColosseum());
+                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaColiseum());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new Yakuza4thChairman());
 
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabTrafficCone());
@@ -74,7 +72,7 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaGrabDragonKart());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBakaMitai());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaRealEstate());
-                YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaColosseum());
+                YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaColiseum());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaFridayNight());
 
         }

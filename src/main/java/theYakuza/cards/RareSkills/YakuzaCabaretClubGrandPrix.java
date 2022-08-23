@@ -1,18 +1,17 @@
 package theYakuza.cards.RareSkills;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
@@ -21,7 +20,7 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaCabaretClubGrandPrix extends AbstractDynamicCard {
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaCabaretClubGrandPrix.class.getSimpleName()); // USE THIS
+    public static final String ID = YakuzaMod.makeID(YakuzaCabaretClubGrandPrix.class.getSimpleName()); // USE THIS
     // ONE
     // FOR THE
     // TEMPLATE;
@@ -40,12 +39,11 @@ public class YakuzaCabaretClubGrandPrix extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.SELF; // since they don't change much.
     private static final CardType TYPE = CardType.SKILL; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1; // 1// COST = ${COST}
     private static final int MAGIC = 4; // 1// COST = ${COST}
     private static final int UPGRADE_MAGIC = 2; // 1// COST = ${COST}
-    private static final int BLOCK = 5; // 1// COST = ${COST}
 
     // /STAT DECLARATION/
     public YakuzaCabaretClubGrandPrix() { // public ${NAME}() - This one and the one right under the imports are the
@@ -53,7 +51,6 @@ public class YakuzaCabaretClubGrandPrix extends AbstractDynamicCard {
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-        block = baseBlock = BLOCK;
     }
 
     // Actions the card should do.
@@ -62,7 +59,6 @@ public class YakuzaCabaretClubGrandPrix extends AbstractDynamicCard {
         for (int i = 0; i < magicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, 1));
         }
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
 
     }
 

@@ -7,14 +7,14 @@ import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.BufferPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
+import theYakuza.powers.WeavePower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
@@ -23,8 +23,8 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaTaxiDriver extends AbstractDynamicCard {
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaTaxiDriver.class.getSimpleName()); // USE THIS ONE FOR
-                                                                                               // THE
+    public static final String ID = YakuzaMod.makeID(YakuzaTaxiDriver.class.getSimpleName()); // USE THIS ONE FOR
+                                                                                              // THE
     // TEMPLATE;
     public static final String IMG = makeCardPath("Yakuza_Taxi_Driver.png");// "public static final String IMG =
     // makeCardPath("${NAME}.png");
@@ -38,7 +38,7 @@ public class YakuzaTaxiDriver extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY; // since they don't change much.
     private static final CardType TYPE = CardType.ATTACK; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 2; // 1// COST = ${COST}
 
@@ -61,7 +61,7 @@ public class YakuzaTaxiDriver extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(new MinigameAction(p));
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, multiDamage, DamageType.NORMAL,
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new BufferPower(p, BUFFER)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeavePower(p, p, BUFFER)));
     }
 
     // Upgraded stats.

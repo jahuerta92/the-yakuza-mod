@@ -8,12 +8,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.HeatLevelPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
@@ -22,12 +22,13 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaEssenceOfTheDragonGod.class.getSimpleName()); // USE THIS
-                                                                                                          // ONE
+    public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfTheDragonGod.class.getSimpleName()); // USE THIS
+                                                                                                         // ONE
     // FOR THE
     // TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
-                                                                // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_The_Dragon_God.png");// "public static final String
+                                                                                          // IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 
@@ -38,12 +39,12 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY; // since they don't change much.
     private static final CardType TYPE = CardType.ATTACK; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 3; // COST = ${COST}
 
-    private static final int DAMAGE = 14; // DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_DMG = 4; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
+    private static final int DAMAGE = 15; // DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 5; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
     private static final int HEAT_COST = 1;
 

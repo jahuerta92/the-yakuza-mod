@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion.PotionRarity;
@@ -23,10 +24,13 @@ import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import theYakuza.powers.AbstractMinigamePower;
 import theYakuza.powers.FridayNightPower;
 import theYakuza.powers.RealEstatePower;
+import theYakuza.relics.IdolsRodRelic;
+import theYakuza.relics.NuggetRelic;
 
 public class MinigameAction extends AbstractGameAction {
     private AbstractPlayer p;
@@ -35,11 +39,12 @@ public class MinigameAction extends AbstractGameAction {
     private int nEffects;
     private int MAX_EFFECTS = 9;
     private int BASE_BLOCK = 3;
-    private int BASE_GOLD = 5;
+    private int BASE_GOLD = 3;
     private int BASE_DAMAGE = 5;
     private int BASE_DRAW = 1;
     private int BASE_DEBUFF = 1;
     private int BASE_BUFF = 1;
+    private int POTION_CHANCE = 5;
 
     public MinigameAction(final AbstractPlayer p) {
         this.p = p;
@@ -69,6 +74,12 @@ public class MinigameAction extends AbstractGameAction {
 
         }
 
+        for (AbstractRelic r : AbstractDungeon.player.relics) {
+            if (r.relicId.equals(NuggetRelic.ID)) {
+                effectiveness *= 1.5;
+            }
+        }
+
         if (nEffects >= MAX_EFFECTS) {
             nEffects = MAX_EFFECTS;
         }
@@ -83,7 +94,18 @@ public class MinigameAction extends AbstractGameAction {
                 }
             }
 
-            for (int i = 0; i < 9; i++)
+            for (AbstractRelic r : AbstractDungeon.player.relics) {
+                if (r.relicId.equals(IdolsRodRelic.ID)) {
+                    int roll = AbstractDungeon.miscRng.random(100);
+                    if (roll < POTION_CHANCE) {
+                        AbstractDungeon.actionManager
+                                .addToBottom(new ObtainPotionAction(
+                                        AbstractDungeon.returnRandomPotion(PotionRarity.COMMON, true)));
+                    }
+                }
+            }
+
+            for (int i = 0; i < MAX_EFFECTS; i++)
                 allEffects.add(i);
             Collections.shuffle(allEffects);
             for (int i = 0; i < nEffects; i++)
@@ -130,11 +152,8 @@ public class MinigameAction extends AbstractGameAction {
                     }
 
                 } else if (v == 7) {
-                    for (int i = 0; i < effectiveness; i++) {
-                        AbstractDungeon.actionManager.addToBottom(
-                                new ObtainPotionAction(
-                                        AbstractDungeon.returnRandomPotion(PotionRarity.COMMON, true)));
-                    }
+                    AbstractDungeon.actionManager.addToBottom(new ReduceRandomNonZeroCostCardAction(effectiveness));
+
                 } else if (v == 8) {
                     AbstractDungeon.actionManager
                             .addToBottom(

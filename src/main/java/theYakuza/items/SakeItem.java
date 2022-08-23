@@ -1,6 +1,6 @@
 package theYakuza.items;
 
-import static theYakuza.DefaultMod.makeOrbPath;
+import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -11,12 +11,12 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 
 public class SakeItem extends CustomItem {
 
     // Standard ID/Description
-    public static final String ITEM_ID = DefaultMod.makeID("SakeItem");
+    public static final String ITEM_ID = YakuzaMod.makeID("SakeItem");
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
@@ -35,7 +35,7 @@ public class SakeItem extends CustomItem {
                 ATTACK_AMOUNT,
                 SKILL_AMOUNT,
                 THROW_AMOUNT,
-                makeOrbPath("default_item.png"));
+                makeOrbPath("sake_item.png"));
 
         if (upgraded >= 1) {
             this.upgrade(upgraded, UPGRADED_ATTACK_AMOUNT, UPGRADED_SKILL_AMOUNT, UPGRADED_THROW_AMOUNT);

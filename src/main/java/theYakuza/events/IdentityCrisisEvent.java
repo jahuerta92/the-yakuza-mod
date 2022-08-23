@@ -1,6 +1,6 @@
 package theYakuza.events;
 
-import static theYakuza.DefaultMod.makeEventPath;
+import static theYakuza.YakuzaMod.makeEventPath;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -16,11 +16,11 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 
 public class IdentityCrisisEvent extends AbstractImageEvent {
 
-    public static final String ID = DefaultMod.makeID("IdentityCrisisEvent");
+    public static final String ID = YakuzaMod.makeID("IdentityCrisisEvent");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 
     private static final String NAME = eventStrings.NAME;

@@ -4,18 +4,19 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.EssenceOfBurningHeatPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 public class YakuzaEssenceOfBurningHeat extends AbstractDynamicCard {
 
-    public static final String ID = DefaultMod.makeID(YakuzaEssenceOfBurningHeat.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");// "public static final String IMG =
-                                                               // makeCardPath("${NAME}.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfBurningHeat.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_Burning_Heat.png");// "public static final String
+                                                                                        // IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 
@@ -26,7 +27,7 @@ public class YakuzaEssenceOfBurningHeat extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.SELF; // since they don't change much.
     private static final CardType TYPE = CardType.POWER; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 2; // COST = ${COST}
 

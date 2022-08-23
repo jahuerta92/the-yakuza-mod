@@ -1,6 +1,6 @@
 package theYakuza.items;
 
-import static theYakuza.DefaultMod.makeOrbPath;
+import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,13 +8,13 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 
 public class DragonKartItem extends CustomItem {
 
     // Standard ID/Description
-    public static final String ITEM_ID = DefaultMod.makeID("DragonKartItem");
+    public static final String ITEM_ID = YakuzaMod.makeID("DragonKartItem");
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
@@ -33,7 +33,7 @@ public class DragonKartItem extends CustomItem {
                 ATTACK_AMOUNT,
                 SKILL_AMOUNT,
                 THROW_AMOUNT,
-                makeOrbPath("default_item.png"));
+                makeOrbPath("dragon_kart_item.png"));
 
         if (upgraded >= 1) {
             this.upgrade(upgraded, UPGRADED_ATTACK_AMOUNT, UPGRADED_SKILL_AMOUNT, UPGRADED_THROW_AMOUNT);

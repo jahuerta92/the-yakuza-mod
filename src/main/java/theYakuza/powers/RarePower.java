@@ -1,7 +1,7 @@
 package theYakuza.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.DefaultExampleCards.DefaultRareAttack;
 import theYakuza.util.TextureLoader;
 
@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class RarePower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("RarePower");
+    public static final String POWER_ID = YakuzaMod.makeID("RarePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

@@ -1,10 +1,10 @@
 package theYakuza.cards.CommonAttacks;
 
 import basemod.abstracts.CustomCard;
-import theYakuza.DefaultMod;
-import theYakuza.characters.TheDefault;
+import theYakuza.YakuzaMod;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -32,7 +32,7 @@ public class YakuzaStrike extends CustomCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaStrike.class.getSimpleName());
+    public static final String ID = YakuzaMod.makeID(YakuzaStrike.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Yakuza_Strike.png");
@@ -53,7 +53,7 @@ public class YakuzaStrike extends CustomCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1;
     private static final int DAMAGE = 6;

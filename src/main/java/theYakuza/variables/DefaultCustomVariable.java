@@ -4,7 +4,7 @@ import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-import static theYakuza.DefaultMod.makeID;
+import static theYakuza.YakuzaMod.makeID;
 
 public class DefaultCustomVariable extends DynamicVariable { // Custom Dynamic Variables are what you do if you need
                                                              // your card text to display a cool, changing number that

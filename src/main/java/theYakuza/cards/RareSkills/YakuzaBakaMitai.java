@@ -10,12 +10,12 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
@@ -24,9 +24,9 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaBakaMitai extends AbstractDynamicCard {
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaBakaMitai.class.getSimpleName()); // USE THIS
-                                                                                              // ONE
-                                                                                              // FOR THE
+    public static final String ID = YakuzaMod.makeID(YakuzaBakaMitai.class.getSimpleName()); // USE THIS
+                                                                                             // ONE
+                                                                                             // FOR THE
     // TEMPLATE;
     public static final String IMG = makeCardPath("Yakuza_Baka_Mitai.png");// "public static final String IMG =
     // makeCardPath("${NAME}.png");
@@ -42,10 +42,10 @@ public class YakuzaBakaMitai extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.SELF; // since they don't change much.
     private static final CardType TYPE = CardType.SKILL; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 0; // 1// COST = ${COST}
-    private static final int MAGIC = 2; // 1// COST = ${COST}
+    private static final int MAGIC = 1; // 1// COST = ${COST}
     private static final int UPGRADE_MAGIC = 1; // 1// COST = ${COST}
     private static final int VULNERABLE = 2; // 1// COST = ${COST}
 
@@ -61,9 +61,10 @@ public class YakuzaBakaMitai extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        CardCrawlGame.sound.playA("YAKUZA_DAME_DA_NE", 0.0f); // Sound Effect
         AbstractDungeon.actionManager.addToBottom(new MinigameAction(p));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(2));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new VulnerablePower(p, VULNERABLE, false)));
 

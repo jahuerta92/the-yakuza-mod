@@ -1,13 +1,13 @@
 package theYakuza.cards.RareAttacks;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.GrabAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.items.IronKnucklesItem;
 import theYakuza.powers.HeatLevelPower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -23,8 +23,8 @@ public class YakuzaEssenceOfIronFists extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaEssenceOfIronFists.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfIronFists.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_Iron_Fists.png");
 
     // /TEXT DECLARATION/
 
@@ -36,7 +36,7 @@ public class YakuzaEssenceOfIronFists extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 2;
     private static final int DURABILITY = 3;

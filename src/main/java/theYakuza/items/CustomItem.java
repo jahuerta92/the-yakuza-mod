@@ -24,10 +24,13 @@ public class CustomItem extends AbstractItem {
         this.restoreValues();
     }
 
-    public void upgrade(int times, int attack_up, int skill_up, int throw_up) {
-        this.baseAttackValue += attack_up * times;
-        this.baseSkillValue += skill_up * times;
-        this.baseThrowValue += throw_up * times;
+    public void upgrade(int times, int attackUp, int skillUp, int throwUp) {
+        for (int i = 0; i < times; i++) {
+            System.out.println(baseAttackValue);
+            this.baseAttackValue += (attackUp + i);
+            this.baseSkillValue += (skillUp + i);
+            this.baseThrowValue += (throwUp + i);
+        }
         this.attackValue = baseAttackValue;
         this.skillValue = baseSkillValue;
         this.throwValue = baseThrowValue;

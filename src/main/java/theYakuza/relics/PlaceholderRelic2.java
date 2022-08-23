@@ -1,11 +1,11 @@
 package theYakuza.relics;
 
 import basemod.abstracts.CustomRelic;
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makeRelicOutlinePath;
-import static theYakuza.DefaultMod.makeRelicPath;
+import static theYakuza.YakuzaMod.makeRelicOutlinePath;
+import static theYakuza.YakuzaMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -21,7 +21,7 @@ public class PlaceholderRelic2 extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic2");
+    public static final String ID = YakuzaMod.makeID("PlaceholderRelic2");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic2.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic2.png"));

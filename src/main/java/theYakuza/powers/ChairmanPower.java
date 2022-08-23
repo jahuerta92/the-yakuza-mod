@@ -8,15 +8,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makePowerPath;
+import static theYakuza.YakuzaMod.makePowerPath;
 
 public class ChairmanPower extends AbstractGrabPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("Chairman");
+    public static final String POWER_ID = YakuzaMod.makeID("Chairman");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -25,8 +25,8 @@ public class ChairmanPower extends AbstractGrabPower implements CloneablePowerIn
     // image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("4th_chairman_power84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("4th_chairman_power32.png"));
 
     public ChairmanPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
         name = NAME;

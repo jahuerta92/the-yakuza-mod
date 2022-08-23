@@ -1,12 +1,12 @@
 package theYakuza.cards.TemporaryCards;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.GrabAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.items.BrokenPipeItem;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,8 +18,8 @@ public class YakuzaGrabBrokenPipe extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaGrabBrokenPipe.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaGrabBrokenPipe.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Grab_Broken_Pipe.png");
 
     // /TEXT DECLARATION/
 
@@ -31,7 +31,7 @@ public class YakuzaGrabBrokenPipe extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 0;
     private static final int DURABILITY = 2;

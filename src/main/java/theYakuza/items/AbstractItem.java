@@ -9,11 +9,13 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 
 import theYakuza.cards.CommonSkills.YakuzaEssenceOfRepair;
@@ -25,6 +27,7 @@ import theYakuza.cards.UncommonSkills.YakuzaEssenceOfFinesse;
 import theYakuza.cards.UncommonSkills.YakuzaEssenceOfWeaponCounter;
 import theYakuza.powers.EssenceOfPolishPower;
 import theYakuza.powers.EssenceOfRecyclingPower;
+import theYakuza.relics.ThrowingGlovesRelic;
 
 public abstract class AbstractItem extends AbstractStance {
 
@@ -129,6 +132,7 @@ public abstract class AbstractItem extends AbstractStance {
             }
 
             if (durability == 0) {
+                CardCrawlGame.sound.play("BLOCK_BREAK", -0.3F);
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
                 if (AbstractDungeon.player.hasPower(EssenceOfRecyclingPower.POWER_ID)) {
                     EssenceOfRecyclingPower pow = (EssenceOfRecyclingPower) AbstractDungeon.player
@@ -156,6 +160,11 @@ public abstract class AbstractItem extends AbstractStance {
 
                 skillValue += increase;
                 attackValue += increase;
+            }
+        }
+        for (AbstractRelic r : owner.relics) {
+            if (r.relicId.equals(ThrowingGlovesRelic.ID)) {
+                throwValue += 1;
             }
         }
         updateDescription();
@@ -189,14 +198,14 @@ public abstract class AbstractItem extends AbstractStance {
     public void render(SpriteBatch sb) {
         if (this.img != null) {
             sb.setColor(this.c);
-            sb.setBlendFunction(770, 1);
+            // sb.setBlendFunction(770, 1);
             sb.draw(this.img,
                     AbstractDungeon.player.drawX - 256.0F + AbstractDungeon.player.animX,
                     AbstractDungeon.player.drawY - 256.0F + AbstractDungeon.player.animY
                             + AbstractDungeon.player.hb_h / 2.0F,
                     256.0F, 256.0F, 512.0F, 512.0F, Settings.scale, Settings.scale, -this.angle, 0, 0, 512, 512, false,
                     false);
-            sb.setBlendFunction(770, 771);
+            // sb.setBlendFunction(770, 771);
 
         }
         renderText(sb);

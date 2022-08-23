@@ -10,15 +10,16 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
+import theYakuza.relics.DragonScaleRelic;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makePowerPath;
+import static theYakuza.YakuzaMod.makePowerPath;
 
 public class HeatLevelPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("HeatLevel");
+    public static final String POWER_ID = YakuzaMod.makeID("HeatLevel");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -102,7 +103,9 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public int onLoseHp(int damageAmount) {
-        this.reducePower(1);
+        if (!AbstractDungeon.player.hasRelic(DragonScaleRelic.ID)) {
+            this.reducePower(1);
+        }
         return damageAmount;
     }
 

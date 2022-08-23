@@ -5,7 +5,7 @@ import theYakuza.cards.AbstractDefaultCard;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-import static theYakuza.DefaultMod.makeID;
+import static theYakuza.YakuzaMod.makeID;
 
 public class YakuzaDurabilityVariable extends DynamicVariable { // Custom Dynamic Variables are what you do if you need
                                                                 // your card text to display a cool, changing number

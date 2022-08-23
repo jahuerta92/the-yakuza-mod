@@ -1,11 +1,11 @@
 package theYakuza.cards.RarePowers;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.DragonOfDojimaStylePower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,7 +16,7 @@ public class YakuzaDragonOfDojimaStyle extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaDragonOfDojimaStyle.class.getSimpleName());
+    public static final String ID = YakuzaMod.makeID(YakuzaDragonOfDojimaStyle.class.getSimpleName());
     public static final String IMG = makeCardPath("Yakuza_Dragon_Of_Dojima_Style.png");
 
     // /TEXT DECLARATION/
@@ -26,7 +26,7 @@ public class YakuzaDragonOfDojimaStyle extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 2;
     private static final int UPGRADED_COST = 1;

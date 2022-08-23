@@ -3,7 +3,7 @@ package theYakuza.variables;
 import basemod.abstracts.DynamicVariable;
 import theYakuza.cards.AbstractDefaultCard;
 
-import static theYakuza.DefaultMod.makeID;
+import static theYakuza.YakuzaMod.makeID;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 

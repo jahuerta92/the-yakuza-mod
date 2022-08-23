@@ -1,11 +1,11 @@
 package theYakuza.relics;
 
 import basemod.abstracts.CustomRelic;
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makeRelicOutlinePath;
-import static theYakuza.DefaultMod.makeRelicPath;
+import static theYakuza.YakuzaMod.makeRelicOutlinePath;
+import static theYakuza.YakuzaMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
@@ -28,7 +28,7 @@ public class DefaultClickableRelic extends CustomRelic implements ClickableRelic
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("DefaultClickableRelic");
+    public static final String ID = YakuzaMod.makeID("DefaultClickableRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default_clickable_relic.png"));
     private static final Texture OUTLINE = TextureLoader

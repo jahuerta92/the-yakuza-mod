@@ -1,11 +1,11 @@
 package theYakuza.cards.CommonSkills;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.RepairAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -15,8 +15,8 @@ public class YakuzaEssenceOfRepair extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaEssenceOfRepair.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfRepair.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Essence_Of_Repair.png");
 
     // /TEXT DECLARATION/
 
@@ -25,11 +25,11 @@ public class YakuzaEssenceOfRepair extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 0;
 
-    private static final int MAGIC = 3;
+    private static final int MAGIC = 2;
     private static final int UPGRADE_MAGIC = 1;
 
     // /STAT DECLARATION/

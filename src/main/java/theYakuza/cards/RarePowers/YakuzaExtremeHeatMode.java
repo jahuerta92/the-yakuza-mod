@@ -1,12 +1,12 @@
 package theYakuza.cards.RarePowers;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 import theYakuza.powers.ExtremeHeatModeDecayPower;
 import theYakuza.powers.ExtremeHeatModePower;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,8 +18,8 @@ public class YakuzaExtremeHeatMode extends AbstractDynamicCard implements NonSta
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaExtremeHeatMode.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String ID = YakuzaMod.makeID(YakuzaExtremeHeatMode.class.getSimpleName());
+    public static final String IMG = makeCardPath("Yakuza_Extreme_Heat_Mode.png");
 
     // /TEXT DECLARATION/
 
@@ -28,7 +28,7 @@ public class YakuzaExtremeHeatMode extends AbstractDynamicCard implements NonSta
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1;
     private static final int MAGIC = 1;

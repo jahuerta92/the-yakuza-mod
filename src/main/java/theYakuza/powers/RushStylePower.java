@@ -15,15 +15,15 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.LoseDexterityPower;
 
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.util.TextureLoader;
 
-import static theYakuza.DefaultMod.makePowerPath;
+import static theYakuza.YakuzaMod.makePowerPath;
 
 public class RushStylePower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("RushStyle");
+    public static final String POWER_ID = YakuzaMod.makeID("RushStyle");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -32,8 +32,8 @@ public class RushStylePower extends AbstractPower implements CloneablePowerInter
     // image and a 32x32 one.
     // There's a fallback "missing texture" image, so the game shouldn't crash if
     // you accidentally put a non-existent file.
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("rush_style_power84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("rush_style_power32.png"));
 
     public RushStylePower(int amount) {
         name = NAME;

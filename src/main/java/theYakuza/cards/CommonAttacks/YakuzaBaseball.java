@@ -6,12 +6,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theYakuza.DefaultMod;
+import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
 import theYakuza.cards.AbstractDynamicCard;
-import theYakuza.characters.TheDefault;
+import theYakuza.characters.TheYakuza;
 
-import static theYakuza.DefaultMod.makeCardPath;
+import static theYakuza.YakuzaMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
@@ -20,10 +20,10 @@ import static theYakuza.DefaultMod.makeCardPath;
 public class YakuzaBaseball extends AbstractDynamicCard {
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(YakuzaBaseball.class.getSimpleName()); // USE THIS ONE FOR THE
+    public static final String ID = YakuzaMod.makeID(YakuzaBaseball.class.getSimpleName()); // USE THIS ONE FOR THE
     // TEMPLATE;
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG =
-                                                                // makeCardPath("${NAME}.png");
+    public static final String IMG = makeCardPath("Yakuza_Baseball.png");// "public static final String IMG =
+    // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
 
@@ -34,12 +34,12 @@ public class YakuzaBaseball extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON; // Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY; // since they don't change much.
     private static final CardType TYPE = CardType.ATTACK; //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1; // 1// COST = ${COST}
 
-    private static final int DAMAGE = 7; // 7// DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_DMG = 4; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
+    private static final int DAMAGE = 6; // 7// DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 3; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
     // /STAT DECLARATION/
     public YakuzaBaseball() { // public ${NAME}() - This one and the one right under the imports are the most
