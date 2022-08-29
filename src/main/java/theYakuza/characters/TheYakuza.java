@@ -164,7 +164,7 @@ public class TheYakuza extends CustomPlayer {
         }
 
         retVal.add(YakuzaGrabTrafficCone.ID);
-        retVal.add(YakuzaHeatStrike.ID);
+        retVal.add(YakuzaEssenceOfTaunt.ID);
 
         return retVal;
     }

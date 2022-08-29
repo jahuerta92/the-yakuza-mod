@@ -78,6 +78,7 @@ public class YakuzaPocketCircuit extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

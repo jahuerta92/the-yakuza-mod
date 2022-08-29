@@ -44,7 +44,7 @@ public class YakuzaGrabDragonKart extends AbstractDynamicCard {
 
     private static final int COST = 1; // 1// COST = ${COST}
 
-    private static final int DURABILITY = 3;
+    private static final int DURABILITY = 2;
     private static final int UPGRADE_DURABILITY = 2;
 
     // /STAT DECLARATION/
@@ -67,6 +67,7 @@ public class YakuzaGrabDragonKart extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDurability(UPGRADE_DURABILITY);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

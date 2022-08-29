@@ -486,7 +486,8 @@ public class YakuzaMod implements
         BaseMod.addRelicToCustomPool(new NuggetRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new SaejimasCoatRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new ThrowingGlovesRelic(), TheYakuza.Enums.COLOR_YAKUZA);
-        BaseMod.addRelicToCustomPool(new TojoRenegadeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        // BaseMod.addRelicToCustomPool(new TojoRenegadeRelic(),
+        // TheYakuza.Enums.COLOR_YAKUZA);
 
         UnlockTracker.markRelicAsSeen(TojoBadgeRelic.ID);
         UnlockTracker.markRelicAsSeen(AkiyamasVaultRelic.ID);
@@ -501,7 +502,7 @@ public class YakuzaMod implements
         UnlockTracker.markRelicAsSeen(SaejimasCoatRelic.ID);
         UnlockTracker.markRelicAsSeen(ThrowingGlovesRelic.ID);
         UnlockTracker.markRelicAsSeen(ThrowingGlovesRelic.ID);
-        UnlockTracker.markRelicAsSeen(TojoRenegadeRelic.ID);
+        // UnlockTracker.markRelicAsSeen(TojoRenegadeRelic.ID);
 
         logger.info("Done adding relics!");
     }

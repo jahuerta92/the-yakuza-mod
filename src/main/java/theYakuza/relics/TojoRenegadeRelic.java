@@ -1,6 +1,7 @@
 package theYakuza.relics;
 
 import basemod.abstracts.CustomRelic;
+import basemod.patches.com.megacrit.cardcrawl.relics.AbstractRelic.ReorganizeObtainRelicGetHook;
 import theYakuza.YakuzaMod;
 import theYakuza.powers.HeatLevelPower;
 import theYakuza.util.TextureLoader;
@@ -40,7 +41,14 @@ public class TojoRenegadeRelic extends CustomRelic {
 
     @Override
     public void onEquip() {
-        AbstractDungeon.player.loseRelic(TojoBadgeRelic.ID);
+        AbstractPlayer p = AbstractDungeon.player;
+        p.loseRelic(TojoBadgeRelic.ID);
+        ReorganizeObtainRelicGetHook.Insert(this, p, 0, true, 1);
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return AbstractDungeon.player.hasRelic(TojoBadgeRelic.ID);
     }
 
 }

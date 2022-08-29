@@ -2,7 +2,9 @@ package theYakuza.cards.UncommonSkills;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theYakuza.YakuzaMod;
 import theYakuza.actions.MinigameAction;
@@ -26,6 +28,9 @@ public class YakuzaCabaretClub extends AbstractDynamicCard {
     // makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the
     // card in your image folder for it to run correctly.
+
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -69,6 +74,7 @@ public class YakuzaCabaretClub extends AbstractDynamicCard {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(UPGRADE_MAGIC);
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

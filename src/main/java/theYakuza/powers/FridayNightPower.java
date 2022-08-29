@@ -3,6 +3,7 @@ package theYakuza.powers;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -13,7 +14,7 @@ import theYakuza.util.TextureLoader;
 
 import static theYakuza.YakuzaMod.makePowerPath;
 
-public class FridayNightPower extends AbstractGrabPower implements CloneablePowerInterface {
+public class FridayNightPower extends AbstractGrabPower implements CloneablePowerInterface, NonStackablePower {
     public AbstractCreature source;
 
     public static final String POWER_ID = YakuzaMod.makeID("FridayNight");
@@ -48,11 +49,7 @@ public class FridayNightPower extends AbstractGrabPower implements CloneablePowe
 
     @Override
     public void updateDescription() {
-        if (amount > 0) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
-        } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        }
+        description = DESCRIPTIONS[0];
     }
 
     @Override

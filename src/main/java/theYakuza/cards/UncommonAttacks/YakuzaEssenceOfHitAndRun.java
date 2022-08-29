@@ -45,7 +45,7 @@ public class YakuzaEssenceOfHitAndRun extends AbstractDynamicCard {
     private static final int DAMAGE = 8; // DAMAGE = ${DAMAGE}
     private static final int UPGRADE_PLUS_DMG = 4; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
-    private static final int BLOCK = 6;
+    private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 4;
 
     private static final int HEAT = 1;

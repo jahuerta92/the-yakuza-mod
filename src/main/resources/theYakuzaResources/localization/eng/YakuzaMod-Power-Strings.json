@@ -8,9 +8,9 @@
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
 },
 "theYakuza:HeatLevel": {
-        "NAME": "Heat Level",
-        "DESCRIPTIONS": ["Increase attack and block by #b",". Up to #b", " stacks.", " Lose 1 stack when HP is damaged.",
-         " Lose #b", " stack at the end of your turn.", " stacks at the end of your turn."]
+        "NAME": "Heat",
+        "DESCRIPTIONS": ["Increase damage by #b", " and block by #b",", up to #b", " .", " Lose #b1 whenever you lose HP.",
+         " Lose #b", " at the end of your turn.", " at the end of your turn."]
 },
 "theYakuza:Weave": {
         "NAME": "Weave",
@@ -18,15 +18,15 @@
 },
 "theYakuza:Boxing": {
         "NAME": "Boxing",
-        "DESCRIPTIONS": ["Gain #b", " temporary strenght per Minigame activation."]
+        "DESCRIPTIONS": ["Whenever Minigame resolves gain #b", " strength for this turn."]
 },
 "theYakuza:Mahjong": {
         "NAME": "Mahjong",
-        "DESCRIPTIONS": ["Gain #b", " block per Minigame activation."]
+        "DESCRIPTIONS": ["Whenever Minigame resolves gain #b", " block."]
 },
 "theYakuza:EssenceOfBurningHeat": {
-        "NAME": "Essence of Burning Heat",
-        "DESCRIPTIONS": ["At the start of your turn, deal #b", " damage to a random enemy per Heat Level."]
+        "NAME": "Burning Heat",
+        "DESCRIPTIONS": ["When your turn starts, deal 3 damage damage to a random enemy #b+", " times Heat."]
 },
 "theYakuza:EssenceOfAggresiveGrabs": {
         "NAME": "Essence of Aggresive Grabs",
@@ -34,19 +34,19 @@
 },
 "theYakuza:EssenceOfDurableWeapons": {
         "NAME": "Essence of Durable Weapons",
-        "DESCRIPTIONS": ["#yGrab items have #b", " more #yDurability."]
+        "DESCRIPTIONS": ["#yItems have #b", " more #yDurability."]
 },
 "theYakuza:EssenceOfRecycling": {
         "NAME": "Essence of Recycling",
-        "DESCRIPTIONS": ["When an item #yDurability reaches #b0, add a #yBroken #yPipe to your hand.", "When an item #yDurability reaches #b0, add a #yBroken #yPipe+ to your hand."]
+        "DESCRIPTIONS": ["Whenever an item #ybreaks, add a #yBroken #yPipe to your hand.", "Whenever an item #ybreaks, add a #yBroken #yPipe+ to your hand."]
 },
 "theYakuza:BeastStyle": {
         "NAME": "Beast Style",
-        "DESCRIPTIONS": ["Draw  #b", " card when grabbing. Refund #b1 energy the first time you grab an item each turn.", " cards when grabbing. Refund #b1 energy the first time you grab an item each turn."]
+        "DESCRIPTIONS": ["Draw #b", " card when grabbing. Refund [E] the first time you grab each turn.", " cards when grabbing. Refund [E] the first time you grab each turn."]
 },
 "theYakuza:RushStyle": {
         "NAME": "Rush Style",
-        "DESCRIPTIONS": ["Gain #b", " temporary dexterity after playing each Attack."]
+        "DESCRIPTIONS": ["Gain #b", " dexterity this turn after playing each Attack."]
 },
 "theYakuza:BrawlerStyle": {
         "NAME": "Brawler Style",
@@ -54,55 +54,55 @@
 },
 "theYakuza:Retaliate": {
         "NAME": "Retaliate",
-        "DESCRIPTIONS": ["Play #b", " random Attack from your draw pile." , " random Attacks from your draw pile."]
+        "DESCRIPTIONS": ["Play #b", " random Attack from your draw pile at the start of your turn." , " random Attacks from your draw pile at the start of your turn."]
 },
 "theYakuza:EssenceOfPolish": {
-        "NAME": "Essence of Polish",
-        "DESCRIPTIONS": ["Item Attack and Skill triggered effects are improved by #b", "."]
+        "NAME": "Polish",
+        "DESCRIPTIONS": ["#yItem stats except durability are improved by #b", "."]
 },
 "theYakuza:EssenceOfIntimidation": {
-        "NAME": "Essence of Intimidation",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b1 vulnerable to enemies intending to Attack or #b1 Weak otherwise."]
+        "NAME": "\"Intimidation\"",
+        "DESCRIPTIONS": ["When your turn starts, apply #b1 Vulnerable to attacking enemies or #b1 Weak otherwise."]
 },
 "theYakuza:FridayNight": {
         "NAME": "Friday Night",
-        "DESCRIPTIONS": ["Minigame effects activate #b", " additional time.", " additional times."]
+        "DESCRIPTIONS": ["Extended minigame list: NL - Random card in hand costs #b1 less this turn. NL - Gain #b1 #yPlated #yArmor and #yMetallicize. NL - Gain #b2 #yThorns. NL - Gain #b1 #yRetaliate. NL - Gain #b1 #yWeave. NL - Upgrade a random card in your hand. NL - Gain #b1 #yArtifact. NL - Add a random common card from any class with #yPurge and #yEthereal. NL - Obtain an Explosive potion. NL - Random enemy loses #b1 HP for each card played afterwards."]
 },
 "theYakuza:RealEstate": {
         "NAME": "Real Estate",
-        "DESCRIPTIONS": ["Minigame activations grant #b", " additional effects"]
+        "DESCRIPTIONS": ["Minigame activations grant #b", " different additional effects."]
 },
-"theYakuza:Coiseum": {
+"theYakuza:Coliseum": {
         "NAME": "Coliseum",
-        "DESCRIPTIONS": ["Minigame activations grant #b", " Heat Level."]
+        "DESCRIPTIONS": ["Whenever Minigame resolves gain #b", " Heat."]
 },
 "theYakuza:Chairman": {
         "NAME": "4th Chairman",
-        "DESCRIPTIONS": ["Raise Heat Level cap by #b", " ."]
+        "DESCRIPTIONS": ["Max Heat up by #b", " ."]
 },
 "theYakuza:FuryOfTheAzureDragon": {
         "NAME": "Fury of the Azure Dragon",
-        "DESCRIPTIONS": ["Heat Level never decreases."]
+        "DESCRIPTIONS": ["Heat never decreases."]
 },
 "theYakuza:DragonOfDojimaStyle": {
         "NAME": "Dragon of Dojima Style",
-        "DESCRIPTIONS": ["After playing an Attack, create #b", " copy of itself with its damage divided by #b3, cost reduced by #b1, Purge and Exhaust. No effect on #b0 cost cards.",
-        " copies of itself with its damage divided by #b3, cost reduced by #b1 and #yPurge. No effect on #b0 cost cards."]
+        "DESCRIPTIONS": ["After playing an Attack that costs 1 or more, create #b", " copy with Purge that cost 1 less and damage divided by 3.",
+        " copies with Purge that cost 1 less and damage divided by 3."]
 },
 "theYakuza:ExtremeHeatMode": {
         "NAME": "Extreme Heat Mode",
-        "DESCRIPTIONS": ["Effects of Heat Level are increased by #b", "."]
+        "DESCRIPTIONS": ["Attack and Block Heat bonuses are increased by #b", "."]
 },
 "theYakuza:ExtremeHeatModeDecay": {
-        "NAME": "Heat Level Decay",
-        "DESCRIPTIONS": ["Heat Level decays by #b", " at the end of your turn."]
+        "NAME": "Heat Decay",
+        "DESCRIPTIONS": ["Lose #b", " Heat at the end of your turn."]
 },
 "theYakuza:DragonForm": {
         "NAME": "Dragon Form",
-        "DESCRIPTIONS": ["At the start of your turn, Increase ALL of your powers by #b", "."]
+        "DESCRIPTIONS": ["When your turn starts, Increase ALL of your buffs by #b", "."]
 },
 "theYakuza:KamurochoStreets": {
         "NAME": "Kamurocho Streets",
-        "DESCRIPTIONS": ["At the start of your turn, add #b", " random grab card to your hand with cost reduced by 1."]
+        "DESCRIPTIONS": ["When your turn starts, add #b", " random grab to your hand that costs 1 less this turn."]
 }
 }

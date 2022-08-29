@@ -32,7 +32,8 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("heat_level_power32.png"));
 
     private static final int ORIGINAL_HEAT_CAP = 3;
-    private static final int BASE_EFFECTS = 2;
+    private static final int DAMAGE_EFFECTS = 2;
+    private static final int BLOCK_EFFECTS = 1;
 
     public static int getHeatCap() {
         int raisedCap = 0;
@@ -42,8 +43,16 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
         return ORIGINAL_HEAT_CAP + raisedCap;
     }
 
-    public static int getHeatEffects() {
-        int modifier = BASE_EFFECTS;
+    public static int getDamageEffects() {
+        int modifier = DAMAGE_EFFECTS;
+        if (AbstractDungeon.player.hasPower(ExtremeHeatModePower.POWER_ID)) {
+            modifier += AbstractDungeon.player.getPower(ExtremeHeatModePower.POWER_ID).amount;
+        }
+        return modifier;
+    }
+
+    public static int getBlockEffects() {
+        int modifier = BLOCK_EFFECTS;
         if (AbstractDungeon.player.hasPower(ExtremeHeatModePower.POWER_ID)) {
             modifier += AbstractDungeon.player.getPower(ExtremeHeatModePower.POWER_ID).amount;
         }
@@ -70,12 +79,12 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public float atDamageGive(float damage, com.megacrit.cardcrawl.cards.DamageInfo.DamageType type) {
-        return damage + this.amount * getHeatEffects();
+        return damage + this.amount * getDamageEffects();
     }
 
     @Override
     public float modifyBlock(float blockAmount) {
-        return blockAmount + this.amount * getHeatEffects();
+        return blockAmount + this.amount * getBlockEffects();
     }
 
     @Override
@@ -128,17 +137,19 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
     @Override
     public void updateDescription() { // ["Increase attack and block by #b",". Up to #b", "stacks.", " Lose 1 stack
                                       // when HP is damaged.", " Lose 1 stack at the end of your turn."]
-        description = DESCRIPTIONS[0] + (amount * getHeatEffects()) + DESCRIPTIONS[1] + getHeatCap() + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + (amount * getDamageEffects()) +
+                DESCRIPTIONS[1] + (amount * getBlockEffects()) +
+                DESCRIPTIONS[2] + getHeatCap() + DESCRIPTIONS[3];
         if (!AbstractDungeon.player.hasPower(FuryOfTheAzureDragonPower.POWER_ID)) {
-            description += DESCRIPTIONS[3];
+            description += DESCRIPTIONS[4];
             if (AbstractDungeon.player.hasPower(ExtremeHeatModeDecayPower.POWER_ID)) {
                 int decay = AbstractDungeon.player.getPower(ExtremeHeatModeDecayPower.POWER_ID).amount;
 
-                description += DESCRIPTIONS[4] + decay;
+                description += DESCRIPTIONS[5] + decay;
                 if (decay == 1) {
-                    description += DESCRIPTIONS[5];
-                } else {
                     description += DESCRIPTIONS[6];
+                } else {
+                    description += DESCRIPTIONS[7];
                 }
             }
         }

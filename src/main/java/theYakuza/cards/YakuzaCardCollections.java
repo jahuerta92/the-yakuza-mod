@@ -56,6 +56,7 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabStaminanX());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabMotorcycle());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabDemonfireDagger());
+                YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBat());
 
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBaseball());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBowling());

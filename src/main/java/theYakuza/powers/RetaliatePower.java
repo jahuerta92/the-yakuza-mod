@@ -58,9 +58,8 @@ public class RetaliatePower extends AbstractPower implements CloneablePowerInter
          * card.canUse();
          * }
          */
-
+        this.flash();
         while (amount > 0) {
-            this.flash();
             AbstractDungeon.actionManager.addToBottom(new RetaliateAction((AbstractPlayer) owner));
             amount--;
         }

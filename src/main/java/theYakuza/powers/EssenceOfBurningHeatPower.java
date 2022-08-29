@@ -33,6 +33,8 @@ public class EssenceOfBurningHeatPower extends AbstractGrabPower implements Clon
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("essence_of_burning_heat_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("essence_of_burning_heat_power32.png"));
 
+    private static final int BASE_DAMAGE = 3;
+
     public EssenceOfBurningHeatPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
         name = NAME;
         ID = POWER_ID;
@@ -58,17 +60,17 @@ public class EssenceOfBurningHeatPower extends AbstractGrabPower implements Clon
 
     @Override
     public void atStartOfTurn() {
-        if (AbstractDungeon.player.hasPower(HeatLevelPower.POWER_ID)) {
-            this.flash();
-            int times = AbstractDungeon.player.getPower(HeatLevelPower.POWER_ID).amount;
-            for (int i = 0; i < times; i++) {
-                AbstractDungeon.actionManager.addToBottom(
-                        new DamageAction(AbstractDungeon.getRandomMonster(),
-                                new DamageInfo(owner, amount, DamageType.THORNS),
-                                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.flash();
 
-            }
+        int bonus = 0;
+        if (AbstractDungeon.player.hasPower(HeatLevelPower.POWER_ID)) {
+            bonus += AbstractDungeon.player.getPower(HeatLevelPower.POWER_ID).amount * amount;
         }
+
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(AbstractDungeon.getRandomMonster(),
+                        new DamageInfo(null, BASE_DAMAGE + bonus, DamageType.THORNS),
+                        AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override

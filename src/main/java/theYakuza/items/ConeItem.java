@@ -3,12 +3,11 @@ package theYakuza.items;
 import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
@@ -59,11 +58,9 @@ public class ConeItem extends CustomItem {
 
     @Override
     public void performThrownEffect() {
-        AbstractCreature mo = AbstractDungeon.getRandomMonster();
-        DamageInfo dmg = new DamageInfo(AbstractDungeon.player, throwValue, DamageType.NORMAL);
-        dmg.applyPowers(AbstractDungeon.player, mo);
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(mo, dmg, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(
+                new DamageInfo(AbstractDungeon.player, throwValue, DamageType.NORMAL),
+                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
 }

@@ -22,7 +22,7 @@ public class MotorcycleItem extends CustomItem {
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
-    private static final int ATTACK_AMOUNT = 0;
+    private static final int ATTACK_AMOUNT = 2;
     private static final int UPGRADED_ATTACK_AMOUNT = 0;
 
     private static final int SKILL_AMOUNT = 1;
@@ -47,19 +47,17 @@ public class MotorcycleItem extends CustomItem {
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
 
-        description = DESCRIPTIONS[0] +
-                DESCRIPTIONS[1] + skillValue + DESCRIPTIONS[2] +
-                DESCRIPTIONS[3] + throwValue + DESCRIPTIONS[4];
-
+        description = DESCRIPTIONS[0] + attackValue + DESCRIPTIONS[1] +
+                DESCRIPTIONS[2] + skillValue + DESCRIPTIONS[3] +
+                DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5];
     }
 
     @Override
     public float atDamageGive(float damage, DamageType type, AbstractCard card) {
-        int multiplier = 2;
-        if (card.cardID.contains(DOUBLE_ATTACK_ACTIVATION_CARD_ID)) {
-            multiplier = 4;
-        }
-        return atDamageGive(damage * multiplier, type);
+        applyCustomPowers(card);
+        int currentAttackValue = attackValue;
+        restoreValues();
+        return atDamageGive(damage * currentAttackValue, type);
     }
 
     @Override

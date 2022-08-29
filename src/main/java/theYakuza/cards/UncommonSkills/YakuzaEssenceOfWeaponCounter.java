@@ -3,6 +3,7 @@ package theYakuza.cards.UncommonSkills;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
+import theYakuza.items.AbstractItem;
 import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
@@ -42,8 +44,8 @@ public class YakuzaEssenceOfWeaponCounter extends AbstractDynamicCard {
 
     private static final int COST = 2; // 1// COST = ${COST}
 
-    private static final int BLOCK = 14; // 7// DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_BLOCK_PLUS = 3;
+    private static final int BLOCK = 15; // 7// DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_BLOCK_PLUS = 5;
     private static final int HEAT_COST = 1;
 
     // /STAT DECLARATION/
@@ -58,11 +60,39 @@ public class YakuzaEssenceOfWeaponCounter extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
         AbstractDungeon.actionManager.addToBottom(
                 new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, heatCost));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
 
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (heatCost > 0) {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+            if (p.hasPower(HeatLevelPower.POWER_ID)
+                    && p.getPower(HeatLevelPower.POWER_ID).amount >= heatCost
+                    && p.stance instanceof AbstractItem) {
+                this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+            }
+        } else {
+            super.triggerOnGlowCheck();
+        }
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (!canUse) {
+            return false;
+        } else if (heatCost > 0 && !(p.stance instanceof AbstractItem)) {
+            this.cantUseMessage = "No item equipped.";
+            return false;
+        } else {
+            return canUse;
+        }
     }
 
     @Override

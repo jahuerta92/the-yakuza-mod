@@ -143,7 +143,7 @@
   "theYakuza:MotorcycleItem": {
     "NAME": "Motorcycle",
     "DESCRIPTION": [
-      "#yAttack: Deal double damage",
+      "#yAttack: Deal #b", " times more damage",
       " NL #ySkill: Prevent the next #b",
       " times you would be damaged this turn.",
       " NL #yThrown: Deal #b",
@@ -153,9 +153,9 @@
   "theYakuza:DemonfireDaggerItem": {
     "NAME": "Demonfire Dagger",
     "DESCRIPTION": [
-      "#yAttack: This attack deals #b",
-      " more damage.",
-      " NL #ySkill: Draw #b",
+      "#yAttack: Your current attack streak increases damage by #b",
+      " .",
+      " NL #ySkill: End your streak and Draw #b",
       " card.", " cards.", 
       " NL #yThrown: Deal #b",
       " damage to a random enemy."

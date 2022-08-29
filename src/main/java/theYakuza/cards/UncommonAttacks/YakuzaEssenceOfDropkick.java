@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+
 import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
@@ -52,27 +54,39 @@ public class YakuzaEssenceOfDropkick extends AbstractDynamicCard {
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        baseMagicNumber = 0;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(energyOnUse));
-        int effect = energyOnUse;
-        if (p.hasRelic("Chemical X")) {
-            effect += 2;
-            p.getRelic("Chemical X").flash();
+        if (AbstractDungeon.player.hasRelic("Chemical X")) {
+            AbstractDungeon.player.getRelic("Chemical X").flash();
         }
 
-        if (effect > 0) {
+        if (magicNumber > 0) {
             AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(m, new DamageInfo(p, damage * effect, damageTypeForTurn),
+                    new DamageAction(m, new DamageInfo(p, magicNumber, damageTypeForTurn),
                             AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(p, p, new HeatLevelPower(p, p, HEAT)));
         }
 
         AbstractDungeon.actionManager.addToBottom(new PressEndTurnButtonAction());
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        int effect = EnergyPanel.totalCount;
+        if (AbstractDungeon.player.hasRelic("Chemical X")) {
+            effect += 2;
+        }
+
+        this.magicNumber = effect * damage;
+        this.isMagicNumberModified = true;
+
     }
 
     // Upgraded stats.

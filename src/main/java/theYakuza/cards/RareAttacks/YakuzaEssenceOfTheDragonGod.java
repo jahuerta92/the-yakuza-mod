@@ -55,6 +55,7 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         heatCost = baseHeatCost = HEAT_COST;
+        baseMagicNumber = 0;
     }
 
     // Actions the card should do.
@@ -66,8 +67,21 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
                     new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, repeats));
         }
         AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage * repeats, damageTypeForTurn),
+                new DamageAction(m, new DamageInfo(p, magicNumber, damageTypeForTurn),
                         AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        int effect = 0;
+        if (AbstractDungeon.player.hasPower(HeatLevelPower.POWER_ID)) {
+            effect += AbstractDungeon.player.getPower(HeatLevelPower.POWER_ID).amount;
+        }
+
+        this.magicNumber = effect * damage;
+        this.isMagicNumberModified = true;
+
     }
 
     // Upgraded stats.

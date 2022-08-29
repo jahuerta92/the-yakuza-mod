@@ -35,7 +35,7 @@
     "NAME": "Tojo Badge",
     "FLAVOR": "I am Mr Shakedown.",
     "DESCRIPTIONS": [
-      "Gain #b10 #yGold after each combat victory."
+      "Gain #b4 #yGold and #yTemporary #yHP at the start of combat. NL Gain more gold against stronger enemies."
     ]
   },
   "theYakuza:NuggetRelic": {
@@ -49,7 +49,7 @@
     "NAME": "Dragon Scale",
     "FLAVOR": "Hear me roar.",
     "DESCRIPTIONS": [
-      "#ytheyakuza:Heat_Level does not decrease from HP loss"
+      "#ytheyakuza:Heat does not decrease from HP loss"
     ]
   },
   "theYakuza:ManholeCoverRelic": {
@@ -63,7 +63,7 @@
     "NAME": "Tojo Renegade",
     "FLAVOR": "I'm sorry Nishiki.",
     "DESCRIPTIONS": [
-      "Replaces #rTojo #rBadge. NL Begin each combat with #b2 #ytheyakuza:Heat_Level."
+      "Replaces #rTojo #rBadge. NL Begin each combat with #b2 #ytheyakuza:Heat."
     ]
   },
   "theYakuza:MicrophoneRelic": {
@@ -77,42 +77,42 @@
     "NAME": "Hard Hat",
     "FLAVOR": "A school for youth's way of life. Creating Smiles",
     "DESCRIPTIONS": [
-      "Gain 1 [E] . Can't gain #yStrength, #yDexterity or #ytheyakuza:Heat_Level."
+      "Gain 1 [E] . Can't gain #yStrength, #yDexterity or #ytheyakuza:Heat."
     ]
   },
   "theYakuza:IrezumiRelic": {
     "NAME": "Irezumi",
     "FLAVOR": "Like a dragon.",
     "DESCRIPTIONS": [
-      "Gaining #ytheyakuza:Heat_Level heals #b1 HP."
+      "Gaining #ytheyakuza:Heat heals #b1 HP."
     ]
   },
   "theYakuza:IdolsRodRelic": {
     "NAME": "Idol's Rod",
     "FLAVOR": "So much more!",
     "DESCRIPTIONS": [
-      "#b5% chance a #ytheyakuza:Minigame activation grants a random #ycommon #ypotion."
+      "#b20% chance a #ytheyakuza:Minigame activation grants a random #ycommon #ypotion (Max #b2 per combat)."
     ]
   },
   "theYakuza:ThrowingGlovesRelic": {
     "NAME": "Throwing Gloves",
     "FLAVOR": "A retired athlete best friend.",
     "DESCRIPTIONS": [
-      "#yThrowing item effects increased by #b1."
+      "#yThrowing item effects doubled."
     ]
   },
   "theYakuza:MajimasEyepatchRelic": {
     "NAME": "Majima's Eyepatch",
     "FLAVOR": "Receive and bite you.",
     "DESCRIPTIONS": [
-      "Gaining #ytheyakuza:Weave charges grants #b1 #yStrength."
+      "Whenever you take exactly 0 HP damage from an attack gain #b1 #yStrength."
     ]
   },
   "theYakuza:SaejimasCoatRelic": {
     "NAME": "Saejima's Coat",
     "FLAVOR": "A tiger's hide thickens in battle.",
     "DESCRIPTIONS": [
-      "Gaining #ytheyakuza:Retaliate charges grants #b1 #yDexterity."
+      "Whenever your block is broken, gain #b1 #ytheyakuza:Retaliate and #yDexterity."
     ]
   },
   "theYakuza:AkiyamasVaultRelic": {

@@ -6,7 +6,7 @@
     <groupId>yakuzamod</groupId>
     <artifactId>YakuzaMod</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>Yakuza Mod</name>
-    <version>0.0.1</version>
+    <version>0.2.1</version>
     <description>Kyriu-chan.</description>
 
     <properties>
@@ -80,6 +80,7 @@
                             <target>
                                 <!-- This moves your mod into a common folder where all mods you make can go. -->
                                 <copy file="target/${project.artifactId}.jar" tofile="${Steam.path}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
+                                <copy file="target/${project.artifactId}.jar" tofile="${Steam.path}/common/SlayTheSpire/theYakuza/content/${project.artifactId}.jar"/>
                             </target>
                         </configuration>
                         <goals>

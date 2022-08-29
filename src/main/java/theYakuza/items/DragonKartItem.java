@@ -18,13 +18,13 @@ public class DragonKartItem extends CustomItem {
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
-    private static final int ATTACK_AMOUNT = 1;
+    private static final int ATTACK_AMOUNT = 2;
     private static final int UPGRADED_ATTACK_AMOUNT = 0;
 
-    private static final int SKILL_AMOUNT = 1;
+    private static final int SKILL_AMOUNT = 2;
     private static final int UPGRADED_SKILL_AMOUNT = 0;
 
-    private static final int THROW_AMOUNT = 2;
+    private static final int THROW_AMOUNT = 3;
     private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public DragonKartItem(int upgraded, int durability) {

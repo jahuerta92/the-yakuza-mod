@@ -6,7 +6,16 @@
       "Minigame",
       "Minigames"
     ],
-    "DESCRIPTION": "Whenever you play a Minigame card, gain a random effect from this list: NL - Gain #b3 block. NL - Gain #b3 Gold. NL - Deal #b5 damage to a random enemy. NL - Draw #b1 card. NL - Apply #b1 weak to ALL enemies. NL - Apply #b1 vulnerable to ALL enemies. NL - Gain #b1 Temporary Strength. NL - Gain #b1 Temporary Dexterity. NL - Reduce the cost of a random card in your hand by #b1 for this turn."
+    "DESCRIPTION": "Activate #b1 at random: NL - Gain #b3 #yblock. NL - Enemy loses #b5 HP. NL - Draw #b1 card. NL - Apply #b1 #yWeak and #yVulnerable to a random enemy. NL - Gain #b1 #yStrength and #yDexterity this turn. NL - Draw #b1 more card next turn. NL - #yEnergize #b1. NL - Gain #b3 #yVigor. NL - Gain #b1 Temporary HP. NL - Add a random #yMinigame common card with #yPurge."
+  },
+  {
+    "NAMES": [
+      "improved",
+      "improved",
+      "improved",
+      "improved"
+    ],
+    "DESCRIPTION": "Extended minigame list: NL - Random card in hand costs #b1 less this turn. NL - Gain #b1 #yPlated #yArmor and #yMetallicize. NL - Gain #b2 #yThorns. NL - Gain #b1 #yRetaliate. NL - Gain #b1 #yWeave. NL - Upgrade a random card in your hand. NL - Gain #b1 #yArtifact. NL - Add a random common card from any class with #yPurge and #yEthereal. NL - Obtain an Explosive potion. NL - Random enemy loses #b1 HP for each card played afterwards."
   },
   {
     "NAMES": [
@@ -20,18 +29,14 @@
       "grab",
       "Grab"
     ],
-    "DESCRIPTION": "Grab the described item. NL Items empower attacks and skills, and can be thrown. NL If an item is already grabbed, throw it and grab the new one. NL Triggering effects decrease durability by #b1. NL When durability reaches #b0, items break."
+    "DESCRIPTION": "Equip item that empowers Skills and Attacks. Lose #b1 Durability when playing either. Before you grab another, attack by throwing the equipped item."
   },
   {
-    "PROPER_NAME": "Heat Level",
     "NAMES": [
-      "Heat Level",
-      "heat_level",
-      "heat_levels",
-      "Heat Levels",
-      "Heat_Levels"
+      "Heat ",
+      "heat"
     ],
-    "DESCRIPTION": "Each heat level adds #b2 attack damage and #b2 block gain. NL Heat Level caps at #b3 stacks. NL Lose #b1 Heat Level whenever you take damage."
+    "DESCRIPTION": "Gain #b2 damage and #b1 block per level, up to #b3. Lose #b1 whenever you lose HP."
   },
   {
     "PROPER_NAME": "Traffic Cone",
@@ -40,7 +45,7 @@
       "Traffic_Cone",
       "traffic_cone"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b6 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b6 damage damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Traffic Cone+",
@@ -49,119 +54,119 @@
       "Traffic_Cone+",
       "traffic_cone+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b9 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b9 damage damage to a random enemy. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "nunchaku",
       "Nunchaku"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. Gain #b3 block. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b6 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. Gain #b3 block. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b6 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "nunchaku+",
       "Nunchaku+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Gain #b4 block. NL #ySkill: Gain #b5 block. NL #yThrown: Deal #b9 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Gain #b4 block. NL #ySkill: Gain #b5 block. NL #yThrown: Deal #b9 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "bat",
       "Bat"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b6 more damage. NL #ySkill: Gain #b5 block. NL #yThrown: Deal #b8 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b8 damage to a random enemy. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "bat+",
       "Bat+"
     ],
-    "DESCRIPTION": "#yAttack: Upgrade by #b2 + Number of upgrades. NL #ySkill: Upgrade by #b2 + Number of upgrades. NL #yThrown: Upgrade by #b3 + Number of upgrades."
+    "DESCRIPTION": "#yAttack: Upgrade by #b2 + Number of upgrades. NL #ySkill: Upgrade by #b1 + Number of upgrades. NL #yThrown: Upgrade by #b3 + Number of upgrades. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "pan",
       "Pan"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b5 block. NL #yThrown: Gain #b6 block. Deal #b6 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b5 block. NL #yThrown: Gain #b6 block. Deal #b6 damage damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "pan+",
       "Pan+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b8 block. NL #yThrown: Gain #b9 block. Deal #b9 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b8 block. NL #yThrown: Gain #b9 block. Deal #b9 damage damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "sake",
       "Sake"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b2 cards."
+    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b2 cards. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "sake+",
       "Sake+"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b3 cards."
+    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b3 cards. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "revolver",
       "Revolver"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "revolver+",
       "Revolver+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b7 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b7 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "bike",
       "Bike"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b12 more damage. NL #ySkill: Gain #b10 Block. NL #yThrown: Deal #b12 damage to ALL enemies."
+    "DESCRIPTION": "#yAttack: Deal #b7 more damage. NL #ySkill: Gain #b5 Block. NL #yThrown: Deal #b12 damage to ALL enemies. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "bike+",
       "Bike+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b17 more damage. NL #ySkill: Gain #b13 Block. NL #yThrown: Deal #b12 damage to ALL enemies."
+    "DESCRIPTION": "#yAttack: Deal #b10 more damage. NL #ySkill: Gain #b8 Block. NL #yThrown: Deal #b15 damage to ALL enemies. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "sais",
       "Sais"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b2 Temporary Dexterity. NL #ySkill: Gain #b2 Temporary Strength. NL #yThrown: Gain #b1 Retaliate."
+    "DESCRIPTION": "#yAttack: Gain #b2 Temporary Dexterity. NL #ySkill: Gain #b2 Temporary Strength. NL #yThrown: Gain #b1 Retaliate. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "sais+",
       "Sais+"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b3 Temporary Dexterity. NL #ySkill: Gain #b3 Temporary Strength. NL #yThrown: Gain #b1 Retaliate."
+    "DESCRIPTION": "#yAttack: Gain #b3 Temporary Dexterity. NL #ySkill: Gain #b3 Temporary Strength. NL #yThrown: Gain #b1 Retaliate. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "motorcycle",
       "Motorcycle"
     ],
-    "DESCRIPTION": "#yAttack: Deal double damage. NL #ySkill: Prevent the next #1 time you would lose HP this turn. NL #yThrown: Deal #b32 damage to ALL enemies."
+    "DESCRIPTION": "#yAttack: Deal #b2 times more. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b32 damage to ALL enemies. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "motorcycle+",
       "Motorcycle+"
     ],
-    "DESCRIPTION": "#yAttack: Deal double damage. NL #ySkill: Prevent the next #1 time you would lose HP this turn. NL #yThrown: Deal #b42 damage to ALL enemies."
+    "DESCRIPTION": "#yAttack: Deal #b2 times more. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b42 damage to ALL enemies. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Nameless Katana",
@@ -170,7 +175,7 @@
       "nameless_katana",
       "Nameless_Katana"
     ],
-    "DESCRIPTION": "#yAttack: Attacks deal #b3 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b6 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Attacks deal #b3 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b6 damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Nameless Katana+",
@@ -179,7 +184,7 @@
       "nameless_katana+",
       "Nameless_Katana+"
     ],
-    "DESCRIPTION": "#yAttack: Attacks deal #b5 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b9 damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Attacks deal #b5 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b9 damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Broken Pipe",
@@ -188,7 +193,7 @@
       "Broken_Pipe",
       "broken_pipe"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b3 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b3 damage damage to a random enemy. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Broken Pipe+",
@@ -198,7 +203,7 @@
       "broken_pipe+"
 
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b5 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b5 damage damage to a random enemy. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Iron Knucles",
@@ -207,7 +212,7 @@
       "Iron_Knuckles",
       "iron_knuckles"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b0 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b0 damage damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Iron Knuckles+",
@@ -216,7 +221,7 @@
       "Iron_Knuclkes+",
       "iron_knuckles+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b0 damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b0 damage damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Staminan X",
@@ -225,7 +230,7 @@
       "Staminan_X",
       "staminan_x"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b1 Energy."
+    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b1 Energy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Staminan X+",
@@ -234,7 +239,7 @@
       "Staminan_X+",
       "staminan_x+"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b2 Energy."
+    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b2 Energy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Demonfire Dagger",
@@ -243,7 +248,7 @@
       "Demonfire_Dagger",
       "demonfire_dagger"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b4 more damage. NL #ySkill: Draw #b1 card. NL #yThrown: Deal #b999-Durability damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b2 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b999-Durability damage damage to a random enemy. NL #yDurability #b999."
   },
   {
     "PROPER_NAME": "Demonfire Dagger+",
@@ -252,7 +257,7 @@
       "Demonfire_Dagger+",
       "demonfire_dagger+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b6 more damage. NL #ySkill: Draw #b1 card. NL #yThrown: Deal #b999-Durability damage damage to a random enemy."
+    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b3 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b999-Durability damage damage to a random enemy. NL #yDurability #b999."
   },
   {
     "PROPER_NAME": "Dragon Kart",
@@ -261,14 +266,23 @@
       "Dragon_Kart",
       "dragon_kart"
     ],
-    "DESCRIPTION": "#yAttack: Activate #b1 Minigame. NL #ySkill: Activate #b1 Minigame. NL #yThrown: Activate #b2 Minigame."
+    "DESCRIPTION": "#yAttack: Resolve Minigame #b2 times. NL #ySkill: Resolve Minigame #b2 times. NL #yThrown: Resolve Minigame #b3 times. NL #yDurability #b2."
+  },
+  {
+    "PROPER_NAME": "Dragon Kart+",
+    "NAMES": [
+      "Dragon Kart+",
+      "Dragon_Kart+",
+      "dragon_kart+"
+    ],
+    "DESCRIPTION": "#yAttack: Resolve Minigame #b2 times. NL #ySkill: Resolve Minigame #b2 times. NL #yThrown: Resolve Minigame #b3 times. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "retaliate",
       "Retaliate"
     ],
-    "DESCRIPTION": "At the start of your turn, play #b1 Attack from your draw pile for each Retaliate charge."
+    "DESCRIPTION": "Before your turn starts lose #yRetaliate and play that many Attacks from your draw pile."
   },
   {
     "NAMES": [

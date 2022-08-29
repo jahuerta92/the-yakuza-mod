@@ -71,7 +71,7 @@ public abstract class AbstractItem extends AbstractStance {
     }
 
     public int performAttackEffect(AbstractCard card) {
-        applyCustomPowers();
+        applyCustomPowers(card);
         int currentAttackValue = attackValue;
         restoreValues();
         return currentAttackValue;
@@ -98,37 +98,29 @@ public abstract class AbstractItem extends AbstractStance {
     @Override
     public void onExitStance() {
         if (durability > 0) {
+            applyCustomPowers();
             performThrownEffect();
+            restoreValues();
         }
     }
 
     @Override
     public float atDamageGive(float damage, DamageType type, AbstractCard card) {
-        int multiplier = 1;
-        if (card.cardID.contains(DOUBLE_ATTACK_ACTIVATION_CARD_ID)) {
-            multiplier = 2;
-        }
-        int damage_mod = performAttackEffect(card) * multiplier;
+        int damage_mod = performAttackEffect(card);
         return atDamageGive(damage, type) + damage_mod;
     }
 
     @Override
     public void onPlayCard(AbstractCard card) {
-        applyCustomPowers();
-        if (consumes_durability(card)) {
+        applyCustomPowers(card);
+        if (consumesDurability(card)) {
             if (card.type == CardType.SKILL) {
                 durability -= 1;
                 performSkillEffect(card);
-                if (card.cardID.contains(DOUBLE_SKILL_ACTIVATION_CARD_ID)) {
-                    performSkillEffect(card);
-                }
+
             } else if (card.type == CardType.ATTACK) {
                 durability -= 1;
                 performAdditionalAttackEffect(card);
-                if (card.cardID.contains(DOUBLE_ATTACK_ACTIVATION_CARD_ID)) {
-                    performAdditionalAttackEffect(card);
-                }
-
             }
 
             if (durability == 0) {
@@ -160,13 +152,38 @@ public abstract class AbstractItem extends AbstractStance {
 
                 skillValue += increase;
                 attackValue += increase;
+                throwValue += increase;
             }
         }
+
         for (AbstractRelic r : owner.relics) {
             if (r.relicId.equals(ThrowingGlovesRelic.ID)) {
-                throwValue += 1;
+                throwValue *= 2;
             }
         }
+
+        updateDescription();
+    }
+
+    protected void applyCustomPowers(AbstractCard card) {
+        applyCustomPowers();
+
+        if (card.cardID.contains(DOUBLE_SKILL_ACTIVATION_CARD_ID)) {
+            int bonus = 2;
+            if (card.upgraded) {
+                bonus += 1;
+            }
+            skillValue *= bonus;
+        }
+
+        if (card.cardID.contains(DOUBLE_ATTACK_ACTIVATION_CARD_ID)) {
+            int bonus = 2;
+            if (card.upgraded) {
+                bonus += 1;
+            }
+            attackValue *= bonus;
+        }
+
         updateDescription();
     }
 
@@ -176,7 +193,7 @@ public abstract class AbstractItem extends AbstractStance {
         throwValue = baseThrowValue;
     }
 
-    private boolean consumes_durability(AbstractCard card) {
+    private boolean consumesDurability(AbstractCard card) {
         ArrayList<String> allowed_ids = new ArrayList<String>();
         allowed_ids.add("YakuzaGrab");
         allowed_ids.add(YakuzaEssenceOfWeaponFinish.ID);

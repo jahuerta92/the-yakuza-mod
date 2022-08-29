@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theYakuza.YakuzaMod;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
+import theYakuza.items.AbstractItem;
 import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
@@ -44,7 +46,7 @@ public class YakuzaEssenceOfWeaponFinish extends AbstractDynamicCard {
 
     private static final int COST = 2; // 1// COST = ${COST}
 
-    private static final int DAMAGE = 16; // 7// DAMAGE = ${DAMAGE}
+    private static final int DAMAGE = 18; // 7// DAMAGE = ${DAMAGE}
     private static final int UPAGRADE_DAMAGE_PLUS = 4;
     private static final int HEAT_COST = 1;
 
@@ -60,11 +62,11 @@ public class YakuzaEssenceOfWeaponFinish extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
         AbstractDungeon.actionManager.addToBottom(
                 new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, heatCost));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
 
     }
 
@@ -76,4 +78,33 @@ public class YakuzaEssenceOfWeaponFinish extends AbstractDynamicCard {
             initializeDescription();
         }
     }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (heatCost > 0) {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+            if (p.hasPower(HeatLevelPower.POWER_ID)
+                    && p.getPower(HeatLevelPower.POWER_ID).amount >= heatCost
+                    && p.stance instanceof AbstractItem) {
+                this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+            }
+        } else {
+            super.triggerOnGlowCheck();
+        }
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (!canUse) {
+            return false;
+        } else if (heatCost > 0 && !(p.stance instanceof AbstractItem)) {
+            this.cantUseMessage = "No item equipped.";
+            return false;
+        } else {
+            return canUse;
+        }
+    }
+
 }

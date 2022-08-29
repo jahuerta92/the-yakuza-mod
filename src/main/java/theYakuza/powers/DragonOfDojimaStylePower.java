@@ -76,7 +76,7 @@ public class DragonOfDojimaStylePower extends AbstractGrabPower implements Clone
                 tempCard.isCostModified = true;
 
                 tempCard.rawDescription = "Purge. NL " + tempCard.rawDescription;
-                AbstractDungeon.actionManager.addToBottom(new BetterMakeTempCardInHandAction(tempCard, amount, false));
+                AbstractDungeon.actionManager.addToBottom(new BetterMakeTempCardInHandAction(tempCard, amount));
             }
         }
     }

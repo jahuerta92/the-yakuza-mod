@@ -40,8 +40,8 @@ public class YakuzaEssenceOfSidestepping extends AbstractDynamicCard {
 
     private static final int COST = 2; // 1// COST = ${COST}
 
-    private static final int BLOCK = 2; // 7// DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_BLOCK = 1;
+    private static final int BLOCK = 4; // 7// DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_BLOCK = 2;
 
     // /STAT DECLARATION/
     public YakuzaEssenceOfSidestepping() { // public ${NAME}() - This one and the one right under the imports are the

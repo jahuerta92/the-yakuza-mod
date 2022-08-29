@@ -13,11 +13,13 @@ import theYakuza.characters.TheYakuza;
 import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
+import basemod.AutoAdd;
 
 // public class ${NAME} extends AbstractDynamicCard
 // Remove this line when you make a template. Refer to
 // https://github.com/daviscook477/BaseMod/wiki/AutoAdd if you want to know what
 // it does.
+@AutoAdd.Ignore
 public class YakuzaHeatStrike extends AbstractDynamicCard {
     // TEXT DECLARATION
 
