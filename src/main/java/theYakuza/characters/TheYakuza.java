@@ -7,6 +7,7 @@ import theYakuza.YakuzaMod;
 import theYakuza.cards.CommonAttacks.*;
 import theYakuza.cards.CommonSkills.*;
 import theYakuza.relics.TojoBadgeRelic;
+import theYakuza.relics.badgeRelics.TojoBadgeRelicV2;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -173,11 +174,11 @@ public class TheYakuza extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(TojoBadgeRelic.ID);
+        retVal.add(TojoBadgeRelicV2.ID);
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see
         // them in game
-        UnlockTracker.markRelicAsSeen(TojoBadgeRelic.ID);
+        UnlockTracker.markRelicAsSeen(TojoBadgeRelicV2.ID);
 
         return retVal;
     }

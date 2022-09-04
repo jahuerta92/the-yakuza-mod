@@ -38,9 +38,6 @@ public class YakuzaDragonForm extends AbstractDynamicCard {
 
     public YakuzaDragonForm() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        // this.tags.add(CardTags.STARTER_DEFEND); // Tag your strike, defend and form
-        // (Wraith form, Demon form, Echo form,
-        // etc.) cards so that they function correctly.
         isEthereal = true;
     }
 

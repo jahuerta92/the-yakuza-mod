@@ -121,5 +121,152 @@
     "DESCRIPTIONS": [
       "#ytheyakuza:Minigame activations grant #b1 more effect."
     ]
+  },
+  "theYakuza:TojoBadgeRelicV2": {
+    "NAME": "Tojo Badge",
+    "FLAVOR": "Headhunter.",
+    "DESCRIPTIONS": [
+      "Beating an #yElite or #yBoss awards a special random #rBadge #rrelic."
+    ]
+  },
+  "theYakuza:NishikiyamaBadgeRelic": {
+    "NAME": "Nishikiyama Badge",
+    "FLAVOR": "Wow! Breaking the law.",
+    "DESCRIPTIONS": [
+      "On pickup, choose 1 of 3 #yKomaki #yTechniques.", "Choose a Komaki technique."
+    ]
+  },
+  "theYakuza:BleachBadgeRelic": {
+    "NAME": "Bleach Japan Badge",
+    "FLAVOR": "Grey is a boring color.",
+    "DESCRIPTIONS": [
+      "Colorless cards can appear in card rewards."
+    ]
+  },
+  "theYakuza:SnakeFlowerBadgeRelic": {
+    "NAME": "Snake Flower Badge",
+    "FLAVOR": "Danger noodles.",
+    "DESCRIPTIONS": [
+      "On pickup, choose 1 of 20 cards from any class to add to your deck.", "A foreign gift."
+    ]
+  },
+  "theYakuza:SaioBadgeRelic": {
+    "NAME": "Saio Badge",
+    "FLAVOR": "Sins cleansed in righteous fire.",
+    "DESCRIPTIONS": [
+      "Add an #rIronclad #yFiend #yFire card to your deck."
+    ]
+  },
+  "theYakuza:AmonBadgeRelic": {
+    "NAME": "Amon Badge",
+    "FLAVOR": "Fiercest Warrior.",
+    "DESCRIPTIONS": [
+      "When combat begins, Gain #b1 #yTemporary #yHP for each #rBadge."
+    ]
+  },
+  "theYakuza:ArakawaBadgeRelic": {
+    "NAME": "Arakawa Badge",
+    "FLAVOR": "The end of a legacy.",
+    "DESCRIPTIONS": [
+      "When an item #ybreaks, also #ythrow it."
+    ]
+  },
+  "theYakuza:BlackMondayBadgeRelic": {
+    "NAME": "Black Monday Badge",
+    "FLAVOR": "Actual English.",
+    "DESCRIPTIONS": [
+      "Whenever you #ySmith, you may add a card to your deck.", "A contraband card has appeared."
+    ]
+  },
+  "theYakuza:DojimaBadgeRelic": {
+    "NAME": "Dojima Badge",
+    "FLAVOR": "Humble begginings.",
+    "DESCRIPTIONS": [
+      "After each combat victory, Gain #b5 #yGold. NL Rewards are higher for stronger enemies."
+    ]
+  },
+  "theYakuza:GeomijulBadgeRelic": {
+    "NAME": "Geomijul Badge",
+    "FLAVOR": "Caught in the spider nest.",
+    "DESCRIPTIONS": [
+      "When combat starts, a random enemy loses #b8 #yStrength for this turn."
+    ]
+  },
+  "theYakuza:HiroshiBadgeRelic": {
+    "NAME": "Hirose Badge",
+    "FLAVOR": "Promises are eternal.",
+    "DESCRIPTIONS": [
+      "Common enemies have #b10% less HP."
+    ]
+  },
+  "theYakuza:JingweonBadgeRelic": {
+    "NAME": "Jingweon Badge",
+    "FLAVOR": "Korean Vergil.",
+    "DESCRIPTIONS": [
+      "When your turn starts, resolve #ytheyakuza:Minigame once."
+    ]
+  },
+  "theYakuza:KazamaBadgeRelic": {
+    "NAME": "Kazama Badge",
+    "FLAVOR": "Sunflower headmaster.",
+    "DESCRIPTIONS": [
+      "Max #ytheyakuza:Heat raised by #b1."
+    ]
+  },
+  "theYakuza:MajimaBadgeRelic": {
+    "NAME": "Majima Badge",
+    "FLAVOR": "He truly is everywhere.",
+    "DESCRIPTIONS": [
+      "Consecutive #yAttack streaks adds #b1 this relic's counter. NL After combat, Gain that much #ygold and reset the counter."
+    ]
+  },
+  "theYakuza:OmiBadgeRelic": {
+    "NAME": "Omi Badge",
+    "FLAVOR": "It has to be this way.",
+    "DESCRIPTIONS": [
+      "Once per turn, if you have no attacks in hand, #yDraw a random #yAttack."
+    ]
+  },
+  "theYakuza:RyudoBadgeRelic": {
+    "NAME": "Ryudo Badge",
+    "FLAVOR": "Heir of the Morning Glory.",
+    "DESCRIPTIONS": [
+      "Using a #ypotion creates a random common #ytheyakuza:Minigame card in your hand."
+    ]
+  },
+  "theYakuza:ShibusawaBadgeRelic": {
+    "NAME": "Shibusawa Badge",
+    "FLAVOR": "The birth of a true dragon.",
+    "DESCRIPTIONS": [
+      "Begin each combat with #b2 #ytheyakuza:Heat."
+    ]
+  },
+  "theYakuza:ShimanoBadgeRelic": {
+    "NAME": "Shimano Badge",
+    "FLAVOR": "The birth of a true dragon.",
+    "DESCRIPTIONS": [
+      "Consecutive #yAttack streaks adds #b1 this relic's counter. NL When you play a #ySkill, Gain that much #yBlock and reset the counter."
+    ]
+  },
+  "theYakuza:SomeyaBadgeRelic": {
+    "NAME": "Someya Badge",
+    "FLAVOR": "A new generation.",
+    "DESCRIPTIONS": [
+      "#b10% chance to negate any #yDebuff."
+    ]
+  },
+  "theYakuza:UenoSeiwaBadgeRelic": {
+    "NAME": "Ueno Seiwa Relic",
+    "FLAVOR": "Plenty of rubber.",
+    "DESCRIPTIONS": [
+      "Regular treasure chests have #b2 card rewards."
+    ]
+  },
+  "theYakuza:YomeiBadgeRelic": {
+    "NAME": "Yomei Relic",
+    "FLAVOR": "He means nothing to me.",
+    "DESCRIPTIONS": [
+      "Gain #b4 #yBlock the first #b3 turns of combat."
+    ]
   }
 }

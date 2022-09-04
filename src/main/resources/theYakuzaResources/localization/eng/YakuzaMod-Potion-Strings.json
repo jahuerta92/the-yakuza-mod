@@ -1,6 +1,30 @@
 {
 "theYakuza:PlaceholderPotion": {
         "NAME": "Placeholder Potion",
-        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " Strength."]
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " #yStrength."]
+},
+"theYakuza:TaurinerPotion": {
+        "NAME": "Tauriner",
+        "DESCRIPTIONS": ["Gain #b", " #yHeat."]
+},
+"theYakuza:ChampagnePotion": {
+        "NAME": "Champagne Rain",
+        "DESCRIPTIONS": ["Resolve #yMinigame once for every #b", " cards in hand."]
+},
+"theYakuza:RustyPotion": {
+        "NAME": "Rusted Potion",
+        "DESCRIPTIONS": ["Add #b", " #yBroken #yPipes to your hand."]
+},
+"theYakuza:ViolencePotion": {
+        "NAME": "Distilled violence",
+        "DESCRIPTIONS": ["Play #b", " random attacks from your draw pile."]
+},
+"theYakuza:WindPotion": {
+        "NAME": "Wind Potion",
+        "DESCRIPTIONS": ["Gain #b", " #yWeave."]
+},
+"theYakuza:DragonPotion": {
+        "NAME": "Dragon Potion",
+        "DESCRIPTIONS": ["Increase ALL of your buffs by #b", "."]
 }
 }

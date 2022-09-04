@@ -24,7 +24,7 @@ public class NunchakuItem extends CustomItem {
     private static final int ATTACK_AMOUNT = 3;
     private static final int UPGRADED_ATTACK_AMOUNT = 2;
 
-    private static final int SKILL_AMOUNT = 3;
+    private static final int SKILL_AMOUNT = 4;
     private static final int UPGRADED_SKILL_AMOUNT = 2;
 
     private static final int THROW_AMOUNT = 6;

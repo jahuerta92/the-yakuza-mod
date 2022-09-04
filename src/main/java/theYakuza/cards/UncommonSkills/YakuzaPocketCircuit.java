@@ -67,9 +67,7 @@ public class YakuzaPocketCircuit extends AbstractDynamicCard {
             p.getRelic("Chemical X").flash();
         }
 
-        for (int i = 0; i < effect; i++) {
-            AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, magicNumber, 1));
-        }
+        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, magicNumber, effect));
 
     }
 

@@ -31,7 +31,7 @@ public class YakuzaEssenceOfAggresiveGrabs extends AbstractDynamicCard {
 
     private static final int COST = 1; // COST = ${COST}
 
-    private static final int MAGIC = 5; // DAMAGE = ${DAMAGE}
+    private static final int MAGIC = 7; // DAMAGE = ${DAMAGE}
     private static final int UPGRADED_MAGIC = 3; // DAMAGE = ${DAMAGE}
 
     // /STAT DECLARATION/

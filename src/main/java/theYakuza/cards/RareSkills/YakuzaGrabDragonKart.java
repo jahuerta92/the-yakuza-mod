@@ -45,7 +45,7 @@ public class YakuzaGrabDragonKart extends AbstractDynamicCard {
     private static final int COST = 1; // 1// COST = ${COST}
 
     private static final int DURABILITY = 2;
-    private static final int UPGRADE_DURABILITY = 2;
+    private static final int UPGRADE_DURABILITY = 1;
 
     // /STAT DECLARATION/
     public YakuzaGrabDragonKart() { // public ${NAME}() - This one and the one right under the imports are the

@@ -8,6 +8,7 @@ import static theYakuza.YakuzaMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.potions.AbstractPotion.PotionRarity;
 
@@ -33,8 +34,10 @@ public class IdolsRodRelic extends CustomMinigameRelic {
 
     @Override
     public void onMinigameActivation() {
-        int roll = AbstractDungeon.miscRng.random(100);
+        int roll = AbstractDungeon.miscRng.random(99);
         if (roll < POTION_CHANCE && counter > 0) {
+            this.flash();
+            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager
                     .addToBottom(new ObtainPotionAction(
                             AbstractDungeon.returnRandomPotion(PotionRarity.COMMON, true)));

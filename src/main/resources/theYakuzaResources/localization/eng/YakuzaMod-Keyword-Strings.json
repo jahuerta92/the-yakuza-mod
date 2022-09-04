@@ -61,14 +61,14 @@
       "nunchaku",
       "Nunchaku"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. Gain #b3 block. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b6 damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. Gain #b3 block. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b6 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "nunchaku+",
       "Nunchaku+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Gain #b4 block. NL #ySkill: Gain #b5 block. NL #yThrown: Deal #b9 damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b5 more damage. Gain #b5 block. NL #ySkill: Gain #b6 block. NL #yThrown: Deal #b9 damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
@@ -89,14 +89,14 @@
       "pan",
       "Pan"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b5 block. NL #yThrown: Gain #b6 block. Deal #b6 damage damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b6 block. NL #yThrown: Gain #b6 block. Deal #b6 damage damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
       "pan+",
       "Pan+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b8 block. NL #yThrown: Gain #b9 block. Deal #b9 damage damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b9 block. NL #yThrown: Gain #b9 block. Deal #b9 damage damage to a random enemy. NL #yDurability #b4."
   },
   {
     "NAMES": [
@@ -117,14 +117,14 @@
       "revolver",
       "Revolver"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b4 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "revolver+",
       "Revolver+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b7 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b7 more damage. Apply #b1 Vulnerable to ALL enemies. NL #ySkill: No effect. NL #yThrown: Deal #b0 damage to a random enemy. NL #yDurability #b3."
   },
   {
     "NAMES": [
@@ -266,7 +266,7 @@
       "Dragon_Kart",
       "dragon_kart"
     ],
-    "DESCRIPTION": "#yAttack: Resolve Minigame #b2 times. NL #ySkill: Resolve Minigame #b2 times. NL #yThrown: Resolve Minigame #b3 times. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: Resolve Minigame, double its result. NL #ySkill: Resolve Minigame, double its result. NL #yThrown: Resolve Minigame twice and double its result. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Dragon Kart+",
@@ -275,7 +275,7 @@
       "Dragon_Kart+",
       "dragon_kart+"
     ],
-    "DESCRIPTION": "#yAttack: Resolve Minigame #b2 times. NL #ySkill: Resolve Minigame #b2 times. NL #yThrown: Resolve Minigame #b3 times. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Resolve Minigame and double its result. NL #ySkill: Resolve Minigame and double its result. NL #yThrown: Resolve Minigame twice and double its result. NL #yDurability #b3."
   },
   {
     "NAMES": [

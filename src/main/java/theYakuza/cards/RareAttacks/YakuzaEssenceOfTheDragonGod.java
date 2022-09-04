@@ -2,13 +2,13 @@ package theYakuza.cards.RareAttacks;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import theYakuza.YakuzaMod;
+import theYakuza.actions.HeatLevelCostAction;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
 import theYakuza.powers.HeatLevelPower;
@@ -63,8 +63,7 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int repeats = p.getPower(HeatLevelPower.POWER_ID).amount;
         if (heatCost > 0) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, repeats));
+            AbstractDungeon.actionManager.addToBottom(new HeatLevelCostAction(repeats));
         }
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, magicNumber, damageTypeForTurn),
@@ -81,7 +80,18 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
 
         this.magicNumber = effect * damage;
         this.isMagicNumberModified = true;
+    }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        int effect = 0;
+        if (AbstractDungeon.player.hasPower(HeatLevelPower.POWER_ID)) {
+            effect += AbstractDungeon.player.getPower(HeatLevelPower.POWER_ID).amount;
+        }
+
+        this.magicNumber = effect * damage;
+        this.isMagicNumberModified = true;
     }
 
     // Upgraded stats.

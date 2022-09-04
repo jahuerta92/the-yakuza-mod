@@ -2,7 +2,6 @@ package theYakuza.cards.UncommonSkills;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,9 +9,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import theYakuza.YakuzaMod;
+import theYakuza.actions.HeatLevelCostAction;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
-import theYakuza.powers.HeatLevelPower;
 import theYakuza.powers.WeavePower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
@@ -61,8 +60,7 @@ public class YakuzaEssenceOfWeave extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, heatCost));
+        AbstractDungeon.actionManager.addToBottom(new HeatLevelCostAction(heatCost));
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(p, p, new WeavePower(p, p, POWER)));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));

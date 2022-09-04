@@ -6,7 +6,7 @@
     <groupId>yakuzamod</groupId>
     <artifactId>YakuzaMod</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>Yakuza Mod</name>
-    <version>0.2.1</version>
+    <version>0.3.3</version>
     <description>Kyriu-chan.</description>
 
     <properties>

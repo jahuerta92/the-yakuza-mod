@@ -89,6 +89,18 @@ public class YakuzaEssenceOfDropkick extends AbstractDynamicCard {
 
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        int effect = EnergyPanel.totalCount;
+        if (AbstractDungeon.player.hasRelic("Chemical X")) {
+            effect += 2;
+        }
+
+        this.magicNumber = effect * damage;
+        this.isMagicNumberModified = true;
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {

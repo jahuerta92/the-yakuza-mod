@@ -56,10 +56,7 @@ public class YakuzaCabaretClubGrandPrix extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, 1));
-        }
-
+        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, magicNumber));
     }
 
     @Override

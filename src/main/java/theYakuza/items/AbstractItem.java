@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
@@ -28,6 +29,7 @@ import theYakuza.cards.UncommonSkills.YakuzaEssenceOfWeaponCounter;
 import theYakuza.powers.EssenceOfPolishPower;
 import theYakuza.powers.EssenceOfRecyclingPower;
 import theYakuza.relics.ThrowingGlovesRelic;
+import theYakuza.relics.badgeRelics.ArakawaBadgeRelic;
 
 public abstract class AbstractItem extends AbstractStance {
 
@@ -97,7 +99,13 @@ public abstract class AbstractItem extends AbstractStance {
 
     @Override
     public void onExitStance() {
-        if (durability > 0) {
+        boolean hasRelic = AbstractDungeon.player.hasRelic(ArakawaBadgeRelic.ID);
+        if (durability > 0 || hasRelic) {
+            if (hasRelic) {
+                AbstractRelic r = AbstractDungeon.player.getRelic(ArakawaBadgeRelic.ID);
+                r.flash();
+                AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, r));
+            }
             applyCustomPowers();
             performThrownEffect();
             restoreValues();

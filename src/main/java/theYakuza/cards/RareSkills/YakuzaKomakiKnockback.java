@@ -1,7 +1,6 @@
 package theYakuza.cards.RareSkills;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,9 +9,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import theYakuza.YakuzaMod;
+import theYakuza.actions.HeatLevelCostAction;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
-import theYakuza.powers.HeatLevelPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
 
@@ -58,8 +57,7 @@ public class YakuzaKomakiKnockback extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(p, p, HeatLevelPower.POWER_ID, heatCost));
+        AbstractDungeon.actionManager.addToBottom(new HeatLevelCostAction(heatCost));
         AbstractDungeon.actionManager.addToBottom(
                 new GainBlockAction(p, p, m.getIntentBaseDmg()));
     }

@@ -27,8 +27,6 @@ public abstract class AbstractDefaultCard extends CustomCard {
     public int baseHeatCost;
     public int heatCost;
     private boolean upgradedHeatCost;
-    private boolean isHeatCostModified;
-
     public int itemUpgrades;
     public boolean isItemUpgraded;
 
@@ -55,8 +53,6 @@ public abstract class AbstractDefaultCard extends CustomCard {
         upgradedDurability = false;
         isDurabilityModified = false;
         upgradedHeatCost = false;
-        isHeatCostModified = false;
-
         heatCost = baseHeatCost = 0;
     }
 
@@ -74,7 +70,6 @@ public abstract class AbstractDefaultCard extends CustomCard {
         }
         if (upgradedHeatCost) {
             heatCost = baseHeatCost;
-            isHeatCostModified = true;
         }
 
     }

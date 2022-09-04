@@ -6,7 +6,6 @@ import java.util.Collections;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -87,6 +86,7 @@ public class MinigameAction extends AbstractGameAction {
         this.effectiveness = effectiveness;
         this.repeats = repeats;
         nEffects = 1;
+        maxEffects = BASE_EFFECTS;
     }
 
     @Override
@@ -186,13 +186,16 @@ public class MinigameAction extends AbstractGameAction {
                 } else if (v == 8) { // Add TempHP
                     AbstractDungeon.actionManager
                             .addToBottom(new AddTemporaryHPAction(p, p, BASE_TEMPHP * effectiveness));
-                } else if (v == 9) { // Add random minigame common card with purge
+                } else if (v == 19) { // Add random minigame common card with purge
                     for (int i = 0; i < effectiveness; i++) {
                         AbstractCard c = YakuzaCardCollections.MinigameCards.getRandomCard(
                                 AbstractDungeon.cardRandomRng,
                                 CardRarity.COMMON);
-                        c.purgeOnUse = true;
-                        c.rawDescription = "Purge. NL " + c.rawDescription;
+
+                        if (!c.purgeOnUse) {
+                            c.purgeOnUse = true;
+                            c.rawDescription = "Purge. NL " + c.rawDescription;
+                        }
                         AbstractDungeon.actionManager
                                 .addToBottom(new BetterMakeTempCardInHandAction(c));
                     }
@@ -224,10 +227,14 @@ public class MinigameAction extends AbstractGameAction {
                 } else if (v == 17) { // Add a random common card from ANY class to your hand with Purge and Ethereal
                     for (int i = 0; i < effectiveness; i++) {
                         AbstractCard c = CardLibrary.getAnyColorCard(CardRarity.COMMON);
-
-                        c.purgeOnUse = true;
-                        c.isEthereal = true;
-                        c.rawDescription = "Purge. Ethereal. NL " + c.rawDescription;
+                        if (!c.purgeOnUse) {
+                            c.purgeOnUse = true;
+                            c.rawDescription = "Purge. NL " + c.rawDescription;
+                        }
+                        if (!c.isEthereal) {
+                            c.isEthereal = true;
+                            c.rawDescription = "Ethereal. NL " + c.rawDescription;
+                        }
                         AbstractDungeon.actionManager
                                 .addToBottom(new BetterMakeTempCardInHandAction(c));
                     }
@@ -236,7 +243,7 @@ public class MinigameAction extends AbstractGameAction {
                         AbstractDungeon.actionManager
                                 .addToBottom(new ObtainPotionAction(new ExplosivePotion()));
                     }
-                } else if (v == 19) { // A random enemy loses 1HP per card played this turn
+                } else if (v == 9) { // A random enemy loses 1HP per card played this turn
                     if (!AbstractDungeon.getMonsters().monsters.isEmpty()) {
                         AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster();
                         AbstractDungeon.actionManager.addToBottom(

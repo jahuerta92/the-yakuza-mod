@@ -24,7 +24,7 @@ public class DragonKartItem extends CustomItem {
     private static final int SKILL_AMOUNT = 2;
     private static final int UPGRADED_SKILL_AMOUNT = 0;
 
-    private static final int THROW_AMOUNT = 3;
+    private static final int THROW_AMOUNT = 2;
     private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public DragonKartItem(int upgraded, int durability) {
@@ -55,20 +55,20 @@ public class DragonKartItem extends CustomItem {
     @Override
     public void performAdditionalAttackEffect(AbstractCard card) {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, attackValue));
+        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, attackValue, 1));
     }
 
     @Override
     public void performSkillEffect(AbstractCard card) {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, skillValue));
+        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, skillValue, 1));
 
     }
 
     @Override
     public void performThrownEffect() {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, 1, throwValue));
+        AbstractDungeon.actionManager.addToBottom(new MinigameAction(p, throwValue, 2));
     }
 
 }

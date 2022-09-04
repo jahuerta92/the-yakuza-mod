@@ -26,7 +26,7 @@
   },
   "theYakuza:YakuzaEssenceOfComboRush": {
     "NAME": "Combo Rush",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 1 [E] if you have theyakuza:Heat. NL Gain 1 theyakuza:Heat."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] if you have theyakuza:Heat. NL Gain 1 theyakuza:Heat."
   },
   "theYakuza:YakuzaEssenceOfMultiStrikes": {
     "NAME": "Multi Strike",
@@ -41,7 +41,7 @@
     "DESCRIPTION": "Deal !D! damage. NL This damage is affected !M! times by theyakuza:Heat. NL Gain 1 theyakuza:Heat."
   },
   "theYakuza:YakuzaEssenceOfSwiftStrikes": {
-    "NAME": "Swift Strikes",
+    "NAME": "Swift Punch",
     "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat."
   },
   "theYakuza:YakuzaBowling": {
@@ -265,7 +265,7 @@
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
     "NAME": "Dragon God",
-    "DESCRIPTION": "Spend ALL theyakuza:Heat. NL Deal damage equal to !D! times theyakuza:Heat spent. NL (Deal !M! damage). "
+    "DESCRIPTION": "Spend X theyakuza:Heat. NL Deal damage X times !D! damage. NL (Deal !M! damage). "
   },
   "theYakuza:YakuzaEssenceOfKiwami": {
     "NAME": "Kiwami Finisher",
@@ -273,7 +273,9 @@
   },
   "theYakuza:YakuzaEssenceOfNoMercy": {
     "NAME": "No Mercy",
-    "DESCRIPTION": "This attack deals damage equal a third enemy missing HP. NL (Deals !D! damage) NL Gain 1 theyakuza:Heat."
+    "DESCRIPTION": "This attack deals damage equal to third enemy missing HP. NL (Deals !D! damage) NL Gain 1 theyakuza:Heat.",
+    "UPGRADE_DESCRIPTION": "This attack deals damage equal to half enemy missing HP. NL (Deals !D! damage) NL Gain 1 theyakuza:Heat."
+
   },
   "theYakuza:YakuzaEssenceOfIronFists": {
     "NAME": "Iron Fists",
@@ -321,7 +323,7 @@
   "theYakuza:YakuzaFridayNight": {
     "NAME": "Friday Night",
     "DESCRIPTION": "theyakuza:Minigame. NL theyakuza:Minigame effect list is theyakuza:improved.",
-    "UPGRADE_DESCRIPTION": "Innate. NL #yMinigame. NL #yMinigame effect list is theyakuza:improved."
+    "UPGRADE_DESCRIPTION": "Innate. NL theyakuza:Minigame. NL theyakuza:Minigame effect list is theyakuza:improved."
   },
   "theYakuza:YakuzaRealEstate": {
     "NAME": "Real Estate",

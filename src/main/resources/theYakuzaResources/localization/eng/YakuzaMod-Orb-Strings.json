@@ -112,7 +112,7 @@
     "DESCRIPTION": [
       "#yAttack: This attack deals #b",
       " more damage.",
-      " NL #ySkill: Evade the next #b",
+      " NL #ySkill: Gain #b",
       " Block.",
       " NL #yThrown: Deal #b",
       " damage to a random enemy."
@@ -132,12 +132,12 @@
   "theYakuza:DragonKartItem": {
     "NAME": "Dragon Kart",
     "DESCRIPTION": [
-      "#yAttack: Activate #b",
-      " Minigame.",
-      " NL #ySkill: Activate #b",
-      " Minigame.",
-      " NL #yThrown: Activate #b",
-      " Minigame."
+      "#yAttack: Activate Minigame once and is #b",
+      " times as effective.",
+      " NL #ySkill:  Activate Minigame once and is #b",
+      " times as effective.",
+      " NL #yThrown:  Activate Minigame twice and is #b",
+      " times as effective."
     ]
   } ,
   "theYakuza:MotorcycleItem": {

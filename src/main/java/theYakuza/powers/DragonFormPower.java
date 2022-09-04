@@ -61,6 +61,7 @@ public class DragonFormPower extends AbstractGrabPower implements CloneablePower
             if (pow.type == PowerType.BUFF && !pow.ID.equals(POWER_ID)) {
                 pow.stackPower(amount);
                 pow.flashWithoutSound();
+                pow.updateDescription();
             }
         }
     }

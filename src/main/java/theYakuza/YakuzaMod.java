@@ -1,29 +1,15 @@
 package theYakuza;
 
 import basemod.*;
-import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import theYakuza.cards.*;
 import theYakuza.characters.TheYakuza;
-import theYakuza.events.IdentityCrisisEvent;
-import theYakuza.relics.AkiyamasVaultRelic;
-import theYakuza.relics.DragonScaleRelic;
-import theYakuza.relics.HardHatRelic;
-import theYakuza.relics.IdolsRodRelic;
-import theYakuza.relics.IrezumiRelic;
-import theYakuza.relics.MajimasEyepatchRelic;
-import theYakuza.relics.ManholeCoverRelic;
-import theYakuza.relics.MicrophoneRelic;
-import theYakuza.relics.NuggetRelic;
-import theYakuza.relics.SaejimasCoatRelic;
-import theYakuza.relics.ThrowingGlovesRelic;
-import theYakuza.relics.TojoBadgeRelic;
-import theYakuza.relics.TojoRenegadeRelic;
+import theYakuza.potions.*;
+import theYakuza.relics.*;
+import theYakuza.relics.badgeRelics.*;
 import theYakuza.util.IDCheckDontTouchPls;
 import theYakuza.util.TextureLoader;
-import theYakuza.variables.DefaultCustomVariable;
-import theYakuza.variables.DefaultSecondMagicNumber;
-import theYakuza.variables.YakuzaDurabilityVariable;
+import theYakuza.variables.*;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -34,7 +20,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
@@ -106,13 +91,13 @@ public class YakuzaMod implements
 
     // Colors (RGB)
     // Character Color
-    public static final Color YAKUZA_BLUE = CardHelper.getColor(30.0f, 30.0f, 90.0f);
+    public static final Color YAKUZA_BLUE = CardHelper.getColor(0.0f, 60.0f, 130.0f);
 
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
     public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
     public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark
-                                                                                                    // Red/Brown
+    // Red/Brown
 
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE
     // PATHS!!!!!!!!!!!
@@ -427,6 +412,15 @@ public class YakuzaMod implements
 
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
+        BaseMod.addPotion(TaurinerPotion.class, Color.RED, Color.YELLOW, null, TaurinerPotion.POTION_ID,
+                TheYakuza.Enums.THE_YAKUZA);
+        BaseMod.addPotion(RustyPotion.class, Color.BROWN, null, null, RustyPotion.POTION_ID,
+                TheYakuza.Enums.THE_YAKUZA);
+        BaseMod.addPotion(ChampagnePotion.class, Color.GOLD, null, Color.GREEN, ChampagnePotion.POTION_ID,
+                TheYakuza.Enums.THE_YAKUZA);
+        BaseMod.addPotion(ViolencePotion.class, Color.RED, Color.GRAY, Color.MAGENTA, ViolencePotion.POTION_ID);
+        BaseMod.addPotion(WindPotion.class, Color.BLUE, Color.SKY, null, WindPotion.POTION_ID);
+        BaseMod.addPotion(DragonPotion.class, Color.BLUE, null, Color.WHITE, DragonPotion.POTION_ID);
 
         // Class Specific Potion. If you want your potion to not be class-specific,
         // just remove the player class at the end (in this case the
@@ -474,7 +468,7 @@ public class YakuzaMod implements
         // them in game
         // (the others are all starters so they're marked as seen in the character file)
         // UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
-        BaseMod.addRelicToCustomPool(new TojoBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new TojoBadgeRelicV2(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new AkiyamasVaultRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new DragonScaleRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new HardHatRelic(), TheYakuza.Enums.COLOR_YAKUZA);
@@ -486,10 +480,32 @@ public class YakuzaMod implements
         BaseMod.addRelicToCustomPool(new NuggetRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new SaejimasCoatRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new ThrowingGlovesRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+
+        BaseMod.addRelicToCustomPool(new AmonBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new ArakawaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new BlackMondayBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new BleachBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new DojimaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new GeomijulBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new HiroshiBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new JingweonBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new KazamaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new MajimaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new NishikiyamaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new OmiBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new RyudoBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new SaioBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new ShibusawaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new ShimanoBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new SnakeFlowerBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new SomeyaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new UenoSeiwaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        BaseMod.addRelicToCustomPool(new YomeiBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+
         // BaseMod.addRelicToCustomPool(new TojoRenegadeRelic(),
         // TheYakuza.Enums.COLOR_YAKUZA);
 
-        UnlockTracker.markRelicAsSeen(TojoBadgeRelic.ID);
+        UnlockTracker.markRelicAsSeen(TojoBadgeRelicV2.ID);
         UnlockTracker.markRelicAsSeen(AkiyamasVaultRelic.ID);
         UnlockTracker.markRelicAsSeen(DragonScaleRelic.ID);
         UnlockTracker.markRelicAsSeen(HardHatRelic.ID);
@@ -501,7 +517,7 @@ public class YakuzaMod implements
         UnlockTracker.markRelicAsSeen(NuggetRelic.ID);
         UnlockTracker.markRelicAsSeen(SaejimasCoatRelic.ID);
         UnlockTracker.markRelicAsSeen(ThrowingGlovesRelic.ID);
-        UnlockTracker.markRelicAsSeen(ThrowingGlovesRelic.ID);
+
         // UnlockTracker.markRelicAsSeen(TojoRenegadeRelic.ID);
 
         logger.info("Done adding relics!");

@@ -11,6 +11,7 @@ import static theYakuza.YakuzaMod.makeRelicPath;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnLoseBlockRelic;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -39,6 +40,7 @@ public class SaejimasCoatRelic extends CustomRelic implements OnLoseBlockRelic {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.currentBlock <= arg0.output) {
             flash();
+            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(p, p, new RetaliatePower(POWER)));
             AbstractDungeon.actionManager

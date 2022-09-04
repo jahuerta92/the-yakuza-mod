@@ -9,6 +9,7 @@ import static theYakuza.YakuzaMod.makeRelicPath;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
@@ -36,6 +37,7 @@ public class MajimasEyepatchRelic extends CustomRelic {
         AbstractPlayer p = AbstractDungeon.player;
         if (arg1 == 0 && p.currentBlock == 0) {
             flash();
+            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,
                     p, new StrengthPower(p, POWER)));
         }
