@@ -33,8 +33,9 @@ public class YakuzaGrabPan extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
-    private static final int COST = 2;
-    private static final int DURABILITY = 4;
+    private static final int COST = 1;
+    private static final int DURABILITY = 5;
+    private static final int UPGRADE_DURABILITY = 3;
 
     private static final int UPGRADE_VAL = 1;
 
@@ -57,6 +58,7 @@ public class YakuzaGrabPan extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeItem(UPGRADE_VAL);
+            upgradeDurability(UPGRADE_DURABILITY);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

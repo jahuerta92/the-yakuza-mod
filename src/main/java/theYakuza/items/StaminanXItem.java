@@ -24,10 +24,10 @@ public class StaminanXItem extends CustomItem {
     private static final int UPGRADED_ATTACK_AMOUNT = 0;
 
     private static final int SKILL_AMOUNT = 4;
-    private static final int UPGRADED_SKILL_AMOUNT = 0;
+    private static final int UPGRADED_SKILL_AMOUNT = 6;
 
-    private static final int THROW_AMOUNT = 1;
-    private static final int UPGRADED_THROW_AMOUNT = 1;
+    private static final int THROW_AMOUNT = 0;
+    private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public StaminanXItem(int upgraded, int durability) {
         super(ITEM_ID, orbString.NAME,

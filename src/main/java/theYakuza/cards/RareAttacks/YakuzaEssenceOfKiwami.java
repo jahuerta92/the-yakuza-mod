@@ -41,11 +41,11 @@ public class YakuzaEssenceOfKiwami extends AbstractDynamicCard {
 
     private static final int COST = 3; // 1// COST = ${COST}
 
-    private static final int DAMAGE = 58; // 7// DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_DMG = 20; // 7// DAMAGE = ${DAMAGE}
+    private static final int DAMAGE = 40; // 7// DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 12; // 7// DAMAGE = ${DAMAGE}
 
-    private static final int BLOCK = 26; // 7// DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_BLOCK = 6; // 7// DAMAGE = ${DAMAGE}
+    private static final int BLOCK = 20; // 7// DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_BLOCK = 8; // 7// DAMAGE = ${DAMAGE}
 
     private static final int HEAT_COST = 3;
 

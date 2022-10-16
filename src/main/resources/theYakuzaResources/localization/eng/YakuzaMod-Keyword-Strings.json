@@ -6,7 +6,7 @@
       "Minigame",
       "Minigames"
     ],
-    "DESCRIPTION": "Activate #b1 at random: NL - Gain #b3 #yblock. NL - Enemy loses #b5 HP. NL - Draw #b1 card. NL - Apply #b1 #yWeak and #yVulnerable to a random enemy. NL - Gain #b1 #yStrength and #yDexterity this turn. NL - Draw #b1 more card next turn. NL - #yEnergize #b1. NL - Gain #b3 #yVigor. NL - Gain #b1 Temporary HP. NL - Add a random #yMinigame common card with #yPurge."
+    "DESCRIPTION": "Activate #b1 at random: NL - Gain #b3 #yblock. NL - Enemy loses #b5 HP. NL - Draw #b1 card. NL - Apply #b1 #yWeak and #yVulnerable to a random enemy. NL - Gain #b1 #yStrength and #yDexterity this turn. NL - Draw #b1 more card next turn. NL - #yEnergize #b1. NL - Gain #b3 #yVigor. NL - Gain #b1 Temporary HP. NL - Add a random #yMinigame common card with #yPurge.NL - Random enemy loses #b1 HP for each card played afterwards. "
   },
   {
     "NAMES": [
@@ -15,14 +15,14 @@
       "improved",
       "improved"
     ],
-    "DESCRIPTION": "Extended minigame list: NL - Random card in hand costs #b1 less this turn. NL - Gain #b1 #yPlated #yArmor and #yMetallicize. NL - Gain #b2 #yThorns. NL - Gain #b1 #yRetaliate. NL - Gain #b1 #yWeave. NL - Upgrade a random card in your hand. NL - Gain #b1 #yArtifact. NL - Add a random common card from any class with #yPurge and #yEthereal. NL - Obtain an Explosive potion. NL - Random enemy loses #b1 HP for each card played afterwards."
+    "DESCRIPTION": "Extended minigame list: NL - Random card in hand costs #b1 less this turn. NL - Gain #b1 #yPlated #yArmor and #yMetallicize. NL - Gain #b2 #yThorns. NL - Gain #b1 #yRetaliate. NL - Gain #b1 #yWeave. NL - Upgrade a random card in your hand. NL - Gain #b1 #yArtifact. NL - Add a random common card from any class with #yPurge and #yEthereal. NL - Obtain an Explosive potion. NL - Add a random #yMinigame common card with #yPurge."
   },
   {
     "NAMES": [
       "durability",
       "Durability"
     ],
-    "DESCRIPTION": "After each triggered action (skill or attack) items lose #b1 durability. NL When durability reaches #b0, items break."
+    "DESCRIPTION": "After each skill or attack, items lose #b1 durability. NL After durability reaches #b0, items break."
   },
   {
     "NAMES": [
@@ -45,7 +45,7 @@
       "Traffic_Cone",
       "traffic_cone"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b6 damage damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b5+durability damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Traffic Cone+",
@@ -54,7 +54,7 @@
       "Traffic_Cone+",
       "traffic_cone+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b9 damage damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b5 block. NL #yThrown: Deal #b8+durability damage to a random enemy. NL #yDurability #b3."
   },
   {
     "NAMES": [
@@ -75,42 +75,35 @@
       "bat",
       "Bat"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b8 damage to a random enemy. NL #yDurability #b3."
-  },
-  {
-    "NAMES": [
-      "bat+",
-      "Bat+"
-    ],
-    "DESCRIPTION": "#yAttack: Upgrade by #b2 + Number of upgrades. NL #ySkill: Upgrade by #b1 + Number of upgrades. NL #yThrown: Upgrade by #b3 + Number of upgrades. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b2X more damage. NL #ySkill: Gain #bX block. NL #yThrown: Deal #bdurability times #bX damage to a random enemy. NL #yDurability #b3. NL #bX is times upgraded."
   },
   {
     "NAMES": [
       "pan",
       "Pan"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b6 block. NL #yThrown: Gain #b6 block. Deal #b6 damage damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #bdurability block. NL #yThrown: #yThrown: Apply #bdurability Weak to the highest HP enemy with no block. NL #yDurability #b5."
   },
   {
     "NAMES": [
       "pan+",
       "Pan+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #b9 block. NL #yThrown: Gain #b9 block. Deal #b9 damage damage to a random enemy. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Deal #b1 more damage. NL #ySkill: Gain #bdurability block. NL #yThrown: #yThrown: Apply #bdurability Weak to the highest HP enemy. NL #yDurability #b8."
   },
   {
     "NAMES": [
       "sake",
       "Sake"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b2 cards. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Gain #bdurability Plated Armor. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "sake+",
       "Sake+"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Draw #b3 cards. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Gain #b1 Strength. NL #ySkill: Gain #b1 Dexterity. NL #yThrown: Gain #bdurability Plated Armor. NL #yDurability #b3."
   },
   {
     "NAMES": [
@@ -131,42 +124,58 @@
       "bike",
       "Bike"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b7 more damage. NL #ySkill: Gain #b5 Block. NL #yThrown: Deal #b12 damage to ALL enemies. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: All enemies also lose #b6HP. NL #ySkill: Gain #b7 block. NL #yThrown: Deal #b8 times #bdurability damage to ALL enemies. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "bike+",
       "Bike+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b10 more damage. NL #ySkill: Gain #b8 Block. NL #yThrown: Deal #b15 damage to ALL enemies. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: All enemies also lose #b8HP. NL #ySkill: Gain #b9 block. NL #yThrown: Deal #b10 times #bdurability damage to ALL enemies. NL #yDurability #b2."
+  },
+  {
+    "NAMES": [
+      "ramen",
+      "Ramen"
+    ],
+    "DESCRIPTION": "#yAttack: Draw #b1 card. NL #ySkill: Scry #b2. NL #yThrown: Exhaust up to #bdurability cards in hand. NL #yDurability #b1."
   },
   {
     "NAMES": [
       "sais",
       "Sais"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b2 Temporary Dexterity. NL #ySkill: Gain #b2 Temporary Strength. NL #yThrown: Gain #b1 Retaliate. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Gain #b2 Temporary Dexterity. NL #ySkill: Gain #b2 Temporary Strength. NL #yThrown: Gain #bdurability Weave. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "sais+",
       "Sais+"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b3 Temporary Dexterity. NL #ySkill: Gain #b3 Temporary Strength. NL #yThrown: Gain #b1 Retaliate. NL #yDurability #b4."
+    "DESCRIPTION": "#yAttack: Gain #b3 Temporary Dexterity. NL #ySkill: Gain #b3 Temporary Strength. NL #yThrown: Gain #bdurability Weave. NL #yDurability #b3."
   },
   {
     "NAMES": [
       "motorcycle",
       "Motorcycle"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 times more. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b32 damage to ALL enemies. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: Deal half card damage as HP to ALL enemies #b1 time. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b12 times #bdurability damage to ALL enemies. NL #yDurability #b2."
   },
   {
     "NAMES": [
       "motorcycle+",
       "Motorcycle+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 times more. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b42 damage to ALL enemies. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal full card damage as HP to ALL enemies #b1 time. NL #ySkill: Prevent the next #b1 time you would lose HP this turn. NL #yThrown: Deal #b18 times #bdurability damage to ALL enemies. NL #yDurability #b3."
+  },
+  {
+    "PROPER_NAME": "Komaki Technique",
+    "NAMES": [
+      "Komaki Technique",
+      "komaki_technique",
+      "Komaki_Technique"
+    ],
+    "DESCRIPTION": "Only one Komaki technique can spawn in card rewards. Choose wisely."
   },
   {
     "PROPER_NAME": "Nameless Katana",
@@ -175,7 +184,7 @@
       "nameless_katana",
       "Nameless_Katana"
     ],
-    "DESCRIPTION": "#yAttack: Attacks deal #b3 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b6 damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage, double bonus if you have no block. NL #ySkill: Gain #b1 block. NL #yThrown: Apply #b2 times #bdurability Vulnerable to the highest HP enemy with no block. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Nameless Katana+",
@@ -184,7 +193,7 @@
       "nameless_katana+",
       "Nameless_Katana+"
     ],
-    "DESCRIPTION": "#yAttack: Attacks deal #b5 more damage. NL #ySkill: Gain #b1 block. NL #yThrown: Deal #b9 damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b5 more damage, double bonus if you have no block. NL #ySkill: Gain #b1 block. NL #yThrown: Apply #b2 times #bdurability Vulnerable to the highest HP enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Broken Pipe",
@@ -193,7 +202,7 @@
       "Broken_Pipe",
       "broken_pipe"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b3 damage damage to a random enemy. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: Deal #b2 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #bdurability damage damage to a random enemy. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Broken Pipe+",
@@ -203,7 +212,7 @@
       "broken_pipe+"
 
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #b5 damage damage to a random enemy. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b3 block. NL #yThrown: Deal #bdurability damage damage to a random enemy. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Iron Knucles",
@@ -212,7 +221,7 @@
       "Iron_Knuckles",
       "iron_knuckles"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #b0 damage damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b3 more damage. NL #ySkill: Gain #b2 block. NL #yThrown: Deal #bdurability damage damage to a random enemy. NL #yDurability #b3."
   },
   {
     "PROPER_NAME": "Iron Knuckles+",
@@ -221,25 +230,23 @@
       "Iron_Knuclkes+",
       "iron_knuckles+"
     ],
-    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #b0 damage damage to a random enemy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Deal #b5 more damage. NL #ySkill: Gain #b4 block. NL #yThrown: Deal #bdurability damage damage to a random enemy. NL #yDurability #b3."
   },
   {
-    "PROPER_NAME": "Staminan X",
     "NAMES": [
-      "Staminan X",
-      "Staminan_X",
-      "staminan_x"
+      "Staminan",
+      "staminan"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b1 Energy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Gain #b1 Heat. NL #ySkill: Heal #b2 HP. NL #yThrown: Gain #bdurability Energy. NL #yDurability #b2."
   },
   {
-    "PROPER_NAME": "Staminan X+",
+    "PROPER_NAME": "Staminan Royale",
     "NAMES": [
-      "Staminan X+",
-      "Staminan_X+",
-      "staminan_x+"
+      "Staminan Royale",
+      "staminan royale",
+      "staminan_royale"
     ],
-    "DESCRIPTION": "#yAttack: Gain #b1 Heat Level. NL #ySkill: Heal #b4 HP. NL #yThrown: Gain #b2 Energy. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Gain #b1 Heat. NL #ySkill: Heal #b2 HP. NL #yThrown: Gain #bdurability Energy. NL #yDurability #b4."
   },
   {
     "PROPER_NAME": "Demonfire Dagger",
@@ -248,7 +255,7 @@
       "Demonfire_Dagger",
       "demonfire_dagger"
     ],
-    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b2 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b999-Durability damage damage to a random enemy. NL #yDurability #b999."
+    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b2 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b99-Durability damage damage to a random enemy. NL #yDurability #b99."
   },
   {
     "PROPER_NAME": "Demonfire Dagger+",
@@ -257,7 +264,7 @@
       "Demonfire_Dagger+",
       "demonfire_dagger+"
     ],
-    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b3 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b999-Durability damage damage to a random enemy. NL #yDurability #b999."
+    "DESCRIPTION": "#yAttack: Each consecutive attack deals #b3 more damage. NL #ySkill: Draw #b1 card per attack played. Reset your attack streak. NL #yThrown: Deal #b99-Durability damage damage to a random enemy. NL #yDurability #b99."
   },
   {
     "PROPER_NAME": "Dragon Kart",
@@ -266,7 +273,7 @@
       "Dragon_Kart",
       "dragon_kart"
     ],
-    "DESCRIPTION": "#yAttack: Resolve Minigame, double its result. NL #ySkill: Resolve Minigame, double its result. NL #yThrown: Resolve Minigame twice and double its result. NL #yDurability #b2."
+    "DESCRIPTION": "#yAttack: Resolve a #yMinigame #b2 times as effective. NL #ySkill: Resolve a #yMinigame #b2 times as effective. NL #yThrown: Resolve a #yMinigame #b1+durability times as effective. NL #yDurability #b2."
   },
   {
     "PROPER_NAME": "Dragon Kart+",
@@ -275,7 +282,7 @@
       "Dragon_Kart+",
       "dragon_kart+"
     ],
-    "DESCRIPTION": "#yAttack: Resolve Minigame and double its result. NL #ySkill: Resolve Minigame and double its result. NL #yThrown: Resolve Minigame twice and double its result. NL #yDurability #b3."
+    "DESCRIPTION": "#yAttack: Resolve a #yMinigame #b2 times as effective. NL #ySkill: Resolve a #yMinigame #b2 times as effective. NL #yThrown: Resolve a #yMinigame #b1+durability times as effective. NL #yDurability #b3."
   },
   {
     "NAMES": [

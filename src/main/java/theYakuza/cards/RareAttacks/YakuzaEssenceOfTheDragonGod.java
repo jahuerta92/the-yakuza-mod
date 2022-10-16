@@ -43,8 +43,8 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
 
     private static final int COST = 3; // COST = ${COST}
 
-    private static final int DAMAGE = 15; // DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_DMG = 5; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
+    private static final int DAMAGE = 12; // DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 4; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
     private static final int HEAT_COST = 1;
 

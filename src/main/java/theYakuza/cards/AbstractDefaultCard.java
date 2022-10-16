@@ -1,5 +1,8 @@
 package theYakuza.cards;
 
+import java.util.ArrayList;
+
+import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.SpawnModificationCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -9,7 +12,7 @@ import basemod.abstracts.CustomCard;
 import theYakuza.powers.EssenceOfDurableWeaponsPower;
 import theYakuza.powers.HeatLevelPower;
 
-public abstract class AbstractDefaultCard extends CustomCard {
+public abstract class AbstractDefaultCard extends CustomCard implements SpawnModificationCard {
 
     public int defaultSecondMagicNumber; // Just like magic number, or any number for that matter, we want our regular,
                                          // modifiable stat
@@ -29,6 +32,7 @@ public abstract class AbstractDefaultCard extends CustomCard {
     private boolean upgradedHeatCost;
     public int itemUpgrades;
     public boolean isItemUpgraded;
+    public boolean isKomaki;
 
     public AbstractDefaultCard(final String id,
             final String name,
@@ -54,6 +58,7 @@ public abstract class AbstractDefaultCard extends CustomCard {
         isDurabilityModified = false;
         upgradedHeatCost = false;
         heatCost = baseHeatCost = 0;
+        isKomaki = false;
     }
 
     public void displayUpgrades() { // Display the upgrade - when you click a card to upgrade it
@@ -160,5 +165,19 @@ public abstract class AbstractDefaultCard extends CustomCard {
     public void enableHeatCost() {
         heatCost = baseHeatCost;
     };
+
+    @Override
+    public boolean canSpawn(ArrayList<AbstractCard> currentRewardCards) {
+        // Player can't already have another komaki kard.
+        if (this.isKomaki) {
+            for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
+                if (c instanceof AbstractDefaultCard && ((AbstractDefaultCard) c).isKomaki) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 
 }

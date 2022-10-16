@@ -45,9 +45,9 @@ public class YakuzaBakaMitai extends AbstractDynamicCard {
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 0; // 1// COST = ${COST}
-    private static final int MAGIC = 1; // 1// COST = ${COST}
+    private static final int MAGIC = 2; // 1// COST = ${COST}
     private static final int UPGRADE_MAGIC = 1; // 1// COST = ${COST}
-    private static final int VULNERABLE = 2; // 1// COST = ${COST}
+    private static final int VULNERABLE = 3; // 1// COST = ${COST}
 
     // /STAT DECLARATION/
     public YakuzaBakaMitai() { // public ${NAME}() - This one and the one right under the imports are the

@@ -38,30 +38,31 @@ public class YakuzaEssenceOfRetaliation extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL; //
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
-    private static final int COST = 1; // 1// COST = ${COST}
-    private static final int REDUCED_COST = 0;
+    private static final int COST = 0; // 1// COST = ${COST}
 
     private static final int RETALIATE = 1;
+    private static final int UPGRADE = 1;
 
     // /STAT DECLARATION/
     public YakuzaEssenceOfRetaliation() { // public ${NAME}() - This one and the one right under the imports are the
                                           // most
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        magicNumber = baseMagicNumber = RETALIATE;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new RetaliatePower(RETALIATE)));
+                new RetaliatePower(magicNumber)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(REDUCED_COST);
+            upgradeMagicNumber(UPGRADE);
             initializeDescription();
         }
     }

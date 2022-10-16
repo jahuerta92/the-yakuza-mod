@@ -4,8 +4,7 @@ import basemod.interfaces.CloneablePowerInterface;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +12,8 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import theYakuza.YakuzaMod;
+import theYakuza.actions.DrawPileToHandWithDiscountAction;
+import theYakuza.items.AbstractItem;
 import theYakuza.util.TextureLoader;
 
 import static theYakuza.YakuzaMod.makePowerPath;
@@ -32,8 +33,6 @@ public class BeastStylePower extends AbstractGrabPower implements CloneablePower
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("beast_style_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("beast_style_power32.png"));
 
-    private boolean activated;
-
     public BeastStylePower(int amount) {
         name = NAME;
         ID = POWER_ID;
@@ -43,7 +42,6 @@ public class BeastStylePower extends AbstractGrabPower implements CloneablePower
 
         type = PowerType.BUFF;
         isTurnBased = false;
-        activated = false;
         // We load those txtures here.
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
@@ -52,18 +50,9 @@ public class BeastStylePower extends AbstractGrabPower implements CloneablePower
     }
 
     @Override
-    public void onGrab() {
+    public void onGrab(AbstractItem item) {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
-        if (!activated) {
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        }
-        activated = true;
-    }
-
-    @Override
-    public void atStartOfTurn() {
-        activated = false;
+        AbstractDungeon.actionManager.addToBottom(new DrawPileToHandWithDiscountAction(amount, CardType.ATTACK, 1));
     }
 
     @Override

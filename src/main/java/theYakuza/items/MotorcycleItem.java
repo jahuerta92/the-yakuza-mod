@@ -22,14 +22,14 @@ public class MotorcycleItem extends CustomItem {
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
-    private static final int ATTACK_AMOUNT = 2;
+    private static final int ATTACK_AMOUNT = 1;
     private static final int UPGRADED_ATTACK_AMOUNT = 0;
 
     private static final int SKILL_AMOUNT = 1;
     private static final int UPGRADED_SKILL_AMOUNT = 0;
 
-    private static final int THROW_AMOUNT = 32;
-    private static final int UPGRADED_THROW_AMOUNT = 10;
+    private static final int THROW_AMOUNT = 12;
+    private static final int UPGRADED_THROW_AMOUNT = 6;
 
     public MotorcycleItem(int upgraded, int durability) {
         super(ITEM_ID, orbString.NAME,
@@ -47,17 +47,31 @@ public class MotorcycleItem extends CustomItem {
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
 
-        description = DESCRIPTIONS[0] + attackValue + DESCRIPTIONS[1] +
-                DESCRIPTIONS[2] + skillValue + DESCRIPTIONS[3] +
+        String upgradeDesc = upgrades > 0 ? DESCRIPTIONS[8] : DESCRIPTIONS[0];
+        String firstDesc = attackValue > 1 ? DESCRIPTIONS[7] : DESCRIPTIONS[1];
+
+        String secondDesc = throwValue > 1 ? DESCRIPTIONS[6] : DESCRIPTIONS[3];
+        description = upgradeDesc + attackValue + firstDesc +
+                DESCRIPTIONS[2] + skillValue + secondDesc +
                 DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5];
     }
 
     @Override
-    public float atDamageGive(float damage, DamageType type, AbstractCard card) {
-        applyCustomPowers(card);
-        int currentAttackValue = attackValue;
-        restoreValues();
-        return atDamageGive(damage * currentAttackValue, type);
+    public int performAttackEffect(AbstractCard card) {
+        return 0;
+    }
+
+    @Override
+    protected int combineDurabilityAndThrow() {
+        return durability * throwValue;
+    }
+
+    @Override
+    public void performAdditionalAttackEffect(AbstractCard card) {
+        int newDamage = upgrades > 0 ? card.damage : card.damage / 2;
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(null,
+                DamageInfo.createDamageMatrix(newDamage * attackValue, true), DamageType.THORNS,
+                AttackEffect.BLUNT_HEAVY));
     }
 
     @Override
@@ -71,7 +85,7 @@ public class MotorcycleItem extends CustomItem {
     public void performThrownEffect() {
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player,
                 DamageInfo.createDamageMatrix(throwValue), DamageType.NORMAL,
-                AttackEffect.BLUNT_HEAVY));
+                AttackEffect.FIRE));
     }
 
 }

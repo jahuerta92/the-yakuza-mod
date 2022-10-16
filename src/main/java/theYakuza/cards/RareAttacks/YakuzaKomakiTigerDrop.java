@@ -53,6 +53,7 @@ public class YakuzaKomakiTigerDrop extends AbstractDynamicCard {
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        isKomaki = true;
     }
 
     // Actions the card should do.

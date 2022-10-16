@@ -11,7 +11,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class MajimaBadgeRelic extends CustomRelic {
@@ -54,7 +53,7 @@ public class MajimaBadgeRelic extends CustomRelic {
                 flash();
                 counter = minCounter;
             }
-        } else {
+        } else if (targetCard.type == CardType.SKILL) {
             minCounter = 0;
         }
     }

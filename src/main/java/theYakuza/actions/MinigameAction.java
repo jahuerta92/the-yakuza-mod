@@ -48,7 +48,7 @@ import theYakuza.relics.NuggetRelic;
 
 public class MinigameAction extends AbstractGameAction {
     private AbstractPlayer p;
-    private int effectiveness;
+    private float effectiveness;
     private int repeats;
     private int nEffects;
     private int maxEffects;
@@ -136,56 +136,59 @@ public class MinigameAction extends AbstractGameAction {
             for (int v : chosenEffects) {
                 if (v == 0) { // Block gain
                     AbstractDungeon.actionManager
-                            .addToBottom(new GainBlockAction(p, p, BASE_BLOCK * effectiveness));
+                            .addToBottom(new GainBlockAction(p, p, (int) (BASE_BLOCK * effectiveness)));
 
                 } else if (v == 1) { // Flex and Dex
                     AbstractDungeon.actionManager
                             .addToBottom(
-                                    new ApplyPowerAction(p, p, new DexterityPower(p, BASE_BUFF * effectiveness)));
+                                    new ApplyPowerAction(p, p,
+                                            new DexterityPower(p, (int) (BASE_BUFF * effectiveness))));
                     AbstractDungeon.actionManager
                             .addToBottom(
                                     new ApplyPowerAction(p, p,
-                                            new LoseDexterityPower(p, BASE_BUFF * effectiveness)));
-                    AbstractDungeon.actionManager
-                            .addToBottom(
-                                    new ApplyPowerAction(p, p, new StrengthPower(p, BASE_BUFF * effectiveness)));
+                                            new LoseDexterityPower(p, (int) (BASE_BUFF * effectiveness))));
                     AbstractDungeon.actionManager
                             .addToBottom(
                                     new ApplyPowerAction(p, p,
-                                            new LoseStrengthPower(p, BASE_BUFF * effectiveness)));
+                                            new StrengthPower(p, (int) (BASE_BUFF * effectiveness))));
+                    AbstractDungeon.actionManager
+                            .addToBottom(
+                                    new ApplyPowerAction(p, p,
+                                            new LoseStrengthPower(p, (int) (BASE_BUFF * effectiveness))));
 
                 } else if (v == 2) { // Draw card next turn
                     AbstractDungeon.actionManager.addToBottom(
-                            new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, BASE_DRAW * effectiveness)));
+                            new ApplyPowerAction(p, p,
+                                    new DrawCardNextTurnPower(p, (int) (BASE_DRAW * effectiveness))));
 
                 } else if (v == 3) { // Enemy loses health
                     AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(
-                            new DamageInfo(null, BASE_DAMAGE * effectiveness, DamageType.THORNS),
+                            new DamageInfo(null, (int) (BASE_DAMAGE * effectiveness), DamageType.THORNS),
                             AbstractGameAction.AttackEffect.BLUNT_LIGHT));
 
                 } else if (v == 4) { // Draw a card
                     AbstractDungeon.actionManager
-                            .addToBottom(new DrawCardAction(p, BASE_DRAW * effectiveness));
+                            .addToBottom(new DrawCardAction(p, (int) (BASE_DRAW * effectiveness)));
 
                 } else if (v == 5) { // Weak and Vulnerable
                     if (!AbstractDungeon.getMonsters().monsters.isEmpty()) {
                         AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster();
                         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,
-                                p, new VulnerablePower(m, BASE_DEBUFF * effectiveness, false)));
+                                p, new VulnerablePower(m, (int) (BASE_DEBUFF * effectiveness), false)));
                         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,
-                                p, new WeakPower(m, BASE_DEBUFF * effectiveness, false)));
+                                p, new WeakPower(m, (int) (BASE_DEBUFF * effectiveness), false)));
                     }
 
                 } else if (v == 6) { // Energize 1
                     AbstractDungeon.actionManager.addToBottom(
-                            new ApplyPowerAction(p, p, new EnergizedPower(p, BASE_ENERGIZE * effectiveness)));
+                            new ApplyPowerAction(p, p, new EnergizedPower(p, (int) (BASE_ENERGIZE * effectiveness))));
 
                 } else if (v == 7) { // Add Vigor
                     AbstractDungeon.actionManager.addToBottom(
-                            new ApplyPowerAction(p, p, new VigorPower(p, BASE_VIGOR * effectiveness)));
+                            new ApplyPowerAction(p, p, new VigorPower(p, (int) (BASE_VIGOR * effectiveness))));
                 } else if (v == 8) { // Add TempHP
                     AbstractDungeon.actionManager
-                            .addToBottom(new AddTemporaryHPAction(p, p, BASE_TEMPHP * effectiveness));
+                            .addToBottom(new AddTemporaryHPAction(p, p, (int) (BASE_TEMPHP * effectiveness)));
                 } else if (v == 19) { // Add random minigame common card with purge
                     for (int i = 0; i < effectiveness; i++) {
                         AbstractCard c = YakuzaCardCollections.MinigameCards.getRandomCard(
@@ -202,28 +205,28 @@ public class MinigameAction extends AbstractGameAction {
                 } // IMPROVED LIST BY FRIDAY NIGHT
                 else if (v == 10) { // Reduce card cost by 1
                     AbstractDungeon.actionManager
-                            .addToBottom(new ReduceRandomNonZeroCostCardAction(effectiveness * BASE_REDUCTION));
+                            .addToBottom(new ReduceRandomNonZeroCostCardAction((int) (effectiveness * BASE_REDUCTION)));
                 } else if (v == 11) { // Gain 1 plated armor and metallicize
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new MetallicizePower(p, effectiveness * BASE_METAL)));
+                            new MetallicizePower(p, (int) (effectiveness * BASE_METAL))));
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new PlatedArmorPower(p, effectiveness * BASE_METAL)));
+                            new PlatedArmorPower(p, (int) (effectiveness * BASE_METAL))));
                 } else if (v == 12) { // Gain 2 thorns
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new ThornsPower(p, effectiveness * BASE_THORNS)));
+                            new ThornsPower(p, (int) (effectiveness * BASE_THORNS))));
                 } else if (v == 13) { // Gain 1 Retaliate
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new RetaliatePower(effectiveness * BASE_RETALIATE)));
+                            new RetaliatePower((int) (effectiveness * BASE_RETALIATE))));
                 } else if (v == 14) { // Gain 1 Weave
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new WeavePower(p, p, effectiveness * BASE_WEAVE)));
+                            new WeavePower(p, p, (int) (effectiveness * BASE_WEAVE))));
                 } else if (v == 15) { // Upgrade a random card in your hand
                     for (int i = 0; i < effectiveness; i++) {
                         AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardAction());
                     }
                 } else if (v == 16) { // Gain 1 Artifact
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                            new ArtifactPower(p, effectiveness * BASE_ARTIFACT)));
+                            new ArtifactPower(p, (int) (effectiveness * BASE_ARTIFACT))));
                 } else if (v == 17) { // Add a random common card from ANY class to your hand with Purge and Ethereal
                     for (int i = 0; i < effectiveness; i++) {
                         AbstractCard c = CardLibrary.getAnyColorCard(CardRarity.COMMON);
@@ -247,7 +250,7 @@ public class MinigameAction extends AbstractGameAction {
                     if (!AbstractDungeon.getMonsters().monsters.isEmpty()) {
                         AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster();
                         AbstractDungeon.actionManager.addToBottom(
-                                new ApplyPowerAction(m, p, new ChokePower(m, effectiveness * BASE_CHOKE)));
+                                new ApplyPowerAction(m, p, new ChokePower(m, (int) (effectiveness * BASE_CHOKE))));
                     }
 
                 }

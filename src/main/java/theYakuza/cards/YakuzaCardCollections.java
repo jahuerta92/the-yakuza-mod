@@ -28,7 +28,8 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfSlapping());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfSwiftStrikes());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfTaunt());
-                YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfHeatPunches());
+                // YakuzaCardCollections.HeatLevelCards.addToBottom(new
+                // YakuzaEssenceOfHeatPunches());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfDropkick());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfHitAndRun());
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new YakuzaEssenceOfFollowUp());
@@ -43,12 +44,12 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.HeatLevelCards.addToBottom(new Yakuza4thChairman());
 
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabTrafficCone());
-                YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabNunchaku());
+                // YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabNunchaku());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabPan());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabNamelessKatana());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaEssenceOfSwitchGrab());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabSake());
-                YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabRevolver());
+                // YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabRevolver());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBike());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBrokenPipe());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabSais());
@@ -57,6 +58,7 @@ public class YakuzaCardCollections {
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabMotorcycle());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabDemonfireDagger());
                 YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabBat());
+                YakuzaCardCollections.GrabCards.addToBottom(new YakuzaGrabRamen());
 
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBaseball());
                 YakuzaCardCollections.MinigameCards.addToBottom(new YakuzaBowling());

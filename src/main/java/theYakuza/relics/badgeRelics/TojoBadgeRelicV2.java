@@ -32,6 +32,11 @@ public class TojoBadgeRelicV2 extends CustomRelic {
         return DESCRIPTIONS[0];
     }
 
+    @Override
+    public void onEquip() {
+        BadgeRelicCollection.badgeCollection.reset();
+    }
+
     // Description
     @Override
     public void onEnterRoom(AbstractRoom room) {

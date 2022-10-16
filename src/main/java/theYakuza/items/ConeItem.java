@@ -25,9 +25,9 @@ public class ConeItem extends CustomItem {
     private static final int UPGRADED_ATTACK_AMOUNT = 1;
 
     private static final int SKILL_AMOUNT = 3;
-    private static final int UPGRADED_SKILL_AMOUNT = 1;
+    private static final int UPGRADED_SKILL_AMOUNT = 2;
 
-    private static final int THROW_AMOUNT = 6;
+    private static final int THROW_AMOUNT = 5;
     private static final int UPGRADED_THROW_AMOUNT = 3;
 
     public ConeItem(int upgraded, int durability) {

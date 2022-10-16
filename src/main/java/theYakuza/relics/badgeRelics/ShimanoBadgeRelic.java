@@ -46,18 +46,14 @@ public class ShimanoBadgeRelic extends CustomRelic {
     @Override
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
         if (targetCard.type == CardType.ATTACK) {
-            counter++;
+            counter += 1;
             grayscale = false;
-        }
-        if (targetCard.type == CardType.SKILL && counter > 0) {
+        } else if (targetCard.type == CardType.SKILL && counter > 0) {
             flash();
-            grayscale = true;
             AbstractDungeon.actionManager
                     .addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, counter));
             counter = 0;
-        } else {
             grayscale = true;
-            counter = 0;
         }
     }
 

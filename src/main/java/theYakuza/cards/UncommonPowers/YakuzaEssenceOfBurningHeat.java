@@ -10,7 +10,9 @@ import theYakuza.characters.TheYakuza;
 import theYakuza.powers.EssenceOfBurningHeatPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
+import basemod.AutoAdd;
 
+@AutoAdd.Ignore
 public class YakuzaEssenceOfBurningHeat extends AbstractDynamicCard {
 
     public static final String ID = YakuzaMod.makeID(YakuzaEssenceOfBurningHeat.class.getSimpleName());

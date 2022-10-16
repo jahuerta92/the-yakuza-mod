@@ -6,10 +6,10 @@ import theYakuza.YakuzaMod;
 
 import theYakuza.cards.CommonAttacks.*;
 import theYakuza.cards.CommonSkills.*;
-import theYakuza.relics.TojoBadgeRelic;
 import theYakuza.relics.badgeRelics.TojoBadgeRelicV2;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
@@ -20,8 +20,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
@@ -33,6 +35,7 @@ import static theYakuza.YakuzaMod.*;
 import static theYakuza.characters.TheYakuza.Enums.COLOR_YAKUZA;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -289,6 +292,20 @@ public class TheYakuza extends CustomPlayer {
     @Override
     public String getVampireText() {
         return TEXT[2];
+    }
+
+    @Override
+    public Texture getCutsceneBg() {
+        return ImageMaster.loadImage(makeScenePath("yakuzaBg.jpg"));
+    }
+
+    @Override
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList<CutscenePanel>();
+        panels.add(new CutscenePanel(makeScenePath("yakuza1.png")));
+        panels.add(new CutscenePanel(makeScenePath("yakuza2.png"), "YAKUZA_KIRYU_SHOUT_1"));
+        panels.add(new CutscenePanel(makeScenePath("yakuza3.png")));
+        return panels;
     }
 
 }

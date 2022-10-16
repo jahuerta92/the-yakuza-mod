@@ -27,9 +27,9 @@ public class CustomItem extends AbstractItem {
     public void upgrade(int times, int attackUp, int skillUp, int throwUp) {
         for (int i = 0; i < times; i++) {
             System.out.println(baseAttackValue);
-            this.baseAttackValue += (attackUp + i);
-            this.baseSkillValue += (skillUp + i);
-            this.baseThrowValue += (throwUp + i);
+            this.baseAttackValue += attackUp;
+            this.baseSkillValue += skillUp;
+            this.baseThrowValue += throwUp;
         }
         this.attackValue = baseAttackValue;
         this.skillValue = baseSkillValue;

@@ -17,5 +17,16 @@
       "[Leave]",
       "Select card to remove."
     ]
+  },
+  "theYakuza:MajimaEvent": {
+    "NAME": "A sketchy old friend...",
+    "DESCRIPTIONS": [
+      "Through the streets of the city you came across the red district. NL You hear a familiar ~chuckle~ . NL A weird yakuza welcomes you with a smile and a shiv. NL ~Kiryu~ ~CHAN~ .",
+      "The Mad Dog of Shimano welcomes your spirit."
+    ],
+    "OPTIONS": [
+      "[Fight] #rFight #rthe #rstranger. #gGain #ga #gRandom #gBoss #gRelic.",
+      "[Flight] Escape the stranger."
+    ]
   }
 }

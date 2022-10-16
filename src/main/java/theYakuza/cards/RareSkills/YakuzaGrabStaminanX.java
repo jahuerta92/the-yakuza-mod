@@ -43,8 +43,8 @@ public class YakuzaGrabStaminanX extends AbstractDynamicCard {
 
     private static final int COST = 2; // 1// COST = ${COST}
 
-    private static final int DURABILITY = 3;
-    private static final int UPGRADE_VAL = 1;
+    private static final int DURABILITY = 2;
+    private static final int UPGRADE_VAL = 2;
 
     // /STAT DECLARATION/
     public YakuzaGrabStaminanX() { // public ${NAME}() - This one and the one right under the imports are the
@@ -65,7 +65,7 @@ public class YakuzaGrabStaminanX extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeItem(UPGRADE_VAL);
+            upgradeDurability(UPGRADE_VAL);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

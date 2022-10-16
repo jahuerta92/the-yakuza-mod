@@ -4,6 +4,9 @@ import basemod.*;
 import basemod.interfaces.*;
 import theYakuza.cards.*;
 import theYakuza.characters.TheYakuza;
+import theYakuza.events.MajimaEvent;
+import theYakuza.monsters.Majima;
+import theYakuza.monsters.MajimaClone;
 import theYakuza.potions.*;
 import theYakuza.relics.*;
 import theYakuza.relics.badgeRelics.*;
@@ -20,9 +23,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -168,6 +173,18 @@ public class YakuzaMod implements
 
     public static String makeAudioPath(String resourcePath) {
         return getModID() + "Resources/audio/" + resourcePath;
+    }
+
+    public static String makeMusicPath(String resourcePath) {
+        return getModID() + "Resources/audio/" + resourcePath;
+    }
+
+    public static String makeMonsterPath(String resourcePath) {
+        return getModID() + "Resources/images/monsters/" + resourcePath;
+    }
+
+    public static String makeScenePath(String resourcePath) {
+        return getModID() + "Resources/images/scenes/" + resourcePath;
     }
 
     // =============== /MAKE IMAGE PATHS/ =================
@@ -379,6 +396,10 @@ public class YakuzaMod implements
         // all characters.
         // If you want an event that's present at any part of the game, simply don't
         // include the dungeon ID
+
+        BaseMod.addEvent(MajimaEvent.ID, MajimaEvent.class, TheBeyond.ID);
+        BaseMod.addMonster(Majima.ID, () -> new Majima());
+        BaseMod.addMonsterEncounter(null, new MonsterInfo(Majima.ID, 10));
 
         // If you want to have more specific event spawning (e.g. character-specific or
         // so)
@@ -608,6 +629,10 @@ public class YakuzaMod implements
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/YakuzaMod-Orb-Strings.json");
 
+        // MonsterStrings
+        BaseMod.loadCustomStringsFile(MonsterStrings.class,
+                getModID() + "Resources/localization/eng/YakuzaMod-Monster-Strings.json");
+
         logger.info("Done edittting strings");
     }
 
@@ -662,6 +687,9 @@ public class YakuzaMod implements
         BaseMod.addAudio("YAKUZA_DAME_DA_NE", makeAudioPath("dame_da_ne.mp3"));
         BaseMod.addAudio("YAKUZA_FRIDAY_NIGHT", makeAudioPath("friday_night.mp3"));
         BaseMod.addAudio("YAKUZA_MAJIMA_LAUGH", makeAudioPath("majima-laugh.mp3"));
+        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_1", makeAudioPath("majima-laugh.mp3"));
+        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_2", makeAudioPath("majima-laugh.mp3"));
+        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_3", makeAudioPath("majima-laugh.mp3"));
 
         // END AUDIO ADDING
 

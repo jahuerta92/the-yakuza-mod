@@ -5,9 +5,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 import theYakuza.YakuzaMod;
+import theYakuza.actions.RepairAction;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
+import theYakuza.items.AbstractItem;
 import theYakuza.powers.EssenceOfDurableWeaponsPower;
 
 import static theYakuza.YakuzaMod.makeCardPath;
@@ -50,6 +53,9 @@ public class YakuzaEssenceOfDurableWeapons extends AbstractDynamicCard {
         CardCrawlGame.sound.play("CARD_UPGRADE");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new EssenceOfDurableWeaponsPower(p, p, magicNumber)));
+        if (p.stance instanceof AbstractItem) {
+            AbstractDungeon.actionManager.addToBottom(new RepairAction(p, p.stance, magicNumber));
+        }
     }
 
     // Upgraded stats.

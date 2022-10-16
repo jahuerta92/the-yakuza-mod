@@ -4,6 +4,7 @@ import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -40,6 +41,15 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
         if (AbstractDungeon.player.hasPower(ChairmanPower.POWER_ID)) {
             raisedCap += AbstractDungeon.player.getPower(ChairmanPower.POWER_ID).amount;
         }
+        return ORIGINAL_HEAT_CAP + raisedCap;
+    }
+
+    public static int getHeatCap(boolean isMonster) {
+        int raisedCap = 0;
+        if (AbstractDungeon.player.hasPower(ChairmanPower.POWER_ID) && !isMonster) {
+            raisedCap += AbstractDungeon.player.getPower(ChairmanPower.POWER_ID).amount;
+        }
+
         return ORIGINAL_HEAT_CAP + raisedCap;
     }
 
@@ -89,16 +99,16 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
 
     @Override
     public void stackPower(int stackAmount) {
-        if (this.amount + stackAmount <= getHeatCap()) {
+        if (this.amount + stackAmount <= getHeatCap(!owner.isPlayer)) {
             this.amount += stackAmount;
         } else {
-            this.amount = getHeatCap();
+            this.amount = getHeatCap(!owner.isPlayer);
         }
     }
 
     @Override
     public void reducePower(int reduceAmount) {
-        if (AbstractDungeon.player.hasPower(FuryOfTheAzureDragonPower.POWER_ID)) {
+        if (AbstractDungeon.player.hasPower(FuryOfTheAzureDragonPower.POWER_ID) && owner.isPlayer) {
             reduceAmount = 0;
         }
 
@@ -110,23 +120,44 @@ public class HeatLevelPower extends AbstractPower implements CloneablePowerInter
         }
     }
 
+    // @Override
+    // public int onLoseHp(int damageAmount) {
+    // if (!AbstractDungeon.player.hasRelic(DragonScaleRelic.ID) || !owner.isPlayer)
+    // {
+    // this.reducePower(1);
+    // }
+    // return damageAmount;
+    // }
+
     @Override
-    public int onLoseHp(int damageAmount) {
-        if (!AbstractDungeon.player.hasRelic(DragonScaleRelic.ID)) {
-            this.reducePower(1);
+    public void wasHPLost(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0) {
+            if (!AbstractDungeon.player.hasRelic(DragonScaleRelic.ID) || !owner.isPlayer) {
+                this.flash();
+                this.reducePower(1);
+
+            }
         }
-        return damageAmount;
+
     }
+    // @Override
+    // public int onAttacked(DamageInfo info, int damageAmount) {
+    // if (owner.currentBlock < damageAmount) {
+    // if (!AbstractDungeon.player.hasRelic(DragonScaleRelic.ID) || !owner.isPlayer)
+    // {
+    // this.reducePower(1);
+    // }
+    // }
+    // return damageAmount;
+    // }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        if (isPlayer) {
-            if (AbstractDungeon.player.hasPower(ExtremeHeatModeDecayPower.POWER_ID)) {
-                int reduceAmount = AbstractDungeon.player.getPower(ExtremeHeatModeDecayPower.POWER_ID).amount;
-                reducePower(reduceAmount);
-            }
-
+        if (AbstractDungeon.player.hasPower(ExtremeHeatModeDecayPower.POWER_ID) && owner.isPlayer) {
+            int reduceAmount = AbstractDungeon.player.getPower(ExtremeHeatModeDecayPower.POWER_ID).amount;
+            reducePower(reduceAmount);
         }
+
     }
 
     @Override

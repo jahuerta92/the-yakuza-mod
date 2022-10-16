@@ -45,7 +45,7 @@ public class YakuzaEssenceOfUltimatePower extends AbstractDynamicCard {
 
     private static final int COST = 1; // 1// COST = ${COST}
 
-    private static final int MAGIC = 2; // 1// COST = ${COST}
+    private static final int MAGIC = 3; // 1// COST = ${COST}
     private static final int UPGRADE_MAGIC = 1; // 1// COST = ${COST}
 
     // /STAT DECLARATION/
@@ -62,13 +62,15 @@ public class YakuzaEssenceOfUltimatePower extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(p, p, new HeatLevelPower(p, p, HeatLevelPower.getHeatCap())));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 3));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            isInnate = true;
+            rawDescription = UPGRADE_DESCRIPTION;
             upgradeMagicNumber(UPGRADE_MAGIC);
             initializeDescription();
         }

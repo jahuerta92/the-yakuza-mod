@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import theYakuza.YakuzaMod;
+import theYakuza.items.AbstractItem;
 import theYakuza.util.TextureLoader;
 
 import static theYakuza.YakuzaMod.makePowerPath;
@@ -62,7 +63,7 @@ public class EssenceOfAggresiveGrabsPower extends AbstractGrabPower implements C
     }
 
     @Override
-    public void onGrab() {
+    public void onGrab(AbstractItem item) {
         if (!activated) {
             AbstractDungeon.actionManager
                     .addToBottom(new DamageAllEnemiesAction((AbstractCreature) null,

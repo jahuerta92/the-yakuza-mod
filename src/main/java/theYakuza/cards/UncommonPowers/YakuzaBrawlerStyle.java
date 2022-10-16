@@ -34,8 +34,8 @@ public class YakuzaBrawlerStyle extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER; //
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
-    private static final int COST = 2; // COST = ${COST}
-    private static final int UPGRADED_COST = 1; // COST = ${COST}
+    private static final int COST = 1; // COST = ${COST}
+    private static final int UPGRADED_COST = 0; // COST = ${COST}
 
     // /STAT DECLARATION/
 

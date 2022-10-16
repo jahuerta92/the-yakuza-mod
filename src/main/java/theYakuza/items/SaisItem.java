@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import theYakuza.YakuzaMod;
-import theYakuza.powers.RetaliatePower;
+import theYakuza.powers.WeavePower;
 
 public class SaisItem extends CustomItem {
 
@@ -29,7 +29,7 @@ public class SaisItem extends CustomItem {
     private static final int SKILL_AMOUNT = 2;
     private static final int UPGRADED_SKILL_AMOUNT = 1;
 
-    private static final int THROW_AMOUNT = 1;
+    private static final int THROW_AMOUNT = 0;
     private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public SaisItem(int upgraded, int durability) {
@@ -48,9 +48,10 @@ public class SaisItem extends CustomItem {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
+        String secondDesc = throwValue > 1 ? DESCRIPTIONS[6] : DESCRIPTIONS[5];
         description = DESCRIPTIONS[0] + attackValue + DESCRIPTIONS[1] +
                 DESCRIPTIONS[2] + skillValue + DESCRIPTIONS[3] +
-                DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5];
+                DESCRIPTIONS[4] + throwValue + secondDesc;
     }
 
     @Override
@@ -83,7 +84,7 @@ public class SaisItem extends CustomItem {
     public void performThrownEffect() {
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager
-                .addToBottom(new ApplyPowerAction(p, p, new RetaliatePower(throwValue)));
+                .addToBottom(new ApplyPowerAction(p, p, new WeavePower(p, p, throwValue)));
     }
 
 }

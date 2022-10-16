@@ -19,6 +19,9 @@ import static theYakuza.YakuzaMod.makeCardPath;
 // Remove this line when you make a template. Refer to
 // https://github.com/daviscook477/BaseMod/wiki/AutoAdd if you want to know what
 // it does.
+import basemod.AutoAdd;
+
+@AutoAdd.Ignore
 public class YakuzaEssenceOfHeatPunches extends AbstractDynamicCard {
     // TEXT DECLARATION
 

@@ -243,7 +243,7 @@
   },
   "theYakuza:ShimanoBadgeRelic": {
     "NAME": "Shimano Badge",
-    "FLAVOR": "The birth of a true dragon.",
+    "FLAVOR": "Who let the dog out?",
     "DESCRIPTIONS": [
       "Consecutive #yAttack streaks adds #b1 this relic's counter. NL When you play a #ySkill, Gain that much #yBlock and reset the counter."
     ]

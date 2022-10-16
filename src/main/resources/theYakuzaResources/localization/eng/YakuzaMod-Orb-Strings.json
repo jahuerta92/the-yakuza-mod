@@ -49,8 +49,8 @@
       " more damage.",
       " NL #ySkill: Gain #b",
       " Block.",
-      " NL #yThrown: Gain #b", " Block. Deal #b",
-      " damage to a random enemy."
+      " NL #yThrown: Apply #b",
+      " Weak highest HP monster", ".", " without block."
     ]
   },
   "theYakuza:NamelessKatanaItem": {
@@ -60,8 +60,8 @@
       " more damage.",
       " NL #ySkill: Gain #b",
       " Block.",
-      " NL #yThrown: Deal #b",
-      " damage to a random enemy."
+      " NL #yThrown: Apply #b",
+      " Vunerable highest HP monster", ".", " without block."
     ]
   },
   "theYakuza:NunchakuItem": {
@@ -83,7 +83,7 @@
       " Strength.",
       " NL #ySkill: Gain #b",
       " Dexterity.",
-      " NL #yThrown: Draw #b", " card.", " cards."
+      " NL #yThrown: Gain #b", " Plated Armor.", " Plated Armor."
     ]
   },
   "theYakuza:RevolverItem": {
@@ -99,8 +99,8 @@
   "theYakuza:BikeItem": {
     "NAME": "Bike",
     "DESCRIPTION": [
-      "#yAttack: This attack deals #b",
-      " more damage.",
+      "#yAttack: All enemies also lose #b",
+      " HP.",
       " NL #ySkill: Gain #b",
       " Block.",
       " NL #yThrown: Deal #b",
@@ -125,29 +125,29 @@
       " Temporary Dexterity.",
       " NL #ySkill: Gain #b",
       " Temporary Strength.",
-      " NL #yThrown: Gain #b",
-      " Retaliate."
+      " NL #yThrown: Prevent the next #b",
+      " time you would lose HP this turn." , " time you would lose HP this turn."
     ]
   },
   "theYakuza:DragonKartItem": {
     "NAME": "Dragon Kart",
     "DESCRIPTION": [
-      "#yAttack: Activate Minigame once and is #b",
+      "#yAttack: Resolve a Minigame #b",
       " times as effective.",
-      " NL #ySkill:  Activate Minigame once and is #b",
+      " NL #ySkill: Resolve a Minigame #b",
       " times as effective.",
-      " NL #yThrown:  Activate Minigame twice and is #b",
+      " NL #yThrown: Resolve a Minigame #b",
       " times as effective."
     ]
   } ,
   "theYakuza:MotorcycleItem": {
     "NAME": "Motorcycle",
     "DESCRIPTION": [
-      "#yAttack: Deal #b", " times more damage",
+      "#yAttack: Deal half card damage as HP to ALL enemies #b", " time.",
       " NL #ySkill: Prevent the next #b",
       " times you would be damaged this turn.",
       " NL #yThrown: Deal #b",
-      " damage to ALL enemies."
+      " damage to ALL enemies.", " time you would be damaged this turn.", " times.", "#yAttack: Deal full card damage as HP to ALL enemies #b"
     ]
   },
   "theYakuza:DemonfireDaggerItem": {
@@ -162,7 +162,7 @@
     ]
   },
   "theYakuza:StaminanXItem": {
-    "NAME": "Staminan X",
+    "NAME": "Staminan",
     "DESCRIPTION": [
       "#yAttack: Gain #b",
       " Heat Level.",
@@ -170,6 +170,17 @@
       " HP.",
       " NL #yThrown: Gain #b",
       " Energy."
+    ]
+  },
+  "theYakuza:RamenItem": {
+    "NAME": "Ramen",
+    "DESCRIPTION": [
+      "#yAttack: Draw #b",
+      " cards.",
+      " NL #ySkill: Scry #b",
+      " .",
+      " NL #yThrown: Exhaust up to #b",
+      " cards in hand."
     ]
   }
 }

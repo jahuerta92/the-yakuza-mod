@@ -34,7 +34,7 @@ public class YakuzaGrabSais extends AbstractDynamicCard {
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1;
-    private static final int DURABILITY = 4;
+    private static final int DURABILITY = 3;
 
     private static final int UPGRADE_VAL = 1;
 

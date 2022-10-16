@@ -42,7 +42,7 @@
 },
 "theYakuza:BeastStyle": {
         "NAME": "Beast Style",
-        "DESCRIPTIONS": ["Draw #b", " card when grabbing. Refund [E] the first time you grab each turn.", " cards when grabbing. Refund [E] the first time you grab each turn."]
+        "DESCRIPTIONS": ["When you grab, draw #b", " attack with cost reduced by #b1.", " attacks with cost reduced by #b1."]
 },
 "theYakuza:RushStyle": {
         "NAME": "Rush Style",
@@ -104,5 +104,21 @@
 "theYakuza:KamurochoStreets": {
         "NAME": "Kamurocho Streets",
         "DESCRIPTIONS": ["When your turn starts, add #b", " random grab to your hand that costs 1 less this turn."]
+},
+"theYakuza:DuctTape": {
+        "NAME": "Illegal Weapons",
+        "DESCRIPTIONS": ["Durability cannot go below 1. Throw what you grab at #b", " durability."]
+},
+"theYakuza:TemporalConfusion": {
+        "NAME": "Surprised",
+        "DESCRIPTIONS": ["The costs of your cards are randomized on draw for #b", " turn.", "turns."]
+},
+"theYakuza:MadDog": {
+        "NAME": "The Mad Dog of Shimano",
+        "DESCRIPTIONS": ["Gain #b1 heat and change intentions every time you play #b", " card.", " cards."]
+},
+"theYakuza:ShadowClones": {
+        "NAME": "Unpredictable intents",
+        "DESCRIPTIONS": ["When Majima loses #b", " health, he will interrupt your turn. Be ready."]
 }
 }

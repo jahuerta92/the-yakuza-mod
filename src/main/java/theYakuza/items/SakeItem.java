@@ -3,12 +3,12 @@ package theYakuza.items;
 import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import theYakuza.YakuzaMod;
@@ -26,8 +26,8 @@ public class SakeItem extends CustomItem {
     private static final int SKILL_AMOUNT = 1;
     private static final int UPGRADED_SKILL_AMOUNT = 0;
 
-    private static final int THROW_AMOUNT = 2;
-    private static final int UPGRADED_THROW_AMOUNT = 1;
+    private static final int THROW_AMOUNT = 0;
+    private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public SakeItem(int upgraded, int durability) {
         super(ITEM_ID, orbString.NAME,
@@ -76,8 +76,8 @@ public class SakeItem extends CustomItem {
 
     @Override
     public void performThrownEffect() {
-        AbstractDungeon.actionManager
-                .addToBottom(new DrawCardAction(AbstractDungeon.player, throwValue));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
+                new PlatedArmorPower(AbstractDungeon.player, throwValue)));
     }
 
 }

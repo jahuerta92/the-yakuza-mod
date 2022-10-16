@@ -8,6 +8,7 @@ import theYakuza.items.SakeItem;
 
 import static theYakuza.YakuzaMod.makeCardPath;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,7 +35,7 @@ public class YakuzaGrabSake extends AbstractDynamicCard {
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1;
-    private static final int DURABILITY = 3;
+    private static final int DURABILITY = 2;
 
     private static final int UPGRADE_VAL = 1;
 
@@ -49,6 +50,7 @@ public class YakuzaGrabSake extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 2));
         AbstractDungeon.actionManager.addToBottom(new GrabAction(new SakeItem(this.itemUpgrades, durability)));
     }
 
@@ -57,7 +59,7 @@ public class YakuzaGrabSake extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeItem(UPGRADE_VAL);
+            upgradeDurability(UPGRADE_VAL);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

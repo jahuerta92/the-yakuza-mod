@@ -43,8 +43,8 @@ public class YakuzaKomakiParry extends AbstractDynamicCard {
 
     private static final int COST = 1; // COST = ${COST}
 
-    private static final int DAMAGE = 2; // DAMAGE = ${DAMAGE}
-    private static final int UPGRADE_PLUS_DMG = 2; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
+    private static final int DAMAGE = 1; // DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_COST = 0; // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
     private static final int HEAT = 1;
 
@@ -54,6 +54,7 @@ public class YakuzaKomakiParry extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         exhaust = true;
+        isKomaki = true;
     }
 
     // Actions the card should do.
@@ -99,7 +100,7 @@ public class YakuzaKomakiParry extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBaseCost(UPGRADE_COST);
             initializeDescription();
         }
     }

@@ -83,8 +83,8 @@
   },
   "theYakuza:YakuzaPoker": {
     "NAME": "Poker",
-    "DESCRIPTION": "theyakuza:Minigame. NL Discard 1 card. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Discard 1 card. NL Draw !M! cards."
+    "DESCRIPTION": "theyakuza:Minigame. NL Discard !M! card. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Discard !M! cards. NL Draw !M! cards."
   },
   "theYakuza:YakuzaShogi": {
     "NAME": "Shogi",
@@ -96,11 +96,11 @@
   },
   "theYakuza:YakuzaEssenceOfWeaponFinish": {
     "NAME": "Weapon Finish",
-    "DESCRIPTION": "If you have an item equipped, throw it and spend 1 theyakuza:Heat. NL Deal !D! damage."
+    "DESCRIPTION": "If you have an item equipped, throw it. NL Deal !D! damage."
   },
   "theYakuza:YakuzaEssenceOfWeaponCounter": {
     "NAME": "Weapon Counter",
-    "DESCRIPTION": "If you have an item equipped, throw it and spend 1 theyakuza:Heat. NL Gain !B! block."
+    "DESCRIPTION": "If you have an item equipped, throw it. NL Gain !B! block."
   },
   "theYakuza:YakuzaEssenceOfHeatPunches": {
     "NAME": "Heat Flurry",
@@ -175,8 +175,8 @@
   },
   "theYakuza:YakuzaGrabSake": {
     "NAME": "Grab Sake",
-    "DESCRIPTION": "theyakuza:Grab theyakuza:Sake. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Sake+. NL Exhaust."
+    "DESCRIPTION": "Draw 2 cards. NL theyakuza:Grab theyakuza:Sake. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw 2 cards. NL theyakuza:Grab theyakuza:Sake+. NL Exhaust."
   },
   "theYakuza:YakuzaGrabRevolver": {
     "NAME": "Grab Revolver",
@@ -197,7 +197,7 @@
     "DESCRIPTION": "theyakuza:Minigame. NL Whenever a theyakuza:Minigame resolves, gain !M! block."
   },
   "theYakuza:YakuzaEssenceOfAggresiveGrabs": {
-    "NAME": "Aggresive Grabs",
+    "NAME": "Aggressive Grabs",
     "DESCRIPTION": "The first theyakuza:Grab played each turn deals !M! damage to ALL enemies."
   },
   "theYakuza:YakuzaEssenceOfBurningHeat": {
@@ -220,7 +220,7 @@
   },
   "theYakuza:YakuzaBeastStyle": {
     "NAME": "Beast Style",
-    "DESCRIPTION": "Each turn, gain [E]  the first time you theyakuza:Grab. NL Whenever you theyakuza:Grab draw 1 card."
+    "DESCRIPTION": "When you theyakuza:Grab, draw 1 attack with cost reduced by 1 for this turn."
   },
   "theYakuza:YakuzaRushStyle": {
     "NAME": "Rush Style",
@@ -240,7 +240,7 @@
   },
   "theYakuza:YakuzaEssenceOfRetaliation": {
     "NAME": "Retaliate",
-    "DESCRIPTION": "Gain 1 theyakuza:Retaliate."
+    "DESCRIPTION": "Gain !M! theyakuza:Retaliate."
   },
   "theYakuza:YakuzaGrabSais": {
     "NAME": "Grab Sais",
@@ -257,11 +257,11 @@
   },
   "theYakuza:YakuzaKomakiTigerDrop": {
     "NAME": "Komaki Tiger Drop",
-    "DESCRIPTION": "If an enemy intends to attack deal !D! damage. Gain 1 theyakuza:Heat."
+    "DESCRIPTION": "theyakuza:Komaki_Technique. NL If an enemy intends to attack deal !D! damage. Gain 1 theyakuza:Heat."
   },
   "theYakuza:YakuzaKomakiParry": {
     "NAME": "Komaki Parry",
-    "DESCRIPTION": "If an enemy intends to attack deal !D! damage and Stun them 1 turn. NL Gain 1 theyakuza:Heat. NL Exhaust."
+    "DESCRIPTION": "theyakuza:Komaki_Technique. NL If an enemy intends to attack deal !D! damage and Stun them 1 turn. NL Gain 1 theyakuza:Heat. NL Exhaust."
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
     "NAME": "Dragon God",
@@ -279,8 +279,8 @@
   },
   "theYakuza:YakuzaEssenceOfIronFists": {
     "NAME": "Iron Fists",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat. NL theyakuza:Grab theyakuza:Iron_Knuckles .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat. NL theyakuza:Grab theyakuza:Iron_Knuckles+ ."
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat. NL theyakuza:Grab theyakuza:Iron_Knuckles.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 1 theyakuza:Heat. NL theyakuza:Grab theyakuza:Iron_Knuckles+."
   },
   "theYakuza:YakuzaGrabDragonKart": {
     "NAME": "Grab Dragon Kart",
@@ -290,7 +290,9 @@
   },
   "theYakuza:YakuzaEssenceOfUltimatePower": {
     "NAME": "Ultimate Power",
-    "DESCRIPTION": "Max your theyakuza:Heat. NL Draw !M! cards. NL Exhaust. "
+    "DESCRIPTION": "Max your theyakuza:Heat. NL Draw 3 cards. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Innate NL. Max your theyakuza:Heat. NL Draw 3 cards. NL Exhaust. "
+
   },
   "theYakuza:YakuzaBakaMitai": {
     "NAME": "Baka Mitai",
@@ -302,13 +304,17 @@
   },
   "theYakuza:YakuzaKomakiKnockback": {
     "NAME": "Komaki Knockback",
-    "DESCRIPTION": "Spend 1 theyakuza:Heat. NL If an enemy intends to attack gain Block equal to its damage value. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Spend 1 theyakuza:Heat. NL If an enemy intends to attack gain Block equal to its damage value."
+    "DESCRIPTION": "theyakuza:Komaki_Technique. NL If an enemy intends to attack gain Block equal to your missing HP. NL (Gain !B! block)",
+    "UPGRADE_DESCRIPTION": "theyakuza:Komaki_Technique. NL If an enemy intends to attack gain Block equal to double your missing HP. NL (Gain !B! block)"
   },
   "theYakuza:YakuzaGrabMotorcycle": {
     "NAME": "Grab Motorcycle",
     "DESCRIPTION": "theyakuza:Grab theyakuza:Motorcycle.",
     "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Motorcycle+."
+  },
+  "theYakuza:YakuzaGrabRamen": {
+    "NAME": "Grab Ramen",
+    "DESCRIPTION": "Gain !M! Temporary HP. NL theyakuza:Grab theyakuza:Ramen."
   },
   "theYakuza:YakuzaGrabDemonfireDagger": {
     "NAME": "Grab Demonfire Dagger",
@@ -316,9 +322,9 @@
     "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Demonfire_Dagger+. NL Exhaust."
   },
   "theYakuza:YakuzaGrabStaminanX": {
-    "NAME": "Grab Staminan X",
-    "DESCRIPTION": "theyakuza:Grab theyakuza:Staminan_X. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Staminan_X+. NL Exhaust."
+    "NAME": "Grab Staminan",
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Staminan. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Staminan_Royale. NL Exhaust."
   },
   "theYakuza:YakuzaFridayNight": {
     "NAME": "Friday Night",
@@ -362,14 +368,21 @@
   },
   "theYakuza:YakuzaGrabBat": {
     "NAME": "Grab Bat",
-    "DESCRIPTION": "theyakuza:Grab theyakuza:Bat. NL Can be upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Bat+. NL Can be upgraded any number of times."
+    "DESCRIPTION": "theyakuza:Grab theyakuza:Bat. NL Can be upgraded any number of times. NL Begins combat Upgraded once per theyakuza:Grab in deck.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Grab theyakuza:Bat. NL Can be upgraded any number of times. NL Begins combat Upgraded once per theyakuza:Grab in deck."
   },
   "theYakuza:YakuzaPocketCircuit": {
     "NAME": "Pocket Circuit",
     "DESCRIPTION": "theyakuza:Minigame X+1 times. NL Double each result. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "theyakuza:Minigame X+1 times. NL Triple each result. NL Exhaust."
-
+  },
+  "theYakuza:YakuzaDuctTape": {
+    "NAME": "Illegal Weapons",
+    "DESCRIPTION": "theyakuza:Durability cannot go below 1. Throw what your grab at !M! theyakuza:Durability."
+  },
+  "theYakuza:YakuzaCarefulBlow": {
+    "NAME": "Careful Blow",
+    "DESCRIPTION": "Deal !D! damage. Also activates item Skill effect."
   }
 
 }

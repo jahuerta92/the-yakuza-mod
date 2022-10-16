@@ -26,6 +26,7 @@ import theYakuza.cards.UncommonAttacks.YakuzaEssenceOfWeaponFinish;
 import theYakuza.cards.UncommonAttacks.YakuzaEssenceOfWeaponMastery;
 import theYakuza.cards.UncommonSkills.YakuzaEssenceOfFinesse;
 import theYakuza.cards.UncommonSkills.YakuzaEssenceOfWeaponCounter;
+import theYakuza.powers.DuctTapePower;
 import theYakuza.powers.EssenceOfPolishPower;
 import theYakuza.powers.EssenceOfRecyclingPower;
 import theYakuza.relics.ThrowingGlovesRelic;
@@ -90,8 +91,8 @@ public abstract class AbstractItem extends AbstractStance {
     }
 
     public void repair(int amount) {
-        if (durability + amount >= 999) {
-            durability = 999;
+        if (durability + amount >= 100) {
+            durability = 100;
         } else {
             durability += amount;
         }
@@ -101,10 +102,11 @@ public abstract class AbstractItem extends AbstractStance {
     public void onExitStance() {
         boolean hasRelic = AbstractDungeon.player.hasRelic(ArakawaBadgeRelic.ID);
         if (durability > 0 || hasRelic) {
-            if (hasRelic) {
+            if (hasRelic && durability == 0) {
                 AbstractRelic r = AbstractDungeon.player.getRelic(ArakawaBadgeRelic.ID);
                 r.flash();
                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, r));
+                durability++;
             }
             applyCustomPowers();
             performThrownEffect();
@@ -123,15 +125,19 @@ public abstract class AbstractItem extends AbstractStance {
         applyCustomPowers(card);
         if (consumesDurability(card)) {
             if (card.type == CardType.SKILL) {
-                durability -= 1;
                 performSkillEffect(card);
-
-            } else if (card.type == CardType.ATTACK) {
                 durability -= 1;
+            } else if (card.type == CardType.ATTACK) {
                 performAdditionalAttackEffect(card);
+                durability -= 1;
+            }
+
+            if (durability == 0 && AbstractDungeon.player.hasPower(DuctTapePower.POWER_ID)) {
+                durability++;
             }
 
             if (durability == 0) {
+
                 CardCrawlGame.sound.play("BLOCK_BREAK", -0.3F);
                 AbstractDungeon.actionManager.addToBottom(new ChangeStanceAction("Neutral"));
                 if (AbstractDungeon.player.hasPower(EssenceOfRecyclingPower.POWER_ID)) {
@@ -141,18 +147,20 @@ public abstract class AbstractItem extends AbstractStance {
                 }
             }
         }
+
         restoreValues();
 
-    }
-
-    @Override
-    public void atStartOfTurn() {
         applyCustomPowers();
         updateDescription();
         restoreValues();
+
     }
 
-    protected void applyCustomPowers() {
+    protected int combineDurabilityAndThrow() {
+        return durability + throwValue;
+    }
+
+    public void applyCustomPowers() {
         AbstractPlayer owner = AbstractDungeon.player;
         for (AbstractPower p : owner.powers) {
             if (p.ID.equals(EssenceOfPolishPower.POWER_ID)) {
@@ -164,6 +172,8 @@ public abstract class AbstractItem extends AbstractStance {
             }
         }
 
+        throwValue = combineDurabilityAndThrow();
+
         for (AbstractRelic r : owner.relics) {
             if (r.relicId.equals(ThrowingGlovesRelic.ID)) {
                 throwValue *= 2;
@@ -173,7 +183,7 @@ public abstract class AbstractItem extends AbstractStance {
         updateDescription();
     }
 
-    protected void applyCustomPowers(AbstractCard card) {
+    public void applyCustomPowers(AbstractCard card) {
         applyCustomPowers();
 
         if (card.cardID.contains(DOUBLE_SKILL_ACTIVATION_CARD_ID)) {
@@ -199,6 +209,7 @@ public abstract class AbstractItem extends AbstractStance {
         skillValue = baseSkillValue;
         attackValue = baseAttackValue;
         throwValue = baseThrowValue;
+
     }
 
     private boolean consumesDurability(AbstractCard card) {

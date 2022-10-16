@@ -44,7 +44,6 @@ public class EssenceOfIntimidationPower extends AbstractGrabPower
         ID = POWER_ID;
 
         this.owner = owner;
-        this.amount = amount;
         this.source = source;
 
         type = PowerType.BUFF;
@@ -59,7 +58,7 @@ public class EssenceOfIntimidationPower extends AbstractGrabPower
 
     @Override
     public AbstractPower makeCopy() {
-        return new EssenceOfIntimidationPower(owner, source, amount);
+        return new EssenceOfIntimidationPower(owner, source, 1);
     }
 
     @Override

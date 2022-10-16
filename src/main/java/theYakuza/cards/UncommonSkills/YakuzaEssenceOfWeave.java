@@ -43,7 +43,7 @@ public class YakuzaEssenceOfWeave extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.SKILL; //
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
-    private static final int COST = 2; // 1// COST = ${COST}
+    private static final int COST = 1; // 1// COST = ${COST}
     private static final int HEAT_COST = 1;
     private static final int DRAW = 1;
     private static final int POWER = 1;

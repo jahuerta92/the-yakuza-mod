@@ -2,17 +2,15 @@ package theYakuza.items;
 
 import static theYakuza.YakuzaMod.makeOrbPath;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import theYakuza.YakuzaMod;
+import theYakuza.actions.ApplyPowerToHighestHPEnemyAction;
 
 public class PanItem extends CustomItem {
 
@@ -24,11 +22,11 @@ public class PanItem extends CustomItem {
     private static final int ATTACK_AMOUNT = 1;
     private static final int UPGRADED_ATTACK_AMOUNT = 0;
 
-    private static final int SKILL_AMOUNT = 6;
-    private static final int UPGRADED_SKILL_AMOUNT = 3;
+    private static final int SKILL_AMOUNT = 0;
+    private static final int UPGRADED_SKILL_AMOUNT = 0;
 
-    private static final int THROW_AMOUNT = 6;
-    private static final int UPGRADED_THROW_AMOUNT = 3;
+    private static final int THROW_AMOUNT = 0;
+    private static final int UPGRADED_THROW_AMOUNT = 0;
 
     public PanItem(int upgraded, int durability) {
         super(ITEM_ID, orbString.NAME,
@@ -45,25 +43,24 @@ public class PanItem extends CustomItem {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
+        String lastDesc = upgrades > 0 ? DESCRIPTIONS[6] : DESCRIPTIONS[7];
         description = DESCRIPTIONS[0] + attackValue + DESCRIPTIONS[1] +
-                DESCRIPTIONS[2] + skillValue + DESCRIPTIONS[3] +
-                DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5] + throwValue + DESCRIPTIONS[6];
+                DESCRIPTIONS[2] + (skillValue + durability) + DESCRIPTIONS[3] +
+                DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5] + lastDesc;
     }
 
     @Override
     public void performSkillEffect(AbstractCard card) {
         AbstractDungeon.actionManager
-                .addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, skillValue));
+                .addToBottom(
+                        new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, (skillValue + durability)));
     }
 
     @Override
     public void performThrownEffect() {
-        AbstractDungeon.actionManager
-                .addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, throwValue));
-
-        AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(
-                new DamageInfo(AbstractDungeon.player, throwValue, DamageType.NORMAL),
-                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerToHighestHPEnemyAction(
+                null, new WeakPower(null, throwValue, false),
+                throwValue, true, upgrades > 0));
     }
 
 }

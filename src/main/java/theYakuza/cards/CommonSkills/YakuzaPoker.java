@@ -52,7 +52,7 @@ public class YakuzaPoker extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new MinigameAction(p));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, 1, false));
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
     }
 

@@ -7,10 +7,16 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class BadgeRelicCollection {
     private static ArrayList<String> badgeRelics = new ArrayList<String>();
+    private static ArrayList<String> seenRelics = new ArrayList<String>();
 
     public static BadgeRelicCollection badgeCollection = new BadgeRelicCollection();
 
     private BadgeRelicCollection() {
+        // for (String s : seenRelics) {
+        // System.out.println(s);
+        // }
+        // seenRelics = new ArrayList<String>();
+        // badgeRelics = new ArrayList<String>();
         badgeRelics.add(DojimaBadgeRelic.ID);
         badgeRelics.add(OmiBadgeRelic.ID);
         badgeRelics.add(ArakawaBadgeRelic.ID);
@@ -32,7 +38,6 @@ public class BadgeRelicCollection {
         badgeRelics.add(UenoSeiwaBadgeRelic.ID);
         badgeRelics.add(YomeiBadgeRelic.ID);
         badgeRelics.add(AmonBadgeRelic.ID);
-
     }
 
     public String getRandomUnseenBadgeKey() {
@@ -40,17 +45,27 @@ public class BadgeRelicCollection {
         ArrayList<String> eligibleRelics = new ArrayList<String>();
 
         for (String s : badgeRelics) {
-            if (!p.hasRelic(s)) {
+            if (!p.hasRelic(s) && !isSeen(s)) {
                 eligibleRelics.add(s);
             }
         }
 
         if (!eligibleRelics.isEmpty()) {
             int chosenRelic = AbstractDungeon.relicRng.random(eligibleRelics.size() - 1);
-            return eligibleRelics.get(chosenRelic);
+            String chosenRelicStr = eligibleRelics.get(chosenRelic);
+            seenRelics.add(chosenRelicStr);
+            return chosenRelicStr;
         } else {
             return "Circlet";
         }
+    }
+
+    private boolean isSeen(String r) {
+        for (String s : seenRelics) {
+            if (s.equals(r))
+                return true;
+        }
+        return false;
     }
 
     public int getPlayerBadges() {
@@ -64,5 +79,9 @@ public class BadgeRelicCollection {
         }
         return i;
 
+    }
+
+    public void reset() {
+        seenRelics.removeAll(seenRelics);
     }
 }

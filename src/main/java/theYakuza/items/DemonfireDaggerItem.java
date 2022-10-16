@@ -74,10 +74,13 @@ public class DemonfireDaggerItem extends CustomItem {
 
     }
 
+    @Override
+    protected int combineDurabilityAndThrow() {
+        return 99 - durability + throwValue;
+    }
+
     public void performAdditionalAttackEffect(AbstractCard card) {
         streak++;
-        baseThrowValue = throwValue = 999 - durability;
-        updateDescription();
     }
 
     @Override
@@ -85,17 +88,13 @@ public class DemonfireDaggerItem extends CustomItem {
         AbstractDungeon.actionManager
                 .addToBottom(new DrawCardAction(skillValue * streak));
         streak = 0;
-        baseThrowValue = throwValue = 999 - durability;
-        updateDescription();
     }
 
     @Override
     public void performThrownEffect() {
-        applyCustomPowers();
         AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(
                 new DamageInfo(AbstractDungeon.player, throwValue, DamageType.NORMAL),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        restoreValues();
     }
 
     @Override

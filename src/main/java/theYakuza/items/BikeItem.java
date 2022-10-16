@@ -3,6 +3,7 @@ package theYakuza.items;
 import static theYakuza.YakuzaMod.makeOrbPath;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,14 +21,14 @@ public class BikeItem extends CustomItem {
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ITEM_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
 
-    private static final int ATTACK_AMOUNT = 7;
-    private static final int UPGRADED_ATTACK_AMOUNT = 3;
+    private static final int ATTACK_AMOUNT = 6;
+    private static final int UPGRADED_ATTACK_AMOUNT = 2;
 
-    private static final int SKILL_AMOUNT = 5;
-    private static final int UPGRADED_SKILL_AMOUNT = 3;
+    private static final int SKILL_AMOUNT = 7;
+    private static final int UPGRADED_SKILL_AMOUNT = 2;
 
-    private static final int THROW_AMOUNT = 12;
-    private static final int UPGRADED_THROW_AMOUNT = 3;
+    private static final int THROW_AMOUNT = 8;
+    private static final int UPGRADED_THROW_AMOUNT = 2;
 
     public BikeItem(int upgraded, int durability) {
         super(ITEM_ID, orbString.NAME,
@@ -47,6 +48,22 @@ public class BikeItem extends CustomItem {
         description = DESCRIPTIONS[0] + attackValue + DESCRIPTIONS[1] +
                 DESCRIPTIONS[2] + skillValue + DESCRIPTIONS[3] +
                 DESCRIPTIONS[4] + throwValue + DESCRIPTIONS[5];
+    }
+
+    @Override
+    protected int combineDurabilityAndThrow() {
+        return durability * throwValue;
+    }
+
+    @Override
+    public int performAttackEffect(AbstractCard card) {
+        return 0;
+    }
+
+    @Override
+    public void performAdditionalAttackEffect(AbstractCard card) {
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(null,
+                attackValue, DamageType.THORNS, AttackEffect.BLUNT_LIGHT));
     }
 
     @Override

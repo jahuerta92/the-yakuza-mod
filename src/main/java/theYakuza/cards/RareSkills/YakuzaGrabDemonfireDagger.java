@@ -44,7 +44,7 @@ public class YakuzaGrabDemonfireDagger extends AbstractDynamicCard {
 
     private static final int COST = 2; // 1// COST = ${COST}
 
-    private static final int DURABILITY = 999;
+    private static final int DURABILITY = 99;
     private static final int UPGRADE_VAL = 1;
 
     // /STAT DECLARATION/

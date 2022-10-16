@@ -22,7 +22,6 @@ public class OmiBadgeRelic extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("omi_badge_relic.png"));
 
     private boolean canDraw = false;
-    private boolean disabledUntilEndOfTurn = false;
 
     public OmiBadgeRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
@@ -59,10 +58,5 @@ public class OmiBadgeRelic extends CustomRelic {
     public void atTurnStartPostDraw() {
         this.canDraw = true;
         this.grayscale = false;
-        this.disabledUntilEndOfTurn = false;
-    }
-
-    public void disableUntilTurnEnds() {
-        this.disabledUntilEndOfTurn = true;
     }
 }

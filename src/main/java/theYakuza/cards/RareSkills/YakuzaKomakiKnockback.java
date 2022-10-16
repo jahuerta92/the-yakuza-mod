@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import theYakuza.YakuzaMod;
-import theYakuza.actions.HeatLevelCostAction;
 import theYakuza.cards.AbstractDynamicCard;
 import theYakuza.characters.TheYakuza;
 
@@ -43,23 +42,20 @@ public class YakuzaKomakiKnockback extends AbstractDynamicCard {
     public static final CardColor COLOR = TheYakuza.Enums.COLOR_YAKUZA;
 
     private static final int COST = 1; // COST = ${COST}
-    private static final int HEAT_COST = 1; // COST = ${COST}
 
     // /STAT DECLARATION/
     public YakuzaKomakiKnockback() { // public ${NAME}() - This one and the one right under the imports are the
                                      // most
         // important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        exhaust = true;
-        heatCost = baseHeatCost = HEAT_COST;
+        isKomaki = true;
+        baseBlock = block = 0;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new HeatLevelCostAction(heatCost));
-        AbstractDungeon.actionManager.addToBottom(
-                new GainBlockAction(p, p, m.getIntentBaseDmg()));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
     }
 
     @Override
@@ -72,6 +68,22 @@ public class YakuzaKomakiKnockback extends AbstractDynamicCard {
             }
         }
 
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        AbstractPlayer p = AbstractDungeon.player;
+        this.block += upgraded ? 2 * (p.maxHealth - p.currentHealth) : p.maxHealth - p.currentHealth;
+        this.isBlockModified = true;
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        AbstractPlayer p = AbstractDungeon.player;
+        this.block += upgraded ? 2 * (p.maxHealth - p.currentHealth) : p.maxHealth - p.currentHealth;
+        this.isBlockModified = true;
     }
 
     @Override
@@ -93,7 +105,6 @@ public class YakuzaKomakiKnockback extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            exhaust = false;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

@@ -34,7 +34,6 @@ public class FridayNightPower extends AbstractGrabPower implements CloneablePowe
         ID = POWER_ID;
 
         this.owner = owner;
-        this.amount = amount;
         this.source = source;
 
         type = PowerType.BUFF;
