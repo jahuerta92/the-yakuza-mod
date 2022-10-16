@@ -687,8 +687,8 @@ public class YakuzaMod implements
         BaseMod.addAudio("YAKUZA_DAME_DA_NE", makeAudioPath("dame_da_ne.mp3"));
         BaseMod.addAudio("YAKUZA_FRIDAY_NIGHT", makeAudioPath("friday_night.mp3"));
         BaseMod.addAudio("YAKUZA_MAJIMA_LAUGH", makeAudioPath("majima-laugh.mp3"));
-        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_1", makeAudioPath("majima-laugh.mp3"));
-        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_2", makeAudioPath("majima-laugh.mp3"));
+        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_1", makeAudioPath("majima-hanase.mp3"));
+        BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_2", makeAudioPath("majima-yyyyaahooooo.mp3"));
         BaseMod.addAudio("YAKUZA_MAJIMA_SOUND_3", makeAudioPath("majima-laugh.mp3"));
 
         // END AUDIO ADDING
