@@ -1,0 +1,388 @@
+{
+  "theYakuza:YakuzaStrike": {
+    "NAME": "Удар",
+    "DESCRIPTION": "Наносит !D! урона."
+  },
+  "theYakuza:YakuzaDefend": {
+    "NAME": "Оборона",
+    "DESCRIPTION": "Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaHeatStrike": {
+    "NAME": "Яростный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaGrabTrafficCone": {
+    "NAME": "Захват: Дорожный конус",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Дорожный_конус.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Дорожный_конус+."
+  },
+  "theYakuza:YakuzaBaseball": {
+    "NAME": "Бейсбол",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Наносит !D! урона."
+  },
+  "theYakuza:YakuzaEssenceOfSweepKick": {
+    "NAME": "Размашистый пинок",
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaEssenceOfComboRush": {
+    "NAME": "Спешное комбо",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт [E] если у вас есть theyakuza:Ярость. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaEssenceOfMultiStrikes": {
+    "NAME": "Мультиудар",
+    "DESCRIPTION": "Тратит 1 theyakuza:Ярости. NL Наносит !D! урона !M! раз. NL Повторять каждый раз, когда вы разыгрываете эту карту."
+  },
+  "theYakuza:YakuzaEssenceOfHeadCrush": {
+    "NAME": "Сокрушение головы",
+    "DESCRIPTION": "Тратит !M! theyakuza:Ярости. NL Наносит !D! урона."
+  },
+  "theYakuza:YakuzaEssenceOfSlapping": {
+    "NAME": "Сильная пощёчина",
+    "DESCRIPTION": "Нанести !D! урона. NL theyakuza:Ярость влияет на эту карту !M! раз. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaEssenceOfSwiftStrikes": {
+    "NAME": "Стремительный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaBowling": {
+    "NAME": "Боулинг",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Наносит !D! урона ВСЕМ врагам."
+  },
+  "theYakuza:YakuzaEssenceOfTaunt": {
+    "NAME": "Боевой клич",
+    "DESCRIPTION": "Даёт 2 theyakuza:Ярости.",
+    "UPGRADE_DESCRIPTION": "Даёт 2 theyakuza:Ярости и !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfWeave": {
+    "NAME": "Уклонение",
+    "DESCRIPTION": "Тратит 1 theyakuza:Ярости. NL Предотвращает следующую потерю ОЗ в этом ходу.",
+    "UPGRADE_DESCRIPTION": "Тратит 1 theyakuza:Ярости. NL Предотвращает следующую потерю ОЗ в этом ходу. NL Вы берёте 1 карту."
+  },
+  "theYakuza:YakuzaEssenceOfRepair": {
+    "NAME": "Кузница",
+    "DESCRIPTION": "Даёт !M! theyakuza:Прочности предмету. NL (Не тратит Прочность)"
+  },
+  "theYakuza:YakuzaGrabPan": {
+    "NAME": "Захват: Сковорода",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Сковорода.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Сковорода+."
+  },
+  "theYakuza:YakuzaGrabNunchaku": {
+    "NAME": "Захват: Нунчаки",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Нунчаки.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Нунчаки+."
+  },
+  "theYakuza:YakuzaGrabNamelessKatana": {
+    "NAME": "Захват: Безымянная катана",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Безымянная_катана.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Безымянная_катана+."
+  },
+  "theYakuza:YakuzaEssenceOfParry": {
+    "NAME": "Мастерство парирования",
+    "DESCRIPTION": "Если предмет снаряжён, даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaPoker": {
+    "NAME": "Покер",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Вы сбрасываете !M! карту. NL Вы берёте !M! карту.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Мини-игра. NL Вы сбрасываете !M! карт. NL Вы берёте !M! карт."
+  },
+  "theYakuza:YakuzaShogi": {
+    "NAME": "Сёги",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Вы берёте !M! карт."
+  },
+  "theYakuza:YakuzaFishing": {
+    "NAME": "Рыбалка",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Даёт !M! [E]. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponFinish": {
+    "NAME": "Добивание оружием",
+    "DESCRIPTION": "Если у вас снаряжён предмет, Бросьте его. NL Наносит !D! урона."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponCounter": {
+    "NAME": "Контратака оружием",
+    "DESCRIPTION": "Если у вас снаряжён предмет, Бросьте его. NL Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfHeatPunches": {
+    "NAME": "Шквал Ярости",
+    "DESCRIPTION": "Наносит !D! урона NL за каждый уровень theyakuza:Ярости. NL Gain 1 theyakuza:Ярости. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfDropkick": {
+    "NAME": "Дропкик",
+    "DESCRIPTION": "Наносит !D! урона X раз. NL Даёт 1 theyakuza:Ярости за каждый удар. NL Завершает ваш ход. NL (Нанесёт !M! урона)."
+  },
+  "theYakuza:YakuzaEssenceOfWeaponMastery": {
+    "NAME": "Владение оружием",
+    "DESCRIPTION": "Наносит !D! урона. NL Бонусы предмета удвоенны.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Бонусы предмета утроенны."
+  },
+  "theYakuza:YakuzaEssenceOfHitAndRun": {
+    "NAME": "Бей и беги",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !B! Защиты. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaEssenceOfFollowUp": {
+    "NAME": "Удар вдогонку",
+    "DESCRIPTION": "Наносит !D! урона. NL Уменьшает цену случайной карты на 1 в этом ходу. NL Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaEssenceOfDisarming": {
+    "NAME": "Разоружение",
+    "DESCRIPTION": "Тратит 2 theyakuza:Ярости. NL Наносит !D! урона. NL Даёт !B! Защиты. NL Накладывает 2 Слабости."
+  },
+  "theYakuza:YakuzaTelephoneClub": {
+    "NAME": "Телефонный клуб",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Наносит !D! урона. NL Вы берёте 1 карту. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Мини-игра. NL Наносит !D! урона. NL Вы берёте 1 карту."
+  },
+  "theYakuza:YakuzaTaxiDriver": {
+    "NAME": "Таксист",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Наносит !D! урона ВСЕМ врагам. NL Предотвращает следующую потерю ОЗ в этом ходу. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfSidestepping": {
+    "NAME": "Обход",
+    "DESCRIPTION": "Даёт !B! Защиты. Повторить за каждый уровень theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaDarts": {
+    "NAME": "Дартс",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfImprovisation": {
+    "NAME": "Импровизация",
+    "DESCRIPTION": "Добавляет случайную карту, которая даёт theyakuza:Ярость. Она стоит 0 в этом ходу. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfQuickGrab": {
+    "NAME": "Быстрый хват",
+    "DESCRIPTION": "Добавляет случайную карту theyakuza:Захвата. Она стоит 0 в этом ходу. NL Сжигается."
+  },
+  "theYakuza:YakuzaPubCrawl": {
+    "NAME": "Барный тур",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Добавляет случайную карту theyakuza:Мини-игры. Она стоит 0 в этом ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Мини-игра. NL Добавляет случайную карту theyakuza:Мини-игры. Она стоит 0 в этом ходу."
+  },
+  "theYakuza:YakuzaEssenceOfFinesse": {
+    "NAME": "Утончённость оружия",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Бонусы предмета удвоенны.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Бонусы предмета утроенны."
+  },
+  "theYakuza:YakuzaCabaretClub": {
+    "NAME": "Кабарэ",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Удваивает её результат. NL Даёт !B! Защиты.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Minigame. NL Утраивает её результат. NL Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfSwitchGrab": {
+    "NAME": "Смена захвата",
+    "DESCRIPTION": "Вы разыгрываете случайную карту theyakuza:Захвата.",
+    "UPGRADE_DESCRIPTION": "Вы разыгрываете случайную улучшенную карту theyakuza:Захвата."
+
+  },
+  "theYakuza:YakuzaGrabSake": {
+    "NAME": "Захват: Сакэ",
+    "DESCRIPTION": "Вы берёте 2 карты. NL theyakuza:Захват theyakuza:Сакэ. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Вы берёте 2 карты. NL theyakuza:Захват theyakuza:Сакэ+. NL Сжигается."
+  },
+  "theYakuza:YakuzaGrabRevolver": {
+    "NAME": "Захват: Револьвер",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Револьвер.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Револьвер.+."
+  },
+  "theYakuza:YakuzaGrabBike": {
+    "NAME": "Захват: Велосипед",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Велосипед.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Велосипед+."
+  },
+  "theYakuza:YakuzaBoxing": {
+    "NAME": "Бокс",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Когда активируется theyakuza:Мини-игра, даёт 1 Strength в этом ходу."
+  },
+  "theYakuza:YakuzaMahjong": {
+    "NAME": "Маджонг",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Когда активируется theyakuza:Мини-игра, даёт !M! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfAggresiveGrabs": {
+    "NAME": "Озлобленные захваты",
+    "DESCRIPTION": "Первый разыгранный в каждом ходу theyakuza:Захват наносит !M! урона ВСЕМ врагам."
+  },
+  "theYakuza:YakuzaEssenceOfBurningHeat": {
+    "NAME": "Жгучая Ярость",
+    "DESCRIPTION": "В начале вашего хода наносит 3 урона случайному противнику NL + !M! раз theyakuza:Ярость."
+  },
+  "theYakuza:YakuzaEssenceOfDurableWeapons": {
+    "NAME": "Надёжное оружие",
+    "DESCRIPTION": "theyakuza:Захваченные предметы имеют на !M! больше theyakuza:Прочности."
+  },
+  "theYakuza:YakuzaEssenceOfRecycling": {
+    "NAME": "Переработка",
+    "DESCRIPTION": "Когда предмет ломается, добавляет theyakuza:Сломанная_труба в вашу руку.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Когда предмет ломается, добавляет theyakuza:Сломанная_труба+ в вашу руку."
+  },
+  "theYakuza:YakuzaGrabBrokenPipe": {
+    "NAME": "Захват: Сломанная труба",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Сломанная_труба. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Сломанная_труба+. NL Сжигается."
+  },
+  "theYakuza:YakuzaBeastStyle": {
+    "NAME": "Стиль Зверя",
+    "DESCRIPTION": "Когда вы theyakuza:Захватываете, вы берёте 1 Атаку с ценой на 1 меньше на этот ход."
+  },
+  "theYakuza:YakuzaRushStyle": {
+    "NAME": "Стиль Спешки",
+    "DESCRIPTION": "Вы теряете !M! Силы. NL Даёт !theYakuza:SecondMagic! Ловкости в этом ходу после разыгрывания каждой Атаки."
+  },
+  "theYakuza:YakuzaBrawlerStyle": {
+    "NAME": "Стиль Драчуна",
+    "DESCRIPTION": "Когда вы теряете ОЗ, даёт 1 theyakuza:Отомстить."
+  },
+  "theYakuza:YakuzaEssenceOfBlocking": {
+    "NAME": "Яростная защита",
+    "DESCRIPTION": "Тратит 1 theyakuza:Ярости. NL Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfSteel": {
+    "NAME": "Мастерство Стали",
+    "DESCRIPTION": "Тратит 1 theyakuza:Ярости. NL Даёт !M! Металлизации. NL Даёт !M! Панциря. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfRetaliation": {
+    "NAME": "Отомстить",
+    "DESCRIPTION": "Даёт !M! theyakuza:Отомстить."
+  },
+  "theYakuza:YakuzaGrabSais": {
+    "NAME": "Захват: Саи",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Саи.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Саи+."
+  },
+  "theYakuza:YakuzaEssenceOfPolish": {
+    "NAME": "Отполировать",
+    "DESCRIPTION": "Все параметры предмета, кроме прочности, увеличены на !M!."
+  },
+  "theYakuza:YakuzaEssenceOfIntimidation": {
+    "NAME": "\"Устрашение\"",
+    "DESCRIPTION": "В начале вашего хода накладывает 1 Уязвимости на атакующих врагов или 1 Слабости на неатакующих."
+  },
+  "theYakuza:YakuzaKomakiTigerDrop": {
+    "NAME": "Выпад тигра Комэки",
+    "DESCRIPTION": "theyakuza:Техника_Комэки. NL Если враг намеревается атаковать, наносит !D! урона. Даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaKomakiParry": {
+    "NAME": "Парирование Комэки",
+    "DESCRIPTION": "theyakuza:Техника_Комэки. NL Если враг намеревается атаковать, наносит !D! урона и оглушает его на 1 ход. NL Даёт 1 theyakuza:Ярости. NL Сжигается."
+  },
+  "theYakuza:YakuzaEssenceOfTheDragonGod": {
+    "NAME": "Драконий Бог",
+    "DESCRIPTION": "Тратит X theyakuza:Ярости. NL Наносит !D! урона X раз. NL (Нанесёт !M! урона). "
+  },
+  "theYakuza:YakuzaEssenceOfKiwami": {
+    "NAME": "Экстримальный добивающий удар",
+    "DESCRIPTION": "Тратит 3 theyakuza:Ярости. NL Наносит !D! урона. NL Даёт !B! Защиты."
+  },
+  "theYakuza:YakuzaEssenceOfNoMercy": {
+    "NAME": "Без пощады",
+    "DESCRIPTION": "Эта Атака наносит урон, равный трети недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости.",
+    "UPGRADE_DESCRIPTION": "Эта Атака наносит урон, равный половины недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости."
+
+  },
+  "theYakuza:YakuzaEssenceOfIronFists": {
+    "NAME": "Стальные кулаки",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт 1 theyakuza:Ярости. NL theyakuza:Захват theyakuza:Стальные_кастеты.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Даёт 1 theyakuza:Ярости. NL theyakuza:Захват theyakuza:Стальные_кастеты+."
+  },
+  "theYakuza:YakuzaGrabDragonKart": {
+    "NAME": "Захват: Драконий карт",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL theyakuza:Захват theyakuza:Драконий_карт.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Мини-игра. NL theyakuza:Захват theyakuza:Драконий_карт+."
+
+  },
+  "theYakuza:YakuzaEssenceOfUltimatePower": {
+    "NAME": "Бесграничная мощь",
+    "DESCRIPTION": "Делает вашу theyakuza:Ярость максимальной. NL Вы берёте 3 карты. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Делает вашу theyakuza:Ярость максимальной. NL Вы берёте 3 карты. NL Сжигается."
+
+  },
+  "theYakuza:YakuzaBakaMitai": {
+    "NAME": "Бака Митай (Ну и дурак)",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Даёт !M! [E]. NL Вы берёте 2 карты. NL Получите 2 Уязвимости. NL Сжигается."
+  },
+  "theYakuza:YakuzaCabaretClubGrandPrix": {
+    "NAME": "Лихорадка!",
+    "DESCRIPTION": "Активируйте theyakuza:Мини-игру !M! раз."
+  },
+  "theYakuza:YakuzaKomakiKnockback": {
+    "NAME": "Отбрасывание Комэки",
+    "DESCRIPTION": "theyakuza:Техника_Комэки. NL Если враг намеревается атаковать, даёт Защиту, равную вашим недостающим ОЗ. NL (Даёт !B! Защиты)",
+    "UPGRADE_DESCRIPTION": "theyakuza:Техника_Комэки. NL Если враг намеревается атаковать, даёт Защиту, равную вашим удвоенным недостающим ОЗ. NL (Даёт !B! Защиты)"
+  },
+  "theYakuza:YakuzaGrabMotorcycle": {
+    "NAME": "Захват: Мотоцикл",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Мотоцикл.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Мотоцикл+."
+  },
+  "theYakuza:YakuzaGrabRamen": {
+    "NAME": "Захват: Рамэн",
+    "DESCRIPTION": "Даёт !M! Временных ОЗ. NL theyakuza:Захват theyakuza:Рамэн."
+  },
+  "theYakuza:YakuzaGrabDemonfireDagger": {
+    "NAME": "Захват: Кинжал пламени демона",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Кинжал_пламени_демона. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Кинжал_пламени_демона+. NL Сжигается."
+  },
+  "theYakuza:YakuzaGrabStaminanX": {
+    "NAME": "Захват: Стаминан",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Стаминан. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Стаминан_Роял. NL Сжигается."
+  },
+  "theYakuza:YakuzaFridayNight": {
+    "NAME": "Ночь пятницы",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Список эффектов theyakuza:Мини-игр теперь theyakuza:продвинутый.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL theyakuza:Мини-игра. NL Список эффектов theyakuza:Мини-игр теперь theyakuza:продвинутый."
+  },
+  "theYakuza:YakuzaRealEstate": {
+    "NAME": "Недвижимость",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Каждое срабатывание theyakuza:Мини-игр даёт !M! различных дополнительных эффектов."
+  },
+  "theYakuza:YakuzaColiseum": {
+    "NAME": "Колизей",
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Когда срабатывает theyakuza:Мини-игра, даёт 1 theyakuza:Ярости."
+  },
+  "theYakuza:Yakuza4thChairman": {
+    "NAME": "4-й Председатель",
+    "DESCRIPTION": "Поднимает макс.уровень theyakuza:Ярости на !M!. Даёт 3 theyakuza:Ярости."
+  },
+  "theYakuza:YakuzaFuryOfTheAzureDragon": {
+    "NAME": "Ярость Лазурного Дракона",
+    "DESCRIPTION": "theyakuza:Ярость никогда не уменьшается."
+  },
+  "theYakuza:YakuzaDragonOfDojimaStyle": {
+    "NAME": "Дракон Доджимы",
+    "DESCRIPTION": "Атаки с ценой 1 или больше возвращаются как копии с Изгнанием, ценой на 1 меньше и с уроном, уменьшенным в 3 раза."
+  },
+  "theYakuza:YakuzaExtremeHeatMode": {
+    "NAME": "Экстрим-режим Ярости",
+    "DESCRIPTION": "Эффекты theyakuza:Ярости увеличены на !M!. NL theyakuza:Ярость понижается на 1 в конце вашего хода."
+  },
+  "theYakuza:YakuzaDragonForm": {
+    "NAME": "Форма Дракона",
+    "DESCRIPTION": "Эфирная. NL В начале вашего хода повышает ВСЕ ваши положительные эффекты на 1.",
+    "UPGRADE_DESCRIPTION": "NL В начале вашего хода повышает ВСЕ ваши положительные эффекты на 1."
+
+  },
+  "theYakuza:YakuzaKamurochoStreets": {
+    "NAME": "Улицы Камурочо",
+    "DESCRIPTION": "В начале вашего хода добавляет случайную карту Захвата в вашу руку. NL Она стоит на 1 меньше в этом ходу.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL В начале вашего хода добавляет случайную карту Захвата в вашу руку. NL Она стоит на 1 меньше в этом ходу."
+  },
+  "theYakuza:YakuzaGrabBat": {
+    "NAME": "Захват: Бита",
+    "DESCRIPTION": "theyakuza:Захват theyakuza:Бита. NL Можно Улучшать неограниченное количество раз. NL В начале боя улучшается за каждый theyakuza:Захват в колоде.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Захват theyakuza:Бита. NL Можно Улучшать неограниченное количество раз. NL В начале боя улучшается за каждый theyakuza:Захват в колоде."
+  },
+  "theYakuza:YakuzaPocketCircuit": {
+    "NAME": "Карманные гонки",
+    "DESCRIPTION": "theyakuza:Мини-игра X+1 раз. NL Удваивает каждый результат. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "theyakuza:Мини-игра X+1 раз. NL Утраивает каждый результат. NL Сжигается."
+  },
+  "theYakuza:YakuzaDuctTape": {
+    "NAME": "Незаконное оружие",
+    "DESCRIPTION": "theyakuza:Прочность не может опуститься ниже 1. Бросает то, что вы Захватили на theyakuza:Прочности !M!."
+  },
+  "theYakuza:YakuzaCarefulBlow": {
+    "NAME": "Осторожный удар",
+    "DESCRIPTION": "Наносит !D! урона. Также активирует эффект Навыка предмета."
+  }
+
+}

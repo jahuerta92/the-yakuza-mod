@@ -1,0 +1,272 @@
+{
+  "theYakuza:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theYakuza:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theYakuza:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theYakuza:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "theYakuza:TojoBadgeRelic": {
+    "NAME": "Значок Тоджо",
+    "FLAVOR": "Я — Мистер Вымогатель.",
+    "DESCRIPTIONS": [
+	  "Даёт #b4 #yЗолота и #yВременных #yОЗ в начале боя. NL Даёт больше золота за бои против сильных врагов."
+    ]
+  },
+  "theYakuza:NuggetRelic": {
+    "NAME": "Наггет",
+    "FLAVOR": "Лучший в своём деле.",
+    "DESCRIPTIONS": [
+      "Эффекты #ytheyakuza:Мини-игр усиливаются на #b50%."
+    ]
+  },
+  "theYakuza:DragonScaleRelic": {
+    "NAME": "Чешуйка дракона",
+    "FLAVOR": "Услышьте мой рёв.",
+    "DESCRIPTIONS": [
+      "#ytheyakuza:Ярость не уменьшается от потери ОЗ."
+    ]
+  },
+  "theYakuza:ManholeCoverRelic": {
+    "NAME": "Крышка люка",
+    "FLAVOR": "Добро пожаловать в Чистилище.",
+    "DESCRIPTIONS": [
+      "В начале боя добавляет \"#ytheyakuza:Захват: #yСломанная #yтруба\" в вашу руку."
+    ]
+  },
+  "theYakuza:TojoRenegadeRelic": {
+    "NAME": "Предатель Тоджо",
+    "FLAVOR": "Прости, Нишики.",
+    "DESCRIPTIONS": [
+      "Заменяет #rЗначок #rТоджо. NL Начинайте каждый бой с #b2 #ytheyakuza:Ярости."
+    ]
+  },
+  "theYakuza:MicrophoneRelic": {
+    "NAME": "Микрофон",
+    "FLAVOR": "Today is a Diamond, my 24-hour Cindirella.",
+    "DESCRIPTIONS": [
+      "Потеряйте 1 [E] . Использование любой карты активирует #ytheyakuza:Мини-игру."
+    ]
+  },
+  "theYakuza:HardHatRelic": {
+    "NAME": "Каска",
+    "FLAVOR": "Школа жизни для молодёжи. Создаём улыбки!",
+    "DESCRIPTIONS": [
+      "Даёт 1 [E] . Вы не можете получать #yСилу, #yЛовкость или #ytheyakuza:Ярость."
+    ]
+  },
+  "theYakuza:IrezumiRelic": {
+    "NAME": "Ирэдзуми",
+    "FLAVOR": "Подобный дракону.",
+    "DESCRIPTIONS": [
+      "Получение #ytheyakuza:Ярости восполняет #b1 ОЗ."
+    ]
+  },
+  "theYakuza:IdolsRodRelic": {
+    "NAME": "Жезл айдола",
+    "FLAVOR": "Всё больше и больше!",
+    "DESCRIPTIONS": [
+	  "Шанс #b20% на получение случайного #yобычного #yзелья при активации #ytheyakuza:Мини-игры (Макс. #b2 в каждом бою)."
+    ]
+  },
+  "theYakuza:ThrowingGlovesRelic": {
+    "NAME": "Бросковые перчатки",
+    "FLAVOR": "Лучшие друзья атлета на пенсии.",
+    "DESCRIPTIONS": [
+      "Эффекты от #yБроска предметов удваиваются."
+    ]
+  },
+  "theYakuza:MajimasEyepatchRelic": {
+    "NAME": "Повязка Маджимы",
+    "FLAVOR": "Receive and bite you.",
+    "DESCRIPTIONS": [
+      "Когда вы получаете ровно 0 урона по ОЗ от вражеской атаки, даёт #b1 #yСилы."
+    ]
+  },
+  "theYakuza:SaejimasCoatRelic": {
+    "NAME": "Куртка Саеджимы",
+    "FLAVOR": "Тигриная шкура лишь крепнет в бою.",
+    "DESCRIPTIONS": [
+      "Когда ваша Защита сбивается, вы получаете #b1 #ytheyakuza:Отомстить и Ловкость."
+    ]
+  },
+  "theYakuza:AkiyamasVaultRelic": {
+    "NAME": "Хранилище Акиямы",
+    "FLAVOR": "Из грязи в князи.",
+    "DESCRIPTIONS": [
+      "Активация #ytheyakuza:Мини-игры даёт ещё #b1 эффект."
+    ]
+  },
+  "theYakuza:TojoBadgeRelicV2": {
+    "NAME": "Значок Тоджо",
+    "FLAVOR": "Головорез.",
+    "DESCRIPTIONS": [
+	  "Победа над Элитными врагами или над Боссами вознаграждается особым случайным #rЗначком."
+    ]
+  },
+  "theYakuza:NishikiyamaBadgeRelic": {
+    "NAME": "Значок Нишикиямы",
+    "FLAVOR": "Wow, breaking the la-a-a-w!",
+    "DESCRIPTIONS": [
+	  "При получении выберите 1 из 3 #yТехник #yКомэки.", "Выберите Технику Комэки."
+    ]
+  },
+  "theYakuza:BleachBadgeRelic": {
+    "NAME": "Значок \"Отбелим Японию\"",
+    "FLAVOR": "Серый цвет — скучный цвет.",
+    "DESCRIPTIONS": [
+	  "Бесцветные карты могут попадаться при получении наград."
+    ]
+  },
+  "theYakuza:SnakeFlowerBadgeRelic": {
+    "NAME": "Значок Триады Змеиного Цветка",
+    "FLAVOR": "А лапша-то опасная...",
+    "DESCRIPTIONS": [
+	  "При получении выберите 1 из 20 карт любого класса и добавьте её в свою колоду.", "Иноземный дар."
+    ]
+  },
+  "theYakuza:SaioBadgeRelic": {
+    "NAME": "Значок Сайо",
+    "FLAVOR": "Грехи были очищены в праведном огне.",
+    "DESCRIPTIONS": [
+	  "Добавляет карту #rЛатоносца \"#yАдское #yпламя\" в свою колоду."
+    ]
+  },
+  "theYakuza:AmonBadgeRelic": {
+    "NAME": "Значок Амона",
+    "FLAVOR": "Свирепейший воин.",
+    "DESCRIPTIONS": [
+	  "В начале боя даёт #b1 #yВременных #yОЗ за каждый #rЗначок."
+    ]
+  },
+  "theYakuza:ArakawaBadgeRelic": {
+    "NAME": "Значок Аракавы",
+    "FLAVOR": "Наследию пришёл конец.",
+    "DESCRIPTIONS": [
+	  "Когда предмет #yломается, вы также #yБросаете его."
+    ]
+  },
+  "theYakuza:BlackMondayBadgeRelic": {
+    "NAME": "Значок \"Чёрный понедельник\"",
+    "FLAVOR": "Экшуал Инглиш.",
+    "DESCRIPTIONS": [
+	  "Позволяет добавлять карты в колоду при #yКовке в лагере.", "Появилась контрабандная карта."
+    ]
+  },
+  "theYakuza:DojimaBadgeRelic": {
+    "NAME": "Значок Доджимы",
+    "FLAVOR": "Скромное начало.",
+    "DESCRIPTIONS": [
+	  "После каждой победы даёт #b5 yЗолота. NL Награды выше за более сильных противников."
+    ]
+  },
+  "theYakuza:GeomijulBadgeRelic": {
+    "NAME": "Значок Комиджуль",
+    "FLAVOR": "Пойман в паучьем логове.",
+    "DESCRIPTIONS": [
+	  "В начале боя случайный противник теряет #b8 yСилы на этот ход."
+    ]
+  },
+  "theYakuza:HiroshiBadgeRelic": {
+    "NAME": "Значок Хиросэ",
+    "FLAVOR": "Обещания вечны.",
+    "DESCRIPTIONS": [
+	  "Обычные фраги имеют на #b10% меньше ОЗ."
+    ]
+  },
+  "theYakuza:JingweonBadgeRelic": {
+    "NAME": "Значок Джингвон",
+    "FLAVOR": "Корейский Вергилий.",
+    "DESCRIPTIONS": [
+	  "В начале вашего хода активирует #ytheyakuza:Мини-игру один раз."
+    ]
+  },
+  "theYakuza:KazamaBadgeRelic": {
+    "NAME": "Значок Казамы",
+    "FLAVOR": "Директор приюта \"Подсолнух\".",
+    "DESCRIPTIONS": [
+	  "Максимальный уровень #ytheyakuza:Ярости повышаен на #b1."
+    ]
+  },
+  "theYakuza:MajimaBadgeRelic": {
+    "NAME": "Значок Маджимы",
+    "FLAVOR": "Он в самом деле вездесущий.",
+    "DESCRIPTIONS": [
+	  "Серии последовательных атак добавляют #b1 к счётчику этой реликвии. NL После боя даёт #yЗолото, равное значению счётчика, и обнуляет его."
+    ]
+  },
+  "theYakuza:OmiBadgeRelic": {
+    "NAME": "Значок Оми",
+    "FLAVOR": "Всё так, как и должно быть.",
+    "DESCRIPTIONS": [
+	  "Один раз в ход, если в вашей руке нет #yАтак, Вы #yберёте случайную #yАтаку."
+    ]
+  },
+  "theYakuza:RyudoBadgeRelic": {
+    "NAME": "Значок Рюдо",
+    "FLAVOR": "Наследник \"Утренней Славы\".",
+    "DESCRIPTIONS": [
+	  "Использование зелья создаёт случайную обычную карту #ytheyakuza:Мини-игры в вашу руку."
+    ]
+  },
+  "theYakuza:ShibusawaBadgeRelic": {
+    "NAME": "Значок Шибусавы",
+    "FLAVOR": "Рождение истинного дракона.",
+    "DESCRIPTIONS": [
+	  "Начинайте каждый бой с #b2 #ytheyakuza:Ярости."
+    ]
+  },
+  "theYakuza:ShimanoBadgeRelic": {
+    "NAME": "Значок Шимано",
+    "FLAVOR": "Кто спустил пса с цепи?",
+    "DESCRIPTIONS": [
+	  "Серии последовательных атак добавляют #b1 к счётчику этой реликвии. NL Когда вы разыгрываете #yНавык, даёт #yЗащиту, равную значению счётчика, и обнуляет его."
+    ]
+  },
+  "theYakuza:SomeyaBadgeRelic": {
+    "NAME": "Значок Сомэйи",
+    "FLAVOR": "Новое поколение",
+    "DESCRIPTIONS": [
+	  "Шанс #b10% аннулировать любой #yотрицательный #yэффект."
+    ]
+  },
+  "theYakuza:UenoSeiwaBadgeRelic": {
+    "NAME": "Значок Уэно Сэйва",
+    "FLAVOR": "Куча резины.",
+    "DESCRIPTIONS": [
+	  "В обычных сундуках содержатся #b2 наградные карты."
+    ]
+  },
+  "theYakuza:YomeiBadgeRelic": {
+    "NAME": "Значок Йомэй",
+    "FLAVOR": "Он для меня — ничто.",
+    "DESCRIPTIONS": [
+	  "Даёт #b4 #yЗащиты в первые #b3 хода боя."
+    ]
+  }
+}
