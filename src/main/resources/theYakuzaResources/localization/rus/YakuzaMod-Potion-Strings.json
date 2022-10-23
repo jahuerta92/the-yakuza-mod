@@ -1,0 +1,30 @@
+{
+"theYakuza:PlaceholderPotion": {
+        "NAME": "Placeholder Potion",
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " #yStrength."]
+},
+"theYakuza:TaurinerPotion": {
+        "NAME": "Тауринер",
+        "DESCRIPTIONS": ["Даёт #b", " #yЯрости."]
+},
+"theYakuza:ChampagnePotion": {
+        "NAME": "Дождь из шампанского",
+        "DESCRIPTIONS": ["Запускает #yМини-игру один раз за каждые #b", " карты в руке."]
+},
+"theYakuza:RustyPotion": {
+        "NAME": "Ржавое зелье",
+        "DESCRIPTIONS": ["Добавляет #b", " #yСломанные #yТрубы в вашу руку."]
+},
+"theYakuza:ViolencePotion": {
+        "NAME": "Бутилированное насилие",
+        "DESCRIPTIONS": ["Разыгрывает #b", " случайных Атак из вашей стопки добора."]
+},
+"theYakuza:WindPotion": {
+        "NAME": "Зелье ветра",
+        "DESCRIPTIONS": ["Даёт #b", " #yУклонения."]
+},
+"theYakuza:DragonPotion": {
+        "NAME": "Драконье зелье",
+        "DESCRIPTIONS": ["Увеличивает ВСЕ ваши усиления на #b", "."]
+}
+}
