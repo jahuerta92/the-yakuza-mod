@@ -6,7 +6,6 @@ import theYakuza.cards.*;
 import theYakuza.characters.TheYakuza;
 import theYakuza.events.MajimaEvent;
 import theYakuza.monsters.Majima;
-import theYakuza.monsters.MajimaClone;
 import theYakuza.potions.*;
 import theYakuza.relics.*;
 import theYakuza.relics.badgeRelics.*;
@@ -23,11 +22,12 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.core.Settings.GameLanguage;
 import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.monsters.MonsterInfo;
+import com.megacrit.cardcrawl.screens.options.OptionsPanel;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -399,7 +399,7 @@ public class YakuzaMod implements
 
         BaseMod.addEvent(MajimaEvent.ID, MajimaEvent.class, TheBeyond.ID);
         BaseMod.addMonster(Majima.ID, () -> new Majima());
-        BaseMod.addMonsterEncounter(null, new MonsterInfo(Majima.ID, 10));
+        // BaseMod.addMonsterEncounter(null, new MonsterInfo(Majima.ID, 10));
 
         // If you want to have more specific event spawning (e.g. character-specific or
         // so)
@@ -601,37 +601,41 @@ public class YakuzaMod implements
         logger.info("You seeing this?");
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
 
+        String lang_code = "eng";
+        if (Settings.language.equals(GameLanguage.RUS)) {
+            lang_code = "rus";
+        }
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Card-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Card-Strings.json");
 
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Power-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Power-Strings.json");
 
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Relic-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Relic-Strings.json");
 
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Event-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Event-Strings.json");
 
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Potion-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Potion-Strings.json");
 
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Character-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Character-Strings.json");
 
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Orb-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Orb-Strings.json");
 
         // MonsterStrings
         BaseMod.loadCustomStringsFile(MonsterStrings.class,
-                getModID() + "Resources/localization/eng/YakuzaMod-Monster-Strings.json");
+                getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Monster-Strings.json");
 
         logger.info("Done edittting strings");
     }
@@ -656,7 +660,14 @@ public class YakuzaMod implements
         // a_long_keyword
 
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/YakuzaMod-Keyword-Strings.json")
+
+        String lang_code = "eng";
+        if (Settings.language.equals(GameLanguage.RUS)) {
+            lang_code = "rus";
+        }
+
+        String json = Gdx.files
+                .internal(getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Keyword-Strings.json")
                 .readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json,
                 com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
