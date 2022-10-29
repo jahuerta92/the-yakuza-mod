@@ -33,18 +33,18 @@ public class NishikiyamaBadgeRelic extends CustomRelic {
     @Override
     public void onEquip() {
         flash();
-        openOnce = true;
-        RewardItem r = (RewardItem) new KomakiItem();
-        AbstractDungeon.cardRewardScreen.open(r.cards, r, DESCRIPTIONS[1]);
+        // openOnce = true;
+        // RewardItem r = (RewardItem) new KomakiItem();
+        // AbstractDungeon.cardRewardScreen.open(r.cards, r, DESCRIPTIONS[1]);
     }
 
-    @Override
-    public void update() {
-        super.update();
-        if (openOnce && !AbstractDungeon.isScreenUp) {
-            AbstractDungeon.combatRewardScreen.reopen();
-            openOnce = false;
-        }
-    }
+    // @Override
+    // public void update() {
+    // super.update();
+    // if (openOnce && !AbstractDungeon.isScreenUp) {
+    // AbstractDungeon.combatRewardScreen.reopen();
+    // openOnce = false;
+    // }
+    // }
 
 }

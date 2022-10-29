@@ -2,6 +2,7 @@ package theYakuza.relics.badgeRelics;
 
 import basemod.abstracts.CustomRelic;
 import theYakuza.YakuzaMod;
+import theYakuza.rewards.KomakiItem;
 import theYakuza.util.TextureLoader;
 
 import static theYakuza.YakuzaMod.makeRelicOutlinePath;
@@ -55,6 +56,9 @@ public class TojoBadgeRelicV2 extends CustomRelic {
             this.flash();
             this.pulse = false;
             String relicId = BadgeRelicCollection.badgeCollection.getRandomUnseenBadgeKey();
+            if (relicId.equals(NishikiyamaBadgeRelic.ID)) {
+                AbstractDungeon.getCurrRoom().rewards.add(new KomakiItem());
+            }
             AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(RelicLibrary.getRelic(relicId)));
         }
 
