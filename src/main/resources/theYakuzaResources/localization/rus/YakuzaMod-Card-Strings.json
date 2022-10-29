@@ -50,8 +50,8 @@
   },
   "theYakuza:YakuzaEssenceOfTaunt": {
     "NAME": "Боевой клич",
-    "DESCRIPTION": "Даёт 2 theyakuza:Ярости.",
-    "UPGRADE_DESCRIPTION": "Даёт 2 theyakuza:Ярости и !B! Защиты."
+    "DESCRIPTION": "Даёт 2 theyakuza:Ярость.",
+    "UPGRADE_DESCRIPTION": "Даёт 2 theyakuza:Ярость и !B! Защиты."
   },
   "theYakuza:YakuzaEssenceOfWeave": {
     "NAME": "Уклонение",
