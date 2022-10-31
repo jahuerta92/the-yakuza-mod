@@ -79,7 +79,7 @@
   },
   "theYakuza:YakuzaEssenceOfParry": {
     "NAME": "Мастерство парирования",
-    "DESCRIPTION": "Если предмет снаряжён, даёт !B! Защиты."
+    "DESCRIPTION": "Если у вас снаряжён предмет, даёт !B! Защиты."
   },
   "theYakuza:YakuzaPoker": {
     "NAME": "Покер",
@@ -108,7 +108,7 @@
   },
   "theYakuza:YakuzaEssenceOfDropkick": {
     "NAME": "Дропкик",
-    "DESCRIPTION": "Наносит !D! урона X раз. NL Даёт 1 theyakuza:Ярости за каждый удар. NL Завершает ваш ход. NL (Нанесёт !M! урона)."
+    "DESCRIPTION": "Наносит !D! урона X раз. NL Даёт 1 theyakuza:Ярости. NL Завершает ваш ход. NL (Нанесёт !M! урона)."
   },
   "theYakuza:YakuzaEssenceOfWeaponMastery": {
     "NAME": "Владение оружием",
@@ -190,7 +190,7 @@
   },
   "theYakuza:YakuzaBoxing": {
     "NAME": "Бокс",
-    "DESCRIPTION": "theyakuza:Мини-игра. NL Когда активируется theyakuza:Мини-игра, даёт 1 Strength в этом ходу."
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Когда активируется theyakuza:Мини-игра, даёт 1 Силы в этом ходу."
   },
   "theYakuza:YakuzaMahjong": {
     "NAME": "Маджонг",
@@ -210,8 +210,8 @@
   },
   "theYakuza:YakuzaEssenceOfRecycling": {
     "NAME": "Переработка",
-    "DESCRIPTION": "Когда предмет ломается, добавляет theyakuza:Сломанная_труба в вашу руку.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Когда предмет ломается, добавляет theyakuza:Сломанная_труба+ в вашу руку."
+    "DESCRIPTION": "Когда предмет ломается, добавляет theyakuza:Сломанную_трубу в вашу руку.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Когда предмет ломается, добавляет theyakuza:Сломанную_трубу+ в вашу руку."
   },
   "theYakuza:YakuzaGrabBrokenPipe": {
     "NAME": "Захват: Сломанная труба",
@@ -220,7 +220,7 @@
   },
   "theYakuza:YakuzaBeastStyle": {
     "NAME": "Стиль Зверя",
-    "DESCRIPTION": "Когда вы theyakuza:Захватываете, вы берёте 1 Атаку с ценой на 1 меньше на этот ход."
+    "DESCRIPTION": "Когда вы совершаете theyakuza:Захват, вы берёте 1 Атаку с ценой на 1 меньше на этот ход."
   },
   "theYakuza:YakuzaRushStyle": {
     "NAME": "Стиль Спешки",
@@ -249,7 +249,7 @@
   },
   "theYakuza:YakuzaEssenceOfPolish": {
     "NAME": "Отполировать",
-    "DESCRIPTION": "Все параметры предмета, кроме прочности, увеличены на !M!."
+    "DESCRIPTION": "Все параметры предмета, кроме Прочности, увеличены на !M!."
   },
   "theYakuza:YakuzaEssenceOfIntimidation": {
     "NAME": "\"Устрашение\"",
@@ -268,13 +268,13 @@
     "DESCRIPTION": "Тратит X theyakuza:Ярости. NL Наносит !D! урона X раз. NL (Нанесёт !M! урона). "
   },
   "theYakuza:YakuzaEssenceOfKiwami": {
-    "NAME": "Экстримальный добивающий удар",
+    "NAME": "Экстрим-добивание",
     "DESCRIPTION": "Тратит 3 theyakuza:Ярости. NL Наносит !D! урона. NL Даёт !B! Защиты."
   },
   "theYakuza:YakuzaEssenceOfNoMercy": {
     "NAME": "Без пощады",
-    "DESCRIPTION": "Эта Атака наносит урон, равный трети недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости.",
-    "UPGRADE_DESCRIPTION": "Эта Атака наносит урон, равный половины недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости."
+    "DESCRIPTION": "Наносит урон, равный трети недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости.",
+    "UPGRADE_DESCRIPTION": "Наносит урон, равный половины недостающих ОЗ врага. NL (Нанесёт !D! урона) NL Даёт 1 theyakuza:Ярости."
 
   },
   "theYakuza:YakuzaEssenceOfIronFists": {
@@ -289,13 +289,13 @@
 
   },
   "theYakuza:YakuzaEssenceOfUltimatePower": {
-    "NAME": "Бесграничная мощь",
+    "NAME": "Безграничная мощь",
     "DESCRIPTION": "Делает вашу theyakuza:Ярость максимальной. NL Вы берёте 3 карты. NL Сжигается.",
     "UPGRADE_DESCRIPTION": "Начальная. NL Делает вашу theyakuza:Ярость максимальной. NL Вы берёте 3 карты. NL Сжигается."
 
   },
   "theYakuza:YakuzaBakaMitai": {
-    "NAME": "Бака Митай (Ну и дурак)",
+    "NAME": "Бака Митай",
     "DESCRIPTION": "theyakuza:Мини-игра. NL Даёт !M! [E]. NL Вы берёте 2 карты. NL Получите 2 Уязвимости. NL Сжигается."
   },
   "theYakuza:YakuzaCabaretClubGrandPrix": {
@@ -333,7 +333,7 @@
   },
   "theYakuza:YakuzaRealEstate": {
     "NAME": "Недвижимость",
-    "DESCRIPTION": "theyakuza:Мини-игра. NL Каждое срабатывание theyakuza:Мини-игр даёт !M! различных дополнительных эффектов."
+    "DESCRIPTION": "theyakuza:Мини-игра. NL Каждое срабатывание theyakuza:Мини-игры даёт !M! различных дополнительных эффектов."
   },
   "theYakuza:YakuzaColiseum": {
     "NAME": "Колизей",
@@ -341,7 +341,7 @@
   },
   "theYakuza:Yakuza4thChairman": {
     "NAME": "4-й Председатель",
-    "DESCRIPTION": "Поднимает макс.уровень theyakuza:Ярости на !M!. Даёт 3 theyakuza:Ярости."
+    "DESCRIPTION": "Поднимает макс.уровень theyakuza:Ярости на !M!. NL Даёт 3 theyakuza:Ярости."
   },
   "theYakuza:YakuzaFuryOfTheAzureDragon": {
     "NAME": "Ярость Лазурного Дракона",
