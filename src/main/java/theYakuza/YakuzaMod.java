@@ -88,8 +88,8 @@ public class YakuzaMod implements
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     // This is for the in-game mod settings panel.
-    private static final String MODNAME = "The Yakuza";
-    private static final String AUTHOR = "ragnar1992"; // And pretty soon - You!
+    private static final String MODNAME = "The Yakuza JP";
+    private static final String AUTHOR = "sonoda944"; // And pretty soon - You!
     private static final String DESCRIPTION = "Adds Kazuma Kiryu from the yakuza saga to the game, based on the Default.";
 
     // =============== INPUT TEXTURE LOCATION =================
@@ -605,6 +605,9 @@ public class YakuzaMod implements
         if (Settings.language.equals(GameLanguage.RUS)) {
             lang_code = "rus";
         }
+        if (Settings.language.equals(GameLanguage.JPN)) {
+            lang_code = "jpn";
+        }
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
                 getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Card-Strings.json");
@@ -665,7 +668,9 @@ public class YakuzaMod implements
         if (Settings.language.equals(GameLanguage.RUS)) {
             lang_code = "rus";
         }
-
+        if (Settings.language.equals(GameLanguage.JPN)) {
+            lang_code = "jpn";
+        }
         String json = Gdx.files
                 .internal(getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Keyword-Strings.json")
                 .readString(String.valueOf(StandardCharsets.UTF_8));
