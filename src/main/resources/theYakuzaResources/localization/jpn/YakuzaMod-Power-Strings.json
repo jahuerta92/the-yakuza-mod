@@ -1,0 +1,124 @@
+{
+"theYakuza:CommonPower": {
+        "NAME": "Placeholder Power",
+        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+},
+"theYakuza:RarePower": {
+        "NAME": "Placeholder Power",
+        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+},
+"theYakuza:HeatLevel": {
+        "NAME": "ヒート",
+        "DESCRIPTIONS": ["与ダメージを #b", "、 ブロックを #b","、　最大で #b", " 増加させる。", " HP喪失時に #b1 失う。",
+         " ターン終了時に #b", " 失う。"]
+},
+"theYakuza:Weave": {
+        "NAME": "ウィービング",
+        "DESCRIPTIONS": ["このターン中、敵からのダメージを #b", "　回無効化する。"]
+},
+"theYakuza:Boxing": {
+        "NAME": "拳威",
+        "DESCRIPTIONS": ["このターン中、プレイスポットを発動すると筋力 #b",　" を得る。"]
+},
+"theYakuza:Mahjong": {
+        "NAME": "麻雀",
+        "DESCRIPTIONS": ["プレイスポットを発動した時、ブロック #b", "　を得る。"]
+},
+"theYakuza:EssenceOfBurningHeat": {
+        "NAME": "トップギア",
+        "DESCRIPTIONS": ["ターン開始時に、ランダムな敵に 3 ダメージを #b+", " ヒート回与える。"]
+},
+"theYakuza:EssenceOfAggresiveGrabs": {
+        "NAME": "オート武器攻撃",
+        "DESCRIPTIONS": ["1ターンに1度、アイテムを装備した時に、敵全体に #b", " ダメージを与える。"]
+},
+"theYakuza:EssenceOfDurableWeapons": {
+        "NAME": "壊さずの極意",
+        "DESCRIPTIONS": ["#y装備 の #y耐久値 が #b", " 多くなる。"]
+},
+"theYakuza:EssenceOfRecycling": {
+        "NAME": "再利用",
+        "DESCRIPTIONS": ["装備が #y破壊 された時、 #y鉄パイプ を手札に加える。", "装備が #y破壊 された時、 #y鉄パイプ+ を手札に加える。"]
+},
+"theYakuza:BeastStyle": {
+        "NAME": "壊し屋スタイル",
+        "DESCRIPTIONS": ["装備した時、 #b", " 枚のアタックを引き、コストを #b1 下げる。"]
+},
+"theYakuza:RushStyle": {
+        "NAME": "ラッシュスタイル",
+        "DESCRIPTIONS": ["このターンの間、アタックをプレイすると敏捷性 #b", "　を得る。"]
+},
+"theYakuza:BrawlerStyle": {
+        "NAME": "チンピラスタイル",
+        "DESCRIPTIONS": ["HPを失った時、 #b", " 回根性反撃する。"]
+},
+"theYakuza:Retaliate": {
+        "NAME": "根性反撃",
+        "DESCRIPTIONS": ["ターン開始時、山札から #b", " 枚のアタックをプレイする。"]
+},
+"theYakuza:EssenceOfPolish": {
+        "NAME": "研磨",
+        "DESCRIPTIONS": ["#y装備 の耐久値以外のステータスを #b", "増加させる。"]
+},
+"theYakuza:EssenceOfIntimidation": {
+        "NAME": "\"威圧\"",
+        "DESCRIPTIONS": ["ターン開始時に、攻撃予定の敵に脆弱 #b1 を、それ以外の敵に脱力 #b1 を与える。"]
+},
+"theYakuza:FridayNight": {
+        "NAME": "Friday Night",
+        "DESCRIPTIONS": ["Extended minigame list: NL - Random card in hand costs #b1 less this turn. NL - Gain #b1 #yPlated #yArmor and #yMetallicize. NL - Gain #b2 #yThorns. NL - Gain #b1 #yRetaliate. NL - Gain #b1 #yWeave. NL - Upgrade a random card in your hand. NL - Gain #b1 #yArtifact. NL - Add a random common card from any class with #yPurge and #yEthereal. NL - Obtain an Explosive potion. NL - Random enemy loses #b1 HP for each card played afterwards."]
+},
+"theYakuza:RealEstate": {
+        "NAME": "不動産業",
+        "DESCRIPTIONS": ["プレイスポット効果発動時に追加で #b", " つの効果を発動する。"]
+},
+"theYakuza:Coliseum": {
+        "NAME": "闘技場",
+        "DESCRIPTIONS": ["プレイスポット効果発動時にヒートを #b", " 得る。"]
+},
+"theYakuza:Chairman": {
+        "NAME": "四代目会長",
+        "DESCRIPTIONS": ["最大ヒート値を #b", " 増加させる。"]
+},
+"theYakuza:FuryOfTheAzureDragon": {
+        "NAME": "応龍の時刻",
+        "DESCRIPTIONS": ["ヒートが減少しなくなる。"]
+},
+"theYakuza:DragonOfDojimaStyle": {
+        "NAME": "堂島の龍スタイル",
+        "DESCRIPTIONS": ["After playing an Attack that costs 1 or more, create #b", " copy with Purge that cost 1 less and damage divided by 3.",
+        " copies with Purge that cost 1 less and damage divided by 3."]
+},
+"theYakuza:ExtremeHeatMode": {
+        "NAME": "EXヒートモード",
+        "DESCRIPTIONS": ["ヒートの効果を #b", " 増加させる。"]
+},
+"theYakuza:ExtremeHeatModeDecay": {
+        "NAME": "ヒート減衰",
+        "DESCRIPTIONS": ["ターン終了時に #b", " ヒートを失う。"]
+},
+"theYakuza:DragonForm": {
+        "NAME": "怒龍の気位",
+        "DESCRIPTIONS": ["ターン開始時に、所持するバフを #b", "増加させる。"]
+},
+"theYakuza:KamurochoStreets": {
+        "NAME": "天下一通り",
+        "DESCRIPTIONS": ["ターン開始時、ランダムな装備を #b", " 枚手札に加え、そのターンの間コストを1減少する。"]
+},
+"theYakuza:DuctTape": {
+        "NAME": "Illegal Weapons",
+        "DESCRIPTIONS": ["耐久値が1以下にならなくなる。 耐久値が #b", " になった時、装備を投擲する。"]
+},
+"theYakuza:TemporalConfusion": {
+        "NAME": "Surprised",
+        "DESCRIPTIONS": ["#b", " ターンの間、山札から引いたカードのコストがランダムに変動する。"]
+},
+"theYakuza:MadDog": {
+        "NAME": "嶋野の狂犬",
+        "DESCRIPTIONS": ["カードが #b 枚プレイされる度に、 ヒート #b1 を得て予告行動を変える。"]
+},
+"theYakuza:ShadowClones": {
+        "NAME": "Unpredictable intents",
+        "DESCRIPTIONS": ["真島がHPを #b", " 失った時、 あなたのターンを中断する。 用心しろ。"]
+}
+}

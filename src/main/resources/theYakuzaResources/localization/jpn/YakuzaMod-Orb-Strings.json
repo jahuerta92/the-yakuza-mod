@@ -1,0 +1,186 @@
+{
+  "theYakuza:DefaultOrb": {
+    "NAME": "Default Orb",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, draw #b",
+      " card.",
+      " cards.",
+      " NL #yEvoke: Deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "theYakuza:ConeItem": {
+    "NAME": "三角コーン",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:BatItem": {
+    "NAME": "バット",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:IronKnucklesItem": {
+    "NAME": "メリケンサック",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:PanItem": {
+    "NAME": "フライパン",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: 脱力 #b",
+      " をHPが最も多", " い敵に付与する。", " く、ブロックを持たない敵に付与する。"
+    ]
+  },
+  "theYakuza:NamelessKatanaItem": {
+    "NAME": "刀",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: 脆弱 #b",
+      " をHPが最も多", " い敵に付与する。", " く、ブロックを持たない敵に付与する。"
+    ]
+  },
+  "theYakuza:NunchakuItem": {
+    "NAME": "ヌンチャク",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。 ブロック #b", 
+      " を得る。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:SakeItem": {
+    "NAME": "日本酒",
+    "DESCRIPTION": [
+      "#yアタック: 筋力 #b",
+      " を得る。",
+      " NL #yスキル: 敏捷性 #b",
+      " を得る。",
+      " NL #y投擲: #b", " の金属化と", " プレートアーマーを得る。"
+    ]
+  },
+  "theYakuza:RevolverItem": {
+    "NAME": "拳銃",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。 敵全体に 1 脆弱 を与える。",
+      " NL #yスキル: 効果なし",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:BikeItem": {
+    "NAME": "自転車",
+    "DESCRIPTION": [
+      "#yアタック: 敵全体が #b",
+      " HPを失う。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: 敵全体に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:BrokenPipeItem": {
+    "NAME": "鉄パイプ",
+    "DESCRIPTION": [
+      "#yアタック: 追加で #b",
+      " ダメージを与える。",
+      " NL #yスキル: ブロック #b",
+      " を得る。",
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:SaisItem": {
+    "NAME": "Sais",
+    "DESCRIPTION": [
+      "#yアタック: このターンの間、敏捷性 #b",
+      " を得る。",
+      " NL #yスキル: このターンの間、筋力 #b",
+      " を得る。",
+      " NL #y投擲: 次の #b",
+      " 回のHP喪失を無効化する。"
+    ]
+  },
+  "theYakuza:DragonKartItem": {
+    "NAME": "ドラゴンカート",
+    "DESCRIPTION": [
+      "#yアタック: 発動するプレイスポットの効果を #b",
+      " 倍にする。",
+      " NL #yスキル: 発動するプレイスポットの効果を #b",
+      " 倍にする。",
+      " NL #y投擲: 発動するプレイスポットの効果を #b",
+      " 倍にする。",
+    ]
+  } ,
+  "theYakuza:MotorcycleItem": {
+    "NAME": "バイク",
+    "DESCRIPTION": [
+      "#yアタック: 使用したカードが与えたダメージの半分を敵全体に #b", " 回与える。",
+      " NL #yスキル: 次の #b",
+      " 回のダメージを無効化する。",
+      " NL #y投擲: 敵全体に #b",
+      " ダメージを与える。", "#yアタック: 使用したカードが与えたダメージを敵全体に #b"
+    ]
+  },
+  "theYakuza:DemonfireDaggerItem": {
+    "NAME": "鬼炎のドス",
+    "DESCRIPTION": [
+      "#yアタック: 連続したアタックが与えるダメージを #b",
+      " 増加させる。",
+      " NL #yスキル: 連撃を止め、カードを #b",
+      " 枚引く。", 
+      " NL #y投擲: ランダムな敵に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "theYakuza:StaminanXItem": {
+    "NAME": "スタミナン",
+    "DESCRIPTION": [
+      "#yアタック: ヒート #b",
+      " を得る。",
+      " NL #yスキル: HPを #b",
+      " 回復する。",
+      " NL #y投擲: エネルギーを #b",
+      " 得る。"
+    ]
+  },
+  "theYakuza:RamenItem": {
+    "NAME": "ラーメン",
+    "DESCRIPTION": [
+      "#yアタック: カードを #b",
+      " 枚引く。",
+      " NL #yスキル: 占術 #b",
+      " 。",
+      " NL #y投擲: 手札にあるカードを #b",
+      " 枚まで廃棄できる。"
+    ]
+  }
+}

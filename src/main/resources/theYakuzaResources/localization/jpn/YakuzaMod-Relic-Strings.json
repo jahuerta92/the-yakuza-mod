@@ -1,0 +1,273 @@
+{
+  "theYakuza:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theYakuza:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theYakuza:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theYakuza:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "theYakuza:TojoBadgeRelic": {
+    "NAME": "東城会の代紋",
+    "FLAVOR": "カツアゲ君とは俺のことだ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に #yゴールド と #y一時的なHP を #b4 得る。 NL 敵が強いほど得るゴールドは多くなる。"
+    ]
+  },
+  "theYakuza:NuggetRelic": {
+    "NAME": "コケ太郎",
+    "FLAVOR": "頼れるビジネスパートナー。",
+    "DESCRIPTIONS": [
+      "#yプレイスポット の効果を #b50% 増加する。"
+    ]
+  },
+  "theYakuza:DragonScaleRelic": {
+    "NAME": "龍神のウロコ",
+    "FLAVOR": "俺の雄叫びを聞け。",
+    "DESCRIPTIONS": [
+      "HP減少による #yヒート 減少を無効化する。"
+    ]
+  },
+  "theYakuza:ManholeCoverRelic": {
+    "NAME": "マンホールの蓋",
+    "FLAVOR": "賽の河原へようこそ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に #y鉄パイプ を手札に加える。"
+    ]
+  },
+  "theYakuza:TojoRenegadeRelic": {
+    "NAME": "Tojo Renegade",
+    "FLAVOR": "I'm sorry Nishiki.",
+    "DESCRIPTIONS": [
+      "#r東城会の代紋 と置き換わる。 NL 戦闘開始時に #yヒート #b2 を得る。"
+    ]
+  },
+  "theYakuza:MicrophoneRelic": {
+    "NAME": "メガホン",
+    "FLAVOR": "Today is diamond, my 24h Cindirella.",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を失う。 カードをプレイすると、 #yプレイスポット を発動する。"
+    ]
+  },
+  "theYakuza:HardHatRelic": {
+    "NAME": "安全帽",
+    "FLAVOR": "A school for youth's way of life. Creating Smiles",
+    "DESCRIPTIONS": [
+      "ターン開始時に、 [E] を得る。 #y筋力、 #y敏捷性、 #yヒート を得られなくなる。"
+    ]
+  },
+  "theYakuza:IrezumiRelic": {
+    "NAME": "刺青",
+    "FLAVOR": "龍が如く。",
+    "DESCRIPTIONS": [
+      "#yヒート を得た時、HPを #b1 回復する。"
+    ]
+  },
+  "theYakuza:IdolsRodRelic": {
+    "NAME": "アイドルステッキ",
+    "FLAVOR": "Konnanじゃない！",
+    "DESCRIPTIONS": [
+      "#b20% の確率で、 #yプレイスポット 発動時にランダムな #yコモン #yポーション を得る。 (1度の戦闘で #b2 回まで)"
+    ]
+  },
+  "theYakuza:ThrowingGlovesRelic": {
+    "NAME": "ピッチャーグローブ",
+    "FLAVOR": "抹消されたプロ選手の形見。",
+    "DESCRIPTIONS": [
+      "#y投擲 の効果が倍になる。"
+    ]
+  },
+  "theYakuza:MajimasEyepatchRelic": {
+    "NAME": "真島の眼帯",
+    "FLAVOR": "Receive and bite you.",
+    "DESCRIPTIONS": [
+      "敵からの攻撃で 0 ダメージを受けるたび、 #y筋力 #b1 を得る。"
+    ]
+  },
+  "theYakuza:SaejimasCoatRelic": {
+    "NAME": "冴島の上着",
+    "FLAVOR": "虎の毛皮は戦いによって厚くなる。",
+    "DESCRIPTIONS": [
+      "ブロックが破壊された時、 #b1 #y根性反撃 と #y敏捷性 を得る。"
+    ]
+  },
+  "theYakuza:AkiyamasVaultRelic": {
+    "NAME": "秋山の隠し金庫",
+    "FLAVOR": "あの爆発から全てを掴んだ男。",
+    "DESCRIPTIONS": [
+      "#yプレイスポット が効果を #b1 つ追加で発動する。"
+    ]
+  },
+  "theYakuza:TojoBadgeRelicV2": {
+    "NAME": "東城会の代紋",
+    "FLAVOR": "親殺しの肩書き。",
+    "DESCRIPTIONS": [
+      "#yエリート か #yボス を撃破した時、ランダムな #r代紋のレリック を入手する。"
+    ]
+  },
+  "theYakuza:NishikiyamaBadgeRelic": {
+    "NAME": "錦山組の代紋",
+    "FLAVOR": "Wow! Breaking the law.",
+    "DESCRIPTIONS": [
+      "このレリックを獲得した時、 #y古牧流武術 を1枚デッキに加える。", "カードを1枚選択"
+    ]
+  },
+  "theYakuza:BleachBadgeRelic": {
+    "NAME": "ブリーチジャパンの代紋",
+    "FLAVOR": "グレーのらしさは自分で決める。",
+    "DESCRIPTIONS": [
+      "無色カードが報酬として現れるようになる。"
+      
+    ]
+  },
+  "theYakuza:SnakeFlowerBadgeRelic": {
+    "NAME": "蛇華の代紋",
+    "FLAVOR": "Danger noodles.",
+    "DESCRIPTIONS": [
+      "レリック獲得時、20枚のうちから好きなカードを1枚デッキに加える。", "異邦からの贈り物。"
+    ]
+  },
+  "theYakuza:SaioBadgeRelic": {
+    "NAME": "Saio Badge",
+    "FLAVOR": "Sins cleansed in righteous fire.",
+    "DESCRIPTIONS": [
+      "#y鬼火 をデッキに加える。"
+    ]
+  },
+  "theYakuza:AmonBadgeRelic": {
+    "NAME": "亜門の代紋",
+    "FLAVOR": "最強の殺し屋。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に、所持している #r代紋のレリック 毎に #b1 #y一時的HP を得る。"
+    ]
+  },
+  "theYakuza:ArakawaBadgeRelic": {
+    "NAME": "荒川組の代紋",
+    "FLAVOR": "伝統の幕引き。",
+    "DESCRIPTIONS": [
+      "装備品が #y壊れ る際, #y投擲 を発動する。"
+    ]
+  },
+  "theYakuza:BlackMondayBadgeRelic": {
+    "NAME": "ブラック・マンデイの代紋",
+    "FLAVOR": "Ａｃｔｕａｌ Ｅｎｇｌｉｓｈ．",
+    "DESCRIPTIONS": [
+      "#y鍛造 した時、 カードを1枚デッキに加えられる。", "密輸品のカードが現れた"
+    ]
+  },
+  "theYakuza:DojimaBadgeRelic": {
+    "NAME": "堂島組の代紋",
+    "FLAVOR": "全てはここから始まった。",
+    "DESCRIPTIONS": [
+      "戦闘終了後、 #b5 #yゴールド を得る。 NL 敵が強いほど報酬は多くなる。"
+    ]
+  },
+  "theYakuza:GeomijulBadgeRelic": {
+    "NAME": "コミジュルの代紋",
+    "FLAVOR": "クモの巣が絡みついている。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に、ランダムな敵が1ターンの間 #y筋力 #b8 を失う。"
+    ]
+  },
+  "theYakuza:HiroshiBadgeRelic": {
+    "NAME": "Hirose Badge",
+    "FLAVOR": "Promises are eternal.",
+    "DESCRIPTIONS": [
+      "通常エネミーが最大体力の #b10% を失う。"
+    ]
+  },
+  "theYakuza:JingweonBadgeRelic": {
+    "NAME": "ジングォン派の代紋",
+    "FLAVOR": "Korean Vergil.",
+    "DESCRIPTIONS": [
+      "自分のターン開始時に、 #yプレイスポット を1回発動する。"
+    ]
+  },
+  "theYakuza:KazamaBadgeRelic": {
+    "NAME": "風間組の代紋",
+    "FLAVOR": "ひまわりの園長。",
+    "DESCRIPTIONS": [
+      "最大 #yヒート を #b1 増加させる。"
+    ]
+  },
+  "theYakuza:MajimaBadgeRelic": {
+    "NAME": "真島組の代紋",
+    "FLAVOR": "しつこい奴だ。",
+    "DESCRIPTIONS": [
+      "連続で #yアタック を使った時、このレリックのカウントを #b1 増加させる。 NL 戦闘終了後、カウントと同数の #yゴールド を得て、カウントをリセットする。"
+    ]
+  },
+  "theYakuza:OmiBadgeRelic": {
+    "NAME": "近江連合の代紋",
+    "FLAVOR": "龍は一匹で充分だ。",
+    "DESCRIPTIONS": [
+      "1ターンに1度、手札にアタックがない場合に山札からランダムな #yアタック を 引く。"
+    ]
+  },
+  "theYakuza:RyudoBadgeRelic": {
+    "NAME": "琉道一家の代紋",
+    "FLAVOR": "アサガオの守護者。",
+    "DESCRIPTIONS": [
+      "#yポーション を使用した時、ランダムなコモン #yプレイスポット カードを手札に加える。"
+    ]
+  },
+  "theYakuza:ShibusawaBadgeRelic": {
+    "NAME": "渋沢組の代紋",
+    "FLAVOR": "堂島の龍は二人もいらない。",
+    "DESCRIPTIONS": [
+      "戦闘開始時に #b2 #yヒート を得る。"
+    ]
+  },
+  "theYakuza:ShimanoBadgeRelic": {
+    "NAME": "嶋野組の代紋",
+    "FLAVOR": "狂犬を野に放ったのはどいつだ?",
+    "DESCRIPTIONS": [
+      "連続で #yアタック を使った時、このレリックのカウントを #b1 増加させる。 NL #yスキル を使った時、カウントと同数の #yブロック を得て、カウントをリセットする。"
+    ]
+  },
+  "theYakuza:SomeyaBadgeRelic": {
+    "NAME": "染谷組の代紋",
+    "FLAVOR": "新世代のヤクザ。",
+    "DESCRIPTIONS": [
+      "#yデバフ を #b10% の確率で無効化する。"
+    ]
+  },
+  "theYakuza:UenoSeiwaBadgeRelic": {
+    "NAME": "上野誠和会の代紋",
+    "FLAVOR": "ゴム弾か空砲か、それとも実弾か？",
+    "DESCRIPTIONS": [
+      "通常の宝箱にカード報酬を #b2 枚加える。"
+    ]
+  },
+  "theYakuza:YomeiBadgeRelic": {
+    "NAME": "洋盟会の代紋",
+    "FLAVOR": "坊ちゃんは寝る時間だ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時から #b3 ターンの間、 #yブロック #b4 を得る。"
+    ]
+  }
+}

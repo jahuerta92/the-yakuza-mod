@@ -22,7 +22,7 @@
   },
   "theYakuza:YakuzaEssenceOfSweepKick": {
     "NAME": "ライズトルネード",
-    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ヒート を1得る。"
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL theyakuza:ヒート を1得る。"
   },
   "theYakuza:YakuzaEssenceOfComboRush": {
     "NAME": "ラッシュコンボ",
@@ -60,7 +60,7 @@
   },
   "theYakuza:YakuzaEssenceOfRepair": {
     "NAME": "修繕",
-    "DESCRIPTION": "装備しているアイテムの 耐久値 を !M! 増加させる。 NL (この行動は耐久値を消費しない。)"
+    "DESCRIPTION": "装備しているアイテムの theyakuza:耐久値 を !M! 増加させる。 NL (この行動は耐久値を消費しない。)"
   },
   "theYakuza:YakuzagrabPan": {
     "NAME": "路上凶器:フライパン",
@@ -150,12 +150,12 @@
   },
   "theYakuza:YakuzaEssenceOfQuickGrab": {
     "NAME": "装備収集",
-    "DESCRIPTION": "ランダムな theyakuza:装備 カードを手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄。"
+    "DESCRIPTION": "ランダムな theyakuza:装備 を手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄。"
   },
   "theYakuza:YakuzaPubCrawl": {
     "NAME": "Pub Crawl",
-    "DESCRIPTION": "theyakuza:プレイスポット NL ランダムな theyakuza:プレイスポット カードを手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄。",
-    "UPGRADE_DESCRIPTION": "theyakuza:プレイスポット NL ランダムな theyakuza:プレイスポット カードを手札に加える。 このターン中、そのカードのコストは0。"
+    "DESCRIPTION": "theyakuza:プレイスポット NL ランダムな theyakuza:プレイスポット を手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "theyakuza:プレイスポット NL ランダムな theyakuza:プレイスポット を手札に加える。 このターン中、そのカードのコストは0。"
   },
   "theYakuza:YakuzaEssenceOfFinesse": {
     "NAME": "自己防衛術",
@@ -169,8 +169,8 @@
   },
   "theYakuza:YakuzaEssenceOfSwitchGrab": {
     "NAME": "オート武器装備",
-    "DESCRIPTION": "ランダムな theyakuza:装備 カードをプレイする。",
-    "UPGRADE_DESCRIPTION": "ランダムな theyakuza:装備 カードをアップグレードされた状態でプレイする。"
+    "DESCRIPTION": "ランダムな theyakuza:装備 をプレイする。",
+    "UPGRADE_DESCRIPTION": "ランダムな theyakuza:装備 をアップグレードされた状態でプレイする。"
 
   },
   "theYakuza:YakuzaGrabSake": {
@@ -185,8 +185,8 @@
   },
   "theYakuza:YakuzaGrabBike": {
     "NAME": "路上凶器:自転車",
-    "DESCRIPTION": "theyakuza:装備 theyakuza:Bike.",
-    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:Bike+."
+    "DESCRIPTION": "theyakuza:装備 theyakuza:自転車.",
+    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:自転車+."
   },
   "theYakuza:YakuzaBoxing": {
     "NAME": "ボクシングジム",
@@ -198,7 +198,7 @@
   },
   "theYakuza:YakuzaEssenceOfAggresivegrabs": {
     "NAME": "オート武器攻撃",
-    "DESCRIPTION": "The first theyakuza:装備 played each turn deals !M! damage to ALL enemies."
+    "DESCRIPTION": "1ターンに1度、 theyakuza:装備 をプレイしたとき、敵全体に !M! ダメージを与える。"
   },
   "theYakuza:YakuzaEssenceOfBurningheat": {
     "NAME": "トップギア",
@@ -206,12 +206,12 @@
   },
   "theYakuza:YakuzaEssenceOfDurableWeapons": {
     "NAME": "壊さずの極意",
-    "DESCRIPTION": "theyakuza:装備 するとき、 theyakuza:耐久値 を !M! 増加させる。"
+    "DESCRIPTION": "theyakuza:装備 するとき、そのアイテムの theyakuza:耐久値 を !M! 増加させる。"
   },
   "theYakuza:YakuzaEssenceOfRecycling": {
     "NAME": "再利用",
-    "DESCRIPTION": "When an item breaks, add a theyakuza:Broken_Pipe to your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL When an item breaks, add a theyakuza:Broken_Pipe+ to your hand."
+    "DESCRIPTION": "装備が破壊された時、 theyakuza:鉄パイプ を手札に加える。",
+    "UPGRADE_DESCRIPTION": "天武。 NL 装備が破壊された時、 theyakuza:鉄パイプ+ を手札に加える。"
   },
   "theYakuza:YakuzagrabBrokenPipe": {
     "NAME": "路上凶器:鉄パイプ",
@@ -314,7 +314,7 @@
   },
   "theYakuza:YakuzagrabRamen": {
     "NAME": "路上凶器:ラーメン",
-    "DESCRIPTION": "Gain !M! Temporary HP. NL theyakuza:装備 theyakuza:Ramen."
+    "DESCRIPTION": "Gain !M! Temporary HP. NL theyakuza:装備 theyakuza:ラーメン."
   },
   "theYakuza:YakuzagrabDemonfireDagger": {
     "NAME": "路上凶器:鬼炎のドス",
@@ -323,8 +323,8 @@
   },
   "theYakuza:YakuzagrabStaminanX": {
     "NAME": "路上凶器:スタミナン",
-    "DESCRIPTION": "theyakuza:装備 theyakuza:Staminan. NL 廃棄。",
-    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:Staminan_Royale. NL 廃棄。"
+    "DESCRIPTION": "theyakuza:装備 theyakuza:スタミナン. NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:スタミナンロイヤル. NL 廃棄。"
   },
   "theYakuza:YakuzaFridayNight": {
     "NAME": "Friday Night",
@@ -357,7 +357,7 @@
   },
   "theYakuza:YakuzaDragonForm": {
     "NAME": "怒龍の気位",
-    "DESCRIPTION": "エーテリアル NL 自分のターン開始時、全てのバフを 1 増加させる。",
+    "DESCRIPTION": "エセリアル NL 自分のターン開始時、全てのバフを 1 増加させる。",
     "UPGRADE_DESCRIPTION": "自分のターン開始時、全てのバフを 1 増加させる。"
 
   },
@@ -369,16 +369,16 @@
   "theYakuza:YakuzagrabBat": {
     "NAME": "路上凶器:バット",
     "DESCRIPTION": "theyakuza:装備 theyakuza:バット NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。",
-    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:バット NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。",
+    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:バット NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。"
   },
   "theYakuza:YakuzaPocketCircuit": {
-    "NAME": "ポケサー",
+    "NAME": "ポケットサーキット",
     "DESCRIPTION": "theyakuza:プレイスポット X+1 。 NL 発動された効果を 2 倍にする。 NL 廃棄。",
     "UPGRADE_DESCRIPTION": "theyakuza:プレイスポット X+1 。 NL 発動された効果を 3 倍にする。 NL 廃棄。"
   },
   "theYakuza:YakuzaDuctTape": {
     "NAME": "Illegal Weapons",
-    "DESCRIPTION": "theyakuza:耐久値 が1以下にならなくなる。 装備の耐久値が !M! になった時、その武器を theyakuza:投擲する。"
+    "DESCRIPTION": "theyakuza:耐久値 が1以下にならなくなる。 装備の耐久値が !M! になった時、そのアイテムを theyakuza:投擲する。"
   },
   "theYakuza:YakuzaCarefulBlow": {
     "NAME": "武器の心得",

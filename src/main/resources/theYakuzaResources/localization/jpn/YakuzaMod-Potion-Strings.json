@@ -1,0 +1,30 @@
+{
+"theYakuza:PlaceholderPotion": {
+        "NAME": "Placeholder Potion",
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " #yStrength."]
+},
+"theYakuza:TaurinerPotion": {
+        "NAME": "タウリナー",
+        "DESCRIPTIONS": ["#b", " #yヒートを得る。"]
+},
+"theYakuza:ChampagnePotion": {
+        "NAME": "シャンパン",
+        "DESCRIPTIONS": ["手札にカードを #b", " 枚加えるごとに、 #yプレイスポット を発動する。"]
+},
+"theYakuza:RustyPotion": {
+        "NAME": "錆びたポーション",
+        "DESCRIPTIONS": ["#b", "枚の #y鉄パイプ を手札に加える。"]
+},
+"theYakuza:ViolencePotion": {
+        "NAME": "蒸留された暴力",
+        "DESCRIPTIONS": ["山札から #b", "枚の ランダムなアタックをプレイする。"]
+},
+"theYakuza:WindPotion": {
+        "NAME": "疾風のポーション",
+        "DESCRIPTIONS": ["#b", " #yウィービング を得る。"]
+},
+"theYakuza:DragonPotion": {
+        "NAME": "Dragon Potion",
+        "DESCRIPTIONS": ["所持する全てのバフを #b", "増加させる。"]
+}
+}
