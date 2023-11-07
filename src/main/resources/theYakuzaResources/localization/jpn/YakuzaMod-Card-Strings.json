@@ -368,8 +368,8 @@
   },
   "theYakuza:YakuzagrabBat": {
     "NAME": "路上凶器:バット",
-    "DESCRIPTION": "theyakuza:装備 theyakuza:バット NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。",
-    "UPGRADE_DESCRIPTION": "theyakuza:装備 theyakuza:バット NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。"
+    "DESCRIPTION": "theyakuza:バット　を　theyakuza:装備　する。　 NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。",
+    "UPGRADE_DESCRIPTION": "theyakuza:バット　を　theyakuza:装備　する。　NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。"
   },
   "theYakuza:YakuzaPocketCircuit": {
     "NAME": "ポケットサーキット",
