@@ -1,13 +1,12 @@
 {
   "theYakuza:YakuzaCharacter": {
     "NAMES": [
-      "The Yakuza",
-      "the Yakuza"
+      "キリュウ"
     ],
     "TEXT": [
-      "A retired criminal with a demon-ridden past. NL A dragon to be feared by his physical prowess.",
+      "脅威的な身体能力を誇り、引退した今なお「堂島の龍」と恐れられる元極道。 NL 重い過去を背負いながらも、大切なものを護るためなら自らの危険は一切顧みない。",
       "NL You approach the heart.",
-      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+      "薄暗い裏路地を歩いていると、フードを被った集団と謎の儀式に出くわした。それらは一斉にこちらを振り返ると、逃げるどころかあなたを取り囲んだ。辺りが眩しい光に包まれ、あなたが意識を失う瞬間、それらはこうつぶやいた… NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]
   }
 }

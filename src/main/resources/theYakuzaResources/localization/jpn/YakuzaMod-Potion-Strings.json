@@ -24,7 +24,7 @@
         "DESCRIPTIONS": ["#b", " #yウィービング を得る。"]
 },
 "theYakuza:DragonPotion": {
-        "NAME": "Dragon Potion",
+        "NAME": "神力水",
         "DESCRIPTIONS": ["所持する全てのバフを #b", "増加させる。"]
 }
 }

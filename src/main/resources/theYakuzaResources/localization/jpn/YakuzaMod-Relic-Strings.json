@@ -33,7 +33,7 @@
   },
   "theYakuza:TojoBadgeRelic": {
     "NAME": "東城会の代紋",
-    "FLAVOR": "カツアゲ君とは俺のことだ。",
+    "FLAVOR": "東城会のキリトリ担当。",
     "DESCRIPTIONS": [
       "戦闘開始時に #yゴールド と #y一時的なHP を #b4 得る。 NL 敵が強いほど得るゴールドは多くなる。"
     ]
@@ -60,29 +60,29 @@
     ]
   },
   "theYakuza:TojoRenegadeRelic": {
-    "NAME": "Tojo Renegade",
-    "FLAVOR": "I'm sorry Nishiki.",
+    "NAME": "叛逆者の代紋",
+    "FLAVOR": "こうするしか無かったのか、錦…",
     "DESCRIPTIONS": [
       "#r東城会の代紋 と置き換わる。 NL 戦闘開始時に #yヒート #b2 を得る。"
     ]
   },
   "theYakuza:MicrophoneRelic": {
-    "NAME": "メガホン",
-    "FLAVOR": "Today is diamond, my 24h Cindirella.",
+    "NAME": "マイク",
+    "FLAVOR": "起きておくれよ、俺のシンデレラ。",
     "DESCRIPTIONS": [
-      "ターン開始時に、 [E] を失う。 カードをプレイすると、 #yプレイスポット を発動する。"
+      "ターン開始時、 [E] を失う。 カードをプレイすると、 #yプレイスポット を発動する。"
     ]
   },
   "theYakuza:HardHatRelic": {
     "NAME": "安全帽",
-    "FLAVOR": "A school for youth's way of life. Creating Smiles",
+    "FLAVOR": "生命の詩。",
     "DESCRIPTIONS": [
       "ターン開始時に、 [E] を得る。 #y筋力、 #y敏捷性、 #yヒート を得られなくなる。"
     ]
   },
   "theYakuza:IrezumiRelic": {
     "NAME": "刺青",
-    "FLAVOR": "龍が如く。",
+    "FLAVOR": "龍が如く夜空を舞う。",
     "DESCRIPTIONS": [
       "#yヒート を得た時、HPを #b1 回復する。"
     ]
@@ -96,7 +96,7 @@
   },
   "theYakuza:ThrowingGlovesRelic": {
     "NAME": "ピッチャーグローブ",
-    "FLAVOR": "抹消されたプロ選手の形見。",
+    "FLAVOR": "ぴったりフィット。",
     "DESCRIPTIONS": [
       "#y投擲 の効果が倍になる。"
     ]
@@ -146,14 +146,14 @@
   },
   "theYakuza:SnakeFlowerBadgeRelic": {
     "NAME": "蛇華の代紋",
-    "FLAVOR": "Danger noodles.",
+    "FLAVOR": "借りは必ず返す。",
     "DESCRIPTIONS": [
       "レリック獲得時、20枚のうちから好きなカードを1枚デッキに加える。", "異邦からの贈り物。"
     ]
   },
   "theYakuza:SaioBadgeRelic": {
-    "NAME": "Saio Badge",
-    "FLAVOR": "Sins cleansed in righteous fire.",
+    "NAME": "祭汪会",
+    "FLAVOR": "罪を焼き尽くす業火。",
     "DESCRIPTIONS": [
       "#y鬼火 をデッキに加える。"
     ]
@@ -162,7 +162,7 @@
     "NAME": "亜門の代紋",
     "FLAVOR": "最強の殺し屋。",
     "DESCRIPTIONS": [
-      "戦闘開始時に、所持している #r代紋のレリック 毎に #b1 #y一時的HP を得る。"
+      "戦闘開始時、所持している #r代紋 毎に #b1 #y一時的HP を得る。"
     ]
   },
   "theYakuza:ArakawaBadgeRelic": {
@@ -176,7 +176,7 @@
     "NAME": "ブラック・マンデイの代紋",
     "FLAVOR": "Ａｃｔｕａｌ Ｅｎｇｌｉｓｈ．",
     "DESCRIPTIONS": [
-      "#y鍛造 した時、 カードを1枚デッキに加えられる。", "密輸品のカードが現れた"
+      "#y鍛造 した時、 カードを1枚デッキに加えることができる。", "密輸されたカードが届いた。"
     ]
   },
   "theYakuza:DojimaBadgeRelic": {
@@ -194,22 +194,22 @@
     ]
   },
   "theYakuza:HiroshiBadgeRelic": {
-    "NAME": "Hirose Badge",
-    "FLAVOR": "Promises are eternal.",
+    "NAME": "広瀬一家の代紋",
+    "FLAVOR": "永遠の誓い。",
     "DESCRIPTIONS": [
       "通常エネミーが最大体力の #b10% を失う。"
     ]
   },
   "theYakuza:JingweonBadgeRelic": {
     "NAME": "ジングォン派の代紋",
-    "FLAVOR": "Korean Vergil.",
+    "FLAVOR": "身は死にとも魂は死せず。",
     "DESCRIPTIONS": [
       "自分のターン開始時に、 #yプレイスポット を1回発動する。"
     ]
   },
   "theYakuza:KazamaBadgeRelic": {
     "NAME": "風間組の代紋",
-    "FLAVOR": "ひまわりの園長。",
+    "FLAVOR": "ヒマワリの園長。",
     "DESCRIPTIONS": [
       "最大 #yヒート を #b1 増加させる。"
     ]
@@ -264,7 +264,7 @@
     ]
   },
   "theYakuza:YomeiBadgeRelic": {
-    "NAME": "洋盟会の代紋",
+    "NAME": "陽銘連合の代紋",
     "FLAVOR": "坊ちゃんは寝る時間だ。",
     "DESCRIPTIONS": [
       "戦闘開始時から #b3 ターンの間、 #yブロック #b4 を得る。"
