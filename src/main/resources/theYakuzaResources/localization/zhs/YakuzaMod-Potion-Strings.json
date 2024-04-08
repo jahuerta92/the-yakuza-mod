@@ -1,0 +1,30 @@
+{
+"theYakuza:PlaceholderPotion": {
+        "NAME": "Placeholder Potion",
+        "DESCRIPTIONS": ["Gain ", " At the end of your turn, lose ", " #yStrength."]
+},
+"theYakuza:TaurinerPotion": {
+        "NAME": "红牛",
+        "DESCRIPTIONS": ["获得 #b", " 层 #y热力 。"]
+},
+"theYakuza:ChampagnePotion": {
+        "NAME": "香槟雨",
+        "DESCRIPTIONS": ["每有 #b", " 张手牌，玩1次 #y小游戏 。"]
+},
+"theYakuza:RustyPotion": {
+        "NAME": "铁锈药水",
+        "DESCRIPTIONS": ["将 #b", " 张 #y破管道 加入手牌。"]
+},
+"theYakuza:ViolencePotion": {
+        "NAME": "精炼暴力",
+        "DESCRIPTIONS": ["随机打出抽牌堆中 #b", " 张攻击牌。"]
+},
+"theYakuza:WindPotion": {
+        "NAME": "风之药水",
+        "DESCRIPTIONS": ["获得 #b", " 层 #y迂回 。"]
+},
+"theYakuza:DragonPotion": {
+        "NAME": "龙之药水",
+        "DESCRIPTIONS": ["你的所有增益效果提高 #b", " 层。"]
+}
+}

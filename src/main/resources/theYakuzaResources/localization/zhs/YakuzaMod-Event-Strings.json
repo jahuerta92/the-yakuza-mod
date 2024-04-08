@@ -1,0 +1,32 @@
+{
+  "theYakuza:IdentityCrisisEvent": {
+    "NAME": "Identity Crisis",
+    "DESCRIPTIONS": [
+      "As you move through ~The~ ~City~ you come across a #pPurple #pMirror. NL You look at it, but you see no reflection.",
+      "You see no one but #g~You~ #g~wish~ #g~to~ #g~become~ #g~someone.~",
+      "#r@YOU@ #r@EXIST@ #r@AND@ #r@ARE@ #r@VALID!@",
+      "#yYou #yare #yat #ypeace #ywith #yyour #ypresence.",
+      "You have no hands."
+    ],
+    "OPTIONS": [
+      "[Inspiration] #gGain #ga #gRandom #gStarting #gRelic.",
+      "[Denial] #rLose #r",
+      " #rMax #rHP. #gRemove #ga #gCard #gfrom #gyour #gdeck.",
+      "[Acceptance] #gGain #gApotheosis.",
+      "[TOUCH THE MIRROR] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
+      "[Leave]",
+      "Select card to remove."
+    ]
+  },
+  "theYakuza:MajimaEvent": {
+    "NAME": "A sketchy old friend...",
+    "DESCRIPTIONS": [
+      "Through the streets of the city you came across the red district. NL You hear a familiar ~chuckle~ . NL A weird yakuza welcomes you with a smile and a shiv. NL ~Kiryu~ ~CHAN~ .",
+      "The Mad Dog of Shimano welcomes your spirit."
+    ],
+    "OPTIONS": [
+      "[Fight] #rFight #rthe #rstranger. #gGain #ga #gRandom #gBoss #gRelic.",
+      "[Flight] Escape the stranger."
+    ]
+  }
+}
