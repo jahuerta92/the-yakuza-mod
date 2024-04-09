@@ -1,0 +1,186 @@
+{
+  "theYakuza:DefaultOrb": {
+    "NAME": "Default Orb",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, draw #b",
+      " card.",
+      " cards.",
+      " NL #yEvoke: Deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "theYakuza:ConeItem": {
+    "NAME": "路障",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:BatItem": {
+    "NAME": "球拍",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:IronKnucklesItem": {
+    "NAME": "铁指虎",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:PanItem": {
+    "NAME": "平底锅",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :施加 #b",
+      " 层 虚弱 对生命值最多的", "敌人。", "没有 格挡 的敌人。"
+    ]
+  },
+  "theYakuza:NamelessKatanaItem": {
+    "NAME": "无名刀",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :施加 #b",
+      " 层 易伤 对生命值最多的", "敌人。", "没有 格挡 的敌人。"
+    ]
+  },
+  "theYakuza:NunchakuItem": {
+    "NAME": "双截棍",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。获得 #b",
+      " 点 格挡 。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:SakeItem": {
+    "NAME": "酒瓶",
+    "DESCRIPTION": [
+      " #y攻击 :获得 #b",
+      " 点 力量 。",
+      " NL #y技能 :获得 #b",
+      " 点 敏捷 。",
+      " NL #y投掷 :获得 #b", " 层 多层护甲 。", " 层 多层护甲 。"
+    ]
+  },
+  "theYakuza:RevolverItem": {
+    "NAME": "左轮",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。对所有敌人施加1层 易伤 。",
+      " NL #y技能 :没有效果。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:BikeItem": {
+    "NAME": "单车",
+    "DESCRIPTION": [
+      " #y攻击 :所有敌人额外失去 #b",
+      " 点生命。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对所有敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:BrokenPipeItem": {
+    "NAME": "破管道",
+    "DESCRIPTION": [
+      " #y攻击 :伤害提高 #b",
+      " 点。",
+      " NL #y技能 :获得 #b",
+      " 点 格挡 。",
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:SaisItem": {
+    "NAME": "铁尺",
+    "DESCRIPTION": [
+      " #y攻击 :获得 #b",
+      " 点临时 敏捷 。",
+      " NL #y技能 :获得 #b",
+      " 点临时 力量 。",
+      " NL #y投掷 :本回合阻止下 #b",
+      " 次即将受到的生命损失。" , " 次即将受到的生命损失。"
+    ]
+  },
+  "theYakuza:DragonKartItem": {
+    "NAME": "龙车",
+    "DESCRIPTION": [
+      " #y攻击 :触发 #b",
+      " 次 小游戏 的效果。",
+      " NL #y技能 :触发 #b",
+      " 次 小游戏 的效果。",
+      " NL #y投掷 :触发 #b",
+      " 次 小游戏 的效果。"
+    ]
+  } ,
+  "theYakuza:MotorcycleItem": {
+    "NAME": "摩托车",
+    "DESCRIPTION": [
+      " #y攻击 :所有敌人额外失去伤害值一半的生命 #b", " 次。",
+      " NL #y技能 :本回合阻止下 #b",
+      " 次即将受到的生命损失。",
+      " NL #y投掷 :对所有敌人造成 #b",
+      " 点伤害。", " 次即将受到的生命损失。", " 次", " #y攻击 :所有敌人额外失去伤害值的生命 #b"
+    ]
+  },
+  "theYakuza:DemonfireDaggerItem": {
+    "NAME": "魔焰匕首",
+    "DESCRIPTION": [
+      " #y攻击 :下次攻击伤害提高 #b",
+      " 点。",
+      " NL #y技能 :重置伤害提升并抽 #b",
+      " 张牌。", " 张牌。", 
+      " NL #y投掷 :对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "theYakuza:StaminanXItem": {
+    "NAME": "耐力饮料",
+    "DESCRIPTION": [
+      " #y攻击 :获得 #b",
+      " 层 热力 。",
+      " NL #y技能 :回复 #b",
+      " 点 生命。",
+      " NL #y投掷 :获得 #b",
+      " 点 能量 。"
+    ]
+  },
+  "theYakuza:RamenItem": {
+    "NAME": "拉面",
+    "DESCRIPTION": [
+      " #y攻击 :抽 #b",
+      " 张牌。",
+      " NL #y技能 : 预见 #b",
+      " 。",
+      " NL #y投掷 :消耗至多 #b",
+      " 张手牌。"
+    ]
+  }
+}
