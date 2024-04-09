@@ -1,0 +1,358 @@
+[
+  {
+    "NAMES": [
+      "minigame",
+      "minigames",
+      "Minigame",
+      "Minigames",
+      "小游戏"
+    ],
+    "DESCRIPTION": "随机触发 #b1 项效果: NL - 获得 #b3 点 #y格挡。 NL - 随机敌人失去 #b5 点生命。 NL - 抽 #b1 张牌。 NL - 对随机敌人施加 #b1 层 #y虚弱 和 #y易伤 。 NL - 本回合获得 #b1 点 #y力量 和 #y敏捷 。 NL - 下回合额外抽 #b1 张牌。 NL - 下回合额外获得 [E] 。 NL - 获得 #b3 层 #y活力 。 NL - 获得 #b1 点临时生命。 NL - 随机将一张带 #y抹除 的普通 #y小游戏 牌加入手牌。 NL - 随机敌人获得 #b1 层 #y勒脖 。"
+  },
+  {
+    "NAMES": [
+      "improved",
+      "improved",
+      "improved",
+      "improved",
+      "拓展"
+    ],
+    "DESCRIPTION": "拓展小游戏列表: NL - 随机手牌本回合耗能降低 #b1 点。 NL - 获得 #b1 层 #y多层护甲 和 #y金属化 。 NL - 获得 #b2 层 #y荆棘 。 NL - 获得 #b1 层 #y复仇 。 NL - 获得 #b1 层 #y迂回 。 NL - 随机升级一张手牌。 NL - 获得 #b1 层 #y人工制品 。 NL - 随机将一张带 #y抹除 和 #y虚无 的任意颜色的普通牌加入手牌。 NL - 获得1瓶爆炸药水。 NL - 随机将一张带 #y抹除 的普通 #y小游戏 牌加入手牌。"
+  },
+  {
+    "NAMES": [
+      "durability",
+      "Durability",
+      "耐久度"
+    ],
+    "DESCRIPTION": "每次打出攻击或技能牌消耗 #b1 耐久度。 NL 当耐久度为 #b0 时，道具损坏。"
+  },
+  {
+    "NAMES": [
+      "grab",
+      "Grab",
+      "抓取"
+    ],
+    "DESCRIPTION": "装备道具可以强化攻击和技能牌的效果。 每次使用消耗 #b1 耐久度。 在损坏前抓取新道具时，会将之前的道具 投掷 。"
+  },
+  {
+    "NAMES": [
+      "Heat ",
+      "heat",
+      "热力"
+    ],
+    "DESCRIPTION": "每层热力使造成的伤害提高 #b2 点，获得的格挡提高 #b1 点，至多 #b3 层。 失去生命时降低 #b1 层。"
+  },
+  {
+    "PROPER_NAME": "Traffic Cone",
+    "NAMES": [
+      "Traffic Cone",
+      "Traffic_Cone",
+      "traffic_cone",
+      "路障"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b2 点。 NL #y技能牌 :获得 #b3 点格挡。 NL #y投掷 :对随机敌人造成 #b5+耐久度 点伤害。 NL #y耐久度 #b3 。"
+  },
+  {
+    "PROPER_NAME": "Traffic Cone+",
+    "NAMES": [
+      "Traffic Cone+",
+      "Traffic_Cone+",
+      "traffic_cone+",
+      "路障+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b3 点。 NL #y技能牌 :获得 #b5 点格挡。 NL #y投掷 :对随机敌人造成 #b8+耐久度 点伤害。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "nunchaku",
+      "Nunchaku",
+      "双截棍"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b3 点。获得 #b3 点格挡。 NL #y技能牌 :获得 #b4 点格挡。 NL #y投掷 :对随机敌人造成 #b6 点伤害。 NL #y耐久度 #b4 。"
+  },
+  {
+    "NAMES": [
+      "nunchaku+",
+      "Nunchaku+",
+      "双截棍+"
+	  
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b5 点。获得 #b5 点格挡。 NL #y技能牌 :获得 #b6 点格挡。 NL #y投掷 :对随机敌人造成 #b9 点伤害。 NL #y耐久度 #b4 。"
+  },
+  {
+    "NAMES": [
+      "bat",
+      "Bat",
+      "球拍"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b2X 点。 NL #y技能牌 :获得 #bX 点格挡。 NL #y投掷 :对随机敌人造成 #bX倍耐久度 点伤害。 NL #y耐久度 #b3。 NL #bX 为升级次数。"
+  },
+  {
+    "NAMES": [
+      "pan",
+      "Pan",
+      "平底锅"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b1 点。 NL #y技能牌 :获得 #b耐久度 点格挡。 NL #y投掷 : #y投掷 :对生命值最高的没有格挡的敌人施加 #b耐久度 层虚弱。 NL #y耐久度 #b5 。"
+  },
+  {
+    "NAMES": [
+      "pan+",
+      "Pan+",
+      "平底锅+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b1 点。 NL #y技能牌 :获得 #b耐久度 点格挡。 NL #y投掷 : #y投掷 :对生命值最高的敌人施加 #b耐久度 层虚弱。 NL #y耐久度 #b8 。"
+  },
+  {
+    "NAMES": [
+      "sake",
+      "Sake",
+      "酒"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 点力量。 NL #y技能牌 :获得 #b1 点敏捷。 NL #y投掷 :获得 #b耐久度 层多层护甲。 NL #y耐久度 #b2 。"
+  },
+  {
+    "NAMES": [
+      "sake+",
+      "Sake+",
+      "酒+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 点力量。 NL #y技能牌 :获得 #b1 点敏捷。 NL #y投掷 :获得 #b耐久度 层多层护甲。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "revolver",
+      "Revolver",
+      "左轮"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b4 点。 Apply #b1 Vulnerable to ALL enemies. NL #y技能牌 : No effect. NL #y投掷 : Deal #b0 damage to a random enemy. NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "revolver+",
+      "Revolver+",
+      "左轮+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b7 点。 Apply #b1 Vulnerable to ALL enemies. NL #y技能牌 : No effect. NL #y投掷 : Deal #b0 damage to a random enemy. NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "bike",
+      "Bike",
+      "单车"
+    ],
+    "DESCRIPTION": " #y攻击牌 :所有敌人额外失去 #b6 点生命。 NL #y技能牌 :获得 #b7 点格挡。 NL #y投掷 :对所有敌人造成 #b8倍耐久度 的伤害。 NL #y耐久度 #b2 。"
+  },
+  {
+    "NAMES": [
+      "bike+",
+      "Bike+",
+      "单车+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :所有敌人额外失去 #b8 点生命。 NL #y技能牌 :获得 #b9 点格挡。 NL #y投掷 :对所有敌人造成 #b10倍耐久度 的伤害。 NL #y耐久度 #b2 。"
+  },
+  {
+    "NAMES": [
+      "ramen",
+      "Ramen",
+      "拉面"
+    ],
+    "DESCRIPTION": " #y攻击牌 :抽 #b1 张牌。 NL #y技能牌 :预见 #b2 。 NL #y投掷 :消耗至多 #b耐久度 张手牌。 NL #y耐久度 #b1 。"
+  },
+  {
+    "NAMES": [
+      "sais",
+      "Sais",
+      "铁尺"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b2 点临时敏捷 。 NL #y技能牌 :获得 #b2 点临时力量。 NL #y投掷 :获得 #b耐久度 层迂回。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "sais+",
+      "Sais+",
+      "铁尺+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b3 点临时敏捷 。 NL #y技能牌 :获得 #b3 点临时力量。 NL #y投掷 :获得 #b耐久度 层迂回。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "motorcycle",
+      "Motorcycle",
+      "摩托车"
+    ],
+    "DESCRIPTION": " #y攻击牌 :对所有敌人造成一半伤害值的生命流失 #b1 次。 NL #y技能牌 :本回合阻止下 #b1 次即将受到的生命损失。 NL #y投掷 :对所有敌人造成 #b12倍耐久度 点伤害。 NL #y耐久度 #b2 。"
+  },
+  {
+    "NAMES": [
+      "motorcycle+",
+      "Motorcycle+",
+      "摩托车+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :对所有敌人造成全额伤害值的生命流失 #b1 次。 NL #y技能牌 :本回合阻止下 #b1 次即将受到的生命损失。 NL #y投掷 :对所有敌人造成 #b18倍耐久度 点伤害。 NL #y耐久度 #b3 。"
+  },
+  {
+    "PROPER_NAME": "Komaki Technique",
+    "NAMES": [
+      "Komaki Technique",
+      "komaki_technique",
+      "Komaki_Technique",
+      "古牧流招式"
+    ],
+    "DESCRIPTION": "卡牌奖励中只会出现一种古牧流招式。请谨慎选择。"
+  },
+  {
+    "PROPER_NAME": "Nameless Katana",
+    "NAMES": [
+      "Nameless Katana",
+      "nameless_katana",
+      "Nameless_Katana",
+      "无名刀"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b3 点。如果你没有格挡，效果翻倍。 NL #y技能牌 :获得 #b1 点格挡。 NL #y投掷 :对生命值最高的没有格挡的敌人施加 #b2倍耐久度 层易伤。 NL #y耐久度 #b3 。"
+  },
+  {
+    "PROPER_NAME": "Nameless Katana+",
+    "NAMES": [
+      "Nameless Katana+",
+      "nameless_katana+",
+      "Nameless_Katana+",
+      "无名刀+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b5 点。如果你没有格挡，效果翻倍。 NL #y技能牌 :获得 #b1 点格挡。 NL #y投掷 :对生命值最高的敌人施加 #b2倍耐久度 层易伤。 NL #y耐久度 #b3 。"
+  },
+  {
+    "PROPER_NAME": "Broken Pipe",
+    "NAMES": [
+      "Broken Pipe",
+      "Broken_Pipe",
+      "broken_pipe",
+      "破管道"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b2 点。 NL #y技能牌 :获得 #b2 点格挡。 NL #y投掷 :对随机敌人造成 #b耐久度 点伤害。 NL #y耐久度 #b2 。"
+  },
+  {
+    "PROPER_NAME": "Broken Pipe+",
+    "NAMES": [
+      "Broken Pipe+",
+      "Broken_Pipe+",
+      "broken_pipe+",
+      "破管道+"
+
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b3 点。 NL #y技能牌 :获得 #b3 点格挡。 NL #y投掷 :对随机敌人造成 #b耐久度 点伤害。 NL #y耐久度 #b2 。"
+  },
+  {
+    "PROPER_NAME": "Iron Knucles",
+    "NAMES": [
+      "Iron Knuckles",
+      "Iron_Knuckles",
+      "iron_knuckles",
+      "铁指虎"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b3 点。 NL #y技能牌 :获得 #b2 点格挡。 NL #y投掷 :对随机敌人造成 #b耐久度 点伤害。 NL #y耐久度 #b3 。"
+  },
+  {
+    "PROPER_NAME": "Iron Knuckles+",
+    "NAMES": [
+      "Iron Knuclkes+",
+      "Iron_Knuclkes+",
+      "iron_knuckles+",
+      "铁指虎+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :伤害提高 #b5 点。 NL #y技能牌 :获得 #b4 点格挡。 NL #y投掷 :对随机敌人造成 #b耐久度 点伤害。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "Staminan",
+      "staminan",
+      "耐力饮料"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热力。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b2 。"
+  },
+  {
+    "PROPER_NAME": "Staminan Royale",
+    "NAMES": [
+      "Staminan Royale",
+      "staminan royale",
+      "staminan_royale",
+      "浓缩耐力饮料"
+    ],
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热力。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b4 。"
+  },
+  {
+    "PROPER_NAME": "Demonfire Dagger",
+    "NAMES": [
+      "Demonfire Dagger",
+      "Demonfire_Dagger",
+      "demonfire_dagger",
+      "魔焰匕首"
+    ],
+    "DESCRIPTION": " #y攻击牌 :增加1点计数，每点计数提高攻击伤害 #b2 点。 NL #y技能牌 :抽 #b计数 张牌并重置计数。 NL #y投掷 :对随机敌人造成 #b99-耐久度 点伤害。 NL #y耐久度 #b99 。"
+  },
+  {
+    "PROPER_NAME": "Demonfire Dagger+",
+    "NAMES": [
+      "Demonfire Dagger+",
+      "Demonfire_Dagger+",
+      "demonfire_dagger+",
+      "魔焰匕首+"
+    ],
+    "DESCRIPTION": " #y攻击牌 :增加1点计数，每点计数提高攻击伤害 #b3 点。 NL #y技能牌 :抽 #b计数 张牌并重置计数。 NL #y投掷 :对随机敌人造成 #b99-耐久度 点伤害。 NL #y耐久度 #b99 。"
+  },
+  {
+    "PROPER_NAME": "Dragon Kart",
+    "NAMES": [
+      "Dragon Kart",
+      "Dragon_Kart",
+      "dragon_kart",
+      "龙车"
+    ],
+    "DESCRIPTION": " #y攻击牌 :玩 #y小游戏 #b2 次。 NL #y技能牌 :玩 #y小游戏 #b2 次。 NL #y投掷 :玩 #y小游戏 #b1+耐久度 次。 NL #y耐久度 #b2 。"
+  },
+  {
+    "PROPER_NAME": "Dragon Kart+",
+    "NAMES": [
+      "Dragon Kart+",
+      "Dragon_Kart+",
+      "dragon_kart+",
+      "龙车+"
+    ],
+    "DESCRIPTION": " #y攻击牌 : 玩 #y小游戏 #b2 次。 NL #y技能牌 : 玩 #y小游戏 #b2 次。 NL #y投掷 : 玩 #y小游戏 #b1+耐久度 次。 NL #y耐久度 #b3 。"
+  },
+  {
+    "NAMES": [
+      "retaliate",
+      "Retaliate",
+      "复仇"
+    ],
+    "DESCRIPTION": "回合开始时，从抽牌堆随机打出 #y复仇 层数张攻击牌。"
+  },
+  {
+    "NAMES": [
+      "weave",
+      "Weave",
+      "迂回"
+    ],
+    "DESCRIPTION": "阻止本回合下次即将受到的生命损失。"
+  },
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain #b1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]
