@@ -105,7 +105,7 @@
     "NAME": "真岛的眼罩",
     "FLAVOR": "受我一咬！",
     "DESCRIPTIONS": [
-      "Whenever you take exactly 0 HP damage from an attack gain #b1 #yStrength."
+      "当你受到敌人的攻击后格挡为0且没有失去生命时，获得 #b1 点 #y力量 。"
     ]
   },
   "theYakuza:SaejimasCoatRelic": {
