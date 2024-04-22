@@ -8,12 +8,12 @@
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
 },
 "theYakuza:HeatLevel": {
-        "NAME": "热力",
+        "NAME": "热血值",
         "DESCRIPTIONS": ["攻击伤害提高 #b", " 点，获得格挡提高 #b"," 点，至多叠加至 #b", " 层。", " 失去生命时降低 #b1 层。",
          " 回合结束时失去 #b", " 层。", " 层。"]
 },
 "theYakuza:Weave": {
-        "NAME": "迂回",
+        "NAME": "躲闪",
         "DESCRIPTIONS": ["本回合阻止下 #b", " 次即将受到的生命损失。", " 次即将受到的生命损失。"]
 },
 "theYakuza:Boxing": {
@@ -25,7 +25,7 @@
         "DESCRIPTIONS": ["每当玩 小游戏 时，获得 #b", " 点 格挡 。"]
 },
 "theYakuza:EssenceOfBurningHeat": {
-        "NAME": "燃烧热力",
+        "NAME": "燃烧热血",
         "DESCRIPTIONS": ["When your turn starts, deal 3 damage damage to a random enemy #b+", " times Heat."]
 },
 "theYakuza:EssenceOfAggresiveGrabs": {
@@ -41,15 +41,15 @@
         "DESCRIPTIONS": ["每当道具 #y损坏 时，将一张 #y破管道 加入手牌。", "每当武器 #y损坏 时，将一张 #y破管道+ 加入手牌。"]
 },
 "theYakuza:BeastStyle": {
-        "NAME": "野兽式",
+        "NAME": "火爆浪子形态",
         "DESCRIPTIONS": ["每当 抓取 时，抽 #b", " 张攻击牌，其耗能在本回合降低 #b1 点。", " 张攻击牌，其耗能在本回合降低 #b1 点。"]
 },
 "theYakuza:RushStyle": {
-        "NAME": "冲刺式",
+        "NAME": "快攻手形态",
         "DESCRIPTIONS": ["每当打出攻击牌，获得 #b", " 点临时 敏捷 。"]
 },
 "theYakuza:BrawlerStyle": {
-        "NAME": "格斗式",
+        "NAME": "流氓形态",
         "DESCRIPTIONS": ["每当失去生命， 复仇 #b", " 次。", " 次。"]
 },
 "theYakuza:Retaliate": {
@@ -66,7 +66,7 @@
 },
 "theYakuza:FridayNight": {
         "NAME": "星期五之夜",
-        "DESCRIPTIONS": [" 拓展 小游戏 的内容。 列表: NL - 本回合随机手牌耗能降低 #b1 点。 NL - 获得 #b1 层 #y多层护甲 和 #y金属化 。 NL - 获得 #b2 层 #y荆棘 。 NL - 获得 #b1 层 #y复仇 。 NL - 获得 #b1 层 #y迂回 。 NL - 随机升级一张手牌。 NL - 获得 #b1 层 #y人工制品 。 NL - 获得一张任意颜色的普通牌，其具有 #y抹除 和 #y虚无 特性。 NL - 获得1瓶爆炸药水。 NL - 随机敌人获得 #b1 层 勒脖 。"]
+        "DESCRIPTIONS": [" 拓展 小游戏 的内容。 列表: NL - 本回合随机手牌耗能降低 #b1 点。 NL - 获得 #b1 层 #y多层护甲 和 #y金属化 。 NL - 获得 #b2 层 #y荆棘 。 NL - 获得 #b1 层 #y复仇 。 NL - 获得 #b1 层 #y躲闪 。 NL - 随机升级一张手牌。 NL - 获得 #b1 层 #y人工制品 。 NL - 获得一张任意颜色的普通牌，其具有 #y抹除 和 #y虚无 特性。 NL - 获得1瓶爆炸药水。 NL - 随机敌人获得 #b1 层 勒脖 。"]
 },
 "theYakuza:RealEstate": {
         "NAME": "不动产",
@@ -74,15 +74,15 @@
 },
 "theYakuza:Coliseum": {
         "NAME": "竞技场",
-        "DESCRIPTIONS": ["每当玩 小游戏 时，获得 #b", " 层 热力 。"]
+        "DESCRIPTIONS": ["每当玩 小游戏 时，获得 #b", " 层 热血值 。"]
 },
 "theYakuza:Chairman": {
-        "NAME": "第四任头目",
-        "DESCRIPTIONS": [" 热力 最大值提升 #b", " 点。"]
+        "NAME": "第四任头领",
+        "DESCRIPTIONS": [" 热血值 最大值提升 #b", " 点。"]
 },
 "theYakuza:FuryOfTheAzureDragon": {
         "NAME": "青龙之怒",
-        "DESCRIPTIONS": [" 热力 不再降低。"]
+        "DESCRIPTIONS": [" 热血值 不再降低。"]
 },
 "theYakuza:DragonOfDojimaStyle": {
         "NAME": "堂岛之龙",
@@ -91,11 +91,11 @@
 },
 "theYakuza:ExtremeHeatMode": {
         "NAME": "极热模式",
-        "DESCRIPTIONS": [" 热力 提供的攻击和格挡额外提高 #b", " 点。"]
+        "DESCRIPTIONS": [" 热血值 提供的攻击和格挡额外提高 #b", " 点。"]
 },
 "theYakuza:ExtremeHeatModeDecay": {
-        "NAME": "热力消散",
-        "DESCRIPTIONS": ["回合结束时失去 #b", " 点 热力 。"]
+        "NAME": "热血消散",
+        "DESCRIPTIONS": ["回合结束时失去 #b", " 点 热血值 。"]
 },
 "theYakuza:DragonForm": {
         "NAME": "龙之形态",
@@ -115,7 +115,7 @@
 },
 "theYakuza:MadDog": {
         "NAME": "岛野的疯狗",
-        "DESCRIPTIONS": ["每当你打出 #b", " 张牌，获得 #b1 层 热力 ，并改变意图。", " 张牌，获得 #b1 层 热力 ，并改变意图。"]
+        "DESCRIPTIONS": ["每当你打出 #b", " 张牌，获得 #b1 层 热血值 ，并改变意图。", " 张牌，获得 #b1 层 热血值 ，并改变意图。"]
 },
 "theYakuza:ShadowClones": {
         "NAME": "不可预料的意图",
