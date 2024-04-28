@@ -17,7 +17,7 @@
       "improved",
       "拓展"
     ],
-    "DESCRIPTION": "拓展小游戏列表: NL - 随机手牌本回合耗能降低 #b1 点。 NL - 获得 #b1 层 #y多层护甲 和 #y金属化 。 NL - 获得 #b2 层 #y荆棘 。 NL - 获得 #b1 层 #y复仇 。 NL - 获得 #b1 层 #y迂回 。 NL - 随机升级一张手牌。 NL - 获得 #b1 层 #y人工制品 。 NL - 随机将一张带 #y抹除 和 #y虚无 的任意颜色的普通牌加入手牌。 NL - 获得1瓶爆炸药水。 NL - 随机将一张带 #y抹除 的普通 #y小游戏 牌加入手牌。"
+    "DESCRIPTION": "拓展小游戏列表: NL - 随机手牌本回合耗能降低 #b1 点。 NL - 获得 #b1 层 #y多层护甲 和 #y金属化 。 NL - 获得 #b2 层 #y荆棘 。 NL - 获得 #b1 层 #y复仇 。 NL - 获得 #b1 层 #y躲闪 。 NL - 随机升级一张手牌。 NL - 获得 #b1 层 #y人工制品 。 NL - 随机将一张带 #y抹除 和 #y虚无 的任意颜色的普通牌加入手牌。 NL - 获得1瓶爆炸药水。 NL - 随机将一张带 #y抹除 的普通 #y小游戏 牌加入手牌。"
   },
   {
     "NAMES": [
@@ -39,9 +39,9 @@
     "NAMES": [
       "Heat ",
       "heat",
-      "热力"
+      "热血值"
     ],
-    "DESCRIPTION": "每层热力使造成的伤害提高 #b2 点，获得的格挡提高 #b1 点，至多 #b3 层。 失去生命时降低 #b1 层。"
+    "DESCRIPTION": "每层热血值使造成的伤害提高 #b2 点，获得的格挡提高 #b1 点，至多 #b3 层。 失去生命时降低 #b1 层。"
   },
   {
     "PROPER_NAME": "Traffic Cone",
@@ -166,7 +166,7 @@
       "Sais",
       "铁尺"
     ],
-    "DESCRIPTION": " #y攻击牌 :获得 #b2 点临时敏捷 。 NL #y技能牌 :获得 #b2 点临时力量。 NL #y投掷 :获得 #b耐久度 层迂回。 NL #y耐久度 #b3 。"
+    "DESCRIPTION": " #y攻击牌 :获得 #b2 点临时敏捷 。 NL #y技能牌 :获得 #b2 点临时力量。 NL #y投掷 :获得 #b耐久度 层躲闪。 NL #y耐久度 #b3 。"
   },
   {
     "NAMES": [
@@ -174,7 +174,7 @@
       "Sais+",
       "铁尺+"
     ],
-    "DESCRIPTION": " #y攻击牌 :获得 #b3 点临时敏捷 。 NL #y技能牌 :获得 #b3 点临时力量。 NL #y投掷 :获得 #b耐久度 层迂回。 NL #y耐久度 #b3 。"
+    "DESCRIPTION": " #y攻击牌 :获得 #b3 点临时敏捷 。 NL #y技能牌 :获得 #b3 点临时力量。 NL #y投掷 :获得 #b耐久度 层躲闪。 NL #y耐久度 #b3 。"
   },
   {
     "NAMES": [
@@ -269,7 +269,7 @@
       "staminan",
       "耐力饮料"
     ],
-    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热力。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b2 。"
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热血值。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b2 。"
   },
   {
     "PROPER_NAME": "Staminan Royale",
@@ -280,7 +280,7 @@
       "Staminan_Royale",
       "浓缩耐力饮料"
     ],
-    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热力。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b4 。"
+    "DESCRIPTION": " #y攻击牌 :获得 #b1 层热血值。 NL #y技能牌 :回复 #b2 点生命。 NL #y投掷 :获得 #b耐久度 [E] 。 NL #y耐久度 #b4 。"
   },
   {
     "PROPER_NAME": "Demonfire Dagger",
@@ -334,7 +334,7 @@
     "NAMES": [
       "weave",
       "Weave",
-      "迂回"
+      "躲闪"
     ],
     "DESCRIPTION": "阻止本回合下次即将受到的生命损失。"
   },
