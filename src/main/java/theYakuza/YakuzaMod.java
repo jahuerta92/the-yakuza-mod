@@ -512,13 +512,15 @@ public class YakuzaMod implements
         BaseMod.addRelicToCustomPool(new JingweonBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new KazamaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new MajimaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
-        BaseMod.addRelicToCustomPool(new NishikiyamaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        // BaseMod.addRelicToCustomPool(new NishikiyamaBadgeRelic(),
+        // TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new OmiBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new RyudoBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new SaioBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new ShibusawaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new ShimanoBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
-        BaseMod.addRelicToCustomPool(new SnakeFlowerBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
+        // BaseMod.addRelicToCustomPool(new SnakeFlowerBadgeRelic(),
+        // TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new SomeyaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new UenoSeiwaBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);
         BaseMod.addRelicToCustomPool(new YomeiBadgeRelic(), TheYakuza.Enums.COLOR_YAKUZA);

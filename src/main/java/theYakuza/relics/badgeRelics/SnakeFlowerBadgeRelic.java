@@ -29,7 +29,7 @@ public class SnakeFlowerBadgeRelic extends CustomRelic {
 
     public SnakeFlowerBadgeRelic() {
         super(ID, IMG, OUTLINE, RelicTier.SPECIAL, LandingSound.CLINK);
-        pickCard = true;
+        this.pickCard = true;
     }
 
     @Override
@@ -75,7 +75,7 @@ public class SnakeFlowerBadgeRelic extends CustomRelic {
         }
 
         AbstractDungeon.gridSelectScreen.open(group, 1, DESCRIPTIONS[1], false);
-        pickCard = true;
+        this.pickCard = true;
     }
 
     public void update() {
@@ -85,7 +85,7 @@ public class SnakeFlowerBadgeRelic extends CustomRelic {
             AbstractDungeon.effectList
                     .add(new ShowCardAndObtainEffect(c, (float) Settings.WIDTH / 2.0F, (float) Settings.HEIGHT / 2.0F));
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
-            pickCard = false;
+            this.pickCard = false;
         }
 
     }

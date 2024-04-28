@@ -1,14 +1,18 @@
 package theYakuza.monsters;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.ShoutAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.actions.common.SpawnMonsterAction;
+import com.megacrit.cardcrawl.actions.common.SuicideAction;
+import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -16,6 +20,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 
 import basemod.abstracts.CustomMonster;
 import theYakuza.YakuzaMod;
@@ -192,6 +197,21 @@ public class Majima extends CustomMonster {
             AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(newMonster, true));
             this.enemySlots.put(key, newMonster);
         }
+    }
+
+    public void die() {
+        super.die();
+        Iterator<AbstractMonster> var1 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        while (var1.hasNext()) {
+            AbstractMonster m = (AbstractMonster) var1.next();
+            if (!m.isDead && !m.isDying) {
+                AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(m));
+                AbstractDungeon.actionManager.addToTop(new SuicideAction(m));
+                AbstractDungeon.actionManager.addToTop(new VFXAction(m, new InflameEffect(m), 0.2F));
+            }
+        }
+
     }
 
 }
