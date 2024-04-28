@@ -670,7 +670,9 @@ public class YakuzaMod implements
         if (Settings.language.equals(GameLanguage.RUS)) {
             lang_code = "rus";
         }
-
+        if (Settings.language.equals(GameLanguage.JPN)) {
+            lang_code = "jpn";
+        }
         String json = Gdx.files
                 .internal(getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Keyword-Strings.json")
                 .readString(String.valueOf(StandardCharsets.UTF_8));

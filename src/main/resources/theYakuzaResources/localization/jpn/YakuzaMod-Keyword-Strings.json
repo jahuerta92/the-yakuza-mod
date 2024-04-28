@@ -1,0 +1,320 @@
+[
+  {
+    "NAMES": [
+      "プレイスポット"
+    ],
+    "DESCRIPTION": "以下から #b1 つの効果をランダムで発動する: NL - #yブロック #b3 を得る。 NL - #b5 ダメージを与える。 NL - カードを #b1 枚引く。 NL - ランダムな敵に #y脱力 と #y脆弱 #b1 を付与する。 NL このターン中、 #y腕力 と #y敏捷性 #b1 を得る。 NL - 次のターン、カードをもう #b1 枚引く。 NL - #y活性化 #b1 を得る。 NL - #y占術 #b3 を得る。 NL - 一時的にHPを #b1 得る。 NL - ランダムな #yプレイスポット コモンカードを #y処分 付きで得る。 NL - これ以降カードをプレイする毎に、ランダムな敵に #b1 ダメージを与える。 "
+  },
+  {
+    "NAMES": [
+      "拡張"
+    ],
+    "DESCRIPTION": "プレイスポットで発動する効果に以下を追加する: NL - このターン中、手札にあるランダムなカードのコストを #b1 減少させる。 NL - #yプレートアーマー と #y金属化 #b1 を得る。 NL - #yトゲ #b2 を得る。 NL - #y根性反撃 #b1 を得る。 NL - #yウィービング #b1 を得る。 NL - 手札にあるカードを1枚、ランダムでアップグレードする。 NL - #yアーティファクト #b1 を得る。 NL - ランダムな色のコモンカードを #y処分 と #yエセリアル 付きで得る。 NL - 爆破ポーションを入手する。"
+  },
+  {
+    "NAMES": [
+      "耐久値",
+      "durability",
+      "Durability"
+    ],
+    "DESCRIPTION": "アタック又はスキルを使用すると #b1 減少する。 NL この数値が #b0 になった時、 装備しているアイテムは破壊される。"
+  },
+  {
+    "NAMES": [
+      "装備",
+      "grab",
+      "Grab"
+    ],
+    "DESCRIPTION": "アタックとスキルを強化するアイテムを装備する。 使用される度に耐久値を #b1 消費する。 違うアイテムを装備する際、現在装備しているアイテムを投擲する。"
+  },
+  {
+    "NAMES": [
+      "ヒート",
+      "Heat",
+      "heat"
+    ],
+    "DESCRIPTION": "スタック毎に #b2 ダメージと #b1 ブロックを、最大で #b3 スタック分追加する。 ダメージを受ける度に #b1 減少する。"
+  },
+  {
+    "NAMES": [
+      "三角コーン",
+      "Traffic_Cone",
+      "traffic_cone"
+    ],
+    "DESCRIPTION": "#yアタック: #b2 ダメージを追加で与える。 NL #yスキル: #b3 ブロック得る。 NL #y投擲: ランダムな敵に #b5+耐久値 のダメージを与える。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "三角コーン+",
+      "Traffic_Cone+",
+      "traffic_cone+"
+    ],
+    "DESCRIPTION": "#yアタック: #b3 ダメージを追加で与える。 NL #yスキル: #b5 ブロックを得る。 NL #y投擲: ランダムな敵に #b8+耐久値 のダメージを与える。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "ヌンチャク",
+      "nunchaku",
+      "Nunchaku"
+    ],
+    "DESCRIPTION": "#yアタック: #b3 ダメージを追加で与える。 #b3 ブロックを得る。 NL #yスキル: #b4 ブロックを得る。 NL #y投擲: ランダムな敵に #b6 ダメージを与える。 NL #y耐久値 #b4"
+  },
+  {
+    "NAMES": [
+      "ヌンチャク+",
+      "nunchaku+",
+      "Nunchaku+"
+    ],
+    "DESCRIPTION": "#yアタック: #b5 ダメージを追加で与える。 #b5 ブロックを得る。 NL #yスキル: ブロック #b6 を得る。 NL #y投擲: ランダムな敵に #b9 ダメージを与える。 NL #y耐久値 #b4"
+  },
+  {
+    "NAMES": [
+      "バット",
+      "bat",
+      "Bat"
+    ],
+    "DESCRIPTION": "#yアタック: #b2X ダメージを追加で与える。 NL #yスキル: #bX ブロックを得る。 NL #y投擲: #b耐久値*#bX ダメージをランダムな敵に与える。 NL #y耐久値 #b3 NL #bX の数値はアップグレードされた回数。"
+  },
+  {
+    "NAMES": [
+      "フライパン",
+      "pan",
+      "Pan"
+    ],
+    "DESCRIPTION": "#yアタック: #b1 ダメージを追加で与える。 NL #yスキル: #b耐久値 ブロックを得る。 NL #y投擲: 脱力 #b耐久値 をHPが最も多く、ブロックを所持しない敵に付与する。 NL #y耐久値 #b5"
+  },
+  {
+    "NAMES": [
+      "フライパン+",
+      "pan+",
+      "Pan+"
+    ],
+    "DESCRIPTION": "#yアタック: #b1 ダメージを追加で与える。 NL #yスキル: #b耐久値 ブロックを得る。 NL #y投擲: 脱力 #b耐久値 をHPが最も多い敵に付与する。 NL #y耐久値 #b8"
+  },
+  {
+    "NAMES": [
+      "日本酒",
+      "sake",
+      "Sake"
+    ],
+    "DESCRIPTION": "#yアタック: 筋力 #b1 を得る。 NL #yスキル: 敏捷性 #b1 を得る。 NL #y投擲: プレートアーマー #b耐久値 を得る。 NL #y耐久値 #b2"
+  },
+  {
+    "NAMES": [
+      "日本酒+",
+      "sake+",
+      "Sake+"
+    ],
+    "DESCRIPTION": "#yアタック: 筋力 #b1 を得る。 NL #yスキル: 敏捷性 #b1 を得る。 NL #y投擲: プレートアーマー #b耐久値 を得る。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "ダブルアクションリボルバー",
+      "revolver",
+      "Revolver"
+    ],
+    "DESCRIPTION": "#yアタック: #b4 ダメージを追加で与える。 敵全体に 脆弱 #b1 を付与する。 NL #yスキル: 効果なし。 NL #y投擲: ランダムな敵に #b0 ダメージを与える。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "ダブルアクションリボルバー+",
+      "revolver+",
+      "Revolver+"
+    ],
+    "DESCRIPTION": "#yアタック: #b7 ダメージを追加で与える。 敵全体に 脆弱 #b1 を付与する。 NL #yスキル: 効果なし。 NL #y投擲: ランダムな敵に #b0 ダメージを与える。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "自転車",
+      "bike",
+      "Bike"
+    ],
+    "DESCRIPTION": "#yアタック: 敵全体に #b6 ダメージを与える。 NL #yスキル: #b7 ブロックを得る。 NL #y投擲: 敵全体に #b8*#b耐久値 ダメージを与える。 NL #y耐久値 #b2"
+  },
+  {
+    "NAMES": [
+      "自転車+",
+      "bike+",
+      "Bike+"
+    ],
+    "DESCRIPTION": "#yアタック: 敵全体に #b8 ダメージを与える。 NL #yスキル: #b9 ブロックを得る。 NL #y投擲: 敵全体に #b10*#b耐久値 ダメージを与える。 NL #y耐久値 #b2"
+  },
+  {
+    "NAMES": [
+      "ラーメン",
+      "ramen",
+      "Ramen"
+    ],
+    "DESCRIPTION": "#yアタック: カードを #b1 枚引く。 NL #yスキル: 占術 #b2. NL #y投擲: 手札から #b耐久値 枚まで廃棄できる。 NL #y耐久値 #b1"
+  },
+  {
+    "NAMES": [
+      "釵",
+      "sais",
+      "Sais"
+    ],
+    "DESCRIPTION": "#yアタック: 一時的に敏捷性 #b2 を得る。 NL #yスキル: 一時的に筋力 #b2 を得る。 NL #y投擲: ウィービング #b耐久値 を得る。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "釵+",
+      "sais+",
+      "Sais+"
+    ],
+    "DESCRIPTION": "#yアタック: 一時的に敏捷性 #b3 を得る。 NL #yスキル: 一時的に筋力 #b3 を得る。 NL #y投擲: ウィービング #b耐久値 を得る。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "バイク",
+      "motorcycle",
+      "Motorcycle"
+    ],
+    "DESCRIPTION": "#yアタック: 使用したカードの半分の威力で、敵全体に #b1 回攻撃する。 NL #yスキル: このターン中、次に受けるダメージを #b1 回無効化する。 NL #y投擲: 敵全体に #b12*#b耐久値 ダメージを与える。 NL #y耐久値 #b2"
+  },
+  {
+    "NAMES": [
+      "バイク+",
+      "motorcycle+",
+      "Motorcycle+"
+    ],
+    "DESCRIPTION": "#yアタック: 使用カードと同じ威力で、敵全体を #b1 回攻撃する。 NL #yスキル: このターン中、次に受けるダメージを #b1 回無効化する。 NL #y投擲: 敵全体に #b18*#b耐久値 ダメージを与える。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "古牧流武術",
+      "komaki_technique",
+      "Komaki_Technique"
+    ],
+    "DESCRIPTION": "1度に2枚以上古牧流武術のカードを見つけることはできない。 選択は慎重に。"
+  },
+  {
+    "NAMES": [
+      "無銘の刀",
+      "nameless_katana",
+      "Nameless_Katana"
+    ],
+    "DESCRIPTION": "#yアタック: #b3 ダメージを追加で与える。 対象がブロックを保持していない場合、この効果は2倍になる。 NL #yスキル: #b1 ブロックを得る。 NL #y投擲: 脆弱 #b2*#b耐久値 をHPが最も多く、ブロックを所持していない敵に付与する。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "無銘の刀+",
+      "nameless_katana+",
+      "Nameless_Katana+"
+    ],
+    "DESCRIPTION": "#yアタック: #b5 ダメージを追加で与える。 対象がブロックを保持していない場合、この効果は2倍になる。 NL #yスキル: ブロック #b1 を得る。 NL #y投擲: 脆弱 #b2*#b耐久値 をHPが最も多い敵に付与する。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "鉄パイプ",
+      "Broken_Pipe",
+      "broken_pipe"
+    ],
+    "DESCRIPTION": "#yアタック: #b2 ダメージを追加で与える。 NL #yスキル: ブロック #b2 を得る。 NL #y投擲: ランダムな敵に #b耐久値 ダメージを与える。 NL #y耐久値 #b2."
+  },
+  {
+    "NAMES": [
+      "鉄パイプ+",
+      "Broken_Pipe+",
+      "broken_pipe+"
+    ],
+    "DESCRIPTION": "#yアタック: #b3 ダメージを追加で与える。 NL #yスキル: ブロック #b3 を得る。 NL #y投擲: ランダムな敵に #b耐久値 ダメージを与える。 NL #y耐久値 #b2."
+  },
+  {
+    "NAMES": [
+      "メリケンサック",
+      "Iron_Knuckles",
+      "iron_knuckles"
+    ],
+    "DESCRIPTION": "#yアタック: #b3 ダメージを追加で与える。 NL #yスキル: ブロック #b2 を得る。 NL #y投擲: ランダムな敵に #b耐久値 ダメージを与える。 NL #y耐久値 #b3."
+  },
+  {
+    "NAMES": [
+      "メリケンサック+",
+      "Iron_Knuckles+",
+      "iron_knuckles+"
+    ],
+    "DESCRIPTION": "#yアタック: #b5 ダメージを追加で与える。 NL #yスキル: ブロック #b4 を得る。 NL #y投擲: ランダムな敵に #b耐久値 ダメージを与える。 NL #y耐久値 #b3."
+  },
+  {
+    "NAMES": [
+      "スタミナン",
+      "Staminan",
+      "staminan"
+    ],
+    "DESCRIPTION": "#yアタック: ヒートを #b1 得る。 NL #yスキル: HPを #b2 回復する。 NL #y投擲: エネルギーを #b耐久値 得る。 NL #y耐久値 #b2"
+  },
+  {
+    "NAMES": [
+      "スタミナンロイヤル",
+      "staminan_royale",
+      "Staminan_Royale"
+    ],
+    "DESCRIPTION": "#yアタック: ヒート #b1 を得る。 NL #yスキル: HPを #b2 回復する。 NL #y投擲: エネルギーを #b耐久値 得る。 NL #y耐久値 #b4"
+  },
+  {
+    "NAMES": [
+      "鬼炎のドス",
+      "Demonfire_Dagger",
+      "demonfire_dagger"
+    ],
+    "DESCRIPTION": "#yアタック: 連続でアタックするたびに、ダメージを #b2 増加させる。 NL #yスキル: 連続でアタックした回数だけカードを #b1 枚引く。 連撃回数をリセットする。 NL #y投擲: #b99-耐久値 のダメージをランダムな敵に与える。 NL #y耐久値 #b99"
+  },
+  {
+    "NAMES": [
+      "鬼炎のドス+",
+      "Demonfire_Dagger+",
+      "demonfire_dagger+"
+    ],
+    "DESCRIPTION": "#yアタック: 連続で攻撃するたびに、ダメージを #b3 増加させる。 NL #yスキル: 連続でアタックした回数だけカードを #b1 枚引く。 連撃回数をリセットする。 NL #y投擲: #b99-耐久値 のダメージをランダムな敵に与える。 NL #y耐久値 #b99."
+  },
+  {
+    "NAMES": [
+      "ドラゴンカート",
+      "Dragon_Kart",
+      "dragon_kart"
+    ],
+    "DESCRIPTION": "#yアタック: #yプレイスポット の効果を #b2 倍にする。 NL #yスキル: #yプレイスポット の効果を #b2 倍にする。 NL #y投擲: #yプレイスポット の効果を #b1+耐久値 倍にする。  NL #y耐久値 #b2."
+  },
+  {
+    "NAMES": [
+      "ドラゴンカート+",
+      "Dragon_Kart+",
+      "dragon_kart+"
+    ],
+    "DESCRIPTION": "#yアタック: #yプレイスポット の効果を #b2 倍にする。 NL #yスキル: #yプレイスポット の効果を #b2 倍にする。 NL #y投擲: #yプレイスポット の効果を #b1+耐久値 倍にする。 NL #y耐久値 #b3"
+  },
+  {
+    "NAMES": [
+      "根性反撃",
+      "retaliate",
+      "Retaliate"
+    ],
+    "DESCRIPTION": "ターン開始前に全ての #y根性反撃 を消費し、 山札から同数のアタックを発動する。"
+  },
+  {
+    "NAMES": [
+      "ウィービング",
+      "weave",
+      "Weave"
+    ],
+    "DESCRIPTION": "このターン中、次に受けるダメージを無効化する。"
+  },
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain #b1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]

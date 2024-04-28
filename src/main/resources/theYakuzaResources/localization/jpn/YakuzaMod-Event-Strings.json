@@ -1,0 +1,32 @@
+{
+  "theYakuza:IdentityCrisisEvent": {
+    "NAME": "Identity Crisis",
+    "DESCRIPTIONS": [
+      "As you move through ~The~ ~City~ you come across a #pPurple #pMirror. NL You look at it, but you see no reflection.",
+      "You see no one but #g~You~ #g~wish~ #g~to~ #g~become~ #g~someone.~",
+      "#r@YOU@ #r@EXIST@ #r@AND@ #r@ARE@ #r@VALID!@",
+      "#yYou #yare #yat #ypeace #ywith #yyour #ypresence.",
+      "You have no hands."
+    ],
+    "OPTIONS": [
+      "[Inspiration] #gGain #ga #gRandom #gStarting #gRelic.",
+      "[Denial] #rLose #r",
+      " #rMax #rHP. #gRemove #ga #gCard #gfrom #gyour #gdeck.",
+      "[Acceptance] #gGain #gApotheosis.",
+      "[TOUCH THE MIRROR] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
+      "[Leave]",
+      "Select card to remove."
+    ]
+  },
+  "theYakuza:MajimaEvent": {
+    "NAME": "ばったり真島",
+    "DESCRIPTIONS": [
+      "とある街中の繁華街に立ち寄ると、 後ろから覚えのある ~笑い声~ が聞こえた。 NL 振り返ると、妙な姿のヤクザが満面の笑みとドスを構えながら近づいてきた。 NL 「見っけたでぇ、 ~桐生ちゃん！~ 」",
+      "嶋野の狂犬は、これから始まる戦いに身震いした。"
+    ],
+    "OPTIONS": [
+      "[戦闘] #r謎の男と戦う。 #gランダムなボスレリックを得る。",
+      "[逃走] この場から一目散に去る。"
+    ]
+  }
+}
