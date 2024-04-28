@@ -669,6 +669,10 @@ public class YakuzaMod implements
         String lang_code = "eng";
         if (Settings.language.equals(GameLanguage.RUS)) {
             lang_code = "rus";
+        } else if (Settings.language.equals(GameLanguage.JPN)) {
+            lang_code = "jpn";
+        } else if (Settings.language.equals(GameLanguage.ZHS)) {
+            lang_code = "zhs";
         }
 
         String json = Gdx.files
