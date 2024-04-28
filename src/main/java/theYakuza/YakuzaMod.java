@@ -604,7 +604,12 @@ public class YakuzaMod implements
         String lang_code = "eng";
         if (Settings.language.equals(GameLanguage.RUS)) {
             lang_code = "rus";
+        } else if (Settings.language.equals(GameLanguage.JPN)) {
+            lang_code = "jpn";
+        } else if (Settings.language.equals(GameLanguage.ZHS)) {
+            lang_code = "zhs";
         }
+
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
                 getModID() + "Resources/localization/" + lang_code + "/YakuzaMod-Card-Strings.json");
