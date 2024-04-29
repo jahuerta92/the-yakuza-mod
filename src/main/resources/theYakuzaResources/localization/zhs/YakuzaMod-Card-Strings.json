@@ -367,9 +367,9 @@
     "UPGRADE_DESCRIPTION": " 固有 。 NL 回合开始时，随机将1张抓取牌加入手牌， NL 其耗能在本回合降低1点。"
   },
   "theYakuza:YakuzaGrabBat": {
-    "NAME": "抓取球拍",
-    "DESCRIPTION": " theyakuza:抓取 theyakuza:球拍 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:球拍 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。"
+    "NAME": "抓取球棒",
+    "DESCRIPTION": " theyakuza:抓取 theyakuza:球棒 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。",
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:球棒 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。"
   },
   "theYakuza:YakuzaPocketCircuit": {
     "NAME": "轨道赛车",
