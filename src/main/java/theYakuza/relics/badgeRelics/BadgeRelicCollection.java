@@ -28,12 +28,12 @@ public class BadgeRelicCollection {
         badgeRelics.add(JingweonBadgeRelic.ID);
         badgeRelics.add(KazamaBadgeRelic.ID);
         badgeRelics.add(MajimaBadgeRelic.ID);
-        badgeRelics.add(NishikiyamaBadgeRelic.ID);
+        // badgeRelics.add(NishikiyamaBadgeRelic.ID);
         badgeRelics.add(RyudoBadgeRelic.ID);
         badgeRelics.add(SaioBadgeRelic.ID);
         badgeRelics.add(ShibusawaBadgeRelic.ID);
         badgeRelics.add(ShimanoBadgeRelic.ID);
-        badgeRelics.add(SnakeFlowerBadgeRelic.ID);
+        // badgeRelics.add(SnakeFlowerBadgeRelic.ID);
         badgeRelics.add(SomeyaBadgeRelic.ID);
         badgeRelics.add(UenoSeiwaBadgeRelic.ID);
         badgeRelics.add(YomeiBadgeRelic.ID);

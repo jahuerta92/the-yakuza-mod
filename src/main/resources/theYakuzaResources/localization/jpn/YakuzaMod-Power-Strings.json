@@ -18,7 +18,7 @@
 },
 "theYakuza:Boxing": {
         "NAME": "拳威",
-        "DESCRIPTIONS": ["このターン中、プレイスポットを発動すると筋力 #b",　" を得る。"]
+        "DESCRIPTIONS": ["このターン中、プレイスポットを発動すると筋力 #b", " を得る。"]
 },
 "theYakuza:Mahjong": {
         "NAME": "麻雀",
