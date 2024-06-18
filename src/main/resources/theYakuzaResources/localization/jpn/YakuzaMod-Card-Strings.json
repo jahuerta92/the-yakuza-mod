@@ -153,7 +153,7 @@
     "DESCRIPTION": "ランダムな theyakuza:装備 を手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄 。"
   },
   "theYakuza:YakuzaPubCrawl": {
-    "NAME": "Pub Crawl",
+    "NAME": "ハシゴ酒",
     "DESCRIPTION": "theyakuza:プレイスポット 。 NL ランダムな theyakuza:プレイスポット を手札に加える。 このターン中、そのカードのコストは0。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "theyakuza:プレイスポット 。 NL ランダムな theyakuza:プレイスポット を手札に加える。 このターン中、そのカードのコストは0。"
   },
@@ -378,7 +378,7 @@
   },
   "theYakuza:YakuzaDuctTape": {
     "NAME": "頑丈な武器",
-    "DESCRIPTION": "theyakuza:装備 の theyakuza:耐久値 が1以下にならなくなる。 耐久値が !M! になった時、そのアイテムを 投擲 する。"
+    "DESCRIPTION": "theyakuza:装備 の theyakuza:耐久値 が1以下にならなくなる。 耐久値が !M! になった時、そのアイテムを投擲する。"
   },
   "theYakuza:YakuzaCarefulBlow": {
     "NAME": "武器の心得",
