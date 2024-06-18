@@ -60,7 +60,7 @@
   },
   "theYakuza:YakuzaEssenceOfRepair": {
     "NAME": "修繕",
-    "DESCRIPTION": "装備しているアイテムの theyakuza:耐久値 を !M! 増加させる。 NL (この行動は耐久値を消費しない。)"
+    "DESCRIPTION": " theyakuza:装備 しているアイテムの theyakuza:耐久値 を !M! 増加させる。 NL (この行動は耐久値を消費しない。)"
   },
   "theYakuza:YakuzaGrabPan": {
     "NAME": "路上凶器:フライパン",
@@ -79,7 +79,7 @@
   },
   "theYakuza:YakuzaEssenceOfParry": {
     "NAME": "弾き返し",
-    "DESCRIPTION": "アイテムを装備している場合、 !B! ブロックを得る。"
+    "DESCRIPTION": "アイテムを theyakuza:装備 している場合、 !B! ブロックを得る。"
   },
   "theYakuza:YakuzaPoker": {
     "NAME": "ポーカー",
@@ -96,11 +96,11 @@
   },
   "theYakuza:YakuzaEssenceOfWeaponFinish": {
     "NAME": "武器打撃の極み",
-    "DESCRIPTION": "武器を装備している場合、投擲する。 NL !D! ダメージを与える。"
+    "DESCRIPTION": "アイテムを theyakuza:装備 している場合、投擲する。 NL !D! ダメージを与える。"
   },
   "theYakuza:YakuzaEssenceOfWeaponCounter": {
     "NAME": "武器防御の極み",
-    "DESCRIPTION": "武器を装備している場合、投擲する。 NL !B! ブロック を得る。"
+    "DESCRIPTION": "アイテムを theyakuza:装備 している場合、投擲する。 NL !B! ブロック を得る。"
   },
   "theYakuza:YakuzaEssenceOfHeatPunches": {
     "NAME": "旋回砲火の極み",
@@ -185,8 +185,8 @@
   },
   "theYakuza:YakuzaGrabBike": {
     "NAME": "路上凶器:自転車",
-    "DESCRIPTION": "theyakuza:自転車 を theyakuza:装備する。",
-    "UPGRADE_DESCRIPTION": "theyakuza:自転車+ を theyakuza:装備する。"
+    "DESCRIPTION": "theyakuza:自転車 を theyakuza:装備 する。",
+    "UPGRADE_DESCRIPTION": "theyakuza:自転車+ を theyakuza:装備 する。"
   },
   "theYakuza:YakuzaBoxing": {
     "NAME": "ボクシングジム",
@@ -210,8 +210,8 @@
   },
   "theYakuza:YakuzaEssenceOfRecycling": {
     "NAME": "再利用",
-    "DESCRIPTION": "装備が破壊された時、 theyakuza:鉄パイプ を手札に加える。",
-    "UPGRADE_DESCRIPTION": "天武 。 NL 装備が破壊された時、 theyakuza:鉄パイプ+ を手札に加える。"
+    "DESCRIPTION": "theyakuza:装備 が破壊された時、 theyakuza:鉄パイプ を手札に加える。",
+    "UPGRADE_DESCRIPTION": "天武 。 NL theyakuza:装備 が破壊された時、 theyakuza:鉄パイプ+ を手札に加える。"
   },
   "theYakuza:YakuzaGrabBrokenPipe": {
     "NAME": "路上凶器:鉄パイプ",
@@ -265,7 +265,7 @@
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
     "NAME": "ザ・極み",
-    "DESCRIPTION": "theyakuza:ヒートを X 消費する。 NL !D! ダメージを X 回与える。 NL (!M! ダメージを与える。) "
+    "DESCRIPTION": "theyakuza:ヒート を X 消費する。 NL !D! ダメージを X 回与える。 NL (!M! ダメージを与える。) "
   },
   "theYakuza:YakuzaEssenceOfKiwami": {
     "NAME": "究極の極み",
@@ -324,7 +324,7 @@
   "theYakuza:YakuzaGrabStaminanX": {
     "NAME": "路上凶器:スタミナン",
     "DESCRIPTION": "theyakuza:スタミナン を theyakuza:装備 する。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "theyakuza:スタミナンロイヤル を theYakuza:装備 する。 NL 廃棄 。"
+    "UPGRADE_DESCRIPTION": "theyakuza:スタミナンロイヤル を theyakuza:装備 する。 NL 廃棄 。"
   },
   "theYakuza:YakuzaFridayNight": {
     "NAME": "Friday Night",
@@ -353,7 +353,7 @@
   },
   "theYakuza:YakuzaExtremeHeatMode": {
     "NAME": "EXヒートモード",
-    "DESCRIPTION": "theyakuza:ヒート の効果を !M! 増加させる。 NL ターン終了時、theyakuza:ヒート を1失う。"
+    "DESCRIPTION": "theyakuza:ヒート の効果を !M! 増加させる。 NL ターン終了時、 theyakuza:ヒート を 1 失う。"
   },
   "theYakuza:YakuzaDragonForm": {
     "NAME": "怒龍の気位",
