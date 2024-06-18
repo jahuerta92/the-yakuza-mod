@@ -13,8 +13,8 @@
   },
   "theYakuza:YakuzaGrabTrafficCone": {
     "NAME": "路上凶器:三角コーン",
-    "DESCRIPTION": " theyakuza:三角コーン を theyakuza:装備",
-    "UPGRADE_DESCRIPTION": " theyakuza:三角コーン+ を theyakuza:装備"
+    "DESCRIPTION": " theyakuza:三角コーン を theyakuza:装備 する。",
+    "UPGRADE_DESCRIPTION": " theyakuza:三角コーン+ を theyakuza:装備 する。"
   },
   "theYakuza:YakuzaBaseball": {
     "NAME": "草野球",
@@ -38,7 +38,7 @@
   },
   "theYakuza:YakuzaEssenceOfSlapping": {
     "NAME": "張り手の極み",
-    "DESCRIPTION": "!D! ダメージを与える。 NL この攻撃は theyakuza:ヒートの効果を !M! 回受ける。 NL theyakuza:ヒート 1 を得る。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL この攻撃は theyakuza:ヒート の効果を !M! 回受ける。 NL theyakuza:ヒート 1 を得る。"
   },
   "theYakuza:YakuzaEssenceOfSwiftStrikes": {
     "NAME": "サブマリンアッパー",
@@ -92,8 +92,7 @@
   },
   "theYakuza:YakuzaFishing": {
     "NAME": "釣り",
-    "DESCRIPTION": "theyakuza:プレイスポット 。 NL [E] [E] を得る。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"theyakuza:プレイスポット 。 NL [E] [E] [E] を得る。 NL 廃棄 。"
+    "DESCRIPTION": "theyakuza:プレイスポット 。 NL !M! [E] を得る。 NL 廃棄 。"
   },
   "theYakuza:YakuzaEssenceOfWeaponFinish": {
     "NAME": "武器打撃の極み",
@@ -143,7 +142,7 @@
   },
   "theYakuza:YakuzaDarts": {
     "NAME": "ダーツ",
-    "DESCRIPTION": "プレイスポット 。 NL !B! ブロック を得る。"
+    "DESCRIPTION": "theyakuza:プレイスポット 。 NL !B! ブロック を得る。"
   },
   "theYakuza:YakuzaEssenceOfImprovisation": {
     "NAME": "臨機応変",
@@ -186,8 +185,8 @@
   },
   "theYakuza:YakuzaGrabBike": {
     "NAME": "路上凶器:自転車",
-    "DESCRIPTION": "theyakuza:自転車を theyakuza:装備する。",
-    "UPGRADE_DESCRIPTION": "theyakuza:自転車+を theyakuza:装備する。"
+    "DESCRIPTION": "theyakuza:自転車 を theyakuza:装備する。",
+    "UPGRADE_DESCRIPTION": "theyakuza:自転車+ を theyakuza:装備する。"
   },
   "theYakuza:YakuzaBoxing": {
     "NAME": "ボクシングジム",
@@ -379,7 +378,7 @@
   },
   "theYakuza:YakuzaDuctTape": {
     "NAME": "頑丈な武器",
-    "DESCRIPTION": "theyakuza:装備 の theyakuza:耐久値 が1以下にならなくなる。 耐久値が !M! になった時、そのアイテムを theyakuza:投擲 する。"
+    "DESCRIPTION": "theyakuza:装備 の theyakuza:耐久値 が1以下にならなくなる。 耐久値が !M! になった時、そのアイテムを 投擲 する。"
   },
   "theYakuza:YakuzaCarefulBlow": {
     "NAME": "武器の心得",
