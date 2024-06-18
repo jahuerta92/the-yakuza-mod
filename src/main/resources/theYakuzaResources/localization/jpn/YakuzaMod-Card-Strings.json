@@ -11,14 +11,14 @@
     "NAME": "フィニッシュブロウ",
     "DESCRIPTION": " !D! ダメージを与える。 NL theyakuza:ヒート 1 を得る。"
   },
-  "theYakuza:YakuzagrabTrafficCone": {
+  "theYakuza:YakuzaGrabTrafficCone": {
     "NAME": "路上凶器:三角コーン",
-    "DESCRIPTION": " theyakuza:三角コーン を theyakuza:装備 する。",
-    "UPGRADE_DESCRIPTION": " theyakuza:三角コーン+ を theyakuza:装備 する。"
+    "DESCRIPTION": " theyakuza:三角コーン を theyakuza:装備",
+    "UPGRADE_DESCRIPTION": " theyakuza:三角コーン+ を theyakuza:装備"
   },
   "theYakuza:YakuzaBaseball": {
     "NAME": "草野球",
-    "DESCRIPTION": "theyakuza:プレイスポット 。 NL !D! ダメージを与える。"
+    "DESCRIPTION": "theyakuza:プレイスポット NL !D! ダメージを与える。"
   },
   "theYakuza:YakuzaEssenceOfSweepKick": {
     "NAME": "ライズトルネード",
@@ -30,7 +30,7 @@
   },
   "theYakuza:YakuzaEssenceOfMultiStrikes": {
     "NAME": "驚愕の極み",
-    "DESCRIPTION": "theyakuza:ヒート を 1 消費する。 NL !D! ダメージを !M! 回与える。 NL このカードをプレイするたび、攻撃回数を 1 増加させる。"
+    "DESCRIPTION": "theyakuza:ヒート を1消費する。 NL !D! ダメージを !M! 回与える。 NL このカードをプレイするたび、攻撃回数を 1 増加させる。"
   },
   "theYakuza:YakuzaEssenceOfHeadCrush": {
     "NAME": "意地反撃の極み",
@@ -38,7 +38,7 @@
   },
   "theYakuza:YakuzaEssenceOfSlapping": {
     "NAME": "張り手の極み",
-    "DESCRIPTION": "!D! ダメージを与える。 NL この攻撃は theyakuza:ヒート の効果を !M! 回受ける。 NL theyakuza:ヒート 1 を得る。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL この攻撃は theyakuza:ヒートの効果を !M! 回受ける。 NL theyakuza:ヒート 1 を得る。"
   },
   "theYakuza:YakuzaEssenceOfSwiftStrikes": {
     "NAME": "サブマリンアッパー",
@@ -62,24 +62,24 @@
     "NAME": "修繕",
     "DESCRIPTION": "装備しているアイテムの theyakuza:耐久値 を !M! 増加させる。 NL (この行動は耐久値を消費しない。)"
   },
-  "theYakuza:YakuzagrabPan": {
+  "theYakuza:YakuzaGrabPan": {
     "NAME": "路上凶器:フライパン",
     "DESCRIPTION": "theyakuza:フライパン を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "theyakuza:フライパン+ を theyakuza:装備 する。"
   },
-  "theYakuza:YakuzagrabNunchaku": {
+  "theYakuza:YakuzaGrabNunchaku": {
     "NAME": "路上凶器:ヌンチャク",
     "DESCRIPTION": "theyakuza:ヌンチャク を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "theyakuza:ヌンチャク+ を theyakuza:装備 する。"
   },
-  "theYakuza:YakuzagrabNamelessKatana": {
+  "theYakuza:YakuzaGrabNamelessKatana": {
     "NAME": "路上凶器:刀",
     "DESCRIPTION": "theyakuza:無銘の刀 を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "theyakuza:無銘の刀+ を theyakuza:装備 する。"
   },
   "theYakuza:YakuzaEssenceOfParry": {
     "NAME": "弾き返し",
-    "DESCRIPTION": "アイテムを装備している場合、 ブロック !B! を得る。"
+    "DESCRIPTION": "アイテムを装備している場合、 !B! ブロックを得る。"
   },
   "theYakuza:YakuzaPoker": {
     "NAME": "ポーカー",
@@ -92,7 +92,8 @@
   },
   "theYakuza:YakuzaFishing": {
     "NAME": "釣り",
-    "DESCRIPTION": "theyakuza:プレイスポット 。 NL !M! [E] を得る。 NL 廃棄 。"
+    "DESCRIPTION": "theyakuza:プレイスポット 。 NL [E] [E] を得る。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"theyakuza:プレイスポット 。 NL [E] [E] [E] を得る。 NL 廃棄 。"
   },
   "theYakuza:YakuzaEssenceOfWeaponFinish": {
     "NAME": "武器打撃の極み",
@@ -117,7 +118,7 @@
   },
   "theYakuza:YakuzaEssenceOfHitAndRun": {
     "NAME": "スウェイブロウ",
-    "DESCRIPTION": "!D! ダメージを与える。 NL !B! ブロックを得る。 NL ヒート 1 を得る。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL !B! ブロック を得る。 NL theyakuza:ヒート 1 を得る。"
   },
   "theYakuza:YakuzaEssenceOfFollowUp": {
     "NAME": "捌き討ち",
@@ -185,8 +186,8 @@
   },
   "theYakuza:YakuzaGrabBike": {
     "NAME": "路上凶器:自転車",
-    "DESCRIPTION": "theyakuza:自転車 を theyakuza:装備 する。",
-    "UPGRADE_DESCRIPTION": "theyakuza:自転車+ を theyakuza:装備 する。"
+    "DESCRIPTION": "theyakuza:自転車を theyakuza:装備する。",
+    "UPGRADE_DESCRIPTION": "theyakuza:自転車+を theyakuza:装備する。"
   },
   "theYakuza:YakuzaBoxing": {
     "NAME": "ボクシングジム",
@@ -196,7 +197,7 @@
     "NAME": "雀荘",
     "DESCRIPTION": "theyakuza:プレイスポット 。 NL theyakuza:プレイスポット が発動するたび、 !M! ブロック を得る。"
   },
-  "theYakuza:YakuzaEssenceOfAggresivegrabs": {
+  "theYakuza:YakuzaEssenceOfAggresiveGrabs": {
     "NAME": "オート武器攻撃",
     "DESCRIPTION": "1ターンに1度、 theyakuza:装備 をプレイしたとき、敵全体に !M! ダメージを与える。"
   },
@@ -213,7 +214,7 @@
     "DESCRIPTION": "装備が破壊された時、 theyakuza:鉄パイプ を手札に加える。",
     "UPGRADE_DESCRIPTION": "天武 。 NL 装備が破壊された時、 theyakuza:鉄パイプ+ を手札に加える。"
   },
-  "theYakuza:YakuzagrabBrokenPipe": {
+  "theYakuza:YakuzaGrabBrokenPipe": {
     "NAME": "路上凶器:鉄パイプ",
     "DESCRIPTION": "theyakuza:鉄パイプ を theyakuza:装備 する。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "theyakuza:鉄パイプ+ を theyakuza:装備 する。 NL 廃棄 。"
@@ -261,7 +262,7 @@
   },
   "theYakuza:YakuzaKomakiParry": {
     "NAME": "古牧流 弾き返し",
-    "DESCRIPTION": "theyakuza:古牧流武術 。 NL 敵が攻撃予定の場合、 !D! ダメージを与え、 1 ターンの間スタンさせる。 NL theyakuza:ヒート  1 を得る。 NL 廃棄。"
+    "DESCRIPTION": "theyakuza:古牧流武術 。 NL 敵が攻撃予定の場合、 !D! ダメージを与え、 1 ターンの間 スタン させる。 NL theyakuza:ヒート 1 を得る。 NL 廃棄 。"
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
     "NAME": "ザ・極み",
@@ -282,7 +283,7 @@
     "DESCRIPTION": "!D! ダメージを与える。 NL theyakuza:ヒート 1 を得る。 NL theyakuza:メリケンサック を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL theyakuza:ヒート 1 を得る。 NL theyakuza:メリケンサック+ を theyakuza:装備 する。"
   },
-  "theYakuza:YakuzagrabDragonKart": {
+  "theYakuza:YakuzaGrabDragonKart": {
     "NAME": "ドラゴンカート",
     "DESCRIPTION": "theyakuza:プレイスポット 。 NL theyakuza:ドラゴンカート を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "theyakuza:プレイスポット 。 NL theyakuza:ドラゴンカート+ を theyakuza:装備 する。"
@@ -291,12 +292,12 @@
   "theYakuza:YakuzaEssenceOfUltimatePower": {
     "NAME": "勝機！",
     "DESCRIPTION": "theyakuza:ヒート を最大まで得る。 NL カードを 3 枚引く。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "天武。 NL theyakuza:ヒート を最大まで得る。 NL カードを 3 枚引く。 NL 廃棄 。 "
+    "UPGRADE_DESCRIPTION": "天武 。 NL theyakuza:ヒート を最大まで得る。 NL カードを 3 枚引く。 NL 廃棄 。 "
 
   },
   "theYakuza:YakuzaBakaMitai": {
     "NAME": "Dame Dane",
-    "DESCRIPTION": "theyakuza:プレイスポット. NL !M! [E] を得る。 NL カードを 2 枚引く。 NL 脆弱 2 を得る。 NL 廃棄 。"
+    "DESCRIPTION": "theyakuza:プレイスポット 。 NL !M! [E] を得る。 NL カードを 2 枚引く。 NL 脆弱 2 を得る。 NL 廃棄 。"
   },
   "theYakuza:YakuzaCabaretClubGrandPrix": {
     "NAME": "フィーバー発動！",
@@ -307,21 +308,21 @@
     "DESCRIPTION": "theyakuza:古牧流武術 。 NL 敵が攻撃予定の場合、自分の失ったHPと同数の ブロック を得る。 NL (!B! ブロック を得る。)",
     "UPGRADE_DESCRIPTION": "theyakuza:古牧流武術 。 NL 敵が攻撃予定の場合、自分の失ったHPの2倍の ブロック を得る。 NL (!B! ブロック を得る。)"
   },
-  "theYakuza:YakuzagrabMotorcycle": {
+  "theYakuza:YakuzaGrabMotorcycle": {
     "NAME": "路上凶器:バイク",
     "DESCRIPTION": "theyakuza:バイク を theyakuza:装備 する。",
     "UPGRADE_DESCRIPTION": "theyakuza:バイク+ を theyakuza:装備 する。"
   },
-  "theYakuza:YakuzagrabRamen": {
+  "theYakuza:YakuzaGrabRamen": {
     "NAME": "路上凶器:ラーメン",
     "DESCRIPTION": "一時的にHPを !M! 得る。 NL theyakuza:ラーメン を theyakuza:装備 する。"
   },
-  "theYakuza:YakuzagrabDemonfireDagger": {
+  "theYakuza:YakuzaGrabDemonfireDagger": {
     "NAME": "路上凶器:鬼炎のドス",
     "DESCRIPTION": "theyakuza:鬼炎のドス を theyakuza:装備 する。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "theyakuza:鬼炎のドス+ を theyakuza:装備 する。 NL 廃棄 。"
   },
-  "theYakuza:YakuzagrabStaminanX": {
+  "theYakuza:YakuzaGrabStaminanX": {
     "NAME": "路上凶器:スタミナン",
     "DESCRIPTION": "theyakuza:スタミナン を theyakuza:装備 する。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "theyakuza:スタミナンロイヤル を theYakuza:装備 する。 NL 廃棄 。"
@@ -363,10 +364,10 @@
   },
   "theYakuza:YakuzaKamurochoStreets": {
     "NAME": "天下一通り",
-    "DESCRIPTION": "ターン開始時、ランダムな theYakuza:装備 カードを手札に加える。 NL このターン中、そのカードはコスト 1 減少。",
-    "UPGRADE_DESCRIPTION": "天武 。 NL ターン開始時、ランダムな theYakuza:装備 カードを手札に加える。 NL このターン中、そのカードはコスト 1 減少。"
+    "DESCRIPTION": "ターン開始時、ランダムな theyakuza:装備 カードを手札に加える。 NL このターン中、そのカードはコスト1減少。",
+    "UPGRADE_DESCRIPTION": "天武 。 NL ターン開始時、ランダムな theyakuza:装備 カードを手札に加える。 NL このターン中、そのカードはコスト1減少。"
   },
-  "theYakuza:YakuzagrabBat": {
+  "theYakuza:YakuzaGrabBat": {
     "NAME": "路上凶器:バット",
     "DESCRIPTION": "theyakuza:バット を theyakuza:装備 する。 NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。",
     "UPGRADE_DESCRIPTION": "theyakuza:バット を theyakuza:装備 する。 NL このカードは何回でもアップグレードできる。 NL 戦闘開始時に、デッキ内の theyakuza:装備 の枚数だけこのカードをアップグレードする。"
