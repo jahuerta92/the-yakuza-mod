@@ -21,7 +21,7 @@
     ]
   },
   "theYakuza:BatItem": {
-    "NAME": "球拍",
+    "NAME": "球棒",
     "DESCRIPTION": [
       " #y攻击 :伤害提高 #b",
       " 点。",
@@ -54,7 +54,7 @@
     ]
   },
   "theYakuza:NamelessKatanaItem": {
-    "NAME": "无名刀",
+    "NAME": "无铭刀",
     "DESCRIPTION": [
       " #y攻击 :伤害提高 #b",
       " 点。",
@@ -151,7 +151,7 @@
     ]
   },
   "theYakuza:DemonfireDaggerItem": {
-    "NAME": "魔焰匕首",
+    "NAME": "鬼炎的匕首",
     "DESCRIPTION": [
       " #y攻击 :下次攻击伤害提高 #b",
       " 点。",
@@ -162,10 +162,10 @@
     ]
   },
   "theYakuza:StaminanXItem": {
-    "NAME": "耐力饮料",
+    "NAME": "精力饮料",
     "DESCRIPTION": [
       " #y攻击 :获得 #b",
-      " 层 热力 。",
+      " 层 热血值 。",
       " NL #y技能 :回复 #b",
       " 点 生命。",
       " NL #y投掷 :获得 #b",

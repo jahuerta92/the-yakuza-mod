@@ -1,32 +1,32 @@
 {
   "theYakuza:IdentityCrisisEvent": {
-    "NAME": "Identity Crisis",
+    "NAME": "身份危机",
     "DESCRIPTIONS": [
-      "As you move through ~The~ ~City~ you come across a #pPurple #pMirror. NL You look at it, but you see no reflection.",
-      "You see no one but #g~You~ #g~wish~ #g~to~ #g~become~ #g~someone.~",
-      "#r@YOU@ #r@EXIST@ #r@AND@ #r@ARE@ #r@VALID!@",
-      "#yYou #yare #yat #ypeace #ywith #yyour #ypresence.",
-      "You have no hands."
+      "在穿过 ~城市~ 时，你遇到一面 #p紫色镜子 。 NL 你看向它，但看不见倒影",
+      "你没看见任何人，但 #g~你希望变成某个人。~",
+      "#r@你的存在被确认了@",
+      "#y你对自己的存在感到平静。",
+      "你没有双手。"
     ],
     "OPTIONS": [
-      "[Inspiration] #gGain #ga #gRandom #gStarting #gRelic.",
-      "[Denial] #rLose #r",
-      " #rMax #rHP. #gRemove #ga #gCard #gfrom #gyour #gdeck.",
-      "[Acceptance] #gGain #gApotheosis.",
-      "[TOUCH THE MIRROR] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
-      "[Leave]",
-      "Select card to remove."
+      "[振奋] #g获得一个随机的初始遗物",
+      "[拒绝] #失去 #r",
+      " #r最大生命值。 #g从你的牌组中移除一张牌",
+      "[接受] #g获得神化。",
+      "[触碰镜子] TOUCH TOUCH TO#C# TOUCH TO UCH TOUCH #rTOUCH TOUCH",
+      "[离开]",
+      "选择要移除的牌"
     ]
   },
   "theYakuza:MajimaEvent": {
-    "NAME": "A sketchy old friend...",
+    "NAME": "真岛趴趴走",
     "DESCRIPTIONS": [
-      "Through the streets of the city you came across the red district. NL You hear a familiar ~chuckle~ . NL A weird yakuza welcomes you with a smile and a shiv. NL ~Kiryu~ ~CHAN~ .",
-      "The Mad Dog of Shimano welcomes your spirit."
+      "穿过城市的街道后来到了红灯区，你听到后面传来熟悉的 ~笑声~ 。NL 当你转身时，一个奇怪的黑道正在走近，脸上挂着灿烂的笑容。NL ”我看到你了！ ~桐生老弟！~ ",
+      "岛野的狂犬为即将开始的战斗而兴奋得颤抖。"
     ],
     "OPTIONS": [
-      "[Fight] #rFight #rthe #rstranger. #gGain #ga #gRandom #gBoss #gRelic.",
-      "[Flight] Escape the stranger."
+      "[战斗] #r与神秘男子战斗. #g获得一个随机的Boss遗物。",
+      "[逃走] 立刻离开这个地方。"
     ]
   }
 }

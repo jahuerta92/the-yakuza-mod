@@ -25,11 +25,11 @@
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaEssenceOfComboRush": {
-    "NAME": "连击冲刺",
+    "NAME": "冲刺连击",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你有 theyakuza:热血值 ，获得 [E] 。 NL 获得 1 层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaEssenceOfMultiStrikes": {
-    "NAME": "多重打击",
+    "NAME": "连击的精髓",
     "DESCRIPTION": "使用1层 theyakuza:热血值 。 NL 造成 !D! 点伤害 !M! 次。 NL 打出后，这张牌的攻击次数增加1次。"
   },
   "theYakuza:YakuzaEssenceOfHeadCrush": {
@@ -41,7 +41,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 这张牌的伤害受 !M! 倍 theyakuza:热血值 影响。 NL 获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaEssenceOfSwiftStrikes": {
-    "NAME": "蜻蜓点水",
+    "NAME": "闪身击",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaBowling": {
@@ -54,12 +54,12 @@
     "UPGRADE_DESCRIPTION": "获得2层 theyakuza:热血值 。获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfWeave": {
-    "NAME": "躲闪",
+    "NAME": "摇摆闪躲",
     "DESCRIPTION": "使用1层 theyakuza:热血值 。 NL 阻止本回合下次即将受到的生命损失。",
     "UPGRADE_DESCRIPTION": "使用1层 theyakuza:热血值 。 NL 阻止本回合下次即将受到的生命损失。 NL 抽1张牌。"
   },
   "theYakuza:YakuzaEssenceOfRepair": {
-    "NAME": "锻造师",
+    "NAME": "修缮",
     "DESCRIPTION": "给当前装备道具增加 !M! 点 theyakuza:耐久度 。 NL (这张牌不会消耗道具耐久度)"
   },
   "theYakuza:YakuzaGrabPan": {
@@ -73,12 +73,12 @@
     "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:双截棍+ 。"
   },
   "theYakuza:YakuzaGrabNamelessKatana": {
-    "NAME": "抓取无名刀",
-    "DESCRIPTION": " theyakuza:抓取 theyakuza:无名刀 。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:无名刀+ 。"
+    "NAME": "抓取无铭刀",
+    "DESCRIPTION": " theyakuza:抓取 theyakuza:无铭刀 。",
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:无铭刀+ 。"
   },
   "theYakuza:YakuzaEssenceOfParry": {
-    "NAME": "精髓招架",
+    "NAME": "武器招架",
     "DESCRIPTION": "如果装备有道具，则获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaPoker": {
@@ -95,19 +95,19 @@
     "DESCRIPTION": " theyakuza:小游戏 。 NL 获得 !M! [E] 。 NL 消耗 。"
   },
   "theYakuza:YakuzaEssenceOfWeaponFinish": {
-    "NAME": "武器终结",
+    "NAME": "武器打击的精髓",
     "DESCRIPTION": "如果装备有道具，将其投掷。 NL 造成 !D! 点伤害。"
   },
   "theYakuza:YakuzaEssenceOfWeaponCounter": {
-    "NAME": "武器反击",
+    "NAME": "武器防御的精髓",
     "DESCRIPTION": "如果装备有道具，将其投掷。 NL 获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfHeatPunches": {
-    "NAME": "热力暴走",
+    "NAME": "热血暴走",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 每有1层 theyakuza:热血值 ，重复一次。 NL 获得1层 theyakuza:热血值 。 NL 消耗 。"
   },
   "theYakuza:YakuzaEssenceOfDropkick": {
-    "NAME": "飞坠踢",
+    "NAME": "舍身踢",
     "DESCRIPTION": "造成 !D! 点伤害X次。 NL 每次攻击获得1层 theyakuza:热血值 。 NL 结束你的回合。 NL (造成 !M! 点伤害)。"
   },
   "theYakuza:YakuzaEssenceOfWeaponMastery": {
@@ -116,7 +116,7 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 三倍道具加成。"
   },
   "theYakuza:YakuzaEssenceOfHitAndRun": {
-    "NAME": "放风筝",
+    "NAME": "游击战术",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaEssenceOfFollowUp": {
@@ -124,7 +124,7 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合随机手牌耗能降低1点。 NL 获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaEssenceOfDisarming": {
-    "NAME": "卸臂",
+    "NAME": "缴械的精髓",
     "DESCRIPTION": "使用2层 theyakuza:热血值 。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 施加2层 虚弱 。"
   },
   "theYakuza:YakuzaTelephoneClub": {
@@ -145,7 +145,7 @@
     "DESCRIPTION": " theyakuza:小游戏 。 NL 获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfImprovisation": {
-    "NAME": "即兴创作",
+    "NAME": "随机应变",
     "DESCRIPTION": "将一张随机 theyakuza:热血值 牌加入手牌，其耗能在本回合为0。 NL 消耗 。"
   },
   "theYakuza:YakuzaEssenceOfQuickGrab": {
@@ -168,7 +168,7 @@
     "UPGRADE_DESCRIPTION": " theyakuza:小游戏 。 NL 其效果变为三倍。 NL 获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfSwitchGrab": {
-    "NAME": "交换抓取",
+    "NAME": "换手抓取",
     "DESCRIPTION": "随机打出一张 theyakuza:抓取 牌。",
     "UPGRADE_DESCRIPTION": "随机打出一张已升级的 theyakuza:抓取 牌。"
 
@@ -201,8 +201,8 @@
     "DESCRIPTION": "每回合第一次 theyakuza:抓取 时，对所有敌人造成 !M! 点伤害。"
   },
   "theYakuza:YakuzaEssenceOfBurningHeat": {
-    "NAME": "热力燃烧",
-    "DESCRIPTION": "When your turn starts, deal 3 damage to a random enemy + !M! times theyakuza:Heat."
+    "NAME": "热血沸腾",
+    "DESCRIPTION": "你的回合开始时, 对一个随机敌人造成 3 点伤害 + !M! theyakuza:Heat. 次"
   },
   "theYakuza:YakuzaEssenceOfDurableWeapons": {
     "NAME": "耐用武器",
@@ -219,28 +219,28 @@
     "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:破管道+ 。 NL 消耗 。"
   },
   "theYakuza:YakuzaBeastStyle": {
-    "NAME": "火爆浪子形态",
+    "NAME": "火爆浪子风格",
     "DESCRIPTION": "每当 theyakuza:抓取 时，抽1张攻击牌，其耗能在本回合降低1点。"
   },
   "theYakuza:YakuzaRushStyle": {
-    "NAME": "快攻手形态",
+    "NAME": "快攻手风格",
     "DESCRIPTION": "失去 !M! 点 力量 。 NL 每当打出攻击牌，获得 !theYakuza:SecondMagic! 点临时 敏捷 。"
   },
   "theYakuza:YakuzaBrawlerStyle": {
-    "NAME": "流氓形态",
-    "DESCRIPTION": "每当失去生命，获得1层 theyakuza:复仇 。"
+    "NAME": "流氓风格",
+    "DESCRIPTION": "每当失去生命，获得1层 theyakuza:坚毅反击 。"
   },
   "theYakuza:YakuzaEssenceOfBlocking": {
     "NAME": "热血格挡",
     "DESCRIPTION": "使用1层 theyakuza:热血值 。 NL 获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfSteel": {
-    "NAME": "钢铁精华",
+    "NAME": "莲家硬体术",
     "DESCRIPTION": "使用1层 theyakuza:热血值 。 NL 获得 !M! 层 金属化 。 NL 获得 !M! 层 多层护甲 。 NL 消耗 。"
   },
   "theYakuza:YakuzaEssenceOfRetaliation": {
-    "NAME": "复仇",
-    "DESCRIPTION": "获得 !M! 层 theyakuza:复仇 。"
+    "NAME": "坚毅反击",
+    "DESCRIPTION": "获得 !M! 层 theyakuza:坚毅反击 。"
   },
   "theYakuza:YakuzaGrabSais": {
     "NAME": "抓取铁尺",
@@ -248,7 +248,7 @@
     "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:铁尺+ 。"
   },
   "theYakuza:YakuzaEssenceOfPolish": {
-    "NAME": "抛光",
+    "NAME": "研磨",
     "DESCRIPTION": "道具除耐久度以外的属性提高 !M! 点。"
   },
   "theYakuza:YakuzaEssenceOfIntimidation": {
@@ -260,7 +260,7 @@
     "DESCRIPTION": " theyakuza:古牧流招式 。 NL 只能对意图是攻击的敌人打出。造成 !D! 点伤害。获得1层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaKomakiParry": {
-    "NAME": "古牧流-招架",
+    "NAME": "古牧流-化劲",
     "DESCRIPTION": " theyakuza:古牧流招式 。 NL 只能对意图是攻击的敌人打出。造成 !D! 点伤害并击晕1回合。 NL 获得1层 theyakuza:热血值 。 NL 消耗 。"
   },
   "theYakuza:YakuzaEssenceOfTheDragonGod": {
@@ -268,13 +268,13 @@
     "DESCRIPTION": "使用所有 theyakuza:热血值 。 NL 每层 theyakuza:热血值 造成 !D! 点伤害。 NL (造成 !M! 点伤害)。 "
   },
   "theYakuza:YakuzaEssenceOfKiwami": {
-    "NAME": "极之终结",
+    "NAME": "究极的精髓",
     "DESCRIPTION": "使用3层 theyakuza:热血值 。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
   },
   "theYakuza:YakuzaEssenceOfNoMercy": {
     "NAME": "毫不留情",
-    "DESCRIPTION": "根据敌人已损失的生命值造成伤害。 NL (造成 !D! 点伤害) NL 获得1层 theyakuza:热血值 。",
-    "UPGRADE_DESCRIPTION": "根据敌人已损失的生命值造成更多伤害。 NL (造成 !D! 点伤害) NL 获得1层 theyakuza:热血值 。"
+    "DESCRIPTION": "造成敌人已损失生命值三分之一的伤害。 NL (造成 !D! 点伤害) NL 获得1层 theyakuza:热血值 。",
+    "UPGRADE_DESCRIPTION": "造成敌人已损失生命值二分之一的伤害。 NL (造成 !D! 点伤害) NL 获得1层 theyakuza:热血值 。"
 
   },
   "theYakuza:YakuzaEssenceOfIronFists": {
@@ -289,7 +289,7 @@
 
   },
   "theYakuza:YakuzaEssenceOfUltimatePower": {
-    "NAME": "究极之力",
+    "NAME": "胜机！",
     "DESCRIPTION": " theyakuza:热血值 提高至上限。 NL 抽3张牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": " 固有 。 NL theyakuza:热血值 提高至上限。 NL 抽3张牌。 NL 消耗 。"
 
@@ -303,7 +303,7 @@
     "DESCRIPTION": "玩 theyakuza:小游戏 !M! 次。"
   },
   "theYakuza:YakuzaKomakiKnockback": {
-    "NAME": "古牧流-震退",
+    "NAME": "古牧流-硬撼",
     "DESCRIPTION": " theyakuza:古牧流招式 。 NL 只能对意图是攻击的敌人打出。获得等同于自身已损失生命值的 格挡 。 NL (获得 !B! 点 格挡 )。",
     "UPGRADE_DESCRIPTION": " theyakuza:古牧流招式 。 NL 只能对意图是攻击的敌人打出。获得等同于自身已损失生命值两倍的 格挡 。 NL (获得 !B! 点 格挡 )。"
   },
@@ -317,14 +317,14 @@
     "DESCRIPTION": "获得 !M! 点 临时生命 。 NL theyakuza:抓取 theyakuza:拉面 。"
   },
   "theYakuza:YakuzaGrabDemonfireDagger": {
-    "NAME": "抓取魔焰匕首",
-    "DESCRIPTION": " theyakuza:抓取 theyakuza:魔焰匕首 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:魔焰匕首+ 。 NL 消耗 。"
+    "NAME": "抓取鬼炎的匕首",
+    "DESCRIPTION": " theyakuza:抓取 theyakuza:鬼炎的匕首 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:鬼炎的匕首+ 。 NL 消耗 。"
   },
   "theYakuza:YakuzaGrabStaminanX": {
-    "NAME": "抓取耐力饮料",
-    "DESCRIPTION": " theyakuza:抓取 theyakuza:耐力饮料 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:浓缩耐力饮料 。 NL 消耗 。"
+    "NAME": "抓取精力饮料",
+    "DESCRIPTION": " theyakuza:抓取 theyakuza:精力饮料 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:浓缩精力饮料 。 NL 消耗 。"
   },
   "theYakuza:YakuzaFridayNight": {
     "NAME": "星期五之夜",
@@ -336,27 +336,27 @@
     "DESCRIPTION": " theyakuza:小游戏 。 NL 每次玩 theyakuza:小游戏 都会额外触发其他 !M! 种不同的效果。"
   },
   "theYakuza:YakuzaColiseum": {
-    "NAME": "竞技场",
+    "NAME": "斗技场",
     "DESCRIPTION": " theyakuza:小游戏 。 NL 每当玩 theyakuza:小游戏 时，获得1层 theyakuza:热血值 。"
   },
   "theYakuza:Yakuza4thChairman": {
-    "NAME": "第四任头领",
+    "NAME": "四代目会长",
     "DESCRIPTION": " theyakuza:热血值 上限提高 !M! 点。获得3层 theyakuza:热血值 。"
   },
   "theYakuza:YakuzaFuryOfTheAzureDragon": {
-    "NAME": "青龙之怒",
+    "NAME": "应龙之怒",
     "DESCRIPTION": " theyakuza:热血值 不再降低。"
   },
   "theYakuza:YakuzaDragonOfDojimaStyle": {
-    "NAME": "堂岛之龙",
+    "NAME": "堂岛之龙风格",
     "DESCRIPTION": "每当打出耗能大于等于1费的攻击牌时，将1张耗能降低1点、伤害变为1/3且带有抹除的复制品加入手牌。"
   },
   "theYakuza:YakuzaExtremeHeatMode": {
-    "NAME": "极热模式",
+    "NAME": "究极热血模式",
     "DESCRIPTION": " theyakuza:热血值 的效果提高 !M! 点。 NL 回合结束时， theyakuza:热血值 降低1层。 "
   },
   "theYakuza:YakuzaDragonForm": {
-    "NAME": "龙之形态",
+    "NAME": "怒龙形态",
     "DESCRIPTION": " 虚无 。 NL 回合开始时，所有增益状态提高1层。",
     "UPGRADE_DESCRIPTION": "回合开始时，所有增益状态提高1层。"
 
@@ -367,9 +367,9 @@
     "UPGRADE_DESCRIPTION": " 固有 。 NL 回合开始时，随机将1张抓取牌加入手牌， NL 其耗能在本回合降低1点。"
   },
   "theYakuza:YakuzaGrabBat": {
-    "NAME": "抓取球拍",
-    "DESCRIPTION": " theyakuza:抓取 theyakuza:球拍 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:球拍 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。"
+    "NAME": "抓取球棒",
+    "DESCRIPTION": " theyakuza:抓取 theyakuza:球棒 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。",
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:球棒 。 NL 可被多次升级。 NL 战斗开始时，牌组中每有一张 theyakuza:抓取 牌，这张牌就升级一次。"
   },
   "theYakuza:YakuzaPocketCircuit": {
     "NAME": "轨道赛车",
@@ -381,7 +381,7 @@
     "DESCRIPTION": " theyakuza:耐久度 不会降低至1以下。投掷时，总是以耐久度为 !M! 计算。"
   },
   "theYakuza:YakuzaCarefulBlow": {
-    "NAME": "小心偷袭",
+    "NAME": "武器的心得",
     "DESCRIPTION": "造成 !D! 点伤害。同时触发技能牌的效果。"
   }
 
