@@ -5,7 +5,7 @@
 },
 "theYakuza:TaurinerPotion": {
         "NAME": "红牛",
-        "DESCRIPTIONS": ["获得 #b", " 层 #y热力 。"]
+        "DESCRIPTIONS": ["获得 #b", " 层 #y热血值 。"]
 },
 "theYakuza:ChampagnePotion": {
         "NAME": "香槟雨",
@@ -21,7 +21,7 @@
 },
 "theYakuza:WindPotion": {
         "NAME": "风之药水",
-        "DESCRIPTIONS": ["获得 #b", " 层 #y迂回 。"]
+        "DESCRIPTIONS": ["获得 #b", " 层 #y摇摆闪躲 。"]
 },
 "theYakuza:DragonPotion": {
         "NAME": "龙之药水",

@@ -49,21 +49,21 @@
     "NAME": "龙纹",
     "FLAVOR": "感受我的咆哮吧。",
     "DESCRIPTIONS": [
-      " #ytheyakuza:热力 不会因失去生命而降低。 "
+      " #ytheyakuza:热血值 不会因失去生命而降低。 "
     ]
   },
   "theYakuza:ManholeCoverRelic": {
     "NAME": "井盖",
-    "FLAVOR": "欢迎来到炼狱。",
+    "FLAVOR": "欢迎来到赛之河原。",
     "DESCRIPTIONS": [
       "战斗开始时，将一张 #y破管道 加入手牌。"
     ]
   },
   "theYakuza:TojoRenegadeRelic": {
-    "NAME": "东城会的叛徒",
-    "FLAVOR": "抱歉，阿锦。",
+    "NAME": "东城会叛徒的徽章",
+    "FLAVOR": "只能这样做了吗，锦。。。",
     "DESCRIPTIONS": [
-      "替换 #r东城会徽章 。 NL 战斗开始时，获得 #b2 层 #ytheyakuza:热力 。"
+      "替换 #r东城会徽章 。 NL 战斗开始时，获得 #b2 层 #ytheyakuza:热血值 。"
     ]
   },
   "theYakuza:MicrophoneRelic": {
@@ -74,17 +74,17 @@
     ]
   },
   "theYakuza:HardHatRelic": {
-    "NAME": "硬帽子",
-    "FLAVOR": "A school for youth's way of life. Creating Smiles",
+    "NAME": "安全帽",
+    "FLAVOR": "生命之诗",
     "DESCRIPTIONS": [
-      "每回合开始时获得 [E] 。无法再获得 #y力量 、 #y敏捷 和 #ytheyakuza:热力 。"
+      "每回合开始时获得 [E] 。无法再获得 #y力量 、 #y敏捷 和 #ytheyakuza:热血值 。"
     ]
   },
   "theYakuza:IrezumiRelic": {
     "NAME": "刺青",
     "FLAVOR": "像龙一样。",
     "DESCRIPTIONS": [
-      "每当获得 #ytheyakuza:热力 ，回复 #b1 点生命。"
+      "每当获得 #ytheyakuza:热血值 ，回复 #b1 点生命。"
     ]
   },
   "theYakuza:IdolsRodRelic": {
@@ -95,7 +95,7 @@
     ]
   },
   "theYakuza:ThrowingGlovesRelic": {
-    "NAME": "投掷手套",
+    "NAME": "投手手套",
     "FLAVOR": "退役运动员的好伙伴。",
     "DESCRIPTIONS": [
       " #y投掷 的效果翻倍。"
@@ -112,7 +112,7 @@
     "NAME": "冴岛的外套",
     "FLAVOR": "虎皮外套，战斗中很有帮助。",
     "DESCRIPTIONS": [
-      "每当你的格挡被打破，获得 #b1 点 #ytheyakuza:复仇 和 #y敏捷 。"
+      "每当你的格挡被打破，获得 #b1 点 #ytheyakuza:坚毅反击 和 #y敏捷 。"
     ]
   },
   "theYakuza:AkiyamasVaultRelic": {
@@ -159,7 +159,7 @@
   },
   "theYakuza:AmonBadgeRelic": {
     "NAME": "亚门徽章",
-    "FLAVOR": "极凶的战士",
+    "FLAVOR": "最强杀手",
     "DESCRIPTIONS": [
       "战斗开始时，每有一个 #r徽章 ，获得 #b1 点 #y临时生命 。"
     ]
@@ -200,7 +200,7 @@
     ]
   },
   "theYakuza:JingweonBadgeRelic": {
-    "NAME": "真拳徽章",
+    "NAME": "真拳派徽章",
     "FLAVOR": "维吉尔韩国分尔。",
     "DESCRIPTIONS": [
       "回合开始时，玩一次 #ytheyakuza:小游戏 。"
@@ -208,9 +208,9 @@
   },
   "theYakuza:KazamaBadgeRelic": {
     "NAME": "风间徽章",
-    "FLAVOR": "向日葵的老大。",
+    "FLAVOR": "向日葵的校长。",
     "DESCRIPTIONS": [
-      " #ytheyakuza:热力 最大值提高 #b1 点。"
+      " #ytheyakuza:热血值 最大值提高 #b1 点。"
     ]
   },
   "theYakuza:MajimaBadgeRelic": {
@@ -222,14 +222,14 @@
   },
   "theYakuza:OmiBadgeRelic": {
     "NAME": "近江徽章",
-    "FLAVOR": "就该是这样。",
+    "FLAVOR": "龙有一条就够了。",
     "DESCRIPTIONS": [
       "如果手中没有攻击牌，随机 #y抽 1张 #y攻击牌 ，每回合限一次。"
     ]
   },
   "theYakuza:RyudoBadgeRelic": {
-    "NAME": "龙道徽章",
-    "FLAVOR": "晨光的继承者。",
+    "NAME": "琉道一家徽章",
+    "FLAVOR": "牵牛花的守护者。",
     "DESCRIPTIONS": [
       "使用 #y药水 时，将一张普通 #ytheyakuza:小游戏 牌加入手牌。"
     ]
@@ -238,32 +238,32 @@
     "NAME": "涩泽徽章",
     "FLAVOR": "真龙的诞生。",
     "DESCRIPTIONS": [
-      "战斗开始时，获得 #b2 层 #ytheyakuza:热力 。"
+      "战斗开始时，获得 #b2 层 #ytheyakuza:热血值 。"
     ]
   },
   "theYakuza:ShimanoBadgeRelic": {
     "NAME": "岛野徽章",
-    "FLAVOR": "谁把这狗放出来的？",
+    "FLAVOR": "谁把这狂犬放出来的？",
     "DESCRIPTIONS": [
       "连续打出 #y攻击牌时 增加 #b1 点遗物计数。 NL 打出 #y技能 牌时，获得所示数量的 #y格挡 ，并重置计数。"
     ]
   },
   "theYakuza:SomeyaBadgeRelic": {
-    "NAME": "染屋徽章",
+    "NAME": "染谷徽章",
     "FLAVOR": "新生代。",
     "DESCRIPTIONS": [
       "你有 #b10% 概率无视即将被施加的 #y负面状态 。"
     ]
   },
   "theYakuza:UenoSeiwaBadgeRelic": {
-    "NAME": "上野诚和徽章",
-    "FLAVOR": "好多抢劫的。",
+    "NAME": "上野诚和会徽章",
+    "FLAVOR": "橡皮子弹，空包弹，还是实弹？",
     "DESCRIPTIONS": [
       "普通宝箱含有 #b2 张卡牌奖励。"
     ]
   },
   "theYakuza:YomeiBadgeRelic": {
-    "NAME": "阳铭徽章",
+    "NAME": "阳铭联合会徽章",
     "FLAVOR": "他对我来说什么都不是。",
     "DESCRIPTIONS": [
       "每场战斗的前 #b3 个回合开始时，获得 #b4 点 #y格挡 。"

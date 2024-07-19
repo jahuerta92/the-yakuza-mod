@@ -1,6 +1,6 @@
 {
 "theYakuza:Majima": {
-        "NAME": "Goro Majima, Patriarch of the Majima family, a Tojo clan subsidiary",
-        "DIALOG": ["~KIRYU-CHAAN~", "~HEH~ ~EHE~ ~HEH~", "YOU'RE ~PATHETIC~ !!", "KYODAIII", "IT'S SHOWTIME"]
+        "NAME": "东城会直系 真岛组组长 真岛吾朗",
+        "DIALOG": ["~桐生老弟~", "~呀哈哈~", "你真 ~可悲~ !!", "好弱啊", "表演时间！"]
 }
 }
