@@ -14,7 +14,7 @@
 },
 "theYakuza:Weave": {
         "NAME": "ウィービング",
-        "DESCRIPTIONS": ["このターン中、敵からのダメージを #b", "　回無効化する。"]
+        "DESCRIPTIONS": ["このターン中、敵からのダメージを #b", "　回無効化する。", "　回無効化する。"]
 },
 "theYakuza:Boxing": {
         "NAME": "拳威",
@@ -42,7 +42,7 @@
 },
 "theYakuza:BeastStyle": {
         "NAME": "壊し屋スタイル",
-        "DESCRIPTIONS": ["装備した時、 #b", " 枚のアタックを引き、コストを #b1 下げる。"]
+        "DESCRIPTIONS": ["装備した時、 #b", " 枚のアタックを引き、コストを #b1 下げる。", " 枚のアタックを引き、コストを #b1 下げる。"]
 },
 "theYakuza:RushStyle": {
         "NAME": "ラッシュスタイル",
@@ -50,11 +50,11 @@
 },
 "theYakuza:BrawlerStyle": {
         "NAME": "チンピラスタイル",
-        "DESCRIPTIONS": ["HPを失った時、 #b", " 回根性反撃する。"]
+        "DESCRIPTIONS": ["HPを失った時、 #b", " 回根性反撃する。", " 回根性反撃する。"]
 },
 "theYakuza:Retaliate": {
         "NAME": "根性反撃",
-        "DESCRIPTIONS": ["ターン開始時、山札から #b", " 枚のアタックをプレイする。"]
+        "DESCRIPTIONS": ["ターン開始時、山札から #b", " 枚のアタックをプレイする。", " 枚のアタックをプレイする。"]
 },
 "theYakuza:EssenceOfPolish": {
         "NAME": "研磨",
@@ -110,11 +110,12 @@
 },
 "theYakuza:TemporalConfusion": {
         "NAME": "目眩",
-        "DESCRIPTIONS": ["#b", " ターンの間、山札から引いたカードのコストがランダムに変動する。"]
+        "DESCRIPTIONS": ["#b", " ターンの間、山札から引いたカードのコストがランダムに変動する。", " ターンの間、山札から引いたカードのコストがランダムに変動する。"]
 },
 "theYakuza:MadDog": {
         "NAME": "嶋野の狂犬",
-        "DESCRIPTIONS": ["カードが #b 枚プレイされる度に、 ヒート #b1 を得て予告行動を変える。"]
+        "DESCRIPTIONS": ["カードが #b 枚プレイされる度に、 ヒート #b1 を得て予告行動を変える。", "カードが #b 枚プレイされる度に、 ヒート #b1 を得て予告行動を変える。", 
+        "カードが #b 枚プレイされる度に、 ヒート #b1 を得て予告行動を変える。"]
 },
 "theYakuza:ShadowClones": {
         "NAME": "読めない男",
