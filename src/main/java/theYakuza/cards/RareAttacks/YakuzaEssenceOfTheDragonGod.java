@@ -61,7 +61,10 @@ public class YakuzaEssenceOfTheDragonGod extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int repeats = p.getPower(HeatLevelPower.POWER_ID).amount;
+        int repeats = 0;
+        if (p.hasPower(HeatLevelPower.POWER_ID)) {
+            repeats = p.getPower(HeatLevelPower.POWER_ID).amount;
+        } // p.getPower(HeatLevelPower.POWER_ID)
         if (heatCost > 0) {
             AbstractDungeon.actionManager.addToBottom(new HeatLevelCostAction(repeats));
         }
