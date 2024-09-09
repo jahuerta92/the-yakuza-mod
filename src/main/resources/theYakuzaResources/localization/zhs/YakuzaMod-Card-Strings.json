@@ -108,7 +108,7 @@
   },
   "theYakuza:YakuzaEssenceOfDropkick": {
     "NAME": "舍身踢",
-    "DESCRIPTION": "造成 !D! 点伤害X次。 NL 每次攻击获得1层 theyakuza:热血值 。 NL 结束你的回合。 NL (造成 !M! 点伤害)。"
+    "DESCRIPTION": "造成 !D! 点伤害X次。 NL 击中时获得1层 theyakuza:热血值 。 NL 结束你的回合。 NL (造成 !M! 点伤害)。"
   },
   "theYakuza:YakuzaEssenceOfWeaponMastery": {
     "NAME": "武器精通",
@@ -324,7 +324,7 @@
   "theYakuza:YakuzaGrabStaminanX": {
     "NAME": "抓取精力饮料",
     "DESCRIPTION": " theyakuza:抓取 theyakuza:精力饮料 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:浓缩精力饮料 。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": " theyakuza:抓取 theyakuza:皇家精力饮料 。 NL 消耗 。"
   },
   "theYakuza:YakuzaFridayNight": {
     "NAME": "星期五之夜",
